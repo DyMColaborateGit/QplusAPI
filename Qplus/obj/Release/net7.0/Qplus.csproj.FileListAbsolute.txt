@@ -1,0 +1,495 @@
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.Development.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.exe
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.deps.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.runtimeconfig.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.pdb
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.xml
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\AspNetCoreRateLimit.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Core.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Identity.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Humanizer.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.Sqlite.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.OpenApi.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.batteries_v2.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.core.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.CodeDom.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Drawing.Common.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Memory.Data.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Permissions.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.pdb
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.pdb
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.AssemblyReference.cache
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfoInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfo.cs
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.CoreCompileInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cache
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssets.props
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.build.Qplus.props
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Qplus.props
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Qplus.props
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.pack.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.build.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.development.json
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\scopedcss\bundle\Qplus.styles.css
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.CopyComplete
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\refint\Qplus.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.xml
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.pdb
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.genruntimeconfig.cache
+D:\PROYECTOS DYM\Qplus-Api\Qplus\obj\Release\net7.0\ref\Qplus.dll
+D:\PROYECTOS DYM\Qplus-Api\Qplus\bin\Release\net7.0\webConfigure.config
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\webConfigure.config
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.Development.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.exe
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.deps.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.runtimeconfig.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.xml
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\AspNetCoreRateLimit.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Core.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Identity.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Humanizer.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.Sqlite.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.OpenApi.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Mono.TextTemplating.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Newtonsoft.Json.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.core.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.CodeDom.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Drawing.Common.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Memory.Data.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Runtime.Caching.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Permissions.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\System.Windows.Extensions.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfo.cs
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.sourcelink.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.build.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.development.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.build.Qplus.props
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Qplus.props
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Qplus.props
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.pack.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\scopedcss\bundle\Qplus.styles.css
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.Up2Date
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\refint\Qplus.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.xml
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.genruntimeconfig.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\Qplus\obj\Release\net7.0\ref\Qplus.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\webConfigure.config
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.Development.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.exe
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.deps.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.runtimeconfig.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.xml
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\AspNetCoreRateLimit.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Core.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Identity.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Humanizer.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.Sqlite.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.OpenApi.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Mono.TextTemplating.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Newtonsoft.Json.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.core.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.CodeDom.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Drawing.Common.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Memory.Data.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Runtime.Caching.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Permissions.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\System.Windows.Extensions.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfo.cs
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.sourcelink.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.build.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.development.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.build.Qplus.props
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Qplus.props
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Qplus.props
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.pack.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\scopedcss\bundle\Qplus.styles.css
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.Up2Date
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\refint\Qplus.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.xml
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.genruntimeconfig.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\Qplus\obj\Release\net7.0\ref\Qplus.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\webConfigure.config
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.Development.json
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\appsettings.json
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.staticwebassets.endpoints.json
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.exe
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.deps.json
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.runtimeconfig.json
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.pdb
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Qplus.xml
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\AspNetCoreRateLimit.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Core.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Azure.Identity.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Humanizer.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Data.Sqlite.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.OpenApi.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Mono.TextTemplating.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Newtonsoft.Json.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.batteries_v2.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.core.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.CodeDom.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Drawing.Common.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Memory.Data.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Runtime.Caching.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Security.Permissions.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\System.Windows.Extensions.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.dll
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.logic.pdb
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Models.pdb
+E:\CODE\DYM\Qplus-Api\Qplus\bin\Release\net7.0\App.Infraestructure.pdb
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.AssemblyReference.cache
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfoInputs.cache
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.AssemblyInfo.cs
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.CoreCompileInputs.cache
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cache
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.sourcelink.json
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\scopedcss\bundle\Qplus.styles.css
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.build.json
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.development.json
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.build.endpoints.json
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssets.props
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.build.Qplus.props
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Qplus.props
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Qplus.props
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.pack.json
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.csproj.Up2Date
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.dll
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\refint\Qplus.dll
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.xml
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.pdb
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\Qplus.genruntimeconfig.cache
+E:\CODE\DYM\Qplus-Api\Qplus\obj\Release\net7.0\ref\Qplus.dll

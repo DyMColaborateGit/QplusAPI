@@ -1,0 +1,17 @@
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.logic.deps.json
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.logic.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Models.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Models.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.csproj.AssemblyReference.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfoInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfo.cs
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.csproj.CoreCompileInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.csproj.CopyComplete
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\ref\App.logic.dll

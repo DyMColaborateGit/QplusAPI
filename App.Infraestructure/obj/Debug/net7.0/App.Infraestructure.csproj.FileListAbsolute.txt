@@ -1,0 +1,15 @@
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.deps.json
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Debug\net7.0\App.Models.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Debug\net7.0\App.Models.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.AssemblyInfo.cs
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.CopyComplete
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\refint\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\ref\App.Infraestructure.dll

@@ -1,0 +1,71 @@
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.deps.json
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.AssemblyReference.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfoInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfo.cs
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.CoreCompileInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.CopyComplete
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\refint\App.logic.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Release\net7.0\ref\App.logic.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.deps.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfo.cs
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.sourcelink.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.Up2Date
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\refint\App.logic.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Logic\obj\Release\net7.0\ref\App.logic.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.deps.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfo.cs
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.sourcelink.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.Up2Date
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\refint\App.logic.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Logic\obj\Release\net7.0\ref\App.logic.dll
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.deps.json
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.dll
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.logic.pdb
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.dll
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.dll
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Infraestructure.pdb
+E:\CODE\DYM\Qplus-Api\App.Logic\bin\Release\net7.0\App.Models.pdb
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.AssemblyReference.cache
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfoInputs.cache
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.AssemblyInfo.cs
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.CoreCompileInputs.cache
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.sourcelink.json
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.csproj.Up2Date
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.dll
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\refint\App.logic.dll
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\App.logic.pdb
+E:\CODE\DYM\Qplus-Api\App.Logic\obj\Release\net7.0\ref\App.logic.dll

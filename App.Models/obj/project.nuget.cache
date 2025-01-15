@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "aC/kJnn7OI8=",
+  "success": true,
+  "projectFilePath": "E:\\CODE\\DYM\\Qplus-Api\\App.Models\\App.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

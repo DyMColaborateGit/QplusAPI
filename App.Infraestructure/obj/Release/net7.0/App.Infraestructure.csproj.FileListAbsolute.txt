@@ -1,0 +1,63 @@
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.deps.json
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfo.cs
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.CopyComplete
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\refint\App.Infraestructure.dll
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.pdb
+D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\ref\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.deps.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfo.cs
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.sourcelink.json
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infr.6554EA0C.Up2Date
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\refint\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\desarrollo\Qplus-Api\App.Infraestructure\obj\Release\net7.0\ref\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.deps.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfo.cs
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.sourcelink.json
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infr.6554EA0C.Up2Date
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\refint\App.Infraestructure.dll
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.pdb
+C:\Users\desar\Escritorio\John\Backup ultimos ajustes QPLUS\Qplus-Api\App.Infraestructure\obj\Release\net7.0\ref\App.Infraestructure.dll
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.deps.json
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.dll
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.pdb
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.dll
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\bin\Release\net7.0\App.Models.pdb
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.AssemblyInfo.cs
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.sourcelink.json
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infr.6554EA0C.Up2Date
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.dll
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\refint\App.Infraestructure.dll
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.pdb
+E:\CODE\DYM\Qplus-Api\App.Infraestructure\obj\Release\net7.0\ref\App.Infraestructure.dll

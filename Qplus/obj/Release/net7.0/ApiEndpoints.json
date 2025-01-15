@@ -1,0 +1,5911 @@
+[
+  {
+    "ContainingType": "Qplus.Controllers.ActividadesPIDController",
+    "Method": "PostCreatenewActividadesCompetencias",
+    "RelativePath": "api/ActividadesPID/PostCreatenewActividadesCompetencias/{ActividadId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ActividadesCompetenciasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "ActividadId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ActividadesCompetenciasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ActividadesPIDController",
+    "Method": "PostCreatenewActividadesIndicadores",
+    "RelativePath": "api/ActividadesPID/PostCreatenewActividadesIndicadores/{ActividadId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ActividadesIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "ActividadId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ActividadesIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ActividadesPIDController",
+    "Method": "PostCreatenewActividadPID",
+    "RelativePath": "api/ActividadesPID/PostCreatenewActividadPID",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.TblCom.TBL_com_ActividadesPIDModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_ActividadesPIDModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.AreasController",
+    "Method": "GetListMacroProcesos",
+    "RelativePath": "api/Areas/GetListMacroProcesos/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.T.AreasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.AuditoriasController",
+    "Method": "GetEncabezadoEvaluacionAuditores",
+    "RelativePath": "api/Auditorias/GetEncabezadoEvaluacionAuditores/{IdEvaluacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdEvaluacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblAud.ResponseTBL_aud_EvaAuditoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.AuditoriasController",
+    "Method": "GetGesEstadoEvaluacionAuditores",
+    "RelativePath": "api/Auditorias/GetGesEstadoEvaluacionAuditores/{IdEvaluacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdEvaluacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblAud.TBL_aud_EvaAuditoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.AuditoriasController",
+    "Method": "GetPreguntasEvaluacionAuditores",
+    "RelativePath": "api/Auditorias/GetPreguntasEvaluacionAuditores/{IdEvaluacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdEvaluacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblAud.TBL_aud_EvaPreguntasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.AuditoriasController",
+    "Method": "UpdateObservacionEvAuditores",
+    "RelativePath": "api/Auditorias/UpdateObservacionEvAuditores",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjEvaluacion",
+        "Type": "App.Models.Models.TblAud.TBL_aud_EvaAuditoresModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblAud.TBL_aud_EvaAuditoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.AuditoriasController",
+    "Method": "UpdatePreguntasEvaluacionAuditores",
+    "RelativePath": "api/Auditorias/UpdatePreguntasEvaluacionAuditores/{IdEvaluacion}/{Calificacion}/{IdEvaPregunta}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdEvaluacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Calificacion",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdEvaPregunta",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblAud.TBL_aud_EvaPreguntasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Webapp.Controllers.AutenticateController",
+    "Method": "GetAutenticateUser",
+    "RelativePath": "api/Autenticate/AutenticateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KeyUser",
+        "Type": "App.Models.Models.Share.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Models.Share.LoginModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.CargosController",
+    "Method": "GetCargoIdCargo",
+    "RelativePath": "api/Cargos/GetCargoIdCargo/{CargoId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CargoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.SCP_CargosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.CargosController",
+    "Method": "GetListaCargos",
+    "RelativePath": "api/Cargos/GetListaCargos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_CargosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.CargosController",
+    "Method": "ListaCargosDocAprobado",
+    "RelativePath": "api/Cargos/ListaCargosDocAprobado/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_CargosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.CargosController",
+    "Method": "ListaCargosDocElaborado",
+    "RelativePath": "api/Cargos/ListaCargosDocElaborado/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_CargosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.CargosController",
+    "Method": "ListaCargosDocRevisado",
+    "RelativePath": "api/Cargos/ListaCargosDocRevisado/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_CargosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.CargosProcesosController",
+    "Method": "GetCargoAutorizadosByProcesoIdCargoId",
+    "RelativePath": "api/CargosProcesos/GetCargoAutorizadosByProcesoIdCargoId/{IdProceso}/{id_cargo}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id_cargo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_CargosProcesosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ConsolidadoDesempenosController",
+    "Method": "GetListConsolidadoDesempeno",
+    "RelativePath": "api/ConsolidadoDesempenos/GetConsolidadoCompetenciasByEvaluacionId/{EvaluacionId}/{Tipo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Tipo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ConsolidadoDesempenoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ControlDistribucionController",
+    "Method": "GetControlDistDocumentoByDocumentoId",
+    "RelativePath": "api/ControlDistribucion/GetControlDistDocumentoByDocumentoId/{IdDocumento}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDocumento",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Control_distribucionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.DialogodeDesarrolloController",
+    "Method": "GetListTiposIndicadoresEstrategicos",
+    "RelativePath": "api/DialogodeDesarrollo/GetListdialogodedesarrolloByevaluacionId/{IdEvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdEvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_DialogodeDesarrolloModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.DialogodeDesarrolloController",
+    "Method": "ObjDialogodeDesarrolloById",
+    "RelativePath": "api/DialogodeDesarrollo/GetObjDialogodeDesarrollo/{IdDialogo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDialogo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_DialogodeDesarrolloModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.DocumentosController",
+    "Method": "GetListadoDocumentosFiltrosVista",
+    "RelativePath": "api/Documentos/GetListadoDocumentosFiltrosVista/{IdArea}/{proceso_doc}/{CodigoDoc}/{IdProducto}/{IdTipo}/{Estado}/{NivelSeguridad}/{EmpresaId}/{InIdSistema}/{Usuario}/{NombreDoc}/{userId}/{ElaboradoPor}/{RevisadoPor}/{AprobadoPor}/{EstadoProceso}/{Pagina}/{pageSize}/{codigoCargo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdArea",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "proceso_doc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CodigoDoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdTipo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "NivelSeguridad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "InIdSistema",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Usuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "NombreDoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ElaboradoPor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "RevisadoPor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "AprobadoPor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EstadoProceso",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "codigoCargo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Infraestructure.Repositories.DocumentosControladosRepository\u002BPagedResult\u00601[[App.Models.Models.TblDoc.ResponseTBL_doc_DocumentosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], App.Infraestructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.DocumentosController",
+    "Method": "GetListDocumentos",
+    "RelativePath": "api/Documentos/GetListDocumentos/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblDoc.TBL_doc_DocumentosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EmpresasController",
+    "Method": "GetempresaByempresaId",
+    "RelativePath": "api/Empresas/GetempresaByempresaId/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.SCP_EmpresasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EmpresasController",
+    "Method": "GetEmpresasTitulosByempresaId",
+    "RelativePath": "api/Empresas/GetEmpresasTitulosByempresaId/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.SCP_EmpresasTitulosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EmpresasController",
+    "Method": "GetListEmpresas",
+    "RelativePath": "api/Empresas/GetListEmpresas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_EmpresasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EncabezadoEvaController",
+    "Method": "GetEncabezadoEvaluacion",
+    "RelativePath": "api/EncabezadoEva/GetEncabezadoEvaluacion/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.ResponseEncabezadoEvaModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EncuestaPreguntaController",
+    "Method": "ListEncuestaPregunta",
+    "RelativePath": "api/EncuestaPregunta/GetListEncuestaPregunta/{EmpresaId}/{IdEncuesta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdEncuesta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.JOIN_tbl_com_EncuestaPreguntaModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EncuestaPreguntaController",
+    "Method": "GetValueEncuestaPregunta",
+    "RelativePath": "api/EncuestaPregunta/GetValueEncuestaPregunta/{EmpresaId}/{IdEncuesta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdEncuesta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EncuestaPreguntaController",
+    "Method": "tUpdateEncuestaPregunta",
+    "RelativePath": "api/EncuestaPregunta/PutUpdateEncuestaPregunta",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.TblCom.TBL_com_EncuestaPreguntaModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_EncuestaPreguntaModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EscalaEvaluacionController",
+    "Method": "GetEscalasEvaluacion",
+    "RelativePath": "api/EscalaEvaluacion/GetEscalasEvaluacion/{EmpresaId}/{AspectoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "AspectoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.Tbl_com_EscalaEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.EscalaEvaluacionController",
+    "Method": "GetListEscalasEvaluacion",
+    "RelativePath": "api/EscalaEvaluacion/GetListEscalasEvaluacion/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.Tbl_com_EscalaEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.FuncionarioController",
+    "Method": "GetJoinfuncionarioByempresaIdByIdentificacion",
+    "RelativePath": "api/Funcionario/GetJoinfuncionarioByempresaIdByIdentificacion/{EmpresaId}/{Identificacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Identificacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.JOINSCP_FuncionariosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.FuncionarioController",
+    "Method": "GetFormInitEvaluacion",
+    "RelativePath": "api/Funcionario/GetObjfuncionarioByempresaIdByIdentificacion/{EmpresaId}/{Identificacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Identificacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.SCP_FuncionariosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GeneralController",
+    "Method": "GetListAnios",
+    "RelativePath": "api/General/GetListAnios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Share.AniosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GetComportamientosByEvaluacionId",
+    "RelativePath": "api/GetGestFormEvaluacion/GetComportamientosByEvaluacionId/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseJoinTbl_com_ResultadosEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GetFormIndicadoresEvaluacion",
+    "RelativePath": "api/GetGestFormEvaluacion/GetFormIndicadoresEvaluacion/{EmpresaId}/{EvaluacionId}/{Anio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Share.GetGestIndicadoresEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GetFormInitEvaluacion",
+    "RelativePath": "api/GetGestFormEvaluacion/GetFormInitEvaluacion/{EmpresaId}/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Share.GetGestEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GeTotalAnalisisIndicadoresEstrategicos",
+    "RelativePath": "api/GetGestFormEvaluacion/GeTotalAnalisisIndicadoresEstrategicos/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_TotalesConsolidadoDesempenoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "TotalAnalisisUesOne",
+    "RelativePath": "api/GetGestFormEvaluacion/GeTotalAnalisisUesOne/{EvaluacionId}/{EmpresaId}/{Tipo}/{Nivel}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Tipo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nivel",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.GeneralTotalUES, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "TotalAnalisisuesTwo",
+    "RelativePath": "api/GetGestFormEvaluacion/GeTotalAnalisisuesTwo/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.GeneralTotalUES, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GeTotalesEvaluacion",
+    "RelativePath": "api/GetGestFormEvaluacion/GeTotalesEvaluacion/{EmpresaId}/{EvaluacionId}/{TipoId}/{Nivel}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "TipoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nivel",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Share.GetGestVerEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GetTotalAnalisisIndicadoresGestion",
+    "RelativePath": "api/GetGestFormEvaluacion/GetTotalAnalisisIndicadoresGestion/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_TotalesConsolidadoDesempenoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GetTotalIndicadoreCorpoportaivos",
+    "RelativePath": "api/GetGestFormEvaluacion/GetTotalIndicadoreCorpoportaivos/{EmpresaId}/{Anio}/{TipoNivelEst}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TipoNivelEst",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.GeneralTBL_ind_TotalIndEstCorporativosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "PutComportamientosByEvaluacionId",
+    "RelativePath": "api/GetGestFormEvaluacion/PutComportamientosByEvaluacionId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.Share.RequestUpdateComportamiento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "GetDataEvaluacionByevaluacionId",
+    "RelativePath": "api/GetGestFormEvaluacion/PutGestValidarAnalisisDesarrollo/{EvaluacionId}/{UserName}/{EmpresaId}/{Bestado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Bestado",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.GetGestFormEvaluacionController",
+    "Method": "PutUpdateComportamientosByEvaluacionId",
+    "RelativePath": "api/GetGestFormEvaluacion/PutUpdateComportamientosByEvaluacionId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.Share.RequestUpdateComportamiento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.HistorialCambiosController",
+    "Method": "GetHistorialesDocumentoByDocumentoId",
+    "RelativePath": "api/HistorialCambios/GetHistorialesDocumentoByDocumentoId/{IdDocumento}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDocumento",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Historial_cambiosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MastIndicadoresController",
+    "Method": "GetEncabezadoEvaluacion",
+    "RelativePath": "api/MastIndicadores/GetExistIndicadoresform/{EmpresaId}/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MastIndicadoresController",
+    "Method": "GetListIndicadoresFuncionario",
+    "RelativePath": "api/MastIndicadores/GetListIndicadoresFuncionario/{EvaluacionId}/{EmpresaId}/{Identificacion}/{CodigoCargo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Identificacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "CodigoCargo",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.Tbl_ind_MastIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MastIndicadoresController",
+    "Method": "GetListIndicadoresPIM",
+    "RelativePath": "api/MastIndicadores/GetListIndicadoresPIM/{EvaluacionId}/{EmpresaId}/{Identificacion}/{CodigoCargo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Identificacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "CodigoCargo",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.Tbl_ind_MastIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MastIndicadoresController",
+    "Method": "PostCrearIndicador",
+    "RelativePath": "api/MastIndicadores/PostCrearIndicador/{EvaluacionId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "objCreate",
+        "Type": "App.Models.Models.TblInd.Tbl_ind_MastIndicadoresModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.Tbl_ind_MastIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MatrizdeTalentosController",
+    "Method": "GetListOficinasByempresaIdByzonas",
+    "RelativePath": "api/MatrizdeTalentos/GestActualizarMatrizdetalentosevaluacion/{Anio}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MatrizdeTalentosController",
+    "Method": "GetFiltroListEvaluacionesAnioEvaluadorId",
+    "RelativePath": "api/MatrizdeTalentos/GetFiltroListEvaluacionesAnioEvaluadorId/{InAnio}/{EvaluadorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadorId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseTbl_com_ProgEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MatrizdeTalentosController",
+    "Method": "GetFiltroListMatrizdeTalentos",
+    "RelativePath": "api/MatrizdeTalentos/GetFiltroListMatrizdeTalentos/{EmpresaId}/{Codmatriz}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Codmatriz",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ZonaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OficinaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadorId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseTbl_com_ProgEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MatrizdeTalentosController",
+    "Method": "GetFiltroListMatrizdeTalentosM",
+    "RelativePath": "api/MatrizdeTalentos/GetFiltroListMatrizdeTalentosM/{EmpresaId}/{NumeroMapaTalentoM}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "NumeroMapaTalentoM",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ZonaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OficinaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadorId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseTbl_com_ProgEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MatrizdeTalentosController",
+    "Method": "GetListOficinasByempresaIdByzonas",
+    "RelativePath": "api/MatrizdeTalentos/GetListMatrizdeTalentos/{EmpresaId}/{Codmatriz}/{InAnio}/{ZonaId}/{OficinaId}/{ProcesoId}/{EvaluadorId}/{EvaluadoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Codmatriz",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ZonaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OficinaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ProcesoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadorId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseTBL_com_MatrizdeTalentosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.MatrizdeTalentosController",
+    "Method": "GetListMatrizdeTalentosM",
+    "RelativePath": "api/MatrizdeTalentos/GetListMatrizdeTalentosM/{EmpresaId}/{Codmatriz}/{InAnio}/{ZonaId}/{OficinaId}/{ProcesoId}/{EvaluadorId}/{EvaluadoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Codmatriz",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ZonaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OficinaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ProcesoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadorId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseTBL_com_MatrizdeTalentosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.NivelDesempenoPpalController",
+    "Method": "GetListNivelDesempenoPpal",
+    "RelativePath": "api/NivelDesempenoPpal/GetListNivelDesempenoPpal/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{ProcesoId}/{EvaluadorId}/{EvaluadoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ZonaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "OficinaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ProcesoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadorId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_NivelesDesempenoPpalModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.NormasController",
+    "Method": "GetCompetenciasActividadesPDIByCargoBytipo",
+    "RelativePath": "api/Normas/GetCompetenciasActividadesPDIByCargoBytipo/{EmpresaId}/{CargoId}/{TipoAna}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CargoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TipoAna",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ObjetivosCalidadController",
+    "Method": "GetListObjetivosDecalidad",
+    "RelativePath": "api/ObjetivosCalidad/GetListObjetivosDecalidad/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.Tbl_ind_ObjetivosCalidadModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.OficinasController",
+    "Method": "GetListOficinasByempresaIdByzonas",
+    "RelativePath": "api/Oficinas/GetListOficinasByempresaIdByzonas/{EmpresaId}/{ZonaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ZonaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblMast.TBL_mast_OficinasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ParametrosEmpresasController",
+    "Method": "GetListParametrosGenerales",
+    "RelativePath": "api/ParametrosEmpresas/GetListParametrosGenerales/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_ParametrosEmpresasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ParametrosEmpresasController",
+    "Method": "GetParametroEmpresaByParametroId",
+    "RelativePath": "api/ParametrosEmpresas/GetParametroEmpresaByParametroId/{EmpresaId}/{ParametroId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ParametroId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.SCP_ParametrosEmpresasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.PesosxTipoIndxNivelCompController",
+    "Method": "GetPesosxTipoIndxNivelComp",
+    "RelativePath": "api/PesosxTipoIndxNivelComp/GetPesosxTipoIndxNivelComp/{EmpresaId}/{Nivel}/{IdTipoIndicador}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nivel",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdTipoIndicador",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.Tbl_ind_PesosxTipoIndxNivelCompModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProcesoController",
+    "Method": "GetListaProcesosEstadoByEmpresaIdByMacroproId",
+    "RelativePath": "api/Proceso/GetListaProcesosEstadoByEmpresaIdByMacroproId/{EmpresaId}/{Id_Area}/{Estado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id_Area",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_ProcesosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProcesoController",
+    "Method": "GetListProcesosByEmpresaId",
+    "RelativePath": "api/Proceso/GetListProcesos/{EmpresaId}/{Estado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_ProcesosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProductosController",
+    "Method": "GetListaSubProcesosByIdProcesoActivos",
+    "RelativePath": "api/Productos/GetListaSubProcesosByIdProcesoActivos/{IdProceso}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.ProductosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "GestActualizarEvaluador",
+    "RelativePath": "api/ProgEvaluacion/GestActualizarEvaluador/{EvaluacionId}/{Evaluador}/{Usuariomod}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Evaluador",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Usuariomod",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "GestCerrarEvaADA",
+    "RelativePath": "api/ProgEvaluacion/GestCerrarEvaADA/{EvaluacionId}/{EmpresaId}/{Caracteres}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Caracteres",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "GestConceptoFinalEval",
+    "RelativePath": "api/ProgEvaluacion/GestConceptoFinalEval",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ConceptoFinal",
+        "Type": "App.Models.Models.Share.RequestConceptoFinal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "GetDataEvaluacionByevaluacionId",
+    "RelativePath": "api/ProgEvaluacion/GetEvaluacioneByEvaluacionId/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.Tbl_com_ProgEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateCajaMapaDesempenoM",
+    "RelativePath": "api/ProgEvaluacion/UpdateCajaMapaDesempenoM/{EvaluacionId}/{UbicacionMD_M}/{NivelM}/{ColorNivelM}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "UbicacionMD_M",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "NivelM",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "ColorNivelM",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateCajaMapaTalentoM",
+    "RelativePath": "api/ProgEvaluacion/UpdateCajaMapaTalentoM/{EvaluacionId}/{NumeroMapaTalentoM}/{CajaMapaTalentoM}/{ColorMapaTalentoM}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "NumeroMapaTalentoM",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CajaMapaTalentoM",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "ColorMapaTalentoM",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateModMD",
+    "RelativePath": "api/ProgEvaluacion/UpdateModMD/{EvaluacionId}/{ModMD}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "ModMD",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateModMT",
+    "RelativePath": "api/ProgEvaluacion/UpdateModMT/{EvaluacionId}/{ModMT}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "ModMT",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateObservacionGeneral",
+    "RelativePath": "api/ProgEvaluacion/UpdateObservacionGeneral/{EvaluacionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Observacion",
+        "Type": "Qplus.Controllers.ProgEvaluacionController\u002BUpdateObservacionModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateObsModMapaDesempeno",
+    "RelativePath": "api/ProgEvaluacion/UpdateObsModMapaDesempeno/{EvaluacionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "obsNivelMapaD",
+        "Type": "Qplus.Controllers.ProgEvaluacionController\u002BUpdateObsModMapaDesempenoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "UpdateObsModMapaT",
+    "RelativePath": "api/ProgEvaluacion/UpdateObsModMapaT/{EvaluacionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "ObsModMapaT",
+        "Type": "Qplus.Controllers.ProgEvaluacionController\u002BUpdateObsModMapaTModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgramacionMasivaEvaluacionesController",
+    "Method": "GetDataProgramacionMasivaEvaluaciones",
+    "RelativePath": "api/ProgramacionMasivaEvaluaciones/GetDataProgramacionMasivaEvaluaciones/{IdProgramacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProgramacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.Tbl_com_ProgramacionMasivaEvaluacionesModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadoEvaluacionadaController",
+    "Method": "GetDataPreguntasAdaByEvaluaciones",
+    "RelativePath": "api/ResultadoEvaluacionada/GetDataPreguntasAda/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ResultadoEvaluacionADAModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadoEvaluacionadaController",
+    "Method": "PutResultadosEvaadaPreguntas",
+    "RelativePath": "api/ResultadoEvaluacionada/PostResultadosEvaadaPreguntas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjPut",
+        "Type": "App.Models.Models.TblCom.TBL_com_ResultadoEvaluacionADAModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_ResultadoEvaluacionADAModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadoEvaluacionadaController",
+    "Method": "PutResultadosEvaADAPreguntasMult",
+    "RelativePath": "api/ResultadoEvaluacionada/PutResultadosEvaADAPreguntasMult/{EvaluacionId}/{IdResultado}/{IdHijo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdResultado",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdHijo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ResultadoEvaluacionADAModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
+    "Method": "PostGestionresultadoIndicadores",
+    "RelativePath": "api/ResultadosEvaIndicadores/GestionresultadoIndicadores/{EmpresaId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.TblCom.Tbl_com_ResultadosEvaIndicadoresModels",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
+    "Method": "GetListaIndicadoresEstrategisco",
+    "RelativePath": "api/ResultadosEvaIndicadores/GetListaIndicadoresEstrategisco/{EvaluacionId}/{Tipo}/{Nivel}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "Tipo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nivel",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.JOINTbl_com_ResultadosEvaIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
+    "Method": "GetListResultadoIndicadoresEstrategicos",
+    "RelativePath": "api/ResultadosEvaIndicadores/GetListResultadoIndicadoresEstrategicos/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.JOINTbl_com_ResultadosEvaIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
+    "Method": "GetListResultadosIndicadores",
+    "RelativePath": "api/ResultadosEvaIndicadores/GetListResultadosIndicadores/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.JOINTbl_com_ResultadosEvaIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
+    "Method": "PutResultadosIndicadoresgestion",
+    "RelativePath": "api/ResultadosEvaIndicadores/PutResultadosIndicadoresgestion",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.Share.RequestIndicadores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaluacionController",
+    "Method": "GetCompetenciasByEvaluacionId",
+    "RelativePath": "api/ResultadosEvaluacion/GetCompetenciasByEvaluacionId/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.ResponseJoinTbl_com_ResultadosEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaluacionController",
+    "Method": "UpdateResultadoObservacionCompetencias",
+    "RelativePath": "api/ResultadosEvaluacion/UpdateResultadoObservacionCompetencias/{EvaluacionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "ObjPut",
+        "Type": "App.Models.Models.Share.RequestUpdateObservaciones",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.Tbl_com_ResultadosEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "PostCrearcompetenciastecnicas",
+    "RelativePath": "api/ResultcomTecnicas/Crearcompetenciastecnicas/{EmpresaId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.TblCom.TBL_com_ResultcomTecnicasModels",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_ResultcomTecnicasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "Eliminarcompetenciatecnica",
+    "RelativePath": "api/ResultcomTecnicas/EliminarcompetenciaTecnica",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.TblCom.TBL_com_ResultcomTecnicasModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "GetCompetenciastecnicas",
+    "RelativePath": "api/ResultcomTecnicas/GetCompetenciastecnicas/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ResultcomTecnicasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "PutModificarcompetenciastecnicas",
+    "RelativePath": "api/ResultcomTecnicas/Modificarcompetenciastecnicas",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjRequest",
+        "Type": "App.Models.Models.TblCom.TBL_com_ResultcomTecnicasModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_ResultcomTecnicasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "Verificarcomptecnicas",
+    "RelativePath": "api/ResultcomTecnicas/Verificarcomptecnicas/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "VerificarcomptecnicasCerradas",
+    "RelativePath": "api/ResultcomTecnicas/VerificarcomptecnicasCerradas/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultcomTecnicasController",
+    "Method": "VerificarVerFormularioTecnicas",
+    "RelativePath": "api/ResultcomTecnicas/VerificarVerFormularioTecnicas/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultIndiCoporpController",
+    "Method": "GetListaResutIndiCorporativos",
+    "RelativePath": "api/ResultIndiCoporp/GetListaResutIndiCorporativos/{EvaluacionId}/{EmpresaId}/{Anio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.JOINTBL_ind_ResultIndiCoporpModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultIndiCoporpController",
+    "Method": "GetresultadoTotalIndicadoreCorporativos",
+    "RelativePath": "api/ResultIndiCoporp/GetresultadoTotalIndicadoreCorporativos/{EvaluacionId}/{EmpresaId}/{Anio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.JOINTBL_ind_ResultIndiCoporpModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.SistemasGestionController",
+    "Method": "GetListaSistemasGestionByEmpresaId",
+    "RelativePath": "api/SistemasGestion/GetListaSistemasGestionByEmpresaId/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblMast.TBL_mast_SistemasGestionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TextosFormularioController",
+    "Method": "GetEncabezadoEvaluacion",
+    "RelativePath": "api/TextosFormulario/GeTextoEvaluacioneByparametros/{EmpresaId}/{Tipotexto}/{Tipovaloracion}/{Anio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Tipotexto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Tipovaloracion",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.Tbl_com_TxtFormEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TiposActividadController",
+    "Method": "GetListObjetivosDecalidad",
+    "RelativePath": "api/TiposActividad/GetLisTiposActividades/{EmpresaId}/{CategoriaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CategoriaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_TiposActividadModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TiposDocumentoController",
+    "Method": "GetListadoTiposDocumentoEmpresaId",
+    "RelativePath": "api/TiposDocumento/GetListadoTiposDocumentoEmpresaId/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Tipo.tipos_documentoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TiposIndicadoresEstrategicosController",
+    "Method": "GetListTiposIndicadoresEstrategicos",
+    "RelativePath": "api/TiposIndicadoresEstrategicos/GetListTiposIndicadoresEstrategicos/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.TBL_ind_TiposIndicadoresEstrategicosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.UsuarioController",
+    "Method": "GetUsuarios",
+    "RelativePath": "api/Usuario/GetUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_UsuarioModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.UsuarioController",
+    "Method": "GetListUsuariosPaginados",
+    "RelativePath": "api/Usuario/GetUsuariosPaginados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Helpers.PaginacionHelpers\u00601[[App.Models.Models.Scp.SCP_UsuarioModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.UsuariosRolesController",
+    "Method": "GetListfuncionariosByrolByIdentificacion",
+    "RelativePath": "api/UsuariosRoles/GetListfuncionariosByrolByIdentificacion/{EmpresaId}/{NomRole}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "NomRole",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.ResponseSCP_UsuariosRolesModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ZonasController",
+    "Method": "GetListZonasByempresaId",
+    "RelativePath": "api/Zonas/GetListZonasByempresaId/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblMast.TBL_mast_ZonasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  }
+]

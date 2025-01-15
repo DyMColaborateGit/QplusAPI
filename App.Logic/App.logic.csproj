@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Infraestructure\App.Infraestructure.csproj" />
+  </ItemGroup>
+
+</Project>
