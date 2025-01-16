@@ -49,3 +49,16 @@ E:\CODE\DYM\Qplus-Api\App.Models\obj\Release\net6.0\App.Models.dll
 E:\CODE\DYM\Qplus-Api\App.Models\obj\Release\net6.0\refint\App.Models.dll
 E:\CODE\DYM\Qplus-Api\App.Models\obj\Release\net6.0\App.Models.pdb
 E:\CODE\DYM\Qplus-Api\App.Models\obj\Release\net6.0\ref\App.Models.dll
+E:\CODE\DYM\QplusAPI\App.Models\bin\Release\net6.0\App.Models.deps.json
+E:\CODE\DYM\QplusAPI\App.Models\bin\Release\net6.0\App.Models.dll
+E:\CODE\DYM\QplusAPI\App.Models\bin\Release\net6.0\App.Models.pdb
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.csproj.AssemblyReference.cache
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.AssemblyInfoInputs.cache
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.AssemblyInfo.cs
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.csproj.CoreCompileInputs.cache
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.sourcelink.json
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.dll
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\refint\App.Models.dll
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.pdb
+E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\ref\App.Models.dll

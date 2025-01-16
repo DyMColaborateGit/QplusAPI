@@ -25,4 +25,7 @@ public interface IProgEvaluacionRepository
 
     Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempeno(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD, string EvaluadorId, long EvaluadoId, bool BEstado);
 
+    Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD_M, string EvaluadorId, long EvaluadoId, bool BEstado);
+
+
 }
