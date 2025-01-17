@@ -1129,10 +1129,7 @@
           "System.Linq.Expressions": "4.3.0"
         },
         "runtime": {
-          "App.Infraestructure.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "App.Infraestructure.dll": {}
         }
       },
       "App.Models/1.0.0": {
@@ -1140,10 +1137,7 @@
           "Microsoft.Extensions.Configuration": "9.0.1"
         },
         "runtime": {
-          "App.Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "App.Models.dll": {}
         }
       }
     }

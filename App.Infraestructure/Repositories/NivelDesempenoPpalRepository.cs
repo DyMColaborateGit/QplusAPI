@@ -28,7 +28,7 @@ namespace App.Infraestructure.Repositories
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("ListNivelDesempenoPpal", ex, EmpresaId.ToString());
+                ExceptionLogHelpers.LogException("ListNivelDesempenoPpal", ex, EmpresaId.ToString() + "/" + InAnio);
                 throw;
             }
         }

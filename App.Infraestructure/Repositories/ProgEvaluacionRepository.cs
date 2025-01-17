@@ -352,8 +352,8 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         }
     }
 
-    public async Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId,
-        int UbicacionMD_M, string EvaluadorId, long EvaluadoId, bool BEstado)
+    public async Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD_M, string EvaluadorId, 
+        long EvaluadoId, bool BEstado)
     {
         try
         {

@@ -76,7 +76,7 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetFiltrosNivelesDesempenoPpal/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}")]
+        [HttpGet("GetFiltrosNivelesDesempenoPpal/{EmpresaId}/{UbicacionMD}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}")]
         public async Task<GetResponse<List<ResponseTbl_com_ProgEvaluacionModels>>> GetFiltrosNivelesDesempenoPpal(int EmpresaId, int UbicacionMD, int InAnio, int ZonaId, int OficinaId, string EvaluadorId, long EvaluadoId)
         {
             GetResponse<List<ResponseTbl_com_ProgEvaluacionModels>> resultado = new GetResponse<List<ResponseTbl_com_ProgEvaluacionModels>>();
@@ -103,7 +103,7 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetFiltrosNivelesDesempenoPpalM/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}")]
+        [HttpGet("GetFiltrosNivelesDesempenoPpalM/{EmpresaId}/{UbicacionMD_M}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}")]
         public async Task<GetResponse<List<ResponseTbl_com_ProgEvaluacionModels>>> GetFiltrosNivelesDesempenoPpalM(int EmpresaId, int UbicacionMD_M, int InAnio, int ZonaId, int OficinaId, string EvaluadorId, long EvaluadoId)
         {
             GetResponse<List<ResponseTbl_com_ProgEvaluacionModels>> resultado = new GetResponse<List<ResponseTbl_com_ProgEvaluacionModels>>();

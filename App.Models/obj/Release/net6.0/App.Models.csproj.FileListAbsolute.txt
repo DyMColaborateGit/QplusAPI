@@ -62,3 +62,16 @@ E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.dll
 E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\refint\App.Models.dll
 E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.pdb
 E:\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\ref\App.Models.dll
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\bin\Release\net6.0\App.Models.deps.json
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\bin\Release\net6.0\App.Models.dll
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\bin\Release\net6.0\App.Models.pdb
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.csproj.AssemblyReference.cache
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.AssemblyInfoInputs.cache
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.AssemblyInfo.cs
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.csproj.CoreCompileInputs.cache
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.sourcelink.json
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.dll
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\refint\App.Models.dll
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\App.Models.pdb
+C:\Users\desar\Escritorio\CODE\DYM\QplusAPI\App.Models\obj\Release\net6.0\ref\App.Models.dll
