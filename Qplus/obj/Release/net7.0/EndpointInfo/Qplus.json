@@ -5994,7 +5994,7 @@
         }
       }
     },
-    "/api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpal/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}": {
+    "/api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpal/{EmpresaId}/{UbicacionMD}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}": {
       "get": {
         "tags": [
           "NivelDesempenoPpal"
@@ -6012,8 +6012,9 @@
           },
           {
             "name": "UbicacionMD",
-            "in": "query",
-            "style": "form",
+            "in": "path",
+            "required": true,
+            "style": "simple",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -6136,7 +6137,7 @@
         }
       }
     },
-    "/api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpalM/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}": {
+    "/api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpalM/{EmpresaId}/{UbicacionMD_M}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}": {
       "get": {
         "tags": [
           "NivelDesempenoPpal"
@@ -6154,8 +6155,9 @@
           },
           {
             "name": "UbicacionMD_M",
-            "in": "query",
-            "style": "form",
+            "in": "path",
+            "required": true,
+            "style": "simple",
             "schema": {
               "type": "integer",
               "format": "int32"

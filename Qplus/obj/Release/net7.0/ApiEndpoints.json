@@ -3212,7 +3212,7 @@
   {
     "ContainingType": "Qplus.Controllers.NivelDesempenoPpalController",
     "Method": "GetFiltrosNivelesDesempenoPpal",
-    "RelativePath": "api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpal/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}",
+    "RelativePath": "api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpal/{EmpresaId}/{UbicacionMD}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -3225,7 +3225,7 @@
       {
         "Name": "UbicacionMD",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "InAnio",
@@ -3291,7 +3291,7 @@
   {
     "ContainingType": "Qplus.Controllers.NivelDesempenoPpalController",
     "Method": "GetFiltrosNivelesDesempenoPpalM",
-    "RelativePath": "api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpalM/{EmpresaId}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}",
+    "RelativePath": "api/NivelDesempenoPpal/GetFiltrosNivelesDesempenoPpalM/{EmpresaId}/{UbicacionMD_M}/{InAnio}/{ZonaId}/{OficinaId}/{EvaluadorId}/{EvaluadoId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -3304,7 +3304,7 @@
       {
         "Name": "UbicacionMD_M",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "InAnio",
