@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CODE\\DYM\\QplusAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\controllers\\niveldesempenoppalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\qplus\\controllers\\niveldesempenoppalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\niveldesempenoppalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\services\\niveldesempenoppalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\niveldesempenoppalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\app.logic\\services\\gestevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\gestevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\niveldesempenoppalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\niveldesempenoppalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\niveldesempenoppalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\iservices\\iniveldesempenoppalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iniveldesempenoppalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\nivelesdedesempenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\nivelesdedesempenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|e:\\code\\dym\\qplusapi\\app.models\\models\\tblcom\\tbl_com_nivelesdesempenoppalmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|solutionrelative:app.models\\models\\tblcom\\tbl_com_nivelesdesempenoppalmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\app.logic\\services\\niveldesempenoppalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\niveldesempenoppalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\irepositories\\iniveldesempenoppalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iniveldesempenoppalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\qplus\\controllers\\getgestformevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\getgestformevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\desar\\escritorio\\code\\dym\\qplusapi\\app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,112 +70,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProgEvaluacionService.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\ProgEvaluacionService.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\ProgEvaluacionService.cs",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAjwOEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T14:06:04.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NivelDesempenoPpalController.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\NivelDesempenoPpalController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\NivelDesempenoPpalController.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\NivelDesempenoPpalController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\NivelDesempenoPpalController.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAcwGYAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T16:58:40.486Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProgEvaluacionRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANcAAAAQAAAAAAAAAA==",
+              "Title": "NivelDesempenoPpalController.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\NivelDesempenoPpalController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\NivelDesempenoPpalController.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\NivelDesempenoPpalController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\NivelDesempenoPpalController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwDoAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:50:45.287Z",
+              "WhenOpened": "2025-01-20T17:26:10.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NivelDesempenoPpalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIA7wBsAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:46:55.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "NivelDesempenoPpalService.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\NivelDesempenoPpalService.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\NivelDesempenoPpalService.cs",
               "RelativeDocumentMoniker": "App.Logic\\Services\\NivelDesempenoPpalService.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\NivelDesempenoPpalService.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\NivelDesempenoPpalService.cs",
               "RelativeToolTip": "App.Logic\\Services\\NivelDesempenoPpalService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAWwBsAAAAMAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAawBsAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T17:10:36.51Z"
+              "WhenOpened": "2025-01-20T16:40:12.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NivelesdeDesempenoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\NivelesdeDesempenoRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\NivelesdeDesempenoRepository.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\NivelesdeDesempenoRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\NivelesdeDesempenoRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAlwBUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:20:05.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestEvaluacionService.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\GestEvaluacionService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\GestEvaluacionService.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\GestEvaluacionService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\GestEvaluacionService.cs",
+              "ViewState": "AQIAACMCAAAAAAAAAAAwwC4CAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T12:54:24.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "NivelDesempenoPpalRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB4AAAByAAAA",
+              "Title": "GetGestFormEvaluacionController.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAAAowMcAAACIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T18:50:36.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "INivelDesempenoPpalService.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\INivelDesempenoPpalService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\INivelDesempenoPpalService.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\INivelDesempenoPpalService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\INivelDesempenoPpalService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T17:07:28.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TBL_com_NivelesDesempenoPpalModels.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Models\\Models\\TblCom\\TBL_com_NivelesDesempenoPpalModels.cs",
-              "RelativeDocumentMoniker": "App.Models\\Models\\TblCom\\TBL_com_NivelesDesempenoPpalModels.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Models\\Models\\TblCom\\TBL_com_NivelesDesempenoPpalModels.cs",
-              "RelativeToolTip": "App.Models\\Models\\TblCom\\TBL_com_NivelesDesempenoPpalModels.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T15:30:18.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgEvaluacionController.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "ViewState": "AQIAABsBAAAAAAAAAAApwCwBAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T20:30:49.945Z"
+              "WhenOpened": "2025-01-20T13:00:17.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "INivelDesempenoPpalRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\INivelDesempenoPpalRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\INivelDesempenoPpalRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\INivelDesempenoPpalRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\INivelDesempenoPpalRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Title": "ProgEvaluacionService.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\ProgEvaluacionService.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\ProgEvaluacionService.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAjwOEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T18:47:44.199Z"
+              "WhenOpened": "2025-01-16T14:06:04.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProgEvaluacionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:50:45.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProgEvaluacionController.cs",
+              "DocumentMoniker": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAA5wDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T20:30:49.945Z",
+              "EditorCaption": ""
             }
           ]
         },

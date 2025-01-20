@@ -19,4 +19,6 @@ public class TBL_com_NivelesdeDesempenoModels
     public string? Color { get; set; }
 
     public int? NivelCompetencia { get; set; }
+    public int? UbicacionMD { get; set; }
+
 }
