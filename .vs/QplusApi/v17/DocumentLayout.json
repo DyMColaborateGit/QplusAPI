@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Qplus\\Controllers\\NivelDesempenoPpalController.cs",
               "ToolTip": "C:\\Users\\desar\\Escritorio\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\NivelDesempenoPpalController.cs",
               "RelativeToolTip": "Qplus\\Controllers\\NivelDesempenoPpalController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwDoAAABWAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwDoAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T17:26:10.83Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\NivelDesempenoPpalRepository.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAIA7wBsAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T16:46:55.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T16:46:55.235Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "App.Logic\\Services\\NivelDesempenoPpalService.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAawBsAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T16:40:12.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T16:40:12.147Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\NivelesdeDesempenoRepository.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAlwBUAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T16:20:05.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T16:20:05.098Z"
             },
             {
               "$type": "Document",
@@ -143,8 +140,7 @@
               "RelativeToolTip": "Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
               "ViewState": "AQIAALcAAAAAAAAAAAAowMcAAACIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:00:17.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:00:17.784Z"
             },
             {
               "$type": "Document",
@@ -156,8 +152,7 @@
               "RelativeToolTip": "App.Logic\\Services\\ProgEvaluacionService.cs",
               "ViewState": "AQIAAM4AAAAAAAAAAAAjwOEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T14:06:04.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T14:06:04.636Z"
             },
             {
               "$type": "Document",
@@ -169,8 +164,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T18:50:45.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T18:50:45.287Z"
             },
             {
               "$type": "Document",
@@ -182,8 +176,7 @@
               "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAA5wDUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T20:30:49.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T20:30:49.945Z"
             }
           ]
         },
