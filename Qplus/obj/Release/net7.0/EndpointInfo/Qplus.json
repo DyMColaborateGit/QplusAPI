@@ -13580,6 +13580,12 @@
           },
           "mod_MT": {
             "type": "boolean"
+          },
+          "mapaTalentos": {
+            "type": "boolean"
+          },
+          "mod_MD": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

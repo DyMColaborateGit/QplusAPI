@@ -343,6 +343,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                 objResult = objResult.Where(p => p.InIdEvaluador.ToString().ToLower().Contains(cedula)).Distinct().ToList();
             }
 
+            objResult = objResult.OrderBy(p => p.NomEvaluado).ToList();
             return _mapper.Map<List<ResponseTbl_com_ProgEvaluacionModels>>(objResult);
         }
         catch (Exception ex)
@@ -385,6 +386,8 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             {
                 objResult = objResult.Where(p => p.InIdEvaluador.ToString().ToLower().Contains(cedula)).Distinct().ToList();
             }
+
+            objResult = objResult.OrderBy(p => p.NomEvaluado).ToList();
 
             return _mapper.Map<List<ResponseTbl_com_ProgEvaluacionModels>>(objResult);
         }
