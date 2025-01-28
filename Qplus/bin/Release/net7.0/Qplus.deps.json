@@ -1238,10 +1238,7 @@
           "System.Linq.Expressions": "4.3.0"
         },
         "runtime": {
-          "App.Infraestructure.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "App.Infraestructure.dll": {}
         }
       },
       "App.logic/1.0.0": {
@@ -1252,10 +1249,7 @@
           "Microsoft.Extensions.Identity.Core": "7.0.9"
         },
         "runtime": {
-          "App.logic.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "App.logic.dll": {}
         }
       },
       "App.Models/1.0.0": {
@@ -1263,10 +1257,7 @@
           "Microsoft.Extensions.Configuration": "9.0.1"
         },
         "runtime": {
-          "App.Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "App.Models.dll": {}
         }
       }
     }

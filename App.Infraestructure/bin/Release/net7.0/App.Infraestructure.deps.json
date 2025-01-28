@@ -1228,10 +1228,7 @@
           "Microsoft.Extensions.Configuration": "9.0.1"
         },
         "runtime": {
-          "App.Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "App.Models.dll": {}
         }
       }
     }

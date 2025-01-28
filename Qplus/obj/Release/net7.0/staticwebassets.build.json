@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "0QQmq/JImrP187mTxqexHFhmdww+dJKzk1FlYOrSG/o=",
+  "Hash": "csS02cPatzbToaQT7mgmcfHljOUxecjPTBZFS1lIA/c=",
   "Source": "Qplus",
   "BasePath": "_content/Qplus",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
