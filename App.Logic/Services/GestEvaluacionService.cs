@@ -570,6 +570,7 @@ namespace App.logic.Services
                                         var nDP = await _nivelDesempenoPpalRepository.GetObjNivelDesempenoPpal(EmpresaId, dEv.Nivel);
                                         dEv.UbicacionMD = nDP.UbicacionMD;
                                         dEv.UbicacionMD_M = nDP.UbicacionMD;
+                                        dEv.Mod_MD = false;
 
                                         dEv = await _progEvaluacionRepository.UpdateProgEvaluacion(dEv);
                                         if (dEv != null)
