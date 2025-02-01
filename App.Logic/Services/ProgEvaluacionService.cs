@@ -242,5 +242,14 @@ public class ProgEvaluacionService : IProgEvaluacionSercice
 
         return "ModMD";
     }
+    public async Task<string> PutUpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel)
+    {
+        Tbl_com_ProgEvaluacionModels ObjEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+        ObjEvaluacion.UsuarioModNivel = UsuarioModNivel;
+
+        await _progEvaluacionRepository.UpdateProgEvaluacion(ObjEvaluacion);
+
+        return "ModMD";
+    }
 
 }

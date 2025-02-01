@@ -571,6 +571,7 @@ namespace App.logic.Services
                                         dEv.UbicacionMD = nDP.UbicacionMD;
                                         dEv.UbicacionMD_M = nDP.UbicacionMD;
                                         dEv.Mod_MD = false;
+                                        dEv.UsuarioModNivel = "N/A";
 
                                         dEv = await _progEvaluacionRepository.UpdateProgEvaluacion(dEv);
                                         if (dEv != null)

@@ -27,5 +27,7 @@ public interface IProgEvaluacionSercice
 
     Task<string> PutUpdateModMD(long EvaluacionId, bool ModMD);
 
+    Task<string> PutUpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel);
+
     Task<Tbl_com_ProgEvaluacionModels> UpdateProgEvaluacionTotalIndicadores(long EvaluacionId, int TotIndi, int EmpresaId, List<Tbl_com_ResultadosEvaIndicadoresModels> IndicadoresEvaluacion);
 }

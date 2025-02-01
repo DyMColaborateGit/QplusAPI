@@ -296,6 +296,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                 UpdateRegistro.NivelM = ObjUpdate.NivelM;
                 UpdateRegistro.Obs_Nivel_MapaD = ObjUpdate.Obs_Nivel_MapaD;
                 UpdateRegistro.Mod_MD = ObjUpdate.Mod_MD;
+                UpdateRegistro.UsuarioModNivel = ObjUpdate.UsuarioModNivel;
                 #endregion
             }
 
