@@ -149,6 +149,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             var objResult = await _context.TBL_com_ProgEvaluacion.AsNoTracking()
             .Where(x => x.InAno == Anio && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == true && x.InIdEvaluador == EvaluadorId)
             .ToListAsync();
+            objResult = objResult.OrderBy(p => p.NomEvaluado).ToList();
             return _mapper.Map<List<ResponseTbl_com_ProgEvaluacionModels>>(objResult);
         }
         catch (Exception ex)
@@ -326,7 +327,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             }
 
             var objResult = await _context.TBL_com_ProgEvaluacion.AsNoTracking()
-            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == BEstado && x.UbicacionMD == UbicacionMD)
+            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == true && x.UbicacionMD == UbicacionMD)
             .Include(x => x.EvaluadObj)
             .Include(x => x.PrgramacionMasivaObj)
             .ToListAsync();
@@ -370,7 +371,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             }
 
             var objResult = await _context.TBL_com_ProgEvaluacion.AsNoTracking()
-            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == BEstado && x.UbicacionMD_M == UbicacionMD_M)
+            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == true && x.UbicacionMD_M == UbicacionMD_M)
             .Include(x => x.EvaluadObj)
             .Include(x => x.PrgramacionMasivaObj)
             .ToListAsync();
