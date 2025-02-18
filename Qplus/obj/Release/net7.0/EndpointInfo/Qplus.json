@@ -13683,6 +13683,9 @@
           },
           "mod_MD": {
             "type": "boolean"
+          },
+          "adiEstrategicos": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
