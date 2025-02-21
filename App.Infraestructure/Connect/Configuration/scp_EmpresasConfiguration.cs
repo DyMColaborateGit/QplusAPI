@@ -130,7 +130,7 @@ public class scp_EmpresasConfiguration : IEntityTypeConfiguration<scp_EmpresasEn
         .IsRequired()
         .HasColumnType("bit");
 
-        builder.Property(p => p.AdiEstrategicos)
+        builder.Property(p => p.Adi_Estrategicos)
         .IsRequired()
         .HasColumnType("bit");
     }

@@ -13684,7 +13684,7 @@
           "mod_MD": {
             "type": "boolean"
           },
-          "adiEstrategicos": {
+          "adi_Estrategicos": {
             "type": "boolean"
           }
         },

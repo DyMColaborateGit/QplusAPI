@@ -11,10 +11,6 @@
       "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\connect\\configuration\\scp_empresasconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\configuration\\scp_empresasconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\mastindicadoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\mastindicadoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,26 +58,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "scp_EmpresasConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\scp_EmpresasConfiguration.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Configuration\\scp_EmpresasConfiguration.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\scp_EmpresasConfiguration.cs",
-              "RelativeToolTip": "App.Infraestructure\\Connect\\Configuration\\scp_EmpresasConfiguration.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAgwIkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T19:37:18.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.json",
               "RelativeDocumentMoniker": "Qplus\\appsettings.json",
               "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.json",
               "RelativeToolTip": "Qplus\\appsettings.json",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswAcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswA8AAADxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-11T16:18:34.043Z",
               "EditorCaption": ""
@@ -94,14 +77,14 @@
               "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.Development.json",
               "RelativeToolTip": "Qplus\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAADxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-11T16:18:33.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ResultadosEvaIndicadoresRepository.cs",
               "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ResultadosEvaIndicadoresRepository.cs",
               "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ResultadosEvaIndicadoresRepository.cs",
@@ -113,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MastIndicadoresRepository.cs",
               "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\MastIndicadoresRepository.cs",
               "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\MastIndicadoresRepository.cs",
@@ -125,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MastIndicadoresService.cs",
               "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\MastIndicadoresService.cs",
               "RelativeDocumentMoniker": "App.Logic\\Services\\MastIndicadoresService.cs",
@@ -137,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MastIndicadoresController.cs",
               "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\MastIndicadoresController.cs",
               "RelativeDocumentMoniker": "Qplus\\Controllers\\MastIndicadoresController.cs",
@@ -145,7 +128,8 @@
               "RelativeToolTip": "Qplus\\Controllers\\MastIndicadoresController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAewDoAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T14:25:14.956Z"
+              "WhenOpened": "2025-02-07T14:25:14.956Z",
+              "EditorCaption": ""
             }
           ]
         },

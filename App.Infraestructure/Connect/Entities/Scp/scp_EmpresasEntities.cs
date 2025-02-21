@@ -37,7 +37,7 @@ public class scp_EmpresasEntities
     public bool Mod_MT { get; set; }
     public bool MapaTalentos { get; set; }
     public bool Mod_MD { get; set; }
-    public bool AdiEstrategicos { get; set; }
+    public bool Adi_Estrategicos { get; set; }
 
     public ICollection<scp_UsuariosEntities>? SCP_Usuarios { get; set; }
     public ICollection<scp_FuncionariosEntities>? SCP_Funcionarios { get; set; }
