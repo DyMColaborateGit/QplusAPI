@@ -62,8 +62,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\EvaPreguntasRepository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAIAxwC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T12:34:43.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T12:34:43.202Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\EvaAuditoresRepository.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAqwFYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T12:34:43.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T12:34:43.208Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "App.Logic\\Services\\EvaAuditoresService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAQwCYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T12:34:43.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T12:34:43.215Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "Qplus\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-27T21:02:48.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T21:02:48.276Z"
             }
           ]
         },
