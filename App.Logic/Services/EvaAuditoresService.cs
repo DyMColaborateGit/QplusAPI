@@ -43,6 +43,10 @@ public class EvaAuditoresService : IEvaAuditoresService
         {
             ObjResult.Estado = true;
         }
+        else
+        {
+            ObjResult.Estado = false;
+        }
         await _evaAuditoresRepository.UpdateEvaAuditores(ObjResult);
         return ObjResult;
     }
