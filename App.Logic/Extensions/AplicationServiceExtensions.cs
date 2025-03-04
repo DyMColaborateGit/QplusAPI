@@ -41,7 +41,6 @@ namespace App.logic.Extensions
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IPasswordHasher<SCP_UsuarioModels>, PasswordHasher<SCP_UsuarioModels>>();
             services.AddScoped<IEmpresasService, EmpresasService>();
-
             services.AddScoped<IEncabezadoEvaService, EncabezadoEvaService>();
             services.AddScoped<IProgEvaluacionSercice, ProgEvaluacionService>();
             services.AddScoped<IProgramacionMasivaEvaluacionesService, ProgramacionMasivaEvaluacionesService>();
