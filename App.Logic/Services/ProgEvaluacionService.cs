@@ -233,10 +233,10 @@ public class ProgEvaluacionService : IProgEvaluacionSercice
         return "Caja Mapa Desempeño Modificado con éxito";
     }
 
-    public async Task<string> PutUpdateModMD(long EvaluacionId, bool ModMD)
+    public async Task<string> PutUpdateModMD(long EvaluacionId, bool Mod_MD)
     {
         Tbl_com_ProgEvaluacionModels ObjEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
-        ObjEvaluacion.Mod_MD = ModMD;
+        ObjEvaluacion.Mod_MD = Mod_MD;
 
         await _progEvaluacionRepository.UpdateProgEvaluacion(ObjEvaluacion);
 

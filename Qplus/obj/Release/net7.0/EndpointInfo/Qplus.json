@@ -8133,7 +8133,7 @@
         }
       }
     },
-    "/api/ProgEvaluacion/UpdateModMD/{EvaluacionId}/{ModMD}": {
+    "/api/ProgEvaluacion/UpdateModMD/{EvaluacionId}/{Mod_MD}": {
       "put": {
         "tags": [
           "ProgEvaluacion"
@@ -8150,7 +8150,7 @@
             }
           },
           {
-            "name": "ModMD",
+            "name": "Mod_MD",
             "in": "path",
             "required": true,
             "style": "simple",

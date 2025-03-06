@@ -4358,7 +4358,7 @@
   {
     "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
     "Method": "UpdateModMD",
-    "RelativePath": "api/ProgEvaluacion/UpdateModMD/{EvaluacionId}/{ModMD}",
+    "RelativePath": "api/ProgEvaluacion/UpdateModMD/{EvaluacionId}/{Mod_MD}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -4369,7 +4369,7 @@
         "IsRequired": true
       },
       {
-        "Name": "ModMD",
+        "Name": "Mod_MD",
         "Type": "System.Boolean",
         "IsRequired": true
       }

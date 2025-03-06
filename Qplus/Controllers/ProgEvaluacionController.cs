@@ -319,13 +319,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPut("UpdateModMD/{EvaluacionId}/{ModMD}")]
-        public async Task<GetResponse<string>> UpdateModMD(long EvaluacionId, bool ModMD)
+        [HttpPut("UpdateModMD/{EvaluacionId}/{Mod_MD}")]
+        public async Task<GetResponse<string>> UpdateModMD(long EvaluacionId, bool Mod_MD)
         {
             GetResponse<string> resultado = new GetResponse<string>();
             try
             {
-                resultado.Data = await _progEvaluacionSercice.PutUpdateModMD(EvaluacionId, ModMD);
+                resultado.Data = await _progEvaluacionSercice.PutUpdateModMD(EvaluacionId, Mod_MD);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;
