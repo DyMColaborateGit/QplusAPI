@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("App.logic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18c886cfbe265c61ba62e18fcad3e7ab94c6af40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18ff164fcb56634823323f6718a1c536fdf36bfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("App.logic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App.logic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
