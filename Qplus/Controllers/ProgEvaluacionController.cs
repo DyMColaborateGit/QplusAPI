@@ -319,13 +319,40 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPut("UpdateModMD/{EvaluacionId}/{ModMD}")]
-        public async Task<GetResponse<string>> UpdateModMD(long EvaluacionId, bool ModMD)
+        [HttpPut("UpdateModMD/{EvaluacionId}/{Mod_MD}")]
+        public async Task<GetResponse<string>> UpdateModMD(long EvaluacionId, bool Mod_MD)
         {
             GetResponse<string> resultado = new GetResponse<string>();
             try
             {
-                resultado.Data = await _progEvaluacionSercice.PutUpdateModMD(EvaluacionId, ModMD);
+                resultado.Data = await _progEvaluacionSercice.PutUpdateModMD(EvaluacionId, Mod_MD);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPut("UpdateUsuarioModNivel/{EvaluacionId}/{UsuarioModNivel}")]
+        public async Task<GetResponse<string>> UpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel)
+        {
+            GetResponse<string> resultado = new GetResponse<string>();
+            try
+            {
+                resultado.Data = await _progEvaluacionSercice.PutUpdateUsuarioModNivel(EvaluacionId, UsuarioModNivel);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

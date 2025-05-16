@@ -88,6 +88,7 @@ public class Tbl_com_ProgEvaluacionModels
     public string? NivelM { get; set; }
     public string? Obs_Nivel_MapaD { get; set; }
     public bool? Mod_MD { get; set; }
+    public string? UsuarioModNivel { get; set; }
 }
 
 public class ResponseTbl_com_ProgEvaluacionModels
@@ -178,5 +179,5 @@ public class ResponseTbl_com_ProgEvaluacionModels
     public string? NivelM { get; set; }
     public string? Obs_Nivel_MapaD { get; set; }
     public bool? Mod_MD { get; set; }
-
+    public string? UsuarioModNivel { get; set; }
 }

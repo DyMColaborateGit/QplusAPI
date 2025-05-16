@@ -29,4 +29,7 @@ public class SCP_EmpresasModels
     public bool LogoMacroProceso { get; set; }
     public int CodTipoMatrix { get; set; }
     public bool Mod_MT {  get; set; }
+    public bool MapaTalentos { get; set; }
+    public bool Mod_MD { get; set; }
+    public bool Adi_Estrategicos { get; set; }
 }

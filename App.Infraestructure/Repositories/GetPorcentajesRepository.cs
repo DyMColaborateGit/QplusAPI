@@ -43,7 +43,7 @@ namespace App.Infraestructure.Repositories
                 double multi = totalEvaIndi * 100;
                 double divi = multi / totalIndi;
 
-                double res = Math.Round(divi, 0);
+                double res = Math.Round(divi, 2);
 
                 if (res <= 0)
                 {

@@ -147,6 +147,7 @@ public class EvaAuditoresRepository : IEvaAuditoresRepository
                     {
                         UpdateRegistro.TotalPreCalificadas = UpdateRegistro.TotalPreCalificadas + 1;
                     }
+                    else
                     {
                         UpdateRegistro.TotalPreCalificadas = UpdateRegistro.TotalPreCalificadas - 1;
                     }
