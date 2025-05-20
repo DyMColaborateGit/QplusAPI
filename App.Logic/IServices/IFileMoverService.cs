@@ -1,6 +1,9 @@
 ﻿
+using App.Models.Models.FileMove;
+using System.IO;
+
 namespace App.logic.IServices;
 public interface IFileMoverService
 {
-    Task<string> PostMoverArchivo(string NombreArchivo);
+    Task<FileResultModels> PostMoverArchivo(FileMoveModels fileMove);
 }

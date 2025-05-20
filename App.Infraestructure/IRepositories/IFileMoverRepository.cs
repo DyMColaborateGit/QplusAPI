@@ -1,9 +1,9 @@
-﻿using App.Models.Models.TblInd;
-using System;
+﻿using System.IO;
+using App.Models.Models.FileMove;
 
 namespace App.Infraestructure.IRepositories;
 
 public interface IFileMoverRepository
 {
-    Task<string> PostMoverArchivo(string NombreArchivo);
+    Task<FileResultModels> PostMoverArchivo(FileMoveModels fileMove);
 }

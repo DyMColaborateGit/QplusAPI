@@ -1,6 +1,8 @@
 ﻿using App.logic.IServices;
 using App.Models.Global;
+using App.Models.Models.FileMove;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
 
 namespace Qplus.Controllers
 {
@@ -23,13 +25,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPost("PostMoverArchivo/{NombreArchivo}")]
-        public async Task<GetResponse<string>> PostMoverArchivo(string NombreArchivo)
+        [HttpPost("PostMoverArchivo/{fileMove}")]
+        public async Task<GetResponse<FileResultModels>> PostMoverArchivo(FileMoveModels fileMove)
         {
-            GetResponse<string> resultado = new GetResponse<string>();
+            GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
             try
             {
-                resultado.Data = await _fileMoverService.PostMoverArchivo(NombreArchivo);
+                resultado.Data = await _fileMoverService.PostMoverArchivo(fileMove);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;
