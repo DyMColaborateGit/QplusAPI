@@ -1664,7 +1664,7 @@
   {
     "ContainingType": "Qplus.Controllers.FileMoverController",
     "Method": "PostMoverArchivo",
-    "RelativePath": "api/FileMover/PostMoverArchivo/{fileMove}",
+    "RelativePath": "api/FileMover/PostMoverArchivo",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1672,11 +1672,6 @@
       {
         "Name": "fileMove",
         "Type": "App.Models.Models.FileMove.FileMoveModels",
-        "IsRequired": true
-      },
-      {
-        "Name": "fileMove",
-        "Type": "",
         "IsRequired": true
       }
     ],

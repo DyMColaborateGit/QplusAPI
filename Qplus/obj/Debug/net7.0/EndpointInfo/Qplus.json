@@ -2959,21 +2959,10 @@
         }
       }
     },
-    "/api/FileMover/PostMoverArchivo/{fileMove}": {
+    "/api/FileMover/PostMoverArchivo": {
       "post": {
         "tags": [
           "FileMover"
-        ],
-        "parameters": [
-          {
-            "name": "fileMove",
-            "in": "path",
-            "required": true,
-            "style": "simple",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -11311,6 +11300,10 @@
             "nullable": true
           },
           "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "mensaje": {
             "type": "string",
             "nullable": true
           }
