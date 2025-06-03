@@ -5,6 +5,7 @@ using App.Infraestructure.Connect.Entities.T;
 using App.Infraestructure.Connect.Entities.TblAud;
 using App.Infraestructure.Connect.Entities.TblCom;
 using App.Infraestructure.Connect.Entities.TblDoc;
+using App.Infraestructure.Connect.Entities.TblGhu;
 using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Connect.Entities.TblMast;
 using App.Infraestructure.Connect.Entities.Tipo;
@@ -94,6 +95,11 @@ public class ConnectContext : DbContext
 
     #region TBL-DOC
     public DbSet<tbl_doc_DocumentosEntities> TBL_doc_Documentos {  get; set; }
+    #endregion
+
+    #region TBL-GHU
+    public DbSet<tbl_ghu_solicitudPersonalEntities> TBL_ghu_SolicitudPersonal { get; set; }
+    public DbSet<tbl_ghu_TemasBrechaPlEntities> TBL_ghu_TemasBrechaP { get; set; }
     #endregion
 
     #region T

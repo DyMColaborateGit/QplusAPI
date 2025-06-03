@@ -85,6 +85,8 @@ namespace App.logic.Extensions
             services.AddScoped<IParametrosEmpresasService, ParametrosEmpresasService>();
             services.AddScoped<INivelDesempenoPpalService, NivelDesempenoPpalService>();
             services.AddScoped<IFileMoverService, FileMoverService>();
+            services.AddScoped<ISolicitudPersonalService, SolicitudPersonalService>();
+            services.AddScoped<ITemasBrechaPService, TemasBrechaPService>();
         }
 
         /// <summary>
@@ -151,6 +153,8 @@ namespace App.logic.Extensions
             services.AddScoped<IParametrosEmpresasRepository, ParametrosEmpresasRepository>();
             services.AddScoped<INivelDesempenoPpalRepository, NivelDesempenoPpalRepository>();
             services.AddScoped<IFileMoverRepository, FileMoverRepository>();
+            services.AddScoped<ISolicitudPersonalRepository, SolicitudPersonalRepository>();
+            services.AddScoped<ITemasBrechaPRepository, TemasBrechaPRepository>();
         }
 
         /// <summary>

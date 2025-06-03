@@ -10369,6 +10369,174 @@
         }
       }
     },
+    "/api/SolicitudPersonal/GetListaSolicitudesPersonal/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "SolicitudPersonal"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/TemasBrechaP/GetListaTemasBrechaP/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "TemasBrechaP"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_TemasBrechaPModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_TemasBrechaPModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_TemasBrechaPModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/TextosFormulario/GeTextoEvaluacioneByparametros/{EmpresaId}/{Tipotexto}/{Tipovaloracion}/{Anio}": {
       "get": {
         "tags": [
@@ -17048,6 +17216,211 @@
           },
           "data": {
             "$ref": "#/components/schemas/Tbl_com_TxtFormEvaluacionModels"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_SolicitudPersonalModels": {
+        "type": "object",
+        "properties": {
+          "solicitudId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "solicitante": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "tipoSolicitud": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cargoDigitado": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoCargo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cargoJefe": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoSolicitud": {
+            "type": "boolean"
+          },
+          "estadoBrecha": {
+            "type": "boolean"
+          },
+          "fechaSolicitud": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaSolicitudIngreso": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "macroProcesoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_proceso": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_producto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidadPersonasS": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horarioTrabajo": {
+            "type": "string",
+            "nullable": true
+          },
+          "salarioAsignado": {
+            "type": "string",
+            "nullable": true
+          },
+          "centroCostos": {
+            "type": "string",
+            "nullable": true
+          },
+          "idContrato": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "duracionVinculacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "requisitos": {
+            "type": "string",
+            "nullable": true
+          },
+          "funciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "solicitudCorreo": {
+            "type": "boolean"
+          },
+          "equipoComputo": {
+            "type": "boolean"
+          },
+          "portatil": {
+            "type": "boolean"
+          },
+          "escritorio": {
+            "type": "boolean"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioCreacion": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usuarioModificacion": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_SolicitudPersonalModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_TemasBrechaPModels": {
+        "type": "object",
+        "properties": {
+          "temaBrechaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreTema": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_TemasBrechaPModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_ghu_TemasBrechaPModels"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
