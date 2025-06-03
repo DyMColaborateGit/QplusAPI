@@ -47,5 +47,9 @@ public class tbl_com_NivelesdeDesempenoConfiguration : IEntityTypeConfiguration<
         .IsRequired()
         .HasColumnType("int");
 
+        builder.Property(p => p.UbicacionMD)
+       .IsRequired()
+       .HasColumnType("int");
+
     }
 }

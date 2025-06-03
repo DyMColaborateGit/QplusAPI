@@ -41,7 +41,6 @@ namespace App.logic.Extensions
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IPasswordHasher<SCP_UsuarioModels>, PasswordHasher<SCP_UsuarioModels>>();
             services.AddScoped<IEmpresasService, EmpresasService>();
-
             services.AddScoped<IEncabezadoEvaService, EncabezadoEvaService>();
             services.AddScoped<IProgEvaluacionSercice, ProgEvaluacionService>();
             services.AddScoped<IProgramacionMasivaEvaluacionesService, ProgramacionMasivaEvaluacionesService>();
@@ -85,6 +84,7 @@ namespace App.logic.Extensions
             services.AddScoped<ICargosProcesosService, CargosProcesosService>();
             services.AddScoped<IParametrosEmpresasService, ParametrosEmpresasService>();
             services.AddScoped<INivelDesempenoPpalService, NivelDesempenoPpalService>();
+            services.AddScoped<IFileMoverService, FileMoverService>();
         }
 
         /// <summary>
@@ -150,6 +150,7 @@ namespace App.logic.Extensions
             services.AddScoped<ICargosProcesosRepository, CargosProcesosRepository>();
             services.AddScoped<IParametrosEmpresasRepository, ParametrosEmpresasRepository>();
             services.AddScoped<INivelDesempenoPpalRepository, NivelDesempenoPpalRepository>();
+            services.AddScoped<IFileMoverRepository, FileMoverRepository>();
         }
 
         /// <summary>

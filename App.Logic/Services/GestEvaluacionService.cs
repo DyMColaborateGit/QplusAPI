@@ -38,6 +38,7 @@ namespace App.logic.Services
         private readonly IResultIndiCoporpRepository _resultIndiCoporpRepository;
         private readonly IEscalaEvaluacionService _escalaEvaluacionService;
         private readonly IParametrosEmpresasRepository _parametrosEmpresasRepository;
+        private readonly INivelDesempenoPpalRepository _nivelDesempenoPpalRepository;
 
         public GestEvaluacionService(
         #region Definition
@@ -65,7 +66,8 @@ namespace App.logic.Services
             IMatrizdeTalentoRepository matrizdeTalentoRepository,
             IResultIndiCoporpRepository resultIndiCoporpRepository,
             IEscalaEvaluacionService escalaEvaluacionService,
-            IParametrosEmpresasRepository parametrosEmpresasRepository)
+            IParametrosEmpresasRepository parametrosEmpresasRepository,
+            INivelDesempenoPpalRepository nivelDesempenoPpalRepository)
         #endregion
         {
             #region Declare
@@ -94,6 +96,7 @@ namespace App.logic.Services
             _resultIndiCoporpRepository = resultIndiCoporpRepository;
             _escalaEvaluacionService = escalaEvaluacionService;
             _parametrosEmpresasRepository = parametrosEmpresasRepository;
+            _nivelDesempenoPpalRepository = nivelDesempenoPpalRepository;
             #endregion
         }
         #endregion
@@ -559,6 +562,16 @@ namespace App.logic.Services
                                         dEv.Nivel = niD.Nivel;
                                         dEv.DescNivel = niD.ComceptoFinal;
                                         dEv.Color = niD.Color;
+                                        dEv.ColorNivelM = niD.Color;
+                                        dEv.NivelM = niD.Nivel;
+                                        dEv.Obs_Nivel_MapaD = "N/A";
+
+                                        // con el nivel se optiene la ubicación y se actualizan los valores en progEvaluacion
+                                        var nDP = await _nivelDesempenoPpalRepository.GetObjNivelDesempenoPpal(EmpresaId, dEv.Nivel);
+                                        dEv.UbicacionMD = nDP.UbicacionMD;
+                                        dEv.UbicacionMD_M = nDP.UbicacionMD;
+                                        dEv.Mod_MD = false;
+                                        dEv.UsuarioModNivel = "N/A";
 
                                         dEv = await _progEvaluacionRepository.UpdateProgEvaluacion(dEv);
                                         if (dEv != null)

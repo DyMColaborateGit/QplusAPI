@@ -23,4 +23,6 @@ public class tbl_com_NivelesdeDesempenoEntities
     public string? Color { get; set; }
 
     public int? NivelCompetencia { get; set; }
+    public int? UbicacionMD { get; set; }
+
 }

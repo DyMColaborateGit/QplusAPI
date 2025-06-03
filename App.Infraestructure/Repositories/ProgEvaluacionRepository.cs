@@ -149,6 +149,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             var objResult = await _context.TBL_com_ProgEvaluacion.AsNoTracking()
             .Where(x => x.InAno == Anio && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == true && x.InIdEvaluador == EvaluadorId)
             .ToListAsync();
+            objResult = objResult.OrderBy(p => p.NomEvaluado).ToList();
             return _mapper.Map<List<ResponseTbl_com_ProgEvaluacionModels>>(objResult);
         }
         catch (Exception ex)
@@ -296,6 +297,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                 UpdateRegistro.NivelM = ObjUpdate.NivelM;
                 UpdateRegistro.Obs_Nivel_MapaD = ObjUpdate.Obs_Nivel_MapaD;
                 UpdateRegistro.Mod_MD = ObjUpdate.Mod_MD;
+                UpdateRegistro.UsuarioModNivel = ObjUpdate.UsuarioModNivel;
                 #endregion
             }
 
@@ -325,7 +327,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             }
 
             var objResult = await _context.TBL_com_ProgEvaluacion.AsNoTracking()
-            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == BEstado && x.UbicacionMD == UbicacionMD)
+            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == true && x.UbicacionMD == UbicacionMD)
             .Include(x => x.EvaluadObj)
             .Include(x => x.PrgramacionMasivaObj)
             .ToListAsync();
@@ -343,11 +345,57 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                 objResult = objResult.Where(p => p.InIdEvaluador.ToString().ToLower().Contains(cedula)).Distinct().ToList();
             }
 
+            objResult = objResult.OrderBy(p => p.NomEvaluado).ToList();
             return _mapper.Map<List<ResponseTbl_com_ProgEvaluacionModels>>(objResult);
         }
         catch (Exception ex)
         {
             ExceptionLogHelpers.LogException("ListEvaluacionesTalentosFuncionarios", ex, EmpresaId + "/" + InAnio + "/" + ZonaId + "/" + OficinaId + "/" + ProcesoId + "/" + UbicacionMD + "/" + EvaluadorId + "/" + EvaluadoId + "/" + BEstado);
+            throw;
+        }
+    }
+
+    public async Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD_M, string EvaluadorId, 
+        long EvaluadoId, bool BEstado)
+    {
+        try
+        {
+            string cedula = "-1";
+            if (EvaluadoId != -1)
+            {
+                cedula = EvaluadoId.ToString();
+            }
+            else
+            {
+                cedula = EvaluadorId;
+            }
+
+            var objResult = await _context.TBL_com_ProgEvaluacion.AsNoTracking()
+            .Where(x => x.InAno == InAnio && x.EvaluadObj.EmpresaId == EmpresaId && x.TipoEvaluacion == 1 && x.TipoValoracionId == 1 && x.BEstado == true && x.UbicacionMD_M == UbicacionMD_M)
+            .Include(x => x.EvaluadObj)
+            .Include(x => x.PrgramacionMasivaObj)
+            .ToListAsync();
+
+            if (ZonaId != -1)
+            {
+                objResult = objResult.Where(p => p.PrgramacionMasivaObj?.CodigoDireccion == ZonaId).Distinct().ToList();
+            }
+            if (OficinaId != -1)
+            {
+                objResult = objResult.Where(p => p.PrgramacionMasivaObj?.CodigoGerencia == OficinaId).Distinct().ToList();
+            }
+            if (cedula != "-1" && EvaluadorId != null && EvaluadorId != "0" && EvaluadorId != "")
+            {
+                objResult = objResult.Where(p => p.InIdEvaluador.ToString().ToLower().Contains(cedula)).Distinct().ToList();
+            }
+
+            objResult = objResult.OrderBy(p => p.NomEvaluado).ToList();
+
+            return _mapper.Map<List<ResponseTbl_com_ProgEvaluacionModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("ListEvaluacionesTalentosFuncionarios", ex, EmpresaId + "/" + InAnio + "/" + ZonaId + "/" + OficinaId + "/" + ProcesoId + "/" + UbicacionMD_M + "/" + EvaluadorId + "/" + EvaluadoId + "/" + BEstado);
             throw;
         }
     }

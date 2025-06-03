@@ -121,5 +121,17 @@ public class scp_EmpresasConfiguration : IEntityTypeConfiguration<scp_EmpresasEn
         builder.Property(p => p.Mod_MT)
         .IsRequired()
         .HasColumnType("bit");
+
+        builder.Property(p => p.MapaTalentos)
+        .IsRequired()
+        .HasColumnType("bit");
+
+        builder.Property(p => p.Mod_MD)
+        .IsRequired()
+        .HasColumnType("bit");
+
+        builder.Property(p => p.Adi_Estrategicos)
+        .IsRequired()
+        .HasColumnType("bit");
     }
 }

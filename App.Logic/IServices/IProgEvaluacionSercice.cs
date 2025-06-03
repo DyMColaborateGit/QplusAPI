@@ -25,7 +25,9 @@ public interface IProgEvaluacionSercice
 
     Task<string> PutUpdateCajaMapaDesempenoM(long EvaluacionId, int UbicacionMD_M, string NivelM, string ColorNivelM);
 
-    Task<string> PutUpdateModMD(long EvaluacionId, bool ModMD);
+    Task<string> PutUpdateModMD(long EvaluacionId, bool Mod_MD);
+
+    Task<string> PutUpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel);
 
     Task<Tbl_com_ProgEvaluacionModels> UpdateProgEvaluacionTotalIndicadores(long EvaluacionId, int TotIndi, int EmpresaId, List<Tbl_com_ResultadosEvaIndicadoresModels> IndicadoresEvaluacion);
 }

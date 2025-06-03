@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "kk1bkMxbF6tp/DUJby7sWPQHXNIp1TSfCz5alfAvIcc=",
+  "Hash": "nk/HLLSs4adAIiq6e4SCU7+HavYc72vVNIQwdvG6y1s=",
   "Source": "Qplus",
   "BasePath": "_content/Qplus",
   "Mode": "Default",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

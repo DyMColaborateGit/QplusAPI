@@ -376,5 +376,10 @@ public class tbl_com_ProgEvaluacionConfiguration : IEntityTypeConfiguration<tbl_
         builder.Property(p => p.Mod_MD)
         .IsRequired(false)
         .HasColumnType("bit");
+
+        builder.Property(p => p.UsuarioModNivel)
+        .IsRequired(false)
+        .HasColumnType("nvarchar")
+        .HasMaxLength(50);
     }
 }
