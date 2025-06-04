@@ -30,7 +30,7 @@ public class tbl_ghu_SolicitudPersonalConfiguration : IEntityTypeConfiguration<t
 
         builder.Property(p => p.CargoDigitado)
             .HasMaxLength(200)
-            .HasColumnType("nvarchat");
+            .HasColumnType("nvarchar");
 
         builder.Property(p => p.CodigoCargo)
             .IsRequired()

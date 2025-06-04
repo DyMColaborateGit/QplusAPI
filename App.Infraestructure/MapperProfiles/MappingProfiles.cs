@@ -117,6 +117,9 @@ public class MappingProfiles: Profile
 
         CreateMap<tbl_ghu_solicitudPersonalEntities, Tbl_ghu_SolicitudPersonalModels>().ReverseMap();
         CreateMap<tbl_ghu_TemasBrechaPlEntities, Tbl_ghu_TemasBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_PreguntasBrechaPEntities, Tbl_ghu_PreguntasBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_RespuestaMultiplesBrechaPEntities, Tbl_ghu_RespuestaMultiplesBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_ResultadoBrechaPEntities, Tbl_ghu_ResultadoBrechaPModels>().ReverseMap();
 
     }
 }

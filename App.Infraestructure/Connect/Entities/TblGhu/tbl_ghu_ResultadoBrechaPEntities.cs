@@ -1,0 +1,23 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace App.Infraestructure.Connect.Entities.TblGhu;
+
+public class tbl_ghu_ResultadoBrechaPEntities
+{
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Key]
+    public int ResultadoBrechaId { get; set; }
+    public int EmpresaId { get; set; }
+    public int PreguntaId { get; set; }
+    public long UsuarioAnalisisBrecha { get; set; }
+    public int TipoPregunta { get; set; }
+    public int TemaBrecha { get; set; }
+    public int RelFuncSolicitudId { get; set; }
+    public int PadreId { get; set; }
+    public int HijoId { get; set; }
+    public string? TextoPregunta { get; set; }
+    public string? TextoSMultiple { get; set; }
+    public string? RespuestaAbierta { get; set; }
+    public bool ResultadoSMultiple { get; set; }
+}

@@ -100,6 +100,9 @@ public class ConnectContext : DbContext
     #region TBL-GHU
     public DbSet<tbl_ghu_solicitudPersonalEntities> TBL_ghu_SolicitudPersonal { get; set; }
     public DbSet<tbl_ghu_TemasBrechaPlEntities> TBL_ghu_TemasBrechaP { get; set; }
+    public DbSet<tbl_ghu_PreguntasBrechaPEntities> TBL_ghu_PreguntasBrechaP { get; set; }
+    public DbSet<tbl_ghu_RespuestaMultiplesBrechaPEntities> TBL_ghu_RespuestaMultiplesBrechaP { get; set; }
+    public DbSet<tbl_ghu_ResultadoBrechaPEntities> TBL_ghu_ResultadoBrechaP { get; set; }
     #endregion
 
     #region T
