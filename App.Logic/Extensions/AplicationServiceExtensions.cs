@@ -90,6 +90,8 @@ namespace App.logic.Extensions
             services.AddScoped<IPreguntasBrechaPService, PreguntasBrechaPService>();
             services.AddScoped<IRespuestaMultiplesBrechaPService, RespuestaMultiplesBrechaPService>();
             services.AddScoped<IResultadoBrechaPService, ResultadoBrechaPService>();
+            services.AddScoped<IRelFuncSolicitudPService, RelFuncSolicitudPService>();
+            services.AddScoped<ITextosBrechaService, TextosBrechaService>();
         }
 
         /// <summary>
@@ -161,6 +163,8 @@ namespace App.logic.Extensions
             services.AddScoped<IPreguntasBrechaPRepository, PreguntasBrechaPRepository>();
             services.AddScoped<IRespuestaMultiplesBrechaPRepository, RespuestaMultiplesBrechaPRepository>();
             services.AddScoped<IResultadoBrechaPRepository, ResultadoBrechaPRepository>();
+            services.AddScoped<IRelFuncSolicitudPRepository, RelFuncSolicitudPRepository>();
+            services.AddScoped<ITextosBrechaRepository, TextosBrechaRepository>();
         }
 
         /// <summary>

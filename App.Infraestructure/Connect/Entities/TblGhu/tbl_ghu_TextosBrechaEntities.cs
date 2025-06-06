@@ -3,12 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace App.Infraestructure.Connect.Entities.TblGhu;
 
-public class tbl_ghu_TemasBrechaPlEntities
+public class tbl_ghu_TextosBrechaEntities
 {
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     [Key]
-    public int TemaBrechaId { get; set; }
+    public int TextoBrechaId { get; set; }
     public int EmpresaId { get; set; }
-    public string? NombreTema { get; set; }
+    public string? TextoBrecha { get; set; }
     public bool Estado { get; set; }
+    public long UsuarioCreacion { get; set; }
+    public DateTime FechaCreacion { get; set; }
 }

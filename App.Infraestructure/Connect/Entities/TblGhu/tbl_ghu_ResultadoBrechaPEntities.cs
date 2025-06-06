@@ -13,7 +13,7 @@ public class tbl_ghu_ResultadoBrechaPEntities
     public long UsuarioAnalisisBrecha { get; set; }
     public int TipoPregunta { get; set; }
     public int TemaBrecha { get; set; }
-    public int RelFuncSolicitudId { get; set; }
+    public int RelFuncSolicitudPId { get; set; }
     public int PadreId { get; set; }
     public int HijoId { get; set; }
     public string? TextoPregunta { get; set; }

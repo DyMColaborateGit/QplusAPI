@@ -36,7 +36,7 @@ public class tbl_ghu_ResultadoBrechaPConfiguration : IEntityTypeConfiguration<tb
             .IsRequired()
             .HasColumnType("int");
 
-        builder.Property(p => p.RelFuncSolicitudId)
+        builder.Property(p => p.RelFuncSolicitudPId)
             .IsRequired()
             .HasColumnType("int");
 

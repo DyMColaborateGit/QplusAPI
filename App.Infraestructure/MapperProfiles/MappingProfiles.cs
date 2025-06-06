@@ -116,10 +116,12 @@ public class MappingProfiles: Profile
         CreateMap<auditoriasEntities, ResponseAuditoriasModels>().ReverseMap();
 
         CreateMap<tbl_ghu_solicitudPersonalEntities, Tbl_ghu_SolicitudPersonalModels>().ReverseMap();
-        CreateMap<tbl_ghu_TemasBrechaPlEntities, Tbl_ghu_TemasBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_TemasBrechaPEntities, Tbl_ghu_TemasBrechaPModels>().ReverseMap();
         CreateMap<tbl_ghu_PreguntasBrechaPEntities, Tbl_ghu_PreguntasBrechaPModels>().ReverseMap();
         CreateMap<tbl_ghu_RespuestaMultiplesBrechaPEntities, Tbl_ghu_RespuestaMultiplesBrechaPModels>().ReverseMap();
         CreateMap<tbl_ghu_ResultadoBrechaPEntities, Tbl_ghu_ResultadoBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_RelFuncSolicitudPEntities, Tbl_ghu_RelFuncSolicitudPModels>().ReverseMap();
+        CreateMap<tbl_ghu_TextosBrechaEntities, Tbl_ghu_TextosBrechaModels>().ReverseMap();
 
     }
 }

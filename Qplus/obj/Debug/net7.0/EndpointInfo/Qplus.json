@@ -8578,6 +8578,90 @@
         }
       }
     },
+    "/api/RelFuncSolicitudP/GetListaRelFuncSolicitudP/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "RelFuncSolicitudP"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/RespuestaMultiplesBrechaP/GetListaRespuestaMultiplesBrechaP/{EmpresaId}": {
       "get": {
         "tags": [
@@ -10830,6 +10914,90 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Tbl_ghu_TemasBrechaPModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/TextosBrecha/GetListaTextosBrecha/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "TextosBrecha"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_TextosBrechaModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_TextosBrechaModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_TextosBrechaModelsListGetResponse"
                 }
               }
             }
@@ -17620,6 +17788,71 @@
         },
         "additionalProperties": false
       },
+      "Tbl_ghu_RelFuncSolicitudPModels": {
+        "type": "object",
+        "properties": {
+          "relFuncSolicitudPId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "identificacion": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "solicitudId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "brecha": {
+            "type": "boolean"
+          },
+          "textoBrecha": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioCreacion": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_RelFuncSolicitudPModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Tbl_ghu_RespuestaMultiplesBrechaPModels": {
         "type": "object",
         "properties": {
@@ -17700,7 +17933,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "relFuncSolicitudId": {
+          "relFuncSolicitudPId": {
             "type": "integer",
             "format": "int32"
           },
@@ -17953,6 +18186,10 @@
             "type": "string",
             "nullable": true
           },
+          "codigoTema": {
+            "type": "integer",
+            "format": "int32"
+          },
           "estado": {
             "type": "boolean"
           }
@@ -17981,6 +18218,63 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Tbl_ghu_TemasBrechaPModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_TextosBrechaModels": {
+        "type": "object",
+        "properties": {
+          "textoBrechaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "textoBrecha": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean"
+          },
+          "usuarioCreacion": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_TextosBrechaModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_ghu_TextosBrechaModels"
             },
             "nullable": true
           }

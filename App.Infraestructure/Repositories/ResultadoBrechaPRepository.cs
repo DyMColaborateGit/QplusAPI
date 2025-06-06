@@ -48,7 +48,7 @@ namespace App.Infraestructure.Repositories
                     UpdateRegistro.UsuarioAnalisisBrecha = ObjUpdate.UsuarioAnalisisBrecha;
                     UpdateRegistro.TipoPregunta = ObjUpdate.TipoPregunta;
                     UpdateRegistro.TemaBrecha = ObjUpdate.TemaBrecha;
-                    UpdateRegistro.RelFuncSolicitudId = ObjUpdate.RelFuncSolicitudId;
+                    UpdateRegistro.RelFuncSolicitudPId = ObjUpdate.RelFuncSolicitudPId;
                     UpdateRegistro.PadreId = ObjUpdate.PadreId;
                     UpdateRegistro.HijoId = ObjUpdate.HijoId;
                     UpdateRegistro.TextoPregunta = ObjUpdate.TextoPregunta;

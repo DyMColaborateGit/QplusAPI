@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace App.Infraestructure.Connect.Configuration.TblGhu;
 
-public class tbl_ghu_TemasBrechaPConfiguration : IEntityTypeConfiguration<tbl_ghu_TemasBrechaPlEntities>
+public class tbl_ghu_TemasBrechaPConfiguration : IEntityTypeConfiguration<tbl_ghu_TemasBrechaPEntities>
 {
-    public void Configure(EntityTypeBuilder<tbl_ghu_TemasBrechaPlEntities> builder)
+    public void Configure(EntityTypeBuilder<tbl_ghu_TemasBrechaPEntities> builder)
     {
         builder.ToTable("tbl_ghu_TemasBrechaP").
        HasKey(p => new { p.TemaBrechaId });
@@ -23,6 +23,10 @@ public class tbl_ghu_TemasBrechaPConfiguration : IEntityTypeConfiguration<tbl_gh
         builder.Property(p => p.NombreTema)
             .HasMaxLength(100)
             .HasColumnType("nvarchar");
+
+        builder.Property(p => p.CodigoTema)
+            .IsRequired()
+            .HasColumnType("int");
 
         builder.Property(p => p.Estado)
             .HasColumnType("bit");
