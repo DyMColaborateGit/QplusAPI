@@ -458,12 +458,22 @@
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
+        <member name="M:Qplus.Controllers.ResultadoBrechaPController.GetDataResultadoBrechaPById(System.Int32)">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
         <member name="M:Qplus.Controllers.ResultadoBrechaPController.GetListaResultadoBrechaP(System.Int32)">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
-        <member name="M:Qplus.Controllers.ResultadoBrechaPController.UpdateResultadoBrechaP(App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels)">
+        <member name="M:Qplus.Controllers.ResultadoBrechaPController.PostResultadosBrechaP(App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels)">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:Qplus.Controllers.ResultadoBrechaPController.PutResultadoBrechaP(App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels)">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>

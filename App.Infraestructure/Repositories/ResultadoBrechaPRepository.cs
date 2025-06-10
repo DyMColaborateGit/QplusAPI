@@ -1,8 +1,12 @@
 ﻿using App.Infraestructure.Connect;
+using App.Infraestructure.Connect.Entities.TblGhu;
+using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.TblAud;
+using App.Models.Models.TblCom;
 using App.Models.Models.TblGhu;
+using App.Models.Models.TblInd;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -19,7 +23,20 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-
+        public async Task<Tbl_ghu_ResultadoBrechaPModels> ObjResultadoBrechaP(int ResultadoBrechaId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_ghu_ResultadoBrechaP.AsNoTracking()
+                .FirstOrDefaultAsync(x => x.ResultadoBrechaId == ResultadoBrechaId);
+                return _mapper.Map<Tbl_ghu_ResultadoBrechaPModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetObjResultadoBrechaP", ex, ResultadoBrechaId.ToString());
+                throw;
+            }
+        }
         public async Task<List<Tbl_ghu_ResultadoBrechaPModels>> GetListaResultadoBrechaP(int EmpresaId)
         {
             try
@@ -35,8 +52,23 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
-
-        public async Task<Tbl_ghu_ResultadoBrechaPModels> UpdateResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjUpdate)
+        public async Task<Tbl_ghu_ResultadoBrechaPModels> PostResultadosBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjUpdate)
+        {
+            tbl_ghu_ResultadoBrechaPEntities CreateRegistro = _mapper.Map<tbl_ghu_ResultadoBrechaPEntities>(ObjUpdate);
+            try
+            {
+                _context.TBL_ghu_ResultadoBrechaP.Add(CreateRegistro);
+                await _context.SaveChangesAsync();
+                var ObjResult = await _context.TBL_ghu_ResultadoBrechaP.OrderByDescending(e => e.ResultadoBrechaId).FirstOrDefaultAsync();
+                return _mapper.Map<Tbl_ghu_ResultadoBrechaPModels>(ObjResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("PostResultadosBrechaP", ex, JsonConvert.SerializeObject(ObjUpdate));
+                throw;
+            }
+        }
+        public async Task<Tbl_ghu_ResultadoBrechaPModels> PutResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjUpdate)
         {
             var UpdateRegistro = _context.TBL_ghu_ResultadoBrechaP.FirstOrDefault(p => p.ResultadoBrechaId == ObjUpdate.ResultadoBrechaId);
             try
@@ -62,7 +94,7 @@ namespace App.Infraestructure.Repositories
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("UpdateResultadoBrechaP", ex, JsonConvert.SerializeObject(ObjUpdate));
+                ExceptionLogHelpers.LogException("PutResultadoBrechaP", ex, JsonConvert.SerializeObject(ObjUpdate));
                 throw;
             }
             return _mapper.Map<Tbl_ghu_ResultadoBrechaPModels>(UpdateRegistro);

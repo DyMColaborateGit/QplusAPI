@@ -22,19 +22,6 @@ D:\PROYECTOS DYM\Qplus-Api\App.Models\obj\Debug\net6.0\App.Models.dll
 D:\PROYECTOS DYM\Qplus-Api\App.Models\obj\Debug\net6.0\refint\App.Models.dll
 D:\PROYECTOS DYM\Qplus-Api\App.Models\obj\Debug\net6.0\App.Models.pdb
 D:\PROYECTOS DYM\Qplus-Api\App.Models\obj\Debug\net6.0\ref\App.Models.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.deps.json
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.pdb
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.csproj.AssemblyReference.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.AssemblyInfoInputs.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.AssemblyInfo.cs
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.csproj.CoreCompileInputs.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.sourcelink.json
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\refint\App.Models.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.pdb
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\ref\App.Models.dll
 E:\CODE\DYM\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.deps.json
 E:\CODE\DYM\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.dll
 E:\CODE\DYM\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.pdb
@@ -48,3 +35,16 @@ E:\CODE\DYM\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.dll
 E:\CODE\DYM\QplusAPI\App.Models\obj\Debug\net6.0\refint\App.Models.dll
 E:\CODE\DYM\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.pdb
 E:\CODE\DYM\QplusAPI\App.Models\obj\Debug\net6.0\ref\App.Models.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.deps.json
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\bin\Debug\net6.0\App.Models.pdb
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.csproj.AssemblyReference.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.AssemblyInfoInputs.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.AssemblyInfo.cs
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.csproj.CoreCompileInputs.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.sourcelink.json
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\refint\App.Models.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\App.Models.pdb
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Models\obj\Debug\net6.0\ref\App.Models.dll

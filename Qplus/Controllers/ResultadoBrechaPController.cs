@@ -2,7 +2,9 @@
 using App.logic.Services;
 using App.Models.Global;
 using App.Models.Models.TblAud;
+using App.Models.Models.TblCom;
 using App.Models.Models.TblGhu;
+using App.Models.Models.TblInd;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Qplus.Controllers
@@ -16,6 +18,33 @@ namespace Qplus.Controllers
         public ResultadoBrechaPController(IResultadoBrechaPService resultadoBrechaPService)
         {
             _resultadoBrechaPService = resultadoBrechaPService;
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetDataResultadoBrechaPById/{ResultadoBrechaId}")]
+        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> GetDataResultadoBrechaPById(int ResultadoBrechaId)
+        {
+            GetResponse<Tbl_ghu_ResultadoBrechaPModels> resultado = new GetResponse<Tbl_ghu_ResultadoBrechaPModels>();
+            try
+            {
+                resultado.Data = await _resultadoBrechaPService.GetObjResultadoBrechaP(ResultadoBrechaId);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
         }
 
         /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
@@ -52,13 +81,40 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPut("UpdateResultadoBrechaP")]
-        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> UpdateResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjResultadoB)
+        [HttpPost("PostResultadosBrechaP")]
+        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> PostResultadosBrechaP(Tbl_ghu_ResultadoBrechaPModels objCreate)
         {
             GetResponse<Tbl_ghu_ResultadoBrechaPModels> resultado = new GetResponse<Tbl_ghu_ResultadoBrechaPModels>();
             try
             {
-                resultado.Data = await _resultadoBrechaPService.UpdateResultadoBrechaP(ObjResultadoB);
+                resultado.Data = await _resultadoBrechaPService.PostResultadosBrechaP(objCreate);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPut("PutResultadoBrechaP")]
+        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> PutResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjResultadoB)
+        {
+            GetResponse<Tbl_ghu_ResultadoBrechaPModels> resultado = new GetResponse<Tbl_ghu_ResultadoBrechaPModels>();
+            try
+            {
+                resultado.Data = await _resultadoBrechaPService.PutResultadoBrechaP(ObjResultadoB);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

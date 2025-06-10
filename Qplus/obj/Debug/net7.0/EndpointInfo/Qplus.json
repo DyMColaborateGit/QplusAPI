@@ -8746,6 +8746,90 @@
         }
       }
     },
+    "/api/ResultadoBrechaP/GetDataResultadoBrechaPById/{ResultadoBrechaId}": {
+      "get": {
+        "tags": [
+          "ResultadoBrechaP"
+        ],
+        "parameters": [
+          {
+            "name": "ResultadoBrechaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/ResultadoBrechaP/GetListaResultadoBrechaP/{EmpresaId}": {
       "get": {
         "tags": [
@@ -8830,7 +8914,98 @@
         }
       }
     },
-    "/api/ResultadoBrechaP/UpdateResultadoBrechaP": {
+    "/api/ResultadoBrechaP/PostResultadosBrechaP": {
+      "post": {
+        "tags": [
+          "ResultadoBrechaP"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModels"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModels"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModels"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/ResultadoBrechaP/PutResultadoBrechaP": {
       "put": {
         "tags": [
           "ResultadoBrechaP"
@@ -11983,6 +12158,10 @@
             "nullable": true
           },
           "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "rutaUserFile": {
             "type": "string",
             "nullable": true
           }
@@ -17756,6 +17935,10 @@
           },
           "estado": {
             "type": "boolean"
+          },
+          "orden": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
