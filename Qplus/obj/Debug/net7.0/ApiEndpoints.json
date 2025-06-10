@@ -4926,6 +4926,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ResultadoBrechaPController",
+    "Method": "GetDataResultadoBrechaPById",
+    "RelativePath": "api/ResultadoBrechaP/GetDataResultadoBrechaPById/{ResultadoBrechaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ResultadoBrechaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadoBrechaPController",
     "Method": "GetListaResultadoBrechaP",
     "RelativePath": "api/ResultadoBrechaP/GetListaResultadoBrechaP/{EmpresaId}",
     "HttpMethod": "GET",
@@ -4975,8 +5024,57 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ResultadoBrechaPController",
-    "Method": "UpdateResultadoBrechaP",
-    "RelativePath": "api/ResultadoBrechaP/UpdateResultadoBrechaP",
+    "Method": "PostResultadosBrechaP",
+    "RelativePath": "api/ResultadoBrechaP/PostResultadosBrechaP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objCreate",
+        "Type": "App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadoBrechaPController",
+    "Method": "PutResultadoBrechaP",
+    "RelativePath": "api/ResultadoBrechaP/PutResultadoBrechaP",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

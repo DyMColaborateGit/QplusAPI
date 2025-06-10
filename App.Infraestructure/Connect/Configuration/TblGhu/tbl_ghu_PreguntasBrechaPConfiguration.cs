@@ -34,5 +34,9 @@ public class tbl_ghu_PreguntasBrechaPConfiguration : IEntityTypeConfiguration<tb
 
         builder.Property(p => p.Estado)
             .HasColumnType("bit");
+
+        builder.Property(p => p.Orden)
+            .IsRequired()
+            .HasColumnType("int");
     }
 }

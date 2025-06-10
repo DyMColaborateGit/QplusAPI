@@ -9,5 +9,6 @@ namespace App.Models.Models.TblGhu
         public int TipoPregunta { get; set; }
         public int TemaBrechaId { get; set; }
         public bool Estado { get; set; }
+        public int Orden { get; set; }
     }
 }
