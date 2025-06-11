@@ -8578,6 +8578,90 @@
         }
       }
     },
+    "/api/RelFuncSolicitudP/GetObjRelFuncSolicitudPById/{RelFuncSolicitudPId}": {
+      "get": {
+        "tags": [
+          "RelFuncSolicitudP"
+        ],
+        "parameters": [
+          {
+            "name": "RelFuncSolicitudPId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/RelFuncSolicitudP/GetListaRelFuncSolicitudP/{EmpresaId}": {
       "get": {
         "tags": [
@@ -8662,40 +8746,47 @@
         }
       }
     },
-    "/api/RespuestaMultiplesBrechaP/GetListaRespuestaMultiplesBrechaP/{EmpresaId}": {
-      "get": {
+    "/api/RelFuncSolicitudP/PutRelFuncSolicitudP": {
+      "put": {
         "tags": [
-          "RespuestaMultiplesBrechaP"
+          "RelFuncSolicitudP"
         ],
-        "parameters": [
-          {
-            "name": "EmpresaId",
-            "in": "path",
-            "required": true,
-            "style": "simple",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModels"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModels"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModels"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK. Devuelve el objeto solicitado.",
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tbl_ghu_RespuestaMultiplesBrechaPModelsListGetResponse"
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsGetResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tbl_ghu_RespuestaMultiplesBrechaPModelsListGetResponse"
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsGetResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tbl_ghu_RespuestaMultiplesBrechaPModelsListGetResponse"
+                  "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModelsGetResponse"
                 }
               }
             }
@@ -8746,14 +8837,14 @@
         }
       }
     },
-    "/api/ResultadoBrechaP/GetDataResultadoBrechaPById/{ResultadoBrechaId}": {
+    "/api/RespuestaMultiplesBrechaP/GetListaRespuestasMultiplesBrechaP/{EmpresaId}": {
       "get": {
         "tags": [
-          "ResultadoBrechaP"
+          "RespuestaMultiplesBrechaP"
         ],
         "parameters": [
           {
-            "name": "ResultadoBrechaId",
+            "name": "EmpresaId",
             "in": "path",
             "required": true,
             "style": "simple",
@@ -8769,17 +8860,185 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                  "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                  "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsGetResponse"
+                  "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/RespuestaMultiplesBrechaP/GetListaRespuestasBrechaPByPreguntaId/{PreguntaId}": {
+      "get": {
+        "tags": [
+          "RespuestaMultiplesBrechaP"
+        ],
+        "parameters": [
+          {
+            "name": "PreguntaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/ResultadoBrechaP/GetListaResultadoBrechaPById/{RelFuncSolicitudPId}": {
+      "get": {
+        "tags": [
+          "ResultadoBrechaP"
+        ],
+        "parameters": [
+          {
+            "name": "RelFuncSolicitudPId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_ResultadoBrechaPModelsListGetResponse"
                 }
               }
             }
@@ -10967,6 +11226,90 @@
           },
           "500": {
             "description": "ServerError. No se ha encontrado el objeto solicitado."
+          }
+        }
+      }
+    },
+    "/api/SolicitudPersonal/GetObjSolicitudPersonalById/{SolicitudId}": {
+      "get": {
+        "tags": [
+          "SolicitudPersonal"
+        ],
+        "parameters": [
+          {
+            "name": "SolicitudId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
           }
         }
       }
@@ -18008,6 +18351,30 @@
         },
         "additionalProperties": false
       },
+      "Tbl_ghu_RelFuncSolicitudPModelsGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Tbl_ghu_RelFuncSolicitudPModels"
+          }
+        },
+        "additionalProperties": false
+      },
       "Tbl_ghu_RelFuncSolicitudPModelsListGetResponse": {
         "type": "object",
         "properties": {
@@ -18036,7 +18403,7 @@
         },
         "additionalProperties": false
       },
-      "Tbl_ghu_RespuestaMultiplesBrechaPModels": {
+      "Tbl_ghu_RespuestasMultiplesBrechaPModels": {
         "type": "object",
         "properties": {
           "respuestaBrechaPId": {
@@ -18061,7 +18428,7 @@
         },
         "additionalProperties": false
       },
-      "Tbl_ghu_RespuestaMultiplesBrechaPModelsListGetResponse": {
+      "Tbl_ghu_RespuestasMultiplesBrechaPModelsListGetResponse": {
         "type": "object",
         "properties": {
           "statusCode": {
@@ -18082,7 +18449,7 @@
           "data": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Tbl_ghu_RespuestaMultiplesBrechaPModels"
+              "$ref": "#/components/schemas/Tbl_ghu_RespuestasMultiplesBrechaPModels"
             },
             "nullable": true
           }
@@ -18322,6 +18689,30 @@
           "fechaModificacion": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_ghu_SolicitudPersonalModelsGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/Tbl_ghu_SolicitudPersonalModels"
           }
         },
         "additionalProperties": false

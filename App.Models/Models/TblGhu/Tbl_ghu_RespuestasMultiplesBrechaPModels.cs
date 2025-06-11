@@ -1,7 +1,7 @@
 ﻿
 namespace App.Models.Models.TblGhu
 {
-    public class Tbl_ghu_RespuestaMultiplesBrechaPModels
+    public class Tbl_ghu_RespuestasMultiplesBrechaPModels
     {
         public int RespuestaBrechaPId { get; set; }
         public int PreguntaId { get; set; }

@@ -16,36 +16,17 @@ namespace App.logic.Services
         {
             _resultadoBrechaPRepository = resultadoBrechaPRepository;
         }
-        public async Task<Tbl_ghu_ResultadoBrechaPModels> GetObjResultadoBrechaP(int ResultadoBrechaId)
+        public async Task<List<Tbl_ghu_ResultadoBrechaPModels>> GetListaResultadoBrechaPById(int RelFuncSolicitudPId)
         {
-            var getResult = await _resultadoBrechaPRepository.ObjResultadoBrechaP(ResultadoBrechaId);
-            return getResult;
+            return await _resultadoBrechaPRepository.GetListaResultadoBrechaPById(RelFuncSolicitudPId);
         }
         public async Task<List<Tbl_ghu_ResultadoBrechaPModels>> GetListaResultadoBrechaP(int EmpresaId)
         {
             return await _resultadoBrechaPRepository.GetListaResultadoBrechaP(EmpresaId);
         }
-        public async Task<Tbl_ghu_ResultadoBrechaPModels> PostResultadosBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjRequest)
+        public async Task<Tbl_ghu_ResultadoBrechaPModels> PostResultadosBrechaP(Tbl_ghu_ResultadoBrechaPModels objCreate)
         {
-            Tbl_ghu_ResultadoBrechaPModels ObjResultadoBrecha = await _resultadoBrechaPRepository.ObjResultadoBrechaP(ObjRequest.ResultadoBrechaId);
-
-            ObjRequest.ResultadoBrechaId = ObjResultadoBrecha.ResultadoBrechaId;
-            ObjRequest.EmpresaId = ObjResultadoBrecha.EmpresaId;
-            ObjRequest.PreguntaId = ObjResultadoBrecha.PreguntaId;
-            ObjRequest.UsuarioAnalisisBrecha = ObjResultadoBrecha.UsuarioAnalisisBrecha;
-            ObjRequest.TipoPregunta = ObjResultadoBrecha.TipoPregunta;
-            ObjRequest.TemaBrecha = ObjResultadoBrecha.TemaBrecha;
-            ObjRequest.RelFuncSolicitudPId = ObjResultadoBrecha.RelFuncSolicitudPId;
-            ObjRequest.PadreId = ObjResultadoBrecha.PadreId;
-            ObjRequest.HijoId = ObjResultadoBrecha.HijoId;
-            ObjRequest.TextoPregunta = ObjResultadoBrecha.TextoPregunta;
-            ObjRequest.TextoSMultiple = ObjResultadoBrecha.TextoSMultiple;
-            ObjRequest.RespuestaAbierta = ObjResultadoBrecha.RespuestaAbierta;
-            ObjRequest.ResultadoSMultiple = ObjResultadoBrecha.ResultadoSMultiple;
-
-            await _resultadoBrechaPRepository.PostResultadosBrechaP(ObjRequest);
-
-            return ObjRequest;
+            return await _resultadoBrechaPRepository.PostResultadosBrechaP(objCreate);
         }
         public async Task<Tbl_ghu_ResultadoBrechaPModels> PutResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjUpdate)
         {

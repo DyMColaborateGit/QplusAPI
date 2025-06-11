@@ -4876,22 +4876,22 @@
     ]
   },
   {
-    "ContainingType": "Qplus.Controllers.RespuestaMultiplesBrechaPController",
-    "Method": "GetListaRespuestaMultiplesBrechaP",
-    "RelativePath": "api/RespuestaMultiplesBrechaP/GetListaRespuestaMultiplesBrechaP/{EmpresaId}",
+    "ContainingType": "Qplus.Controllers.RelFuncSolicitudPController",
+    "Method": "GetObjRelFuncSolicitudPById",
+    "RelativePath": "api/RelFuncSolicitudP/GetObjRelFuncSolicitudPById/{RelFuncSolicitudPId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "EmpresaId",
+        "Name": "RelFuncSolicitudPId",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblGhu.Tbl_ghu_RespuestaMultiplesBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblGhu.Tbl_ghu_RelFuncSolicitudPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -4925,22 +4925,120 @@
     ]
   },
   {
-    "ContainingType": "Qplus.Controllers.ResultadoBrechaPController",
-    "Method": "GetDataResultadoBrechaPById",
-    "RelativePath": "api/ResultadoBrechaP/GetDataResultadoBrechaPById/{ResultadoBrechaId}",
+    "ContainingType": "Qplus.Controllers.RelFuncSolicitudPController",
+    "Method": "PutRelFuncSolicitudP",
+    "RelativePath": "api/RelFuncSolicitudP/PutRelFuncSolicitudP",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ObjUpdate",
+        "Type": "App.Models.Models.TblGhu.Tbl_ghu_RelFuncSolicitudPModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblGhu.Tbl_ghu_RelFuncSolicitudPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.RespuestaMultiplesBrechaPController",
+    "Method": "GetListaRespuestasBrechaPByPreguntaId",
+    "RelativePath": "api/RespuestaMultiplesBrechaP/GetListaRespuestasBrechaPByPreguntaId/{PreguntaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ResultadoBrechaId",
+        "Name": "PreguntaId",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblGhu.Tbl_ghu_RespuestasMultiplesBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.RespuestaMultiplesBrechaPController",
+    "Method": "GetListaRespuestasMultiplesBrechaP",
+    "RelativePath": "api/RespuestaMultiplesBrechaP/GetListaRespuestasMultiplesBrechaP/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblGhu.Tbl_ghu_RespuestasMultiplesBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -4983,6 +5081,55 @@
     "Parameters": [
       {
         "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadoBrechaPController",
+    "Method": "GetListaResultadoBrechaPById",
+    "RelativePath": "api/ResultadoBrechaP/GetListaResultadoBrechaPById/{RelFuncSolicitudPId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RelFuncSolicitudPId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -5080,7 +5227,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ObjResultadoB",
+        "Name": "ObjUpdate",
         "Type": "App.Models.Models.TblGhu.Tbl_ghu_ResultadoBrechaPModels",
         "IsRequired": true
       }
@@ -6187,6 +6334,55 @@
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblGhu.Tbl_ghu_SolicitudPersonalModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.SolicitudPersonalController",
+    "Method": "GetObjSolicitudPersonalById",
+    "RelativePath": "api/SolicitudPersonal/GetObjSolicitudPersonalById/{SolicitudId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SolicitudId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblGhu.Tbl_ghu_SolicitudPersonalModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
