@@ -12161,7 +12161,7 @@
             "type": "string",
             "nullable": true
           },
-          "rutaUserFile": {
+          "rutaUserFiles": {
             "type": "string",
             "nullable": true
           }
