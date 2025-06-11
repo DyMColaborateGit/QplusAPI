@@ -4,6 +4,7 @@ namespace App.Infraestructure.IRepositories
 {
     public interface IRespuestaMultiplesBrechaPRepository
     {
-        Task<List<Tbl_ghu_RespuestaMultiplesBrechaPModels>> GetListaRespuestaMultiplesBrechaP(int EmpresaId);
+        Task<List<Tbl_ghu_RespuestasMultiplesBrechaPModels>> GetListaRespuestasMultiplesBrechaP(int EmpresaId);
+        Task<List<Tbl_ghu_RespuestasMultiplesBrechaPModels>> GetListaRespuestasBrechaPByPreguntaId(int PreguntaId);
     }
 }

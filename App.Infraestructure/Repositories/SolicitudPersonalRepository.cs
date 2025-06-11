@@ -17,7 +17,21 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-
+        public async Task<Tbl_ghu_SolicitudPersonalModels> GetObjSolicitudPersonalById(int SolicitudId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_ghu_SolicitudPersonal.AsNoTracking()
+                    .Where(x => x.SolicitudId == SolicitudId)
+                    .FirstOrDefaultAsync();
+                return _mapper.Map<Tbl_ghu_SolicitudPersonalModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetObjSolicitudPersonalById", ex, SolicitudId.ToString());
+                throw;
+            }
+        }
         public async Task<List<Tbl_ghu_SolicitudPersonalModels>> GetListaSolicitudesPersonal(int EmpresaId)
         {
             try

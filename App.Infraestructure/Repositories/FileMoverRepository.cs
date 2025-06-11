@@ -22,9 +22,10 @@ public class FileMoverRepository : IFileMoverRepository
         try
         {
             // Ruta Servidor Local
-            string _rutaLocal = fileMove.rutaUserFile;
+            string _rutaLocal = fileMove.rutaUserFiles;
             // Ruta Servidor Web
             //string _rutaLocal = @"C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\Qplus-Nube\ISOftware.WebApp\UserFiles\";
+            //string _rutaLocal = @"E:\CODE\DYM\QPLUSProyecto\Qplus-Nube\ISOftware.WebApp\UserFiles\";
 
             string _folderA = fileMove.origen;
             string _folderB = fileMove.destino;

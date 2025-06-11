@@ -6,6 +6,7 @@ using App.Models.Models.TblCom;
 using App.Models.Models.TblGhu;
 using App.Models.Models.TblInd;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Qplus.Controllers
 {
@@ -27,13 +28,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetDataResultadoBrechaPById/{ResultadoBrechaId}")]
-        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> GetDataResultadoBrechaPById(int ResultadoBrechaId)
+        [HttpGet("GetListaResultadoBrechaPById/{RelFuncSolicitudPId}")]
+        public async Task<GetResponse<List<Tbl_ghu_ResultadoBrechaPModels>>> GetListaResultadoBrechaPById(int RelFuncSolicitudPId)
         {
-            GetResponse<Tbl_ghu_ResultadoBrechaPModels> resultado = new GetResponse<Tbl_ghu_ResultadoBrechaPModels>();
+            GetResponse <List<Tbl_ghu_ResultadoBrechaPModels>> resultado = new GetResponse<List<Tbl_ghu_ResultadoBrechaPModels>>();
             try
             {
-                resultado.Data = await _resultadoBrechaPService.GetObjResultadoBrechaP(ResultadoBrechaId);
+                resultado.Data = await _resultadoBrechaPService.GetListaResultadoBrechaPById(RelFuncSolicitudPId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;
@@ -109,12 +110,12 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPut("PutResultadoBrechaP")]
-        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> PutResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjResultadoB)
+        public async Task<GetResponse<Tbl_ghu_ResultadoBrechaPModels>> PutResultadoBrechaP(Tbl_ghu_ResultadoBrechaPModels ObjUpdate)
         {
             GetResponse<Tbl_ghu_ResultadoBrechaPModels> resultado = new GetResponse<Tbl_ghu_ResultadoBrechaPModels>();
             try
             {
-                resultado.Data = await _resultadoBrechaPService.PutResultadoBrechaP(ObjResultadoB);
+                resultado.Data = await _resultadoBrechaPService.PutResultadoBrechaP(ObjUpdate);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;
