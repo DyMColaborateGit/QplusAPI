@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace App.Infraestructure.Connect.Configuration.TblGhu;
 
-public class tbl_ghu_RespuestaMultiplesBrechaPConfiguration : IEntityTypeConfiguration<tbl_ghu_RespuestaMultiplesBrechaPEntities>
+public class tbl_ghu_RespuestasMultiplesBrechaPConfiguration : IEntityTypeConfiguration<tbl_ghu_RespuestasMultiplesBrechaPEntities>
 {
-    public void Configure(EntityTypeBuilder<tbl_ghu_RespuestaMultiplesBrechaPEntities> builder)
+    public void Configure(EntityTypeBuilder<tbl_ghu_RespuestasMultiplesBrechaPEntities> builder)
     {
-        builder.ToTable("tbl_ghu_RespuestaMultiplesBrechaP").
+        builder.ToTable("tbl_ghu_RespuestasMultiplesBrechaP").
         HasKey(p => new { p.RespuestaBrechaPId });
 
         builder.Property(p => p.RespuestaBrechaPId)

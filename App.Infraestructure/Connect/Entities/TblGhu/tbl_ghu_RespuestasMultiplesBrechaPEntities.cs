@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace App.Infraestructure.Connect.Entities.TblGhu;
 
-public class tbl_ghu_RespuestaMultiplesBrechaPEntities
+public class tbl_ghu_RespuestasMultiplesBrechaPEntities
 {
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     [Key]

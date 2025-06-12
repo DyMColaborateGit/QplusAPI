@@ -18,18 +18,33 @@ namespace App.Infraestructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task<List<Tbl_ghu_RespuestaMultiplesBrechaPModels>> GetListaRespuestaMultiplesBrechaP(int EmpresaId)
+        public async Task<List<Tbl_ghu_RespuestasMultiplesBrechaPModels>> GetListaRespuestasMultiplesBrechaP(int EmpresaId)
         {
             try
             {
-                var objResult = await _context.TBL_ghu_RespuestaMultiplesBrechaP.AsNoTracking()
+                var objResult = await _context.TBL_ghu_RespuestasMultiplesBrechaP.AsNoTracking()
                     .Where(x => x.EmpresaId == EmpresaId)
                     .ToListAsync();
-                return _mapper.Map<List<Tbl_ghu_RespuestaMultiplesBrechaPModels>>(objResult);
+                return _mapper.Map<List<Tbl_ghu_RespuestasMultiplesBrechaPModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetListaRespuestaMultiplesBrechaP", ex, EmpresaId.ToString());
+                ExceptionLogHelpers.LogException("GetListaRespuestasMultiplesBrechaP", ex, EmpresaId.ToString());
+                throw;
+            }
+        }
+        public async Task<List<Tbl_ghu_RespuestasMultiplesBrechaPModels>> GetListaRespuestasBrechaPByPreguntaId(int PreguntaId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_ghu_RespuestasMultiplesBrechaP.AsNoTracking()
+                    .Where(x => x.PreguntaId == PreguntaId)
+                    .ToListAsync();
+                return _mapper.Map<List<Tbl_ghu_RespuestasMultiplesBrechaPModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaRespuestasBrechaPByPreguntaId", ex, PreguntaId.ToString());
                 throw;
             }
         }

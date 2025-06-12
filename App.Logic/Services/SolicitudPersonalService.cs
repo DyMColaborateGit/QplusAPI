@@ -1,4 +1,5 @@
 ﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
 using App.Models.Models.TblGhu;
 
@@ -12,7 +13,10 @@ namespace App.logic.Services
         {
             _solicitudPersonalRepository = solicitudPersonalRepository;
         }
-
+        public async Task<Tbl_ghu_SolicitudPersonalModels> GetObjSolicitudPersonalById(int SolicitudId)
+        {
+            return await _solicitudPersonalRepository.GetObjSolicitudPersonalById(SolicitudId);
+        }
         public async Task<List<Tbl_ghu_SolicitudPersonalModels>> GetListaSolicitudesPersonal(int EmpresaId)
         {
             return await _solicitudPersonalRepository.GetListaSolicitudesPersonal(EmpresaId);
