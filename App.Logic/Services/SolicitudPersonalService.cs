@@ -21,5 +21,10 @@ namespace App.logic.Services
         {
             return await _solicitudPersonalRepository.GetListaSolicitudesPersonal(EmpresaId);
         }
+        public async Task<Tbl_ghu_SolicitudPersonalModels> PutSolicitudPById(Tbl_ghu_SolicitudPersonalModels ObjUpdate)
+        {
+            var ObjResult = await _solicitudPersonalRepository.PutSolicitudPById(ObjUpdate);
+            return ObjResult;
+        }
     }
 }
