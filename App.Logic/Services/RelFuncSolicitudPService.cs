@@ -22,6 +22,10 @@ namespace App.logic.Services
         {
             return await _relFuncSolicitudPRepository.GetListaRelFuncSolicitudP(EmpresaId);
         }
+        public async Task<List<Tbl_ghu_RelFuncSolicitudPModels>> GetListaRelFuncSolicitudPBySolicitudId(int SolicitudId)
+        {
+            return await _relFuncSolicitudPRepository.GetListaRelFuncSolicitudPBySolicitudId(SolicitudId);
+        } 
         public async Task<Tbl_ghu_RelFuncSolicitudPModels> PutRelFuncSolicitudP(Tbl_ghu_RelFuncSolicitudPModels ObjUpdate)
         {
             var ObjResult = await _relFuncSolicitudPRepository.PutRelFuncSolicitudP(ObjUpdate);

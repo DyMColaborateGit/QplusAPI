@@ -48,7 +48,21 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
-
+        public async Task<List<Tbl_ghu_RelFuncSolicitudPModels>> GetListaRelFuncSolicitudPBySolicitudId(int SolicitudId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_ghu_RelFuncSolicitudP.AsNoTracking()
+                    .Where(x => x.SolicitudId == SolicitudId)
+                    .ToListAsync();
+                return _mapper.Map<List<Tbl_ghu_RelFuncSolicitudPModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaRelFuncSolicitudPBySolicitudId", ex, SolicitudId.ToString());
+                throw;
+            }
+        }
         public async Task<Tbl_ghu_RelFuncSolicitudPModels> PutRelFuncSolicitudP(Tbl_ghu_RelFuncSolicitudPModels ObjUpdate)
         {
             var UpdateRegistro = _context.TBL_ghu_RelFuncSolicitudP.FirstOrDefault(p => p.RelFuncSolicitudPId == ObjUpdate.RelFuncSolicitudPId);

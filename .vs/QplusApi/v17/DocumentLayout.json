@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CODE\\DYM\\QplusAPI\\",
+  "WorkspaceRootPath": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\solicitudpersonalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\solicitudpersonalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\services\\solicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\solicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\iservices\\isolicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\isolicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\irepositories\\isolicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\isolicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\solicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\solicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,27 +55,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\appsettings.json",
-              "RelativeDocumentMoniker": "Qplus\\appsettings.json",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\appsettings.json",
-              "RelativeToolTip": "Qplus\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T21:47:53.708Z",
+              "Title": "SolicitudPersonalController.cs",
+              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\SolicitudPersonalController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\SolicitudPersonalController.cs",
+              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\SolicitudPersonalController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\SolicitudPersonalController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:38:42.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\appsettings.Development.json",
-              "RelativeToolTip": "Qplus\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T21:47:53.115Z",
+              "Title": "SolicitudPersonalService.cs",
+              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\SolicitudPersonalService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\SolicitudPersonalService.cs",
+              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\SolicitudPersonalService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\SolicitudPersonalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:32:21.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISolicitudPersonalService.cs",
+              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\ISolicitudPersonalService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\IServices\\ISolicitudPersonalService.cs",
+              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\ISolicitudPersonalService.cs",
+              "RelativeToolTip": "App.Logic\\IServices\\ISolicitudPersonalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:28:29.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISolicitudPersonalRepository.cs",
+              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
+              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:27:33.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SolicitudPersonalRepository.cs",
+              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
+              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:08:52.716Z",
               "EditorCaption": ""
             }
           ]

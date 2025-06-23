@@ -5,6 +5,7 @@ namespace App.Infraestructure.IRepositories
     public interface IRelFuncSolicitudPRepository
     {
         Task<List<Tbl_ghu_RelFuncSolicitudPModels>> GetListaRelFuncSolicitudP(int EmpresaId);
+        Task<List<Tbl_ghu_RelFuncSolicitudPModels>> GetListaRelFuncSolicitudPBySolicitudId(int SolicitudId);
         Task<Tbl_ghu_RelFuncSolicitudPModels> GetObjRelFuncSolicitudPById(int RelFuncSolicitudPId);
         Task<Tbl_ghu_RelFuncSolicitudPModels> PutRelFuncSolicitudP(Tbl_ghu_RelFuncSolicitudPModels ObjUpdate);
 
