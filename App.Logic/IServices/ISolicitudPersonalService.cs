@@ -6,5 +6,6 @@ namespace App.logic.IServices
     {
         Task<List<Tbl_ghu_SolicitudPersonalModels>> GetListaSolicitudesPersonal(int SolicitudId);
         Task<Tbl_ghu_SolicitudPersonalModels> GetObjSolicitudPersonalById(int SolicitudId);
+        Task<Tbl_ghu_SolicitudPersonalModels> PutSolicitudPById(Tbl_ghu_SolicitudPersonalModels ObjUpdate);
     }
 }

@@ -1,17 +1,11 @@
 ﻿using App.Infraestructure.Connect;
-using App.Infraestructure.Connect.Entities.TblCom;
 using App.Infraestructure.Connect.Entities.TblGhu;
-using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
-using App.Models.Models.TblAud;
-using App.Models.Models.TblCom;
 using App.Models.Models.TblGhu;
-using App.Models.Models.TblInd;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System.Collections.Generic;
 
 namespace App.Infraestructure.Repositories
 {

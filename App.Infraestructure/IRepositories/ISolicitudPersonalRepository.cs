@@ -6,5 +6,6 @@ namespace App.Infraestructure.IRepositories
     {
         Task<List<Tbl_ghu_SolicitudPersonalModels>> GetListaSolicitudesPersonal(int EmpresaId);
         Task<Tbl_ghu_SolicitudPersonalModels> GetObjSolicitudPersonalById(int SolicitudId);
+        Task<Tbl_ghu_SolicitudPersonalModels> PutSolicitudPById(Tbl_ghu_SolicitudPersonalModels ObjUpdate);
     }
 }
