@@ -33,5 +33,21 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
+
+        public async Task<List<Tbl_ghu_PreguntasBrechaPModels>> GetListaPreguntasBrechaPByTemaId(int TemaBrechaId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_ghu_PreguntasBrechaP.AsNoTracking()
+                    .Where(x => x.TemaBrechaId == TemaBrechaId)
+                    .ToListAsync();
+                return _mapper.Map<List<Tbl_ghu_PreguntasBrechaPModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaPreguntasBrechaPByTemaId", ex, TemaBrechaId.ToString());
+                throw;
+            }
+        }
     }
 }

@@ -17,5 +17,9 @@ namespace App.logic.Services
         {
             return await _preguntasBrechaPRepository.GetListaPreguntasBrechaP(EmpresaId);
         }
+        public async Task<List<Tbl_ghu_PreguntasBrechaPModels>> GetListaPreguntasBrechaPByTemaId(int TemaBrechaId)
+        {
+            return await _preguntasBrechaPRepository.GetListaPreguntasBrechaPByTemaId(TemaBrechaId);
+        }    
     }
 }
