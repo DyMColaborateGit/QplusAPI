@@ -80,6 +80,7 @@ namespace App.Infraestructure.Repositories
                     UpdateRegistro.TextoBrecha = ObjUpdate.TextoBrecha;
                     UpdateRegistro.UsuarioCreacion = ObjUpdate.UsuarioCreacion;
                     UpdateRegistro.FechaCreacion = ObjUpdate.FechaCreacion;
+                    UpdateRegistro.UsuarioCierreBrecha = ObjUpdate.UsuarioCierreBrecha;
                     #endregion
                 }
 
