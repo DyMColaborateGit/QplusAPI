@@ -6226,23 +6226,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\germa\\.nuget\\packages\\": {},
+    "C:\\Users\\DYMDesarrollo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Qplus.csproj",
+      "projectUniqueName": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Qplus.csproj",
       "projectName": "Qplus",
-      "projectPath": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Qplus.csproj",
-      "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-      "outputPath": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\obj\\",
+      "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Qplus.csproj",
+      "packagesPath": "C:\\Users\\DYMDesarrollo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DYMDesarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6251,18 +6251,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\App.logic.csproj": {
-              "projectPath": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\App.logic.csproj"
+            "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\App.logic.csproj": {
+              "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\App.logic.csproj"
             },
-            "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\App.Models.csproj": {
-              "projectPath": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\App.Models.csproj"
+            "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj": {
+              "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj"
             }
           }
         }
@@ -6277,7 +6276,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net7.0": {
@@ -6341,7 +6340,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

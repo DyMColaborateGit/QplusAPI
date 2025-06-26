@@ -1,54 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\preguntasbrechapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\preguntasbrechapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\relfuncsolicitudpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\relfuncsolicitudpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\preguntasbrechaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\preguntasbrechaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\relfuncsolicitudpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\relfuncsolicitudpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\irepositories\\ipreguntasbrechaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\ipreguntasbrechaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\irepositories\\irelfuncsolicitudprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\irelfuncsolicitudprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\iservices\\ipreguntasbrechapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\ipreguntasbrechapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\relfuncsolicitudprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\relfuncsolicitudprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\services\\preguntasbrechapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\preguntasbrechapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\solicitudpersonalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\solicitudpersonalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\services\\solicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\solicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\iservices\\isolicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\isolicitudpersonalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\irepositories\\isolicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\isolicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\solicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\solicitudpersonalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\connect\\configuration\\tblghu\\tbl_ghu_relfuncsolicitudpconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\configuration\\tblghu\\tbl_ghu_relfuncsolicitudpconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,154 +54,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IPreguntasBrechaPService.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IPreguntasBrechaPService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\IPreguntasBrechaPService.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IPreguntasBrechaPService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\IPreguntasBrechaPService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RelFuncSolicitudPController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\RelFuncSolicitudPController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\RelFuncSolicitudPController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\RelFuncSolicitudPController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\RelFuncSolicitudPController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAewGkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:54:27.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PreguntasBrechaPService.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\PreguntasBrechaPService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\PreguntasBrechaPService.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\PreguntasBrechaPService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\PreguntasBrechaPService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:53:16.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPreguntasBrechaPRepository.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IPreguntasBrechaPRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IPreguntasBrechaPRepository.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IPreguntasBrechaPRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IPreguntasBrechaPRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:52:39.229Z",
+              "WhenOpened": "2025-06-26T20:06:26.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PreguntasBrechaPRepository.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\PreguntasBrechaPRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\PreguntasBrechaPRepository.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\PreguntasBrechaPRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\PreguntasBrechaPRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCQAAABxAAAAAAAAAA==",
+              "Title": "RelFuncSolicitudPService.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\RelFuncSolicitudPService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\RelFuncSolicitudPService.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\RelFuncSolicitudPService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\RelFuncSolicitudPService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewB4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:50:54.766Z",
+              "WhenOpened": "2025-06-26T20:06:22.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PreguntasBrechaPController.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\PreguntasBrechaPController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\PreguntasBrechaPController.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\PreguntasBrechaPController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\PreguntasBrechaPController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADQAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IRelFuncSolicitudPRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\IRelFuncSolicitudPRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IRelFuncSolicitudPRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\IRelFuncSolicitudPRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IRelFuncSolicitudPRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:49:56.004Z",
+              "WhenOpened": "2025-06-26T20:06:18.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.json",
-              "RelativeDocumentMoniker": "Qplus\\appsettings.json",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.json",
-              "RelativeToolTip": "Qplus\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-24T19:44:14.637Z",
+              "DocumentIndex": 3,
+              "Title": "RelFuncSolicitudPRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\RelFuncSolicitudPRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\RelFuncSolicitudPRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\RelFuncSolicitudPRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\RelFuncSolicitudPRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwFAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T20:05:48.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.Development.json",
-              "RelativeToolTip": "Qplus\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-24T19:22:33.329Z",
+              "DocumentIndex": 4,
+              "Title": "tbl_ghu_RelFuncSolicitudPConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\TblGhu\\tbl_ghu_RelFuncSolicitudPConfiguration.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Configuration\\TblGhu\\tbl_ghu_RelFuncSolicitudPConfiguration.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\TblGhu\\tbl_ghu_RelFuncSolicitudPConfiguration.cs",
+              "RelativeToolTip": "App.Infraestructure\\Connect\\Configuration\\TblGhu\\tbl_ghu_RelFuncSolicitudPConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T20:05:14.046Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SolicitudPersonalController.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\SolicitudPersonalController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\SolicitudPersonalController.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\SolicitudPersonalController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\SolicitudPersonalController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:38:42.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SolicitudPersonalService.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\SolicitudPersonalService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\SolicitudPersonalService.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\SolicitudPersonalService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\SolicitudPersonalService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:32:21.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ISolicitudPersonalService.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\ISolicitudPersonalService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\ISolicitudPersonalService.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\ISolicitudPersonalService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\ISolicitudPersonalService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:28:29.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ISolicitudPersonalRepository.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\ISolicitudPersonalRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:27:33.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SolicitudPersonalRepository.cs",
-              "DocumentMoniker": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
-              "ToolTip": "C:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\SolicitudPersonalRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAB3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:08:52.716Z"
             }
           ]
         },
@@ -240,10 +126,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{f2bd8fb8-fc94-3dae-a733-fd993c73cc87}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{f2e84780-2af1-11d1-a7fa-00a0c9110051}"
             },
             {
               "$type": "Bookmark",

@@ -18606,6 +18606,10 @@
           "fechaCreacion": {
             "type": "string",
             "format": "date-time"
+          },
+          "usuarioCierreBrecha": {
+            "type": "integer",
+            "format": "int64"
           }
         },
         "additionalProperties": false

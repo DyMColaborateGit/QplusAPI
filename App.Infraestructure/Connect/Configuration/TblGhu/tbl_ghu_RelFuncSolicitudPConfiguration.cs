@@ -42,5 +42,9 @@ public class tbl_ghu_RelFuncSolicitudPConfiguration : IEntityTypeConfiguration<t
 
         builder.Property(p => p.FechaCreacion)
             .HasColumnType("datetime");
+
+        builder.Property(p => p.UsuarioCierreBrecha)
+            .IsRequired()
+            .HasColumnType("bigint");
     }
 }

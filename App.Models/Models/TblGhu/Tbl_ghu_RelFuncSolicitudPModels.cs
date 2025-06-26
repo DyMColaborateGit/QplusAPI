@@ -10,5 +10,7 @@
         public string? TextoBrecha { get; set; }
         public long UsuarioCreacion { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public long UsuarioCierreBrecha { get; set; }
+
     }
 }
