@@ -92,6 +92,7 @@ namespace App.logic.Extensions
             services.AddScoped<IResultadoBrechaPService, ResultadoBrechaPService>();
             services.AddScoped<IRelFuncSolicitudPService, RelFuncSolicitudPService>();
             services.AddScoped<ITextosBrechaService, TextosBrechaService>();
+            services.AddScoped<IParametrosDesempenoService, ParametrosDesempenoService>();
         }
 
         /// <summary>
