@@ -995,12 +995,6 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\scopedcss\bundle\Qplus.styles.css
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.build.json
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.development.json
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.build.endpoints.json
-E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssets.props
-E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets\msbuild.Qplus.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets\msbuild.build.Qplus.props
-E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Qplus.props
-E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Qplus.props
-E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.pack.json
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\Qplus.csproj.Up2Date
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\Qplus.dll
@@ -1009,3 +1003,8 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\Qplus.xml
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\Qplus.pdb
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\Qplus.genruntimeconfig.cache
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\ref\Qplus.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\rpswa.dswa.cache.json
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\rjimswa.dswa.cache.json
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\rjsmrazor.dswa.cache.json
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\rjsmcshtml.dswa.cache.json
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.build.json.cache
