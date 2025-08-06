@@ -13,6 +13,22 @@ D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestruct
 D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\refint\App.Infraestructure.dll
 D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.pdb
 D:\PROYECTOS DYM\Qplus-Api\App.Infraestructure\obj\Debug\net7.0\ref\App.Infraestructure.dll
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.deps.json
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.dll
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.pdb
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Models.dll
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Models.pdb
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.AssemblyInfo.cs
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.sourcelink.json
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infr.6554EA0C.Up2Date
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.dll
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\refint\App.Infraestructure.dll
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.pdb
+C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\ref\App.Infraestructure.dll
 E:\CODE\DYM\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.deps.json
 E:\CODE\DYM\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.dll
 E:\CODE\DYM\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.pdb
@@ -45,19 +61,3 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\obj\Debug
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\obj\Debug\net7.0\refint\App.Infraestructure.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\obj\Debug\net7.0\ref\App.Infraestructure.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.deps.json
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Models.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Models.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.AssemblyReference.cache
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.AssemblyInfoInputs.cache
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.AssemblyInfo.cs
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.csproj.CoreCompileInputs.cache
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.sourcelink.json
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infr.6554EA0C.Up2Date
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\refint\App.Infraestructure.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Debug\net7.0\ref\App.Infraestructure.dll

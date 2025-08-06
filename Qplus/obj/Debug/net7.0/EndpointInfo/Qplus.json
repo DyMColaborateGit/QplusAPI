@@ -6653,6 +6653,90 @@
         }
       }
     },
+    "/api/ParametrosDesempeno/GetListParametrosDesempeno/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "ParametrosDesempeno"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/ParametrosEmpresas/GetParametroEmpresaByParametroId/{EmpresaId}/{ParametroId}": {
       "get": {
         "tags": [
@@ -16715,6 +16799,81 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TBL_com_NivelesDesempenoPpalModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TBL_com_ParametrosDesempenoModels": {
+        "type": "object",
+        "properties": {
+          "parametroId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tipoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "operadorMin": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorMin": {
+            "type": "number",
+            "format": "double"
+          },
+          "operadorMax": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorMax": {
+            "type": "number",
+            "format": "double"
+          },
+          "parametro": {
+            "type": "string",
+            "nullable": true
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TBL_com_ParametrosDesempenoModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModels"
             },
             "nullable": true
           }
