@@ -1,4 +1,5 @@
 ﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
 using App.Models.Models.TblCom;
 using App.Models.Models.TblDoc;
@@ -15,7 +16,11 @@ namespace App.logic.Services
         {
             _documentosControladosRepository = documentosControladosRepository;
         }
-
+        public async Task<TBL_doc_DocumentosModels> GetObjDocumentos(int DocumentoId)
+        {
+            var getResult = await _documentosControladosRepository.ObjDocumentosC(DocumentoId);
+            return getResult;
+        }
         public async Task<List<TBL_doc_DocumentosModels>> GetListDocumentos(int EmpresaId)
         {
             return await _documentosControladosRepository.DocumentosList(EmpresaId);
@@ -26,6 +31,15 @@ namespace App.logic.Services
         {
             return await _documentosControladosRepository.GetListadoDocumentosFiltrosVista(IdArea, proceso_doc, CodigoDoc, IdProducto, IdTipo, Estado, NivelSeguridad, EmpresaId, 
                 InIdSistema, Usuario, NombreDoc, userId, ElaboradoPor, RevisadoPor, AprobadoPor, EstadoProceso, Pagina, pageSize, codigoCargo);
+        }
+        public async Task<string> PutArchivoEliminadoApp(int DocumentoId, bool ArchivoEliminadoApp)
+        {
+            TBL_doc_DocumentosModels ObjDocumentos = await _documentosControladosRepository.ObjDocumentosC(DocumentoId);
+            ObjDocumentos.ArchivoEliminadoApp = ArchivoEliminadoApp;
+
+            await _documentosControladosRepository.UpdateDocumentos(ObjDocumentos);
+
+            return "ArchivoEliminadoApp";
         }
     }
 }

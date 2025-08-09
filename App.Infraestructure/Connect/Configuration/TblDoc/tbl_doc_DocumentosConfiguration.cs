@@ -164,6 +164,9 @@ namespace App.Infraestructure.Connect.Configuration.TblDoc
             builder.Property(p => p.UsuarioDevolucionVigente)
                 .HasColumnType("bigint");
 
+            builder.Property(p => p.ArchivoEliminadoApp)
+                .HasColumnType("bit");
+
         }
     }
 }
