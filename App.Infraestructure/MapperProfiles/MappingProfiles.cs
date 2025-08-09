@@ -5,6 +5,7 @@ using App.Infraestructure.Connect.Entities.T;
 using App.Infraestructure.Connect.Entities.TblAud;
 using App.Infraestructure.Connect.Entities.TblCom;
 using App.Infraestructure.Connect.Entities.TblDoc;
+using App.Infraestructure.Connect.Entities.TblGhu;
 using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Connect.Entities.TblMast;
 using App.Infraestructure.Connect.Entities.Tipo;
@@ -14,6 +15,7 @@ using App.Models.Models.T;
 using App.Models.Models.TblAud;
 using App.Models.Models.TblCom;
 using App.Models.Models.TblDoc;
+using App.Models.Models.TblGhu;
 using App.Models.Models.TblInd;
 using App.Models.Models.TblMast;
 using App.Models.Models.Tipo;
@@ -112,6 +114,14 @@ public class MappingProfiles: Profile
         CreateMap<scp_UsuariosRolesEntities, ResponseSCP_UsuariosRolesModels>().ReverseMap();
         CreateMap<tbl_aud_EvaAuditoresEntities, ResponseTBL_aud_EvaAuditoresModels>().ReverseMap();
         CreateMap<auditoriasEntities, ResponseAuditoriasModels>().ReverseMap();
+
+        CreateMap<tbl_ghu_solicitudPersonalEntities, Tbl_ghu_SolicitudPersonalModels>().ReverseMap();
+        CreateMap<tbl_ghu_TemasBrechaPEntities, Tbl_ghu_TemasBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_PreguntasBrechaPEntities, Tbl_ghu_PreguntasBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_RespuestasMultiplesBrechaPEntities, Tbl_ghu_RespuestasMultiplesBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_ResultadoBrechaPEntities, Tbl_ghu_ResultadoBrechaPModels>().ReverseMap();
+        CreateMap<tbl_ghu_RelFuncSolicitudPEntities, Tbl_ghu_RelFuncSolicitudPModels>().ReverseMap();
+        CreateMap<tbl_ghu_TextosBrechaEntities, Tbl_ghu_TextosBrechaModels>().ReverseMap();
 
     }
 }

@@ -45,6 +45,8 @@ namespace App.Models.Models.TblDoc
         public long? UsuarioEnvioObsoleto { get; set; }
         public DateTime? FechaDevolucionVigente { get; set; }
         public long? UsuarioDevolucionVigente { get; set; }
+        public bool? ArchivoEliminadoApp { get; set; }
+
     }
 
     public class ResponseTBL_doc_DocumentosModels
@@ -87,5 +89,7 @@ namespace App.Models.Models.TblDoc
         public long? UsuarioEnvioObsoleto { get; set; }
         public DateTime? FechaDevolucionVigente { get; set; }
         public long? UsuarioDevolucionVigente { get; set; }
+        public bool? ArchivoEliminadoApp { get; set; }
+
     }
 }

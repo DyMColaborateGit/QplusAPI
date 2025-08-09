@@ -1,6 +1,7 @@
 ﻿using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
+using App.Models.Models.Scp;
 using App.Models.Models.TblCom;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -45,6 +46,22 @@ public class ParametrosDesempenoRepository: IParametrosDesempenoRepository
         catch (Exception ex)
         {
             ExceptionLogHelpers.LogException("ObjParametrosDesempenoByTipoId", ex, TipoId.ToString()+"/"+ Valor + "/"+ EmpresaId);
+            throw;
+        }
+    }
+
+    public async Task<List<TBL_com_ParametrosDesempenoModels>> GetListParametrosDesempeno(int EmpresaId)
+    {
+        try
+        {
+            var objResult = await _context.TBL_com_ParametrosDesempeno.AsNoTracking()
+                .Where(x => x.EmpresaId == EmpresaId)
+                .ToListAsync();
+            return _mapper.Map<List<TBL_com_ParametrosDesempenoModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListParametrosDesempeno", ex, "");
             throw;
         }
     }

@@ -11,5 +11,6 @@ namespace App.Models.Models.FileMove
         public string? ancla4 { get; set; }
         public string? nombre { get; set; }
         public string? mensaje { get; set; }
+        public string? rutaUserFiles { get; set; }
     }
 }
