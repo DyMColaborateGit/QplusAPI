@@ -48,6 +48,7 @@ namespace App.Infraestructure.Connect.Entities.TblDoc
         public long? UsuarioEnvioObsoleto { get; set; }
         public DateTime? FechaDevolucionVigente { get; set; }
         public long? UsuarioDevolucionVigente { get; set; }
+        public bool? ArchivoEliminadoApp { get; set; }
 
     }
 }

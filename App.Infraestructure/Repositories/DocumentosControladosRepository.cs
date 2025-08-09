@@ -1,10 +1,12 @@
 ﻿using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
+using App.Models.Models.TblCom;
 using App.Models.Models.TblDoc;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace App.Infraestructure.Repositories
 {
@@ -18,7 +20,20 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-
+        public async Task<TBL_doc_DocumentosModels> ObjDocumentosC(int DocumentoId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_doc_Documentos.AsNoTracking()
+                .FirstOrDefaultAsync(x => x.DocumentoId == DocumentoId);
+                return _mapper.Map<TBL_doc_DocumentosModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("ObjDocumentosC", ex, DocumentoId.ToString());
+                throw;
+            }
+        }
         public async Task<List<TBL_doc_DocumentosModels>> DocumentosList(int EmpresaId)
         {
             try
@@ -133,6 +148,29 @@ namespace App.Infraestructure.Repositories
         {
             public List<T> Data { get; set; }
             public int TotalRegistros { get; set; }
+        }
+
+        public async Task<TBL_doc_DocumentosModels> UpdateDocumentos(TBL_doc_DocumentosModels ObjUpdate)
+        {
+            var UpdateRegistro = _context.TBL_doc_Documentos.FirstOrDefault(p => p.DocumentoId == ObjUpdate.DocumentoId);
+            try
+            {
+                if (UpdateRegistro != null)
+                {
+                    #region Update
+                    UpdateRegistro.DocumentoId = ObjUpdate.DocumentoId;
+                    UpdateRegistro.ArchivoEliminadoApp = ObjUpdate.ArchivoEliminadoApp;
+                    #endregion
+                }
+
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("UpdateDocumentos", ex, JsonConvert.SerializeObject(ObjUpdate));
+                throw;
+            }
+            return _mapper.Map<TBL_doc_DocumentosModels>(UpdateRegistro);
         }
     }
 }
