@@ -18,5 +18,8 @@ public class FileMoverService : IFileMoverService
     {
         return await _fileMoverRepository.PostMoverArchivo(fileMove);
     }
-
+    public async Task<FileResultModels> CheckFileExists(FileMoveModels fileCheck)
+    {
+        return await _fileMoverRepository.CheckFileExists(fileCheck);
+    }
 }
