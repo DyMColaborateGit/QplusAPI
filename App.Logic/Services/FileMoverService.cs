@@ -14,7 +14,7 @@ public class FileMoverService : IFileMoverService
         _fileMoverRepository = fileMoverRepository;
     }
 
-    public async Task<FileResultModels> PostMoverArchivo(FileMoveModels fileMove)
+    public async Task<FileResultModels> PostMoverArchivo(List<FileMoveModels> fileMove)
     {
         return await _fileMoverRepository.PostMoverArchivo(fileMove);
     }

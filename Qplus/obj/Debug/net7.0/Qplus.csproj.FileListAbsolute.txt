@@ -500,3 +500,9 @@ F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.xml
 F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll

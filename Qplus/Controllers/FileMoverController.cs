@@ -26,7 +26,7 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost("PostMoverArchivo")]
-        public async Task<GetResponse<FileResultModels>> PostMoverArchivo(FileMoveModels fileMove)
+        public async Task<GetResponse<FileResultModels>> PostMoverArchivo(List<FileMoveModels> fileMove)
         {
             GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
             try

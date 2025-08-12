@@ -1823,7 +1823,7 @@
     "Parameters": [
       {
         "Name": "fileMove",
-        "Type": "App.Models.Models.FileMove.FileMoveModels",
+        "Type": "System.Collections.Generic.List\u00601[[App.Models.Models.FileMove.FileMoveModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],

@@ -158,7 +158,6 @@ namespace App.Infraestructure.Repositories
                 if (UpdateRegistro != null)
                 {
                     #region Update
-                    UpdateRegistro.DocumentoId = ObjUpdate.DocumentoId;
                     UpdateRegistro.ArchivoEliminadoApp = ObjUpdate.ArchivoEliminadoApp;
                     #endregion
                 }

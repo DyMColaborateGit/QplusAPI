@@ -6,6 +6,7 @@ using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.FileMove;
 using AutoMapper;
+using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
@@ -76,7 +77,43 @@ public class FileMoverRepository : IFileMoverRepository
             throw;
         }
     }
-    public async Task<FileResultModels> PostMoverArchivo(FileMoveModels fileMove)
+
+    public async Task<FileResultModels> PostMoverArchivo([FromBody] List<FileMoveModels> allFiles)
+    {
+        if (allFiles == null || allFiles.Count == 0)
+        {
+            return new FileResultModels
+            {
+                success = false,
+                status = "BadRequest",
+                message = "La lista de archivos está vacía."
+            };
+        }
+
+        const int batchSize = 100;
+        var resultados = new List<object>();
+
+        for (int i = 0; i < allFiles.Count; i += batchSize)
+        {
+            var batch = allFiles.Skip(i).Take(batchSize).ToList();
+
+            foreach (var fileMove in batch)
+            {
+                var resultado = await MoverArchivo(fileMove);
+                resultados.Add(resultado);
+            }
+        }
+        Console.WriteLine($"Resultados lista: {resultados}");
+
+        return new FileResultModels
+        {
+            success = true,
+            status = "Success",
+            message = "Proceso correcto."
+        };
+    }
+
+    public async Task<FileResultModels> MoverArchivo(FileMoveModels fileMove)
     {
         try
         {
@@ -86,55 +123,31 @@ public class FileMoverRepository : IFileMoverRepository
                 {
                     success = false,
                     status = "Error",
-                    message = "Los parámetros 'origen', 'destino', 'ancla1', 'ancla2', 'nombreArchivo', 'ancla3', 'ancla4' y 'rutaBase' son obligatorios."
+                    message = "Los parametros no pueden estar vacios."
                 };
             }
 
-            // Ruta Servidor Local
-            string _rutaLocal = fileMove.RutaUserFiles;
+            var rutaDirectorioOrigen = Path.Combine(fileMove.RutaUserFiles, fileMove.Origen);
+            var rutaDirectorioDestino = Path.Combine(fileMove.RutaUserFiles, fileMove.Destino);
 
-            string _folderA = fileMove.Origen;
-            string _folderB = fileMove.Destino;
-
-            //TODO crear la ruta absoluta del servidor para la gestion de archivos
-            string origen = _rutaLocal + _folderA;
-            string destino = _rutaLocal + _folderB;
-
-            string ancla1 = fileMove.Ancla1;
-            string ancla2 = fileMove.Ancla2;
-            string ancla3 = fileMove.Ancla3;
-            string ancla4 = fileMove.Ancla4;
-
-            // Validar que el nombre del archivo no esté vacío
-            if (string.IsNullOrEmpty(fileMove.Nombre))
+            if (!Directory.Exists(rutaDirectorioOrigen))
             {
-                return new FileResultModels
-                {
-                    success = false,
-                    status = "BadRequest",
-                    message = "El nombre del archivo está vacío."
-                };
+                Directory.CreateDirectory(rutaDirectorioOrigen);
             }
 
-            if (!Directory.Exists(origen))
+            if (!Directory.Exists(rutaDirectorioDestino))
             {
-                Directory.CreateDirectory(origen);
+                Directory.CreateDirectory(rutaDirectorioDestino);
             }
 
-            if (!Directory.Exists(destino))
-            {
-                Directory.CreateDirectory(destino);
-            }
+            var extension = Path.GetExtension(fileMove.Nombre);
+            var nomFile = $"{fileMove.Ancla1}_{fileMove.Ancla2}_{fileMove.Ancla3}_{fileMove.Ancla4}{extension}";
 
-            string extension = Path.GetExtension(fileMove.Nombre);
-            string nomFile = ancla1 + "_" + ancla2 + "_" + ancla3 + "_" + ancla4 + extension;
+            var rutaOriginal = Path.Combine(rutaDirectorioOrigen, fileMove.Nombre);
+            var rutaFinal = Path.Combine(rutaDirectorioDestino, nomFile);
 
-            string nombreArchivo = $"{nomFile}";
-
-            string rutaOriginal = _rutaLocal + "\\" + _folderA + "\\" + fileMove.Nombre;
-            string rutaFinal = _rutaLocal + "\\" + _folderB + "\\" + nombreArchivo;
-            var rutaCompleta = Path.Combine(rutaFinal);
-
+            Console.WriteLine($"Ruta Original: {rutaOriginal}");
+            Console.WriteLine($"Ruta Final: {rutaFinal}");
 
             if (!System.IO.File.Exists(rutaOriginal))
             {
@@ -142,19 +155,21 @@ public class FileMoverRepository : IFileMoverRepository
                 {
                     success = false,
                     status = "NotFound",
-                    message = $"El archivo '{fileMove.Nombre}' no fue encontrado en la carpeta origen.",
-                    fileName = nombreArchivo
+                    message = "El archivo '{fileMove.Nombre}' no fue encontrado en la carpeta origen.",
+                    fileName = nomFile
                 };
             }
 
+            // Mueve el archivo
             await Task.Run(() => System.IO.File.Move(rutaOriginal, rutaFinal));
 
+            // Retorna el resultado exitoso
             return new FileResultModels
             {
                 success = true,
                 status = "Success",
-                message = $"El archivo '{nombreArchivo}' fue movido correctamente.",
-                fileName = nombreArchivo
+                message = "El archivo '{nomFile}' fue movido correctamente.",
+                fileName = nomFile
             };
         }
         catch (Exception ex)

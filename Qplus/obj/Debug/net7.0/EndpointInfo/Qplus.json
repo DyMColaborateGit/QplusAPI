@@ -3145,17 +3145,26 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FileMoveModels"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FileMoveModels"
+                }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/FileMoveModels"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FileMoveModels"
+                }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/FileMoveModels"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FileMoveModels"
+                }
               }
             }
           }
