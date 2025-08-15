@@ -3,6 +3,7 @@ namespace App.Models.Models.FileMove
 {
     public class FileMoveModels
     {
+        public int id { get; set; }
         public string? Origen { get; set; }
         public string? Destino { get; set; }
         public string? Ancla1 { get; set; }

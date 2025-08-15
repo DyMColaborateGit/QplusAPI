@@ -116,11 +116,6 @@
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
             <response code="500">ServerError. No se ha encontrado el objeto solicitado.</response>
         </member>
-        <member name="M:Qplus.Controllers.DocumentosController.PutArchivoEliminadoApp(System.Int32,System.Boolean)">
-            <response code="200">OK. Devuelve el objeto solicitado.</response> 
-            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
-            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
-        </member>
         <member name="M:Qplus.Controllers.EmpresasController.GetempresaByempresaId(System.Int32)">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  

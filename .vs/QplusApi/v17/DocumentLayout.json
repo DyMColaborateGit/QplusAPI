@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.models\\models\\filemove\\filemovemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|solutionrelative:app.models\\models\\filemove\\filemovemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\documentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\documentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.models\\models\\tbldoc\\tbl_doc_documentosmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|solutionrelative:app.models\\models\\tbldoc\\tbl_doc_documentosmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\filemovercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\filemovercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\connect\\entities\\tbldoc\\tbl_doc_documentosentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\entities\\tbldoc\\tbl_doc_documentosentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\connect\\configuration\\tbldoc\\tbl_doc_documentosconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\configuration\\tbldoc\\tbl_doc_documentosconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\irepositories\\idocumentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\idocumentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\iservices\\idocumentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\idocumentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\services\\documentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\documentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\documentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\documentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,26 +78,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "FileMoveModels.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\Models\\FileMove\\FileMoveModels.cs",
+              "RelativeDocumentMoniker": "App.Models\\Models\\FileMove\\FileMoveModels.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\Models\\FileMove\\FileMoveModels.cs",
+              "RelativeToolTip": "App.Models\\Models\\FileMove\\FileMoveModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T22:18:29.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "tbl_doc_DocumentosConfiguration.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\TblDoc\\tbl_doc_DocumentosConfiguration.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Configuration\\TblDoc\\tbl_doc_DocumentosConfiguration.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\TblDoc\\tbl_doc_DocumentosConfiguration.cs",
+              "RelativeToolTip": "App.Infraestructure\\Connect\\Configuration\\TblDoc\\tbl_doc_DocumentosConfiguration.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAgwKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T21:22:24.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "tbl_doc_DocumentosEntities.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Connect\\Entities\\TblDoc\\tbl_doc_DocumentosEntities.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Entities\\TblDoc\\tbl_doc_DocumentosEntities.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Connect\\Entities\\TblDoc\\tbl_doc_DocumentosEntities.cs",
+              "RelativeToolTip": "App.Infraestructure\\Connect\\Entities\\TblDoc\\tbl_doc_DocumentosEntities.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAA+wCkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:01:04.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDocumentosControladosRepository.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAADMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T23:57:55.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDocumentosControladosService.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IDocumentosControladosService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\IServices\\IDocumentosControladosService.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IDocumentosControladosService.cs",
+              "RelativeToolTip": "App.Logic\\IServices\\IDocumentosControladosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAADgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T23:56:39.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DocumentosController.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\DocumentosController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\DocumentosController.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\DocumentosController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\DocumentosController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAIwGcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T23:55:51.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DocumentosControladosService.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\DocumentosControladosService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\DocumentosControladosService.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\DocumentosControladosService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\DocumentosControladosService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAIA2wCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T23:54:58.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DocumentosControladosRepository.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T23:34:47.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TBL_doc_DocumentosModels.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\Models\\TblDoc\\TBL_doc_DocumentosModels.cs",
+              "RelativeDocumentMoniker": "App.Models\\Models\\TblDoc\\TBL_doc_DocumentosModels.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\Models\\TblDoc\\TBL_doc_DocumentosModels.cs",
+              "RelativeToolTip": "App.Models\\Models\\TblDoc\\TBL_doc_DocumentosModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T20:48:04.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FileMoverController.cs",
               "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\FileMoverController.cs",
               "RelativeDocumentMoniker": "Qplus\\Controllers\\FileMoverController.cs",
               "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\FileMoverController.cs",
               "RelativeToolTip": "Qplus\\Controllers\\FileMoverController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA/wCEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T23:51:56.948Z",
+              "WhenOpened": "2025-08-12T19:25:24.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FileMoverRepository.cs",
               "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\FileMoverRepository.cs",
               "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
               "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\FileMoverRepository.cs",
               "RelativeToolTip": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFAAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAkwJkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T18:17:16.826Z",
               "EditorCaption": ""

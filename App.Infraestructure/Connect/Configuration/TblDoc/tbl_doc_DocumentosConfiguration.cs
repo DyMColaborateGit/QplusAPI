@@ -165,7 +165,7 @@ namespace App.Infraestructure.Connect.Configuration.TblDoc
                 .HasColumnType("bigint");
 
             builder.Property(p => p.ArchivoEliminadoApp)
-                .HasColumnType("bit");
+                .HasColumnType("int");
 
         }
     }

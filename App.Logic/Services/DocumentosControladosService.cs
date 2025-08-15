@@ -32,15 +32,6 @@ namespace App.logic.Services
             return await _documentosControladosRepository.GetListadoDocumentosFiltrosVista(IdArea, proceso_doc, CodigoDoc, IdProducto, IdTipo, Estado, NivelSeguridad, EmpresaId, 
                 InIdSistema, Usuario, NombreDoc, userId, ElaboradoPor, RevisadoPor, AprobadoPor, EstadoProceso, Pagina, pageSize, codigoCargo);
         }
-        public async Task<string> PutArchivoEliminadoApp(int DocumentoId, bool ArchivoEliminadoApp)
-        {
-            TBL_doc_DocumentosModels ObjDocumentos = await _documentosControladosRepository.ObjDocumentosC(DocumentoId);
-            ObjDocumentos.ArchivoEliminadoApp = ArchivoEliminadoApp;
-
-            await _documentosControladosRepository.UpdateDocumentos(ObjDocumentos);
-
-            return "ArchivoEliminadoApp";
-        }
     }
 }
 

@@ -31,6 +31,8 @@ namespace Qplus.Controllers
             GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
             try
             {
+                Console.WriteLine($"Lista recibida: {fileMove}");
+
                 resultado.Data = await _fileMoverService.PostMoverArchivo(fileMove);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;

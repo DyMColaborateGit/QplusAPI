@@ -5,10 +5,12 @@ using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.FileMove;
+using App.Models.Models.TblDoc;
 using AutoMapper;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 
 namespace App.Infraestructure.Repositories;
 
@@ -89,31 +91,32 @@ public class FileMoverRepository : IFileMoverRepository
                 message = "La lista de archivos está vacía."
             };
         }
+        Console.WriteLine($"Lista recibida: {allFiles}");
 
-        const int batchSize = 100;
+        const int batchSize = 1;
         var resultados = new List<object>();
 
         for (int i = 0; i < allFiles.Count; i += batchSize)
         {
             var batch = allFiles.Skip(i).Take(batchSize).ToList();
 
+            // Procesar cada archivo en el batch
             foreach (var fileMove in batch)
             {
-                var resultado = await MoverArchivo(fileMove);
+                var resultado = await PostMoverDataArchivo(fileMove);
                 resultados.Add(resultado);
             }
         }
-        Console.WriteLine($"Resultados lista: {resultados}");
 
         return new FileResultModels
         {
             success = true,
             status = "Success",
-            message = "Proceso correcto."
+            message = "El archivo '{nomFile}' fue movido correctamente."
         };
     }
 
-    public async Task<FileResultModels> MoverArchivo(FileMoveModels fileMove)
+    public async Task<FileResultModels> PostMoverDataArchivo(FileMoveModels fileMove)
     {
         try
         {
@@ -145,37 +148,66 @@ public class FileMoverRepository : IFileMoverRepository
 
             var rutaOriginal = Path.Combine(rutaDirectorioOrigen, fileMove.Nombre);
             var rutaFinal = Path.Combine(rutaDirectorioDestino, nomFile);
+            var id = fileMove.id;
 
             Console.WriteLine($"Ruta Original: {rutaOriginal}");
             Console.WriteLine($"Ruta Final: {rutaFinal}");
 
-            if (!System.IO.File.Exists(rutaOriginal))
+            if (System.IO.File.Exists(rutaOriginal))
             {
+                // Mueve el archivo
+                await Task.Run(() => System.IO.File.Move(rutaOriginal, rutaFinal));
+                await Task.Delay(1000);
+                //var updateDoc = await UpdateDocumentos(id, 1);
+                //Console.WriteLine($"Documento actualizado: {updateDoc}");
+
+                return new FileResultModels
+                {
+                    success = true,
+                    status = "Success",
+                    message = "El archivo '{nomFile}' fue movido correctamente."
+                };
+            }
+            else
+            {
+                var updateDoc = await UpdateDocumentos(id, 2);
+                Console.WriteLine($"Documento no existente: {updateDoc}");
+
                 return new FileResultModels
                 {
                     success = false,
-                    status = "NotFound",
-                    message = "El archivo '{fileMove.Nombre}' no fue encontrado en la carpeta origen.",
-                    fileName = nomFile
+                    status = "Warning",
+                    message = "El archivo '{nomFile}' NO existe en la carpeta Origen."
                 };
             }
-
-            // Mueve el archivo
-            await Task.Run(() => System.IO.File.Move(rutaOriginal, rutaFinal));
-
-            // Retorna el resultado exitoso
-            return new FileResultModels
-            {
-                success = true,
-                status = "Success",
-                message = "El archivo '{nomFile}' fue movido correctamente.",
-                fileName = nomFile
-            };
         }
         catch (Exception ex)
         {
-            ExceptionLogHelpers.LogException("PostMoverArchivo", ex, fileMove.Nombre);
+            ExceptionLogHelpers.LogException("PostMoverArchivo", ex, "Error de Sistema");
             throw;
         }
     }
+
+    public async Task<TBL_doc_DocumentosModels> UpdateDocumentos(int id, int existe)
+    {
+        var UpdateRegistro = _context.TBL_doc_Documentos.FirstOrDefault(p => p.DocumentoId == id);
+        Console.WriteLine($"socumento Original: {UpdateRegistro.CodigoDoc}");
+
+        try
+        {
+            if (UpdateRegistro != null)
+            {
+                UpdateRegistro.ArchivoEliminadoApp = existe;
+            }
+
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("UpdateDocumentos", ex, JsonConvert.SerializeObject(id));
+            throw;
+        }
+        return _mapper.Map<TBL_doc_DocumentosModels>(UpdateRegistro);
+    }
+
 }
