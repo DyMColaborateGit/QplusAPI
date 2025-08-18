@@ -93,7 +93,7 @@ public class FileMoverRepository : IFileMoverRepository
         }
         Console.WriteLine($"Lista recibida: {allFiles}");
 
-        const int batchSize = 1;
+        const int batchSize = 20;
         var resultados = new List<object>();
 
         for (int i = 0; i < allFiles.Count; i += batchSize)
@@ -120,56 +120,75 @@ public class FileMoverRepository : IFileMoverRepository
     {
         try
         {
-            if (string.IsNullOrEmpty(fileMove.Origen) || string.IsNullOrEmpty(fileMove.Destino) || string.IsNullOrEmpty(fileMove.RutaUserFiles) || string.IsNullOrEmpty(fileMove.Ancla1) || string.IsNullOrEmpty(fileMove.Ancla2) || string.IsNullOrEmpty(fileMove.Ancla3) || string.IsNullOrEmpty(fileMove.Ancla4))
+            if (fileMove.Nombre != "")
             {
-                return new FileResultModels
+                if (string.IsNullOrEmpty(fileMove.Origen) || string.IsNullOrEmpty(fileMove.Destino) || string.IsNullOrEmpty(fileMove.Nombre) || string.IsNullOrEmpty(fileMove.RutaUserFiles) || string.IsNullOrEmpty(fileMove.Ancla1))
                 {
-                    success = false,
-                    status = "Error",
-                    message = "Los parametros no pueden estar vacios."
-                };
-            }
+                    return new FileResultModels
+                    {
+                        success = false,
+                        status = "Error",
+                        message = "Los parametros no pueden estar vacios."
+                    };
+                }
 
-            var rutaDirectorioOrigen = Path.Combine(fileMove.RutaUserFiles, fileMove.Origen);
-            var rutaDirectorioDestino = Path.Combine(fileMove.RutaUserFiles, fileMove.Destino);
+                var rutaDirectorioOrigen = Path.Combine(fileMove.RutaUserFiles, fileMove.Origen);
+                var rutaDirectorioDestino = Path.Combine(fileMove.RutaUserFiles, fileMove.Destino);
 
-            if (!Directory.Exists(rutaDirectorioOrigen))
-            {
-                Directory.CreateDirectory(rutaDirectorioOrigen);
-            }
-
-            if (!Directory.Exists(rutaDirectorioDestino))
-            {
-                Directory.CreateDirectory(rutaDirectorioDestino);
-            }
-
-            var extension = Path.GetExtension(fileMove.Nombre);
-            var nomFile = $"{fileMove.Ancla1}_{fileMove.Ancla2}_{fileMove.Ancla3}_{fileMove.Ancla4}{extension}";
-
-            var rutaOriginal = Path.Combine(rutaDirectorioOrigen, fileMove.Nombre);
-            var rutaFinal = Path.Combine(rutaDirectorioDestino, nomFile);
-            var id = fileMove.id;
-
-            Console.WriteLine($"Ruta Original: {rutaOriginal}");
-            Console.WriteLine($"Ruta Final: {rutaFinal}");
-
-            if (System.IO.File.Exists(rutaOriginal))
-            {
-                // Mueve el archivo
-                await Task.Run(() => System.IO.File.Move(rutaOriginal, rutaFinal));
-                await Task.Delay(1000);
-                //var updateDoc = await UpdateDocumentos(id, 1);
-                //Console.WriteLine($"Documento actualizado: {updateDoc}");
-
-                return new FileResultModels
+                if (!Directory.Exists(rutaDirectorioOrigen))
                 {
-                    success = true,
-                    status = "Success",
-                    message = "El archivo '{nomFile}' fue movido correctamente."
-                };
-            }
+                    Directory.CreateDirectory(rutaDirectorioOrigen);
+                }
+
+                if (!Directory.Exists(rutaDirectorioDestino))
+                {
+                    Directory.CreateDirectory(rutaDirectorioDestino);
+                }
+
+                var extension = Path.GetExtension(fileMove.Nombre);
+                var nomFile = $"{fileMove.Ancla1}_{fileMove.Ancla2}_{fileMove.Ancla3}_{fileMove.Ancla4}{extension}";
+
+                var rutaOriginal = Path.Combine(rutaDirectorioOrigen, fileMove.Nombre);
+                var rutaFinal = Path.Combine(rutaDirectorioDestino, nomFile);
+                var id = fileMove.id;
+
+                Console.WriteLine($"Ruta Original: {rutaOriginal}");
+                Console.WriteLine($"Ruta Final: {rutaFinal}");
+
+                if (System.IO.File.Exists(rutaOriginal))
+                {
+                    if (!System.IO.File.Exists(rutaFinal))
+                    {
+                        // Mueve el archivo
+                        await Task.Run(() => System.IO.File.Move(rutaOriginal, rutaFinal));
+                        var updateDoc = await UpdateDocumentos(id, 1);
+                        await Task.Delay(1500);
+                        //Console.WriteLine($"Documento actualizado: {updateDoc}");
+
+                        return new FileResultModels
+                        {
+                            success = true,
+                            status = "Success",
+                            message = "El archivo '{nomFile}' fue movido correctamente."
+                        };
+                    }
+                }
+                else
+                {
+                    var updateDoc = await UpdateDocumentos(id, 2);
+                    Console.WriteLine($"Documento no existente: {updateDoc}");
+
+                    return new FileResultModels
+                    {
+                        success = false,
+                        status = "Warning",
+                        message = "El archivo '{nomFile}' NO existe en la carpeta Origen."
+                    };
+                }
+            } 
             else
             {
+                var id = fileMove.id;
                 var updateDoc = await UpdateDocumentos(id, 2);
                 Console.WriteLine($"Documento no existente: {updateDoc}");
 
