@@ -1261,60 +1261,6 @@
     ]
   },
   {
-    "ContainingType": "Qplus.Controllers.DocumentosController",
-    "Method": "PutArchivoEliminadoApp",
-    "RelativePath": "api/Documentos/PutArchivoEliminadoApp/{DocumentoId}/{ArchivoEliminadoApp}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "DocumentoId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "ArchivoEliminadoApp",
-        "Type": "System.Boolean",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "App.Models.Global.GetResponse\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 401
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
-  },
-  {
     "ContainingType": "Qplus.Controllers.EmpresasController",
     "Method": "GetempresaByempresaId",
     "RelativePath": "api/Empresas/GetempresaByempresaId/{EmpresaId}",
@@ -1766,6 +1712,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.FileMoverController",
+    "Method": "CheckFileExists",
+    "RelativePath": "api/FileMover/CheckFileExists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileCheck",
+        "Type": "App.Models.Models.FileMove.FileMoveModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.FileMove.FileResultModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.FileMoverController",
     "Method": "PostMoverArchivo",
     "RelativePath": "api/FileMover/PostMoverArchivo",
     "HttpMethod": "POST",
@@ -1774,7 +1769,7 @@
     "Parameters": [
       {
         "Name": "fileMove",
-        "Type": "App.Models.Models.FileMove.FileMoveModels",
+        "Type": "System.Collections.Generic.List\u00601[[App.Models.Models.FileMove.FileMoveModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
