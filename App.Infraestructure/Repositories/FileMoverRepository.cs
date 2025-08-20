@@ -186,6 +186,12 @@ public class FileMoverRepository : IFileMoverRepository
                     };
                 }
             } 
+            return new FileResultModels
+            {
+                success = false,
+                status = "Warning",
+                message = "El archivo '{nomFile}' NO existe en la carpeta Origen."
+            };
         }
         catch (Exception ex)
         {
