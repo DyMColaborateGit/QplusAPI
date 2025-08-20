@@ -186,19 +186,6 @@ public class FileMoverRepository : IFileMoverRepository
                     };
                 }
             } 
-            else
-            {
-                var id = fileMove.id;
-                var updateDoc = await UpdateDocumentos(id, 2);
-                Console.WriteLine($"Documento no existente: {updateDoc}");
-
-                return new FileResultModels
-                {
-                    success = false,
-                    status = "Warning",
-                    message = "El archivo '{nomFile}' NO existe en la carpeta Origen."
-                };
-            }
         }
         catch (Exception ex)
         {
