@@ -126,4 +126,9 @@ public class ConnectContext : DbContext
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
+
+    internal async Task SaveChangesAsync()
+    {
+        throw new NotImplementedException();
+    }
 }
