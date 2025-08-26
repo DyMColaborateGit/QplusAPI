@@ -13051,6 +13051,9 @@
           "success": {
             "type": "boolean"
           },
+          "data": {
+            "nullable": true
+          },
           "status": {
             "type": "string",
             "nullable": true
