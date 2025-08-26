@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\encuestarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\encuestarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\app.models\\models\\filemove\\fileresultmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54432226-743A-44BC-B51B-4E1C49881B4B}|App.Models\\App.Models.csproj|solutionrelative:app.models\\models\\filemove\\fileresultmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|f:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,8 +49,43 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EncuestaRepository.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\EncuestaRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\EncuestaRepository.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\EncuestaRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\EncuestaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T20:02:47.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.json",
+              "RelativeDocumentMoniker": "Qplus\\appsettings.json",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.json",
+              "RelativeToolTip": "Qplus\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-25T19:08:15.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileResultModels.cs",
+              "DocumentMoniker": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\Models\\FileMove\\FileResultModels.cs",
+              "RelativeDocumentMoniker": "App.Models\\Models\\FileMove\\FileResultModels.cs",
+              "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Models\\Models\\FileMove\\FileResultModels.cs",
+              "RelativeToolTip": "App.Models\\Models\\FileMove\\FileResultModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T15:12:49.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,7 +95,7 @@
               "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
               "ToolTip": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\FileMoverRepository.cs",
               "RelativeToolTip": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAIwLEAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAIwKQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T21:05:24.49Z",
               "EditorCaption": ""
