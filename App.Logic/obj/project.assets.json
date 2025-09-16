@@ -5683,23 +5683,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\germa\\.nuget\\packages\\": {},
+    "C:\\Users\\DYMDesarrollo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\App.logic.csproj",
+      "projectUniqueName": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\App.logic.csproj",
       "projectName": "App.logic",
-      "projectPath": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\App.logic.csproj",
-      "packagesPath": "C:\\Users\\germa\\.nuget\\packages\\",
-      "outputPath": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\obj\\",
+      "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\App.logic.csproj",
+      "packagesPath": "C:\\Users\\DYMDesarrollo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\germa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DYMDesarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5708,15 +5708,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj": {
-              "projectPath": "F:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj"
+            "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj"
             }
           }
         }
