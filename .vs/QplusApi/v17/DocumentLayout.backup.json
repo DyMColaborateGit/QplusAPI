@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.Development.json",
               "RelativeToolTip": "Qplus\\appsettings.Development.json",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAADtAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABgAAADoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-10T14:27:35.31Z",
               "EditorCaption": ""
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "Qplus\\appsettings.json",
               "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.json",
               "RelativeToolTip": "Qplus\\appsettings.json",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAADtAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAADKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-25T19:08:15.232Z",
               "EditorCaption": ""
@@ -88,8 +88,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\EncuestaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T20:02:47.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T20:02:47.114Z"
             },
             {
               "$type": "Document",
@@ -101,8 +100,7 @@
               "RelativeToolTip": "App.Models\\Models\\FileMove\\FileResultModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T15:12:49.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T15:12:49.83Z"
             },
             {
               "$type": "Document",
@@ -114,8 +112,7 @@
               "RelativeToolTip": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
               "ViewState": "AgIAAMQAAAAAAAAAAAAcwNcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T21:05:24.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T21:05:24.49Z"
             }
           ]
         },
