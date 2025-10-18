@@ -1013,3 +1013,9 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Release\net7.0\rjim
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Release\net7.0\rjsmrazor.dswa.cache.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Release\net7.0\rjsmcshtml.dswa.cache.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Release\net7.0\staticwebassets.build.json.cache
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\System.Diagnostics.DiagnosticSource.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\System.Text.Encodings.Web.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
