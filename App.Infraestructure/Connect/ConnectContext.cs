@@ -127,8 +127,8 @@ public class ConnectContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 
-    internal async Task SaveChangesAsync()
-    {
-        throw new NotImplementedException();
-    }
+    //internal async Task SaveChangesAsync()
+    //{
+    //    throw new NotImplementedException();
+    //}
 }

@@ -135,7 +135,8 @@ public class EvaAuditoresRepository : IEvaAuditoresRepository
 
     public async Task<TBL_aud_EvaAuditoresModels> UpdateContadorEvaAuditores(long IdEvaluacion, bool Gest)
     {
-        var UpdateRegistro = _context.TBL_aud_EvaAuditores.FirstOrDefault(p => p.IdEvaluacion == IdEvaluacion);
+        //var UpdateRegistro = _context.TBL_aud_EvaAuditores.FirstOrDefault(p => p.IdEvaluacion == IdEvaluacion);
+        var UpdateRegistro = await _context.TBL_aud_EvaAuditores.FirstOrDefaultAsync(p => p.IdEvaluacion == IdEvaluacion);
         try
         {
             if (UpdateRegistro != null)
