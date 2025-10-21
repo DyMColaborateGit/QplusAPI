@@ -8,6 +8,7 @@ using App.Infraestructure.Connect.Entities.TblDoc;
 using App.Infraestructure.Connect.Entities.TblGhu;
 using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Connect.Entities.TblMast;
+using App.Infraestructure.Connect.Entities.TblRgp;
 using App.Infraestructure.Connect.Entities.Tipo;
 using App.Models.Models;
 using App.Models.Models.Scp;
@@ -18,6 +19,7 @@ using App.Models.Models.TblDoc;
 using App.Models.Models.TblGhu;
 using App.Models.Models.TblInd;
 using App.Models.Models.TblMast;
+using App.Models.Models.TblRgp;
 using App.Models.Models.Tipo;
 using AutoMapper;
 
@@ -122,6 +124,13 @@ public class MappingProfiles: Profile
         CreateMap<tbl_ghu_ResultadoBrechaPEntities, Tbl_ghu_ResultadoBrechaPModels>().ReverseMap();
         CreateMap<tbl_ghu_RelFuncSolicitudPEntities, Tbl_ghu_RelFuncSolicitudPModels>().ReverseMap();
         CreateMap<tbl_ghu_TextosBrechaEntities, Tbl_ghu_TextosBrechaModels>().ReverseMap();
+
+        CreateMap<tbl_rgp_ZonasEntities, Tbl_rgp_ZonasModels>().ReverseMap();
+        CreateMap<tbl_rgp_EvaluacionRiesgoEntities, Tbl_rgp_EvaluacionRiesgoModels>().ReverseMap();
+        CreateMap<tbl_rgp_ParametrosValoracionEntities, Tbl_rgp_ParametrosValoracionModels>().ReverseMap();
+        CreateMap<tbl_rgp_ConsecuenciasEntities, Tbl_rgp_ConsecuenciasModels>().ReverseMap();
+        CreateMap<tbl_rgp_ProbabilidadesEntities, Tbl_rgp_ProbabilidadesModels>().ReverseMap();
+        CreateMap<tbl_rgp_RiesgosEntities, Tbl_rgp_RiesgosModels>().ReverseMap();
 
     }
 }

@@ -80,6 +80,11 @@
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
+        <member name="M:Qplus.Controllers.ConsecuenciasController.GetListaConsecuencias">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
         <member name="M:Qplus.Controllers.ConsolidadoDesempenosController.GetListConsolidadoDesempeno(System.Int64,System.Int32)">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
@@ -157,6 +162,11 @@
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
         <member name="M:Qplus.Controllers.EscalaEvaluacionController.GetListEscalasEvaluacion(System.Int32)">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:Qplus.Controllers.EvaluacionRiesgoController.GetListaEvaluacionRiesgo">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
@@ -363,6 +373,11 @@
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
+        <member name="M:Qplus.Controllers.ParametrosValoracionController.GetListaParametrosValoracion">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
         <member name="M:Qplus.Controllers.PesosxTipoIndxNivelCompController.GetPesosxTipoIndxNivelComp(System.Int32,System.Int32,System.Int32)">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
@@ -374,6 +389,11 @@
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
         <member name="M:Qplus.Controllers.PreguntasBrechaPController.GetListaPreguntasBrechaPByTemaId(System.Int32)">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:Qplus.Controllers.ProbabilidadesController.GetListaProbabilidades">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
@@ -613,6 +633,11 @@
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
+        <member name="M:Qplus.Controllers.RiesgosController.GetListaRiesgos">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
         <member name="M:Qplus.Controllers.SistemasGestionController.GetListaSistemasGestionByEmpresaId(System.Int32)">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
@@ -690,6 +715,11 @@
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
         </member>
         <member name="M:Qplus.Controllers.ZonasController.GetListZonasByempresaId(System.Int32)">
+            <response code="200">OK. Devuelve el objeto solicitado.</response> 
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:Qplus.Controllers.ZonasRiesgoController.GetListaZonasRiesgo">
             <response code="200">OK. Devuelve el objeto solicitado.</response> 
             <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
             <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>

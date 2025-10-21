@@ -1468,6 +1468,78 @@
         }
       }
     },
+    "/api/Consecuencias/GetListaConsecuencias": {
+      "get": {
+        "tags": [
+          "Consecuencias"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ConsecuenciasModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ConsecuenciasModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ConsecuenciasModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/ConsolidadoDesempenos/GetConsolidadoCompetenciasByEvaluacionId/{EvaluacionId}/{Tipo}": {
       "get": {
         "tags": [
@@ -2993,6 +3065,78 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Tbl_com_EscalaEvaluacionModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/EvaluacionRiesgo/GetListaEvaluacionRiesgo": {
+      "get": {
+        "tags": [
+          "EvaluacionRiesgo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_EvaluacionRiesgoModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_EvaluacionRiesgoModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_EvaluacionRiesgoModelsListGetResponse"
                 }
               }
             }
@@ -7099,6 +7243,78 @@
         }
       }
     },
+    "/api/ParametrosValoracion/GetListaParametrosValoracion": {
+      "get": {
+        "tags": [
+          "ParametrosValoracion"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/PesosxTipoIndxNivelComp/GetPesosxTipoIndxNivelComp/{EmpresaId}/{Nivel}/{IdTipoIndicador}": {
       "get": {
         "tags": [
@@ -7321,6 +7537,78 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Tbl_ghu_PreguntasBrechaPModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Probabilidades/GetListaProbabilidades": {
+      "get": {
+        "tags": [
+          "Probabilidades"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ProbabilidadesModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ProbabilidadesModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ProbabilidadesModelsListGetResponse"
                 }
               }
             }
@@ -11582,6 +11870,78 @@
         }
       }
     },
+    "/api/Riesgos/GetListaRiesgos": {
+      "get": {
+        "tags": [
+          "Riesgos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_RiesgosModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_RiesgosModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_RiesgosModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/SistemasGestion/GetListaSistemasGestionByEmpresaId/{EmpresaId}": {
       "get": {
         "tags": [
@@ -12768,6 +13128,78 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TBL_mast_ZonasModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/ZonasRiesgo/GetListaZonasRiesgo": {
+      "get": {
+        "tags": [
+          "ZonasRiesgo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ZonasModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ZonasModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ZonasModelsListGetResponse"
                 }
               }
             }
@@ -19823,6 +20255,442 @@
           },
           "data": {
             "$ref": "#/components/schemas/Tbl_ind_PesosxTipoIndxNivelCompModels"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ConsecuenciasModels": {
+        "type": "object",
+        "properties": {
+          "idConsecuencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "consecuencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "valor": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ConsecuenciasModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_ConsecuenciasModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_EvaluacionRiesgoModels": {
+        "type": "object",
+        "properties": {
+          "idEvaluacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idRiesgo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorProbabilidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorConsecuencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resultadoRiesgo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "siglaZona": {
+            "type": "string",
+            "nullable": true
+          },
+          "respuesta": {
+            "type": "string",
+            "nullable": true
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
+          },
+          "aceptabilidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "evaAnterior": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ubicacionMR": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_EvaluacionRiesgoModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_EvaluacionRiesgoModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ParametrosValoracionModels": {
+        "type": "object",
+        "properties": {
+          "idParametro": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorProbabilidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valorConsecuencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resultado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idZona": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ubicacionMR": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ParametrosValoracionModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ProbabilidadesModels": {
+        "type": "object",
+        "properties": {
+          "idProbabilidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "probabilidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "varlor": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ProbabilidadesModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_ProbabilidadesModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_RiesgosModels": {
+        "type": "object",
+        "properties": {
+          "idRiesgo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "riesgo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAgente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "causas": {
+            "type": "string",
+            "nullable": true
+          },
+          "efectos": {
+            "type": "string",
+            "nullable": true
+          },
+          "procesoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "claseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTipoAnalisis": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estado": {
+            "type": "boolean"
+          },
+          "usuarioCreacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usuarioModificacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "evaluacionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "consecutivo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subprocesoId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_RiesgosModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_RiesgosModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ZonasModels": {
+        "type": "object",
+        "properties": {
+          "idZona": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "zona": {
+            "type": "string",
+            "nullable": true
+          },
+          "respuesta": {
+            "type": "string",
+            "nullable": true
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
+          },
+          "sigla": {
+            "type": "string",
+            "nullable": true
+          },
+          "aceptabilidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ZonasModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_ZonasModels"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
