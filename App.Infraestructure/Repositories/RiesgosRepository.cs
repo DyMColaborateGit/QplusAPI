@@ -2,6 +2,7 @@
 using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
+using App.Models.Models;
 using App.Models.Models.TblRgp;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,25 @@ namespace App.Infraestructure.Repositories
             catch (Exception ex)
             {
                 ExceptionLogHelpers.LogException("GetListaRiesgos", ex, "");
+                throw;
+            }
+        }
+        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaCodigoRiesgoByProcesoId(int ProcesoId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_rgp_Riesgos.AsNoTracking()
+                .Where(x => x.ProcesoId == ProcesoId)
+                .OrderBy(x => x.Codigo)
+                .ToListAsync();
+
+                //objResult = objResult.OrderBy(x => x.Proceso?.Trim()).ToList();
+
+                return _mapper.Map<List<Tbl_rgp_RiesgosModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaCodigoRiesgoByProcesoId", ex, ProcesoId.ToString());
                 throw;
             }
         }

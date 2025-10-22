@@ -99,6 +99,8 @@ namespace App.logic.Extensions
             services.AddScoped<IConsecuenciasService, ConsecuenciasService>();
             services.AddScoped<IProbabilidadesService, ProbabilidadesService>();
             services.AddScoped<IRiesgosService, RiesgosService>();
+            services.AddScoped<IClasesService, ClasesService>();
+            services.AddScoped<IAgentesService, AgentesService>();
         }
 
         /// <summary>
@@ -178,6 +180,8 @@ namespace App.logic.Extensions
             services.AddScoped<IConsecuenciasRepository, ConsecuenciasRepository>();
             services.AddScoped<IProbabilidadesRepository, ProbabilidadesRepository>();
             services.AddScoped<IRiesgosRepository, RiesgosRepository>();
+            services.AddScoped<IClasesRepository, ClasesRepository>();
+            services.AddScoped<IAgentesRepository, AgentesRepository>();
         }
 
         /// <summary>

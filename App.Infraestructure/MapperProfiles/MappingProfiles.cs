@@ -131,6 +131,8 @@ public class MappingProfiles: Profile
         CreateMap<tbl_rgp_ConsecuenciasEntities, Tbl_rgp_ConsecuenciasModels>().ReverseMap();
         CreateMap<tbl_rgp_ProbabilidadesEntities, Tbl_rgp_ProbabilidadesModels>().ReverseMap();
         CreateMap<tbl_rgp_RiesgosEntities, Tbl_rgp_RiesgosModels>().ReverseMap();
+        CreateMap<tbl_rgp_ClasesEntities, Tbl_rgp_ClasesModels>().ReverseMap();
+        CreateMap<tbl_rgp_AgentesEntities, Tbl_rgp_AgentesModels>().ReverseMap();
 
     }
 }
