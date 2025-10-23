@@ -23,13 +23,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetListaProbabilidades")]
-        public async Task<GetResponse<List<Tbl_rgp_ProbabilidadesModels>>> GetListaProbabilidades()
+        [HttpGet("GetListaProbabilidades/{EmpresaId}")]
+        public async Task<GetResponse<List<Tbl_rgp_ProbabilidadesModels>>> GetListaProbabilidades(int EmpresaId)
         {
             GetResponse<List<Tbl_rgp_ProbabilidadesModels>> resultado = new GetResponse<List<Tbl_rgp_ProbabilidadesModels>>();
             try
             {
-                resultado.Data = await _probabilidadesService.GetListaProbabilidades();
+                resultado.Data = await _probabilidadesService.GetListaProbabilidades(EmpresaId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

@@ -5,6 +5,6 @@ namespace App.Infraestructure.IRepositories
 {
     public interface IProbabilidadesRepository
     {
-        Task<List<Tbl_rgp_ProbabilidadesModels>> GetListaProbabilidades();
+        Task<List<Tbl_rgp_ProbabilidadesModels>> GetListaProbabilidades(int empresaId);
     }
 }

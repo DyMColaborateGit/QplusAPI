@@ -1009,14 +1009,74 @@
   {
     "ContainingType": "Qplus.Controllers.ConsecuenciasController",
     "Method": "GetListaConsecuencias",
-    "RelativePath": "api/Consecuencias/GetListaConsecuencias",
+    "RelativePath": "api/Consecuencias/GetListaConsecuencias/{EmpresaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_ConsecuenciasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ConsecuenciasController",
+    "Method": "GetObjConsecuenciaByEmpresaIdByValor",
+    "RelativePath": "api/Consecuencias/GetObjConsecuenciaByEmpresaIdByValor/{EmpresaId}/{Valor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Valor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblRgp.Tbl_rgp_ConsecuenciasModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -4469,11 +4529,17 @@
   {
     "ContainingType": "Qplus.Controllers.ProbabilidadesController",
     "Method": "GetListaProbabilidades",
-    "RelativePath": "api/Probabilidades/GetListaProbabilidades",
+    "RelativePath": "api/Probabilidades/GetListaProbabilidades/{EmpresaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_ProbabilidadesModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",

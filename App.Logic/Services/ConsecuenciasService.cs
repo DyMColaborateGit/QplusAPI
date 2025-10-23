@@ -1,6 +1,8 @@
 ﻿
 using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
+using App.Models.Models.Scp;
 using App.Models.Models.TblRgp;
 
 namespace App.logic.Services
@@ -14,9 +16,13 @@ namespace App.logic.Services
             _consecuenciasRepository = consecuenciasRepository;
         }
 
-        public async Task<List<Tbl_rgp_ConsecuenciasModels>> GetListaConsecuencias()
+        public async Task<List<Tbl_rgp_ConsecuenciasModels>> GetListaConsecuencias(int EmpresaId)
         {
-            return await _consecuenciasRepository.GetListaConsecuencias();
+            return await _consecuenciasRepository.GetListaConsecuencias(EmpresaId);
+        }
+        public async Task<Tbl_rgp_ConsecuenciasModels> GetObjConsecuenciaByEmpresaIdByValor(int EmpresaId, int Valor)
+        {
+            return await _consecuenciasRepository.GetObjConsecuenciaByEmpresaIdByValor(EmpresaId, Valor);
         }
     }
 }

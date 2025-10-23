@@ -18,17 +18,19 @@ namespace App.Infraestructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task<List<Tbl_rgp_ProbabilidadesModels>> GetListaProbabilidades()
+        public async Task<List<Tbl_rgp_ProbabilidadesModels>> GetListaProbabilidades(int EmpresaId)
         {
             try
             {
                 var objResult = await _context.TBL_rgp_Probabilidades.AsNoTracking()
+                    .Where(x => x.EmpresaId == EmpresaId)
+                    .OrderByDescending(x => x.Varlor)
                     .ToListAsync();
                 return _mapper.Map<List<Tbl_rgp_ProbabilidadesModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetListaProbabilidades", ex, "");
+                ExceptionLogHelpers.LogException("GetListaProbabilidades", ex, EmpresaId.ToString());
                 throw;
             }
         }
