@@ -1,4 +1,5 @@
 ﻿
+using App.Infraestructure.Connect.Entities.TblDoc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,4 +28,5 @@ public class tbl_rgp_RiesgosEntities
     public string? Codigo { get; set; }
     public int Consecutivo { get; set; }
     public int SubprocesoId { get; set; }
+    public ICollection<tbl_rgp_EvaluacionRiesgoEntities>? TBL_rgp_EvaluacionRiesgo { get; set; }
 }

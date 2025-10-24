@@ -2010,11 +2010,17 @@
   {
     "ContainingType": "Qplus.Controllers.EvaluacionRiesgoController",
     "Method": "GetListaEvaluacionRiesgo",
-    "RelativePath": "api/EvaluacionRiesgo/GetListaEvaluacionRiesgo",
+    "RelativePath": "api/EvaluacionRiesgo/GetListaEvaluacionRiesgo/{EmpresaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_EvaluacionRiesgoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
@@ -4328,12 +4334,67 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ParametrosValoracionController",
-    "Method": "GetListaParametrosValoracion",
-    "RelativePath": "api/ParametrosValoracion/GetListaParametrosValoracion",
+    "Method": "GetListaColoresZonas",
+    "RelativePath": "api/ParametrosValoracion/GetListaColoresZonas/{IdZona}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "IdZona",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_ParametrosValoracionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ParametrosValoracionController",
+    "Method": "GetListaParametrosValoracion",
+    "RelativePath": "api/ParametrosValoracion/GetListaParametrosValoracion/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_ParametrosValoracionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
@@ -6997,11 +7058,17 @@
   {
     "ContainingType": "Qplus.Controllers.RiesgosController",
     "Method": "GetListaRiesgos",
-    "RelativePath": "api/Riesgos/GetListaRiesgos",
+    "RelativePath": "api/Riesgos/GetListaRiesgos/{EmpresaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_RiesgosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",

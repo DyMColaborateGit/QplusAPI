@@ -20,17 +20,18 @@ namespace App.Infraestructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaRiesgos()
+        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaRiesgos(int EmpresaId)
         {
             try
             {
                 var objResult = await _context.TBL_rgp_Riesgos.AsNoTracking()
+                    .Where(x => x.EmpresaId == EmpresaId)
                     .ToListAsync();
                 return _mapper.Map<List<Tbl_rgp_RiesgosModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetListaRiesgos", ex, "");
+                ExceptionLogHelpers.LogException("GetListaRiesgos", ex, EmpresaId.ToString());
                 throw;
             }
         }
@@ -42,9 +43,6 @@ namespace App.Infraestructure.Repositories
                 .Where(x => x.ProcesoId == ProcesoId)
                 .OrderBy(x => x.Codigo)
                 .ToListAsync();
-
-                //objResult = objResult.OrderBy(x => x.Proceso?.Trim()).ToList();
-
                 return _mapper.Map<List<Tbl_rgp_RiesgosModels>>(objResult);
             }
             catch (Exception ex)

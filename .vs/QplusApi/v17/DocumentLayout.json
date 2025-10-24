@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\probabilidadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\probabilidadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\probabilidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\probabilidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\probabilidadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\probabilidadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\iservices\\iprobabilidadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iprobabilidadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\irepositories\\iprobabilidadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iprobabilidadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\evaluacionriesgocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\evaluacionriesgocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,67 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IProbabilidadesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\IProbabilidadesRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IProbabilidadesRepository.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\IProbabilidadesRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IProbabilidadesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T20:02:16.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProbabilidadesService.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\ProbabilidadesService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\ProbabilidadesService.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\ProbabilidadesService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\ProbabilidadesService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAEwBQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T19:59:59.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProbabilidadesService.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\IProbabilidadesService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\IProbabilidadesService.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\IProbabilidadesService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\IProbabilidadesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T19:59:35.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProbabilidadesController.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ProbabilidadesController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\ProbabilidadesController.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ProbabilidadesController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\ProbabilidadesController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T19:58:43.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProbabilidadesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ProbabilidadesRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProbabilidadesRepository.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ProbabilidadesRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\ProbabilidadesRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "Title": "EvaluacionRiesgoController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\EvaluacionRiesgoController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\EvaluacionRiesgoController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\EvaluacionRiesgoController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\EvaluacionRiesgoController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T19:53:24.807Z",
+              "WhenOpened": "2025-10-24T20:35:02.407Z",
               "EditorCaption": ""
             }
           ]

@@ -19,17 +19,36 @@ namespace App.Infraestructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task<List<Tbl_rgp_ParametrosValoracionModels>> GetListaParametrosValoracion()
+        public async Task<List<Tbl_rgp_ParametrosValoracionModels>> GetListaParametrosValoracion(int EmpresaId)
         {
             try
             {
                 var objResult = await _context.TBL_rgp_ParametrosValoracion.AsNoTracking()
+                    .Include(x => x.ZonaObj)
+                    .Where(x => x.EmpresaId == EmpresaId)
                     .ToListAsync();
                 return _mapper.Map<List<Tbl_rgp_ParametrosValoracionModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetListaParametrosValoracion", ex, "");
+                ExceptionLogHelpers.LogException("GetListaParametrosValoracion", ex, EmpresaId.ToString());
+                throw;
+            }
+        }
+        public async Task<List<Tbl_rgp_ParametrosValoracionModels>> GetListaColoresZonas(int IdZona)
+        {
+            try
+            {
+                var objResult = await _context.TBL_rgp_ParametrosValoracion
+                    .AsNoTracking()
+                    .Include(x => x.ZonaObj)
+                    .Where(x => x.ZonaObj.IdZona == IdZona)
+                    .ToListAsync();
+                return _mapper.Map<List<Tbl_rgp_ParametrosValoracionModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaColoresZonas", ex, IdZona.ToString());
                 throw;
             }
         }

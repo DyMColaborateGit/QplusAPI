@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using App.Infraestructure.Connect.Entities.Scp;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Infraestructure.Connect.Entities.TblRgp;
@@ -11,6 +12,9 @@ public class tbl_rgp_ParametrosValoracionEntities
     public int ValorProbabilidad { get; set; }
     public int valorConsecuencia { get; set; }
     public int Resultado { get; set; }
-    public int IdZona { get; set; }
+
+    [ForeignKey(nameof(IdZona))]
+    public int? IdZona { get; set; }
+    public tbl_rgp_ZonasEntities? ZonaObj { get; set; }
     public int UbicacionMR { get; set; }
 }

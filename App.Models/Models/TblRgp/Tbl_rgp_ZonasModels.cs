@@ -3,7 +3,7 @@ namespace App.Models.Models.TblRgp;
 
 public class Tbl_rgp_ZonasModels
 {
-    public int IdZona {set; get;}
+    public int IdZona { set; get;}
     public int EmpresaId {set; get;}
     public string? Zona {set; get;}
     public string? Respuesta {set; get;}

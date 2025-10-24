@@ -5,7 +5,8 @@ public class Tbl_rgp_EvaluacionRiesgoModels
 {
     public int IdEvaluacion {set; get; }
     public DateTime Fecha {set; get; }
-    public int IdRiesgo {set; get; }
+    public int? IdRiesgo {set; get; }
+    public Tbl_rgp_RiesgosModels? RiesgoObj { get; set; }
     public int ValorProbabilidad { set; get; }
     public int ValorConsecuencia { set; get; }
     public int ResultadoRiesgo { set; get; }

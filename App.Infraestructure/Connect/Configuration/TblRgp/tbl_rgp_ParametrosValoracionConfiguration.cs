@@ -28,8 +28,10 @@ namespace App.Infraestructure.Connect.Configuration.TblRgp
             builder.Property(p => p.Resultado)
                 .HasColumnType("int");
 
-            builder.Property(p => p.IdZona)
-                .HasColumnType("int");
+            builder.HasOne(p => p.ZonaObj)
+                .WithMany(p => p.TBL_rgp_ParametrosValoracion)
+                .HasForeignKey(p => p.IdZona)
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.Property(p => p.UbicacionMR)
                 .HasColumnType("int");

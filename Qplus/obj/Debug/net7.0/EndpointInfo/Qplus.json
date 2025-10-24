@@ -3551,10 +3551,22 @@
         }
       }
     },
-    "/api/EvaluacionRiesgo/GetListaEvaluacionRiesgo": {
+    "/api/EvaluacionRiesgo/GetListaEvaluacionRiesgo/{EmpresaId}": {
       "get": {
         "tags": [
           "EvaluacionRiesgo"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -7679,10 +7691,106 @@
         }
       }
     },
-    "/api/ParametrosValoracion/GetListaParametrosValoracion": {
+    "/api/ParametrosValoracion/GetListaParametrosValoracion/{EmpresaId}": {
       "get": {
         "tags": [
           "ParametrosValoracion"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ParametrosValoracionModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/ParametrosValoracion/GetListaColoresZonas/{IdZona}": {
+      "get": {
+        "tags": [
+          "ParametrosValoracion"
+        ],
+        "parameters": [
+          {
+            "name": "IdZona",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -12318,10 +12426,22 @@
         }
       }
     },
-    "/api/Riesgos/GetListaRiesgos": {
+    "/api/Riesgos/GetListaRiesgos/{EmpresaId}": {
       "get": {
         "tags": [
           "Riesgos"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -20983,7 +21103,11 @@
           },
           "idRiesgo": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
+          },
+          "riesgoObj": {
+            "$ref": "#/components/schemas/Tbl_rgp_RiesgosModels"
           },
           "valorProbabilidad": {
             "type": "integer",
@@ -21081,7 +21205,11 @@
           },
           "idZona": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
+          },
+          "zonaObj": {
+            "$ref": "#/components/schemas/Tbl_rgp_ZonasModels"
           },
           "ubicacionMR": {
             "type": "integer",

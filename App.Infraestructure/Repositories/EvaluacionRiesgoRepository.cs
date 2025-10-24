@@ -19,17 +19,19 @@ namespace App.Infraestructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task<List<Tbl_rgp_EvaluacionRiesgoModels>> GetListaEvaluacionRiesgo()
+        public async Task<List<Tbl_rgp_EvaluacionRiesgoModels>> GetListaEvaluacionRiesgo(int EmpresaId)
         {
             try
             {
                 var objResult = await _context.TBL_rgp_EvaluacionRiesgo.AsNoTracking()
+                    .Include(x => x.RiesgoObj)
+                    .Where(x => x.RiesgoObj.EmpresaId == EmpresaId)
                     .ToListAsync();
                 return _mapper.Map<List<Tbl_rgp_EvaluacionRiesgoModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetListaEvaluacionRiesgo", ex, "");
+                ExceptionLogHelpers.LogException("GetListaEvaluacionRiesgo", ex, EmpresaId.ToString());
                 throw;
             }
         }

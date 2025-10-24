@@ -20,8 +20,10 @@ namespace App.Infraestructure.Connect.Configuration.TblRgp
                 .IsRequired()
                 .HasColumnType("Datetime");
 
-            builder.Property(p => p.IdRiesgo)
-                .HasColumnType("int");
+            builder.HasOne(p => p.RiesgoObj)
+                .WithMany(p => p.TBL_rgp_EvaluacionRiesgo)
+                .HasForeignKey(p => p.IdRiesgo)
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.Property(p => p.ValorProbabilidad)
                 .HasColumnType("int");

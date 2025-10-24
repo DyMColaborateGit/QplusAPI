@@ -14,9 +14,13 @@ namespace App.logic.Services
             _parametrosValoracionRepository = parametrosValoracionRepository;
         }
 
-        public async Task<List<Tbl_rgp_ParametrosValoracionModels>> GetListaParametrosValoracion()
+        public async Task<List<Tbl_rgp_ParametrosValoracionModels>> GetListaParametrosValoracion(int EmpresaId)
         {
-            return await _parametrosValoracionRepository.GetListaParametrosValoracion();
+            return await _parametrosValoracionRepository.GetListaParametrosValoracion(EmpresaId);
+        }
+        public async Task<List<Tbl_rgp_ParametrosValoracionModels>> GetListaColoresZonas(int IdZona)
+        {
+            return await _parametrosValoracionRepository.GetListaColoresZonas(IdZona);
         }
     }
 }

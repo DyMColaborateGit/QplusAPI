@@ -1,4 +1,5 @@
 ﻿
+using App.Infraestructure.Connect.Entities.Scp;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -10,7 +11,10 @@ public class tbl_rgp_EvaluacionRiesgoEntities
     [Key]
     public int IdEvaluacion { set; get; }
     public DateTime Fecha { set; get; }
-    public int IdRiesgo { set; get; }
+
+    [ForeignKey(nameof(IdRiesgo))]
+    public int? IdRiesgo { get; set; }
+    public tbl_rgp_RiesgosEntities? RiesgoObj { get; set; }
     public int ValorProbabilidad { set; get; }
     public int ValorConsecuencia { set; get; }
     public int ResultadoRiesgo { set; get; }
