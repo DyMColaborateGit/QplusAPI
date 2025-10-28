@@ -3551,22 +3551,10 @@
         }
       }
     },
-    "/api/EvaluacionRiesgo/GetListaEvaluacionRiesgo/{EmpresaId}": {
+    "/api/EvaluacionRiesgo/GetListaEvaluacionRiesgo": {
       "get": {
         "tags": [
           "EvaluacionRiesgo"
-        ],
-        "parameters": [
-          {
-            "name": "EmpresaId",
-            "in": "path",
-            "required": true,
-            "style": "simple",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -12594,6 +12582,159 @@
         }
       }
     },
+    "/api/Riesgos/GetListaRiesgosFiltros/{FechaInicio}/{FechaFin}/{ProcesoId}/{Codigo}/{SubprocesoId}/{ClaseId}/{IdAgente}/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "Riesgos"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "FechaInicio",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "FechaFin",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "ProcesoId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Codigo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SubprocesoId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ClaseId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "IdAgente",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_RiesgosModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_RiesgosModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_RiesgosModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "ServerError. No se ha encontrado el objeto solicitado."
+          }
+        }
+      }
+    },
     "/api/SistemasGestion/GetListaSistemasGestionByEmpresaId/{EmpresaId}": {
       "get": {
         "tags": [
@@ -21367,7 +21508,11 @@
           },
           "evaluacionId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
+          },
+          "evaluacionRObj": {
+            "$ref": "#/components/schemas/Tbl_rgp_EvaluacionRiesgoModels"
           },
           "codigo": {
             "type": "string",

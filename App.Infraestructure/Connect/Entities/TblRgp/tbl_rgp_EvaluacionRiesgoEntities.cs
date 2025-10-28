@@ -25,4 +25,5 @@ public class tbl_rgp_EvaluacionRiesgoEntities
     public string? Aceptabilidad { set; get; }
     public int EvaAnterior { set; get; }
     public int UbicacionMR { set; get; }
+    public ICollection<tbl_rgp_RiesgosEntities>? TBL_rgp_Riesgos { get; set; }
 }

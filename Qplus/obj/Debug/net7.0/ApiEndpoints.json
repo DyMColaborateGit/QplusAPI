@@ -2010,17 +2010,11 @@
   {
     "ContainingType": "Qplus.Controllers.EvaluacionRiesgoController",
     "Method": "GetListaEvaluacionRiesgo",
-    "RelativePath": "api/EvaluacionRiesgo/GetListaEvaluacionRiesgo/{EmpresaId}",
+    "RelativePath": "api/EvaluacionRiesgo/GetListaEvaluacionRiesgo",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "EmpresaId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_EvaluacionRiesgoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
@@ -7065,6 +7059,90 @@
     "Parameters": [
       {
         "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_RiesgosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.RiesgosController",
+    "Method": "GetListaRiesgosFiltros",
+    "RelativePath": "api/Riesgos/GetListaRiesgosFiltros/{FechaInicio}/{FechaFin}/{ProcesoId}/{Codigo}/{SubprocesoId}/{ClaseId}/{IdAgente}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "FechaInicio",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "FechaFin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "ProcesoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "SubprocesoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ClaseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdAgente",
         "Type": "System.Int32",
         "IsRequired": true
       }

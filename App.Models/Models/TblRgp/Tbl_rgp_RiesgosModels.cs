@@ -18,7 +18,8 @@ namespace App.Models.Models.TblRgp
         public DateTime FechaCreacion { get; set; }
         public string? UsuarioModificacion { get; set; }
         public DateTime FechaModificacion { get; set; }
-        public int EvaluacionId { get; set; }
+        public int? EvaluacionId { get; set; }
+        public Tbl_rgp_EvaluacionRiesgoModels? EvaluacionRObj { get; set; }
         public string? Codigo { get; set; }
         public int Consecutivo { get; set; }
         public int SubprocesoId { get; set; }

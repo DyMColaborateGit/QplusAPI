@@ -67,8 +67,10 @@ namespace App.Infraestructure.Connect.Configuration.TblRgp
                 .IsRequired()
                 .HasColumnType("Datetime");
 
-            builder.Property(p => p.EvaluacionId)
-                .HasColumnType("int");
+            builder.HasOne(p => p.EvaluacionRObj)
+                .WithMany(p => p.TBL_rgp_Riesgos)
+                .HasForeignKey(p => p.EvaluacionId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.Property(p => p.Codigo)
                 .HasMaxLength(50)

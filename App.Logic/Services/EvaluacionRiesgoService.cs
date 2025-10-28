@@ -14,9 +14,9 @@ namespace App.logic.Services
             _evaluacionRiesgoRepository = evaluacionRiesgoRepository;
         }
 
-        public async Task<List<Tbl_rgp_EvaluacionRiesgoModels>> GetListaEvaluacionRiesgo(int EmpresaId)
+        public async Task<List<Tbl_rgp_EvaluacionRiesgoModels>> GetListaEvaluacionRiesgo()
         {
-            return await _evaluacionRiesgoRepository.GetListaEvaluacionRiesgo(EmpresaId);
+            return await _evaluacionRiesgoRepository.GetListaEvaluacionRiesgo();
         }
     }
 }

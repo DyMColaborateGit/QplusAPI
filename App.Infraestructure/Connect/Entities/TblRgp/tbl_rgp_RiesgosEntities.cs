@@ -24,7 +24,10 @@ public class tbl_rgp_RiesgosEntities
     public DateTime FechaCreacion { get; set; }
     public string? UsuarioModificacion { get; set; }
     public DateTime FechaModificacion { get; set; }
-    public int EvaluacionId { get; set; }
+
+    [ForeignKey(nameof(EvaluacionId))]
+    public int? EvaluacionId { get; set; }
+    public tbl_rgp_EvaluacionRiesgoEntities? EvaluacionRObj { get; set; }
     public string? Codigo { get; set; }
     public int Consecutivo { get; set; }
     public int SubprocesoId { get; set; }
