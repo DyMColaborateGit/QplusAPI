@@ -93,6 +93,15 @@ namespace App.logic.Extensions
             services.AddScoped<IRelFuncSolicitudPService, RelFuncSolicitudPService>();
             services.AddScoped<ITextosBrechaService, TextosBrechaService>();
             services.AddScoped<IParametrosDesempenoService, ParametrosDesempenoService>();
+            services.AddScoped<IZonasRiesgoService, ZonasRiesgoService>();
+            services.AddScoped<IEvaluacionRiesgoService, EvaluacionRiesgoService>();
+            services.AddScoped<IParametrosValoracionService, ParametrosValoracionService>();
+            services.AddScoped<IConsecuenciasService, ConsecuenciasService>();
+            services.AddScoped<IProbabilidadesService, ProbabilidadesService>();
+            services.AddScoped<IRiesgosService, RiesgosService>();
+            services.AddScoped<IClasesService, ClasesService>();
+            services.AddScoped<IAgentesService, AgentesService>();
+            services.AddScoped<ITipoAnalisisService, TipoAnalisisService>();
         }
 
         /// <summary>
@@ -166,6 +175,15 @@ namespace App.logic.Extensions
             services.AddScoped<IResultadoBrechaPRepository, ResultadoBrechaPRepository>();
             services.AddScoped<IRelFuncSolicitudPRepository, RelFuncSolicitudPRepository>();
             services.AddScoped<ITextosBrechaRepository, TextosBrechaRepository>();
+            services.AddScoped<IZonasRiesgoRepository, ZonasRiesgoRepository>();
+            services.AddScoped<IEvaluacionRiesgoRepository, EvaluacionRiesgoRepository>();
+            services.AddScoped<IParametrosValoracionRepository, ParametrosValoracionRepository>();
+            services.AddScoped<IConsecuenciasRepository, ConsecuenciasRepository>();
+            services.AddScoped<IProbabilidadesRepository, ProbabilidadesRepository>();
+            services.AddScoped<IRiesgosRepository, RiesgosRepository>();
+            services.AddScoped<IClasesRepository, ClasesRepository>();
+            services.AddScoped<IAgentesRepository, AgentesRepository>();
+            services.AddScoped<ITipoAnalisisRepository, TipoAnalisisRepository>();
         }
 
         /// <summary>

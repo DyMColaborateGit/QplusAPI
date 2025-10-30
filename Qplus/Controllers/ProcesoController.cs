@@ -23,13 +23,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetListProcesos/{EmpresaId}/{Estado}")]
-        public async Task<GetResponse<List<SCP_ProcesosModels>>> GetListProcesosByEmpresaId(int EmpresaId, string Estado)
+        [HttpGet("GetListProcesosByEmpresaIdByEstado/{EmpresaId}/{Estado}")]
+        public async Task<GetResponse<List<SCP_ProcesosModels>>> GetListProcesosByEmpresaIdByEstado(int EmpresaId, string Estado)
         {
             GetResponse<List<SCP_ProcesosModels>> resultado = new GetResponse<List<SCP_ProcesosModels>>();
             try
             {
-                resultado.Data = await _procesoService.GetListProcesosByEmpresaId(EmpresaId, Estado);
+                resultado.Data = await _procesoService.GetListProcesosByEmpresaIdByEstado(EmpresaId, Estado);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

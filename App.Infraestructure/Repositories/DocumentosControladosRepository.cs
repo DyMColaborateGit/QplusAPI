@@ -53,13 +53,6 @@ namespace App.Infraestructure.Repositories
           int NivelSeguridad, int EmpresaId, int InIdSistema, int Usuario, string NombreDoc, int userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize,
           int codigoCargo)
         {
-
-            //if (CodigoDoc == null)
-            //    CodigoDoc = "T";
-
-            //if (NombreDoc == null)
-            //    NombreDoc = "T";
-
             if (string.IsNullOrEmpty(CodigoDoc))
             {
                 CodigoDoc = "T";

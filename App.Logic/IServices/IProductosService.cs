@@ -10,6 +10,7 @@ namespace App.logic.IServices
 {
     public interface IProductosService
     {
+        Task<List<ProductosModels>> GetListaSubProcesosByActivos();
         Task<List<ProductosModels>> GetListaSubProcesosByIdProcesoActivos(int IdProceso);
     }
 }
