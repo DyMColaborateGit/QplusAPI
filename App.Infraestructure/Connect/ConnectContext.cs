@@ -117,6 +117,7 @@ public class ConnectContext : DbContext
     public DbSet<tbl_rgp_ParametrosValoracionEntities> TBL_rgp_ParametrosValoracion {  get; set; }
     public DbSet<tbl_rgp_ClasesEntities> TBL_rgp_Clases {  get; set; }
     public DbSet<tbl_rgp_AgentesEntities> TBL_rgp_Agentes {  get; set; }
+    public DbSet<tbl_rgp_TipoAnalisisEntities> TBL_rgp_TipoAnalisis {  get; set; }
     #endregion
 
     #region T

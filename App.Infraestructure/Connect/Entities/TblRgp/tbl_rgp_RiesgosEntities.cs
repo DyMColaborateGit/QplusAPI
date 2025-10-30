@@ -1,5 +1,4 @@
 ﻿
-using App.Infraestructure.Connect.Entities.TblDoc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

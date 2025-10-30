@@ -101,6 +101,7 @@ namespace App.logic.Extensions
             services.AddScoped<IRiesgosService, RiesgosService>();
             services.AddScoped<IClasesService, ClasesService>();
             services.AddScoped<IAgentesService, AgentesService>();
+            services.AddScoped<ITipoAnalisisService, TipoAnalisisService>();
         }
 
         /// <summary>
@@ -182,6 +183,7 @@ namespace App.logic.Extensions
             services.AddScoped<IRiesgosRepository, RiesgosRepository>();
             services.AddScoped<IClasesRepository, ClasesRepository>();
             services.AddScoped<IAgentesRepository, AgentesRepository>();
+            services.AddScoped<ITipoAnalisisRepository, TipoAnalisisRepository>();
         }
 
         /// <summary>
