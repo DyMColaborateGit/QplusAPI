@@ -39,8 +39,13 @@ namespace App.Infraestructure.Connect.Configuration.TblRgp
                 .HasMaxLength(4000)
                 .HasColumnType("nvarchar");
 
-            builder.Property(p => p.ProcesoId)
-                .HasColumnType("int");
+            builder.HasOne(p => p.ProcesosObj)
+                .WithMany(p => p.TBL_rgp_Riesgos)
+                .HasForeignKey(p => p.ProcesoId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            //builder.Property(p => p.ProcesoId)
+            //    .HasColumnType("int");
 
             builder.Property(p => p.ClaseId)
                 .HasColumnType("int");

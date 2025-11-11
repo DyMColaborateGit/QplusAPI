@@ -12570,12 +12570,22 @@
         }
       }
     },
-    "/api/Riesgos/GetListaCodigoRiesgoByProcesoId/{ProcesoId}": {
+    "/api/Riesgos/GetListaCodigoRiesgoByProcesoId/{EmpresaId}/{ProcesoId}/{EstadoProceso}": {
       "get": {
         "tags": [
           "Riesgos"
         ],
         "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "ProcesoId",
             "in": "path",
@@ -12584,6 +12594,15 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "EstadoProceso",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -21633,7 +21652,11 @@
           },
           "procesoId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
+          },
+          "procesosObj": {
+            "$ref": "#/components/schemas/SCP_ProcesosModels"
           },
           "claseId": {
             "type": "integer",

@@ -1,4 +1,6 @@
 ﻿
+using App.Models.Models.Scp;
+
 namespace App.Models.Models.TblRgp
 {
     public class Tbl_rgp_RiesgosModels
@@ -10,7 +12,8 @@ namespace App.Models.Models.TblRgp
         public int IdAgente { get; set; }
         public string? Causas { get; set; }
         public string? Efectos { get; set; }
-        public int ProcesoId { get; set; }
+        public int? ProcesoId { get; set; }
+        public SCP_ProcesosModels? ProcesosObj { get; set; }
         public int ClaseId { get; set; }
         public int IdTipoAnalisis { get; set; }
         public bool Estado {  get; set; }

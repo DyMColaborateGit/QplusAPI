@@ -7046,14 +7046,24 @@
   {
     "ContainingType": "Qplus.Controllers.RiesgosController",
     "Method": "GetListaCodigoRiesgoByProcesoId",
-    "RelativePath": "api/Riesgos/GetListaCodigoRiesgoByProcesoId/{ProcesoId}",
+    "RelativePath": "api/Riesgos/GetListaCodigoRiesgoByProcesoId/{EmpresaId}/{ProcesoId}/{EstadoProceso}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
         "Name": "ProcesoId",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EstadoProceso",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

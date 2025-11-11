@@ -18,9 +18,9 @@ namespace App.logic.Services
         {
             return await _riesgosRepository.GetListaRiesgos(EmpresaId);
         }
-        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaCodigoRiesgoByProcesoId(int ProcesoId)
+        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaCodigoRiesgoByProcesoId(int EmpresaId, int ProcesoId, string EstadoProceso)
         {
-            return await _riesgosRepository.GetListaCodigoRiesgoByProcesoId(ProcesoId);
+            return await _riesgosRepository.GetListaCodigoRiesgoByProcesoId(EmpresaId, ProcesoId, EstadoProceso);
         }
         public async Task<List<Tbl_rgp_RiesgosModels>> GetListaRiesgosFiltros(int EmpresaId, DateTime? FechaInicio, DateTime? FechaFin, int ProcesoId, string Codigo, int SubprocesoId, int ClaseId, int IdAgente)
         {

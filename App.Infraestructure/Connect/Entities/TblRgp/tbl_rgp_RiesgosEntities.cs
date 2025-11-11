@@ -1,4 +1,5 @@
 ﻿
+using App.Infraestructure.Connect.Entities.Scp;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,7 +16,10 @@ public class tbl_rgp_RiesgosEntities
     public int IdAgente { get; set; }
     public string? Causas { get; set; }
     public string? Efectos { get; set; }
+
+    [ForeignKey(nameof(ProcesoId))]
     public int ProcesoId { get; set; }
+    public scp_ProcesosEntities? ProcesosObj { get; set; }
     public int ClaseId { get; set; }
     public int IdTipoAnalisis { get; set; }
     public bool Estado { get; set; }

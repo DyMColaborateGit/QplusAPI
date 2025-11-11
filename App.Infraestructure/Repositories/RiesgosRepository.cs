@@ -26,6 +26,7 @@ namespace App.Infraestructure.Repositories
             try
             {
                 var objResult = await _context.TBL_rgp_Riesgos.AsNoTracking()
+                    .Include(x => x.ProcesosObj)
                     .Where(x => x.EmpresaId == EmpresaId)
                     .ToListAsync();
                 return _mapper.Map<List<Tbl_rgp_RiesgosModels>>(objResult);
@@ -36,19 +37,28 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
-        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaCodigoRiesgoByProcesoId(int ProcesoId)
+        public async Task<List<Tbl_rgp_RiesgosModels>> GetListaCodigoRiesgoByProcesoId(int EmpresaId, int ProcesoId, string EstadoProceso)
         {
             try
             {
-                var objResult = await _context.TBL_rgp_Riesgos.AsNoTracking()
-                .Where(x => x.ProcesoId == ProcesoId)
-                .OrderBy(x => x.Codigo)
-                .ToListAsync();
+                var query = _context.TBL_rgp_Riesgos
+                    .AsNoTracking()
+                    .Include(x => x.ProcesosObj)
+                    .Where(x => x.EmpresaId == EmpresaId && x.ProcesosObj.Estado == EstadoProceso)
+                    .AsQueryable();
+
+                if (ProcesoId != -1)
+                {
+                    query = query.Where(x => x.ProcesoId == ProcesoId);
+                }
+
+                var objResult = await query.OrderBy(p => p.Codigo).Distinct().ToListAsync();
+
                 return _mapper.Map<List<Tbl_rgp_RiesgosModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetListaCodigoRiesgoByProcesoId", ex, ProcesoId.ToString());
+                ExceptionLogHelpers.LogException("GetListaCodigoRiesgoByProcesoId", ex, EmpresaId + "/" + ProcesoId + "/" + EstadoProceso);
                 throw;
             }
         }
