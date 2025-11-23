@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using App.Infraestructure.Connect.Entities.TblAud;
 using App.Infraestructure.Connect.Entities.TblDoc;
+using App.Infraestructure.Connect.Entities.TblRgp;
 
 namespace App.Infraestructure.Connect.Entities.Scp;
 
@@ -29,6 +30,7 @@ public class scp_ProcesosEntities
     public bool? Generico { get; set; }
     public ICollection<auditoriasEntities>? Auditorias { get; set; }
     public ICollection<tbl_doc_DocumentosEntities>? TBL_Doc_Documentos { get; set; }
+    public ICollection<tbl_rgp_RiesgosEntities>? TBL_rgp_Riesgos { get; set; }
 
 
 }
