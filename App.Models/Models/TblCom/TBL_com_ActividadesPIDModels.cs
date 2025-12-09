@@ -23,4 +23,6 @@ public class TBL_com_ActividadesPIDModels
     public string? AutoDesarrollo { get; set; }
     public string? TipoActividadOtro { get; set; }
     public string? Analisis { get; set; }
+    public string? UltimoUsuarioSeguimiento { get; set; }
+
 }

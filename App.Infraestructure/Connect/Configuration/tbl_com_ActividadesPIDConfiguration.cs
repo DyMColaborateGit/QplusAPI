@@ -94,5 +94,10 @@ public class tbl_com_ActividadesPIDConfiguration : IEntityTypeConfiguration<tbl_
         .IsRequired()
         .HasMaxLength(150)
         .HasColumnType("nvarchar");
+
+        builder.Property(e => e.UltimoUsuarioSeguimiento)
+        .IsRequired()
+        .HasMaxLength(150)
+        .HasColumnType("nvarchar");
     }
 }

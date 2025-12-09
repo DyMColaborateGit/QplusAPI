@@ -79,6 +79,7 @@ public class ConnectContext : DbContext
     public DbSet<tbl_com_PreguntasEntities> TBL_com_Preguntas { get; set; }
     public DbSet<tbl_com_MatrizdeTalentosEntities> TBL_com_MatrizdeTalentos { get; set; }
     public DbSet<tbl_com_NivelesDesempenoPpalEntities> TBL_Com_NivelesDesempenoPpal { get; set; }
+    public DbSet<tbl_com_SeguimientoActividadesEntities> TBL_com_SeguimientoActividades { get; set; }
     #endregion
 
     #region TBL-IND
