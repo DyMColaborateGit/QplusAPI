@@ -1,46 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\",
+  "WorkspaceRootPath": "E:\\CODE\\DYM\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\seguimientoactividadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\seguimientoactividadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\funcionariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\funcionariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\irepositories\\iseguimientoactividadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iseguimientoactividadesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\irepositories\\ifuncionariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\ifuncionariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\actividadespidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\actividadespidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\linkrelacionadoactividadespidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\linkrelacionadoactividadespidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\seguimientoactividadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\seguimientoactividadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\iservices\\ifuncionariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\ifuncionariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\irepositories\\iactividadespidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iactividadespidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\services\\funcionariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\funcionariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\iservices\\iseguimientoactividadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iseguimientoactividadesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\actividadespidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\actividadespidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\seguimientoactividadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\seguimientoactividadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\iservices\\iactividadespidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iactividadespidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\actividadespidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\actividadespidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -75,131 +59,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SeguimientoActividadesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\SeguimientoActividadesRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\SeguimientoActividadesRepository.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\SeguimientoActividadesRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\SeguimientoActividadesRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBoAAABaAAAAAAAAAA==",
+              "Title": "FuncionariosRepository.cs",
+              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\FuncionariosRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\FuncionariosRepository.cs",
+              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\FuncionariosRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\FuncionariosRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwCQAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T21:56:31.142Z",
+              "WhenOpened": "2025-12-10T20:20:29.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ISeguimientoActividadesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\ISeguimientoActividadesRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\ISeguimientoActividadesRepository.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\ISeguimientoActividadesRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\ISeguimientoActividadesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABsAAAAAAAAAA==",
+              "Title": "IFuncionariosRepository.cs",
+              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\IFuncionariosRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IFuncionariosRepository.cs",
+              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\IFuncionariosRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IFuncionariosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T21:55:21.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SeguimientoActividadesService.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\SeguimientoActividadesService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\SeguimientoActividadesService.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\SeguimientoActividadesService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\SeguimientoActividadesService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T21:52:03.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ISeguimientoActividadesService.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\ISeguimientoActividadesService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\ISeguimientoActividadesService.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\ISeguimientoActividadesService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\ISeguimientoActividadesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T21:49:26.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SeguimientoActividadesController.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\SeguimientoActividadesController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\SeguimientoActividadesController.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\SeguimientoActividadesController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\SeguimientoActividadesController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T21:42:25.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ActividadesPIDRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ActividadesPIDRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ActividadesPIDRepository.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ActividadesPIDRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\ActividadesPIDRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T20:40:34.495Z",
+              "WhenOpened": "2025-12-10T20:20:23.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IActividadesPIDRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\IActividadesPIDRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IActividadesPIDRepository.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\IActividadesPIDRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IActividadesPIDRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAxAAAAAAAAAA==",
+              "Title": "FuncionariosService.cs",
+              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\FuncionariosService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\FuncionariosService.cs",
+              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\FuncionariosService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\FuncionariosService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T20:40:03.479Z",
+              "WhenOpened": "2025-12-10T20:20:20.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ActividadesPIDService.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\ActividadesPIDService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\ActividadesPIDService.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\ActividadesPIDService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\ActividadesPIDService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IFuncionariosService.cs",
+              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\IFuncionariosService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\IServices\\IFuncionariosService.cs",
+              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\IFuncionariosService.cs",
+              "RelativeToolTip": "App.Logic\\IServices\\IFuncionariosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T20:39:06.688Z",
+              "WhenOpened": "2025-12-10T20:20:16.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IActividadesPIDService.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\IActividadesPIDService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\IActividadesPIDService.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\IActividadesPIDService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\IActividadesPIDService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAIAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FuncionarioController.cs",
+              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\FuncionarioController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\FuncionarioController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\FuncionarioController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEMAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T20:38:19.745Z",
+              "WhenOpened": "2025-12-10T20:16:01.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ActividadesPIDController.cs",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ActividadesPIDController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\ActividadesPIDController.cs",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ActividadesPIDController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\ActividadesPIDController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAowE8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LinkRelacionadoActividadesPIDRepository.cs",
+              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\LinkRelacionadoActividadesPIDRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\LinkRelacionadoActividadesPIDRepository.cs",
+              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\LinkRelacionadoActividadesPIDRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\LinkRelacionadoActividadesPIDRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T20:30:22.049Z",
+              "WhenOpened": "2025-12-10T16:59:20.121Z",
               "EditorCaption": ""
             }
           ]

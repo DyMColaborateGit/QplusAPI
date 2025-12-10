@@ -33,7 +33,21 @@ public class FuncionariosRepository : IFuncionariosRepository
             throw;
         }
     }
-
+    public async Task<List<SCP_FuncionariosModels>> GetListfuncionariosByEmpresaId(int EmpresaId)
+    {
+        try
+        {
+            var objResult = await _context.SCP_Funcionarios.AsNoTracking()
+                .Where(x => x.EmpresaId == EmpresaId)
+                .ToListAsync();
+            return _mapper.Map<List<SCP_FuncionariosModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListfuncionariosByEmpresaId", ex, EmpresaId.ToString());
+            throw;
+        }
+    }
     public async Task<JOINSCP_FuncionariosModels> ObjJoinFuncionarioByEmpresaIdByIdentificacion(int EmpresaId, long Identificacion)
     {
         try

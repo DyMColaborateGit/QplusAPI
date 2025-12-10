@@ -10,6 +10,7 @@ using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Connect.Entities.TblMast;
 using App.Infraestructure.Connect.Entities.TblRgp;
 using App.Infraestructure.Connect.Entities.Tipo;
+using App.Models.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -132,6 +133,7 @@ public class ConnectContext : DbContext
     #region Tipo
     public DbSet<tipos_DocumentoEntities> Tipos_documento { get; set; } 
     #endregion
+    public DbSet<linkRelacionadoActividadesPIDEntities> LinkRelacionadoActividadesPID { get; set; }
     public DbSet<historial_cambiosEntities> Historial_Cambios { get; set; }
     public DbSet<control_distribucionEntities> Control_Distribucion { get; set; }
 
