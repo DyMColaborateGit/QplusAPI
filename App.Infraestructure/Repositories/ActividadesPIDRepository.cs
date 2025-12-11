@@ -21,7 +21,36 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-
+        public async Task<TBL_com_ActividadesPIDModels> GetObjActividadesPDI(int EmpresaId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_com_ActividadesPID.AsNoTracking()
+                    .Where(x => x.EmpresaId == EmpresaId)
+                    .FirstOrDefaultAsync();
+                return _mapper.Map<TBL_com_ActividadesPIDModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetObjActividadesPDI", ex, EmpresaId.ToString());
+                throw;
+            }
+        }
+        public async Task<List<TBL_com_ActividadesPIDModels>> GetListaActividadesPDI(int EmpresaId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_com_ActividadesPID.AsNoTracking()
+                    .Where(x => x.EmpresaId == EmpresaId)
+                    .ToListAsync();
+                return _mapper.Map<List<TBL_com_ActividadesPIDModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaActividadesPDI", ex, EmpresaId.ToString());
+                throw;
+            }
+        }
         public async Task<TBL_com_ActividadesPIDModels> CreateActividadesPID(TBL_com_ActividadesPIDModels objCreate)
         {
             try

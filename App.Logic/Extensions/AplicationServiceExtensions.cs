@@ -102,6 +102,8 @@ namespace App.logic.Extensions
             services.AddScoped<IClasesService, ClasesService>();
             services.AddScoped<IAgentesService, AgentesService>();
             services.AddScoped<ITipoAnalisisService, TipoAnalisisService>();
+            services.AddScoped<ISeguimientoActividadesService, SeguimientoActividadesService>();
+            services.AddScoped<ILinkRelacionadoActividadesPIDService, LinkRelacionadoActividadesPIDService>();
         }
 
         /// <summary>
@@ -184,6 +186,8 @@ namespace App.logic.Extensions
             services.AddScoped<IClasesRepository, ClasesRepository>();
             services.AddScoped<IAgentesRepository, AgentesRepository>();
             services.AddScoped<ITipoAnalisisRepository, TipoAnalisisRepository>();
+            services.AddScoped<ISeguimientoActividadesRepository, SeguimientoActividadesRepository>();
+            services.AddScoped<ILinkRelacionadoActividadesPIDRepository, LinkRelacionadoActividadesPIDRepository>();
         }
 
         /// <summary>
