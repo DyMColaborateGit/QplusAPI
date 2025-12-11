@@ -9,6 +9,7 @@ namespace App.Infraestructure.IRepositories
 {
     public interface ITiposActividadRepository
     {
+        Task<TBL_com_TiposActividadModels> GetDataTiposActividadById(int InIdTipoActividad);
         Task<List<TBL_com_TiposActividadModels>> ListTiposActividadByCtegoriaIdEstado(int EmpresaId, int CategoriaId, bool Estado);
     }
 }

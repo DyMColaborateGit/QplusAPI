@@ -9,6 +9,7 @@ namespace App.logic.IServices
 {
     public interface ITiposActividadService
     {
+        Task<TBL_com_TiposActividadModels> GetDataTiposActividadById(int InIdTipoActividad);
         Task<List<TBL_com_TiposActividadModels>> GetListTiposActividadByCtegoriaIdEstado(int EmpresaId, int CategoriaId, bool Estado);
     }
 }

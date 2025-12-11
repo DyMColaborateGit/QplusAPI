@@ -22,7 +22,21 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-
+        public async Task<TBL_com_TiposActividadModels> GetDataTiposActividadById(int InIdTipoActividad)
+        {
+            try
+            {
+                var objResult = await _context.TBL_com_TiposActividad.AsNoTracking()
+                    .Where(x => x.InIdTipoActividad == InIdTipoActividad)
+                    .FirstOrDefaultAsync();
+                return _mapper.Map<TBL_com_TiposActividadModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetDataTiposActividadById", ex, InIdTipoActividad.ToString());
+                throw;
+            }
+        }
         public async Task<List<TBL_com_TiposActividadModels>> ListTiposActividadByCtegoriaIdEstado(int EmpresaId, int CategoriaId, bool Estado)
         {
             try
