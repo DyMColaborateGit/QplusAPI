@@ -7894,6 +7894,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.TiposActividadController",
+    "Method": "GetDataTiposActividadById",
+    "RelativePath": "api/TiposActividad/GetDataTiposActividadById/{InIdTipoActividad}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "InIdTipoActividad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_TiposActividadModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TiposActividadController",
     "Method": "GetListObjetivosDecalidad",
     "RelativePath": "api/TiposActividad/GetLisTiposActividades/{EmpresaId}/{CategoriaId}",
     "HttpMethod": "GET",
