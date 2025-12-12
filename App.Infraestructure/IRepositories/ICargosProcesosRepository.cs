@@ -10,6 +10,6 @@ namespace App.Infraestructure.IRepositories
     public interface ICargosProcesosRepository
     {
         Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int IdProceso, int id_cargo, int EmpresaId);
-
+        Task<SCP_CargosProcesosModels> GetProcesoPerteneceByIdCargo(int Id_cargo, int EmpresaId);
     }
 }

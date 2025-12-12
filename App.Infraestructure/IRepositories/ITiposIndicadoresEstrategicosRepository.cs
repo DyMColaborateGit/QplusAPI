@@ -9,5 +9,6 @@ namespace App.Infraestructure.IRepositories;
 
 public interface ITiposIndicadoresEstrategicosRepository
 {
+    Task<TBL_ind_TiposIndicadoresEstrategicosModels> GetDataTiposIndicadoresEstrategicosByTipo(int EmpresaId, int idTipoIndiEstra);
     Task<List<TBL_ind_TiposIndicadoresEstrategicosModels>> ListTiposIndicadoresEstrategicosByEmpresaId(int EmpresaId);
 }

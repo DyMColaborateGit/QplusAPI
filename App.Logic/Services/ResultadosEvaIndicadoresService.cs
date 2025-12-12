@@ -1,5 +1,7 @@
 ﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
+using App.Models.Models.Scp;
 using App.Models.Models.TblCom;
 using System;
 
@@ -15,7 +17,10 @@ namespace App.logic.Services
             _resultadosEvaIndicadoresRepository = resultadosEvaIndicadoresRepository;
             _progEvaluacionRepository = progEvaluacionRepository;
         }
-
+        public async Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresByEvaluacionId(int EvaluacionId)
+        {
+            return await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresByEvaluacionId(EvaluacionId);
+        }
         public async Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListResultadosIndicadores(long EvaluacionId, int[] ClaseId, int EmpresaId)
         {
             var ListResult =  await _resultadosEvaIndicadoresRepository.ListResultadosEvaIndicadoresByDifClaseId(EvaluacionId, ClaseId, EmpresaId);

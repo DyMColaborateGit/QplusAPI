@@ -19,7 +19,22 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-
+        public async Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresByEvaluacionId(int EvaluacionId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_com_ResultadosEvaIndicadores.AsNoTracking()
+                .Where(x => x.EvaluacionId == EvaluacionId && x.MastIndicadoresobj.ClaseId != 6)
+                .Include(x => x.MastIndicadoresobj)
+                .ToListAsync();
+                return _mapper.Map<List<JOINTbl_com_ResultadosEvaIndicadoresModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaEvaluacionIndicadoresByEvaluacionId", ex, EvaluacionId.ToString());
+                throw;
+            }
+        }
         public async Task<Tbl_com_ResultadosEvaIndicadoresModels> ObjResultadosEvaIndicadores(long ResultadoId)
         {
             try

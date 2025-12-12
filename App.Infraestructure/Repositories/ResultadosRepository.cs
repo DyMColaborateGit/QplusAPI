@@ -3,6 +3,7 @@ using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.TblCom;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
@@ -36,7 +37,23 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
+        public async Task<List<Tbl_com_ResultadosModels>> GetResultadosEvaluacionListaByEvaluacionId(int EvaluacionId, int NormaId)
+        {
+            try
+            {
+                var objResult = await _context.TBL_com_Resultados
+                    .AsNoTracking()
+                    .Where(x => x.EvaluacionId == EvaluacionId && x.NormaId == NormaId)
+                    .ToListAsync();
 
+                return _mapper.Map<List<Tbl_com_ResultadosModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetResultadosEvaluacionListaByEvaluacionId", ex, EvaluacionId + "/" + NormaId);
+                throw;
+            }
+        }
         public async Task<List<Tbl_com_ResultadosModels>> ListResultadosByEvaluacionId(long EvaluacionId)
         {
             try

@@ -4,6 +4,8 @@ namespace App.Infraestructure.IRepositories
 {
     public interface IResultadosEvaIndicadoresRepository
     {
+        Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresByEvaluacionId(int EvaluacionId);
+
         Task<List<Tbl_com_ResultadosEvaIndicadoresModels>> ListResultadosEvaIndicadoresByClaseId(long EvaluacionId, int[] ClaseId, int EmpresaId);
 
         Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> ListResultadosEvaIndicadoresByDifClaseId(long EvaluacionId, int[] ClaseId, int EmpresaId);

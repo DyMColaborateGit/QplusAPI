@@ -58,4 +58,22 @@ public class ResultIndiCoporpRepository: IResultIndiCoporpRepository
             throw;
         }
     }
+    public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativosByAnio(int EvaluacionId, int EmpresaId, int InAnio)
+    {
+        try
+        {
+            // el año se trae de progEvaluacion ¡¡¡CAMBIAR!!!
+            var objResult = await _context.TBL_ind_ResultIndiCoporp.AsNoTracking()
+                .Where(x => x.Anio == InAnio && x.EmpresaId == EmpresaId && x.MastIndicadoresObj.InEstado == 1)
+                .Include(x => x.MastIndicadoresObj)
+                .ToListAsync();
+
+            return _mapper.Map<List<JOINTBL_ind_ResultIndiCoporpModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListaResultadoIndicadoresCorporativosByAnio", ex, EvaluacionId + "/" + EmpresaId + "/" + InAnio);
+            throw;
+        }
+    }
 }

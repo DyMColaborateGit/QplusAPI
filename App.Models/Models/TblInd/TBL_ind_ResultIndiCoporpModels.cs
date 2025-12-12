@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Models.Models.TblInd;
 
@@ -17,6 +18,8 @@ public class JOINTBL_ind_ResultIndiCoporpModels
 {
     public int ResultadoId { get; set; }
     public int? EmpresaId { get; set; }
+
+    [ForeignKey(nameof(CodigoIndi))]
     public string? CodigoIndi { get; set; }
     public Tbl_ind_MastIndicadoresModels? MastIndicadoresobj { get; set; }
     public int? Anio { get; set; }
