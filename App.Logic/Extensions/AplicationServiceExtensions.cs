@@ -105,6 +105,7 @@ namespace App.logic.Extensions
             services.AddScoped<ISeguimientoActividadesService, SeguimientoActividadesService>();
             services.AddScoped<ILinkRelacionadoActividadesPIDService, LinkRelacionadoActividadesPIDService>();
             services.AddScoped<IResultadosService, ResultadosService>();
+            services.AddScoped<ITotalIndEstCorporativosService, TotalIndEstCorporativosService>();
         }
 
         /// <summary>

@@ -17,6 +17,10 @@ namespace App.logic.Services
             _resultadosEvaIndicadoresRepository = resultadosEvaIndicadoresRepository;
             _progEvaluacionRepository = progEvaluacionRepository;
         }
+        public async Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(int EvaluacionId)
+        {
+            return await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(EvaluacionId);
+        }
         public async Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresByEvaluacionId(int EvaluacionId)
         {
             return await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresByEvaluacionId(EvaluacionId);

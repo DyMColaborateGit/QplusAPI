@@ -2512,6 +2512,55 @@
     ]
   },
   {
+    "ContainingType": "Qplus.Controllers.FuncionarioController",
+    "Method": "GetObjFuncionarioByIdentificacion",
+    "RelativePath": "api/Funcionario/GetObjFuncionarioByIdentificacion/{Identificacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Identificacion",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.Scp.SCP_FuncionariosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Qplus.Controllers.GeneralController",
     "Method": "GetListAnios",
     "RelativePath": "api/General/GetListAnios",
@@ -6667,6 +6716,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
+    "Method": "GetListaEvaluacionIndicadoresEstrategicosEvaluacionId",
+    "RelativePath": "api/ResultadosEvaIndicadores/GetListaEvaluacionIndicadoresEstrategicosEvaluacionId/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.JOINTbl_com_ResultadosEvaIndicadoresModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ResultadosEvaIndicadoresController",
     "Method": "GetListaIndicadoresEstrategisco",
     "RelativePath": "api/ResultadosEvaIndicadores/GetListaIndicadoresEstrategisco/{EvaluacionId}/{Tipo}/{Nivel}/{EmpresaId}",
     "HttpMethod": "GET",
@@ -7339,8 +7437,8 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ResultIndiCoporpController",
-    "Method": "GetListaResultadoIndicadoresCorporativosByAnio",
-    "RelativePath": "api/ResultIndiCoporp/GetListaResultadoIndicadoresCorporativosByAnio/{EvaluacionId}/{EmpresaId}/{Anio}",
+    "Method": "GetListaResultadoIndicadoresCorporativos",
+    "RelativePath": "api/ResultIndiCoporp/GetListaResultadoIndicadoresCorporativos/{EvaluacionId}/{EmpresaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -7352,11 +7450,6 @@
       },
       {
         "Name": "EmpresaId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "Anio",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -8385,6 +8478,60 @@
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.TBL_ind_TiposIndicadoresEstrategicosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TotalIndEstCorporativosController",
+    "Method": "GetListaTotalIndicadoresCorporativos",
+    "RelativePath": "api/TotalIndEstCorporativos/GetListaTotalIndicadoresCorporativos/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.GeneralTBL_ind_TotalIndEstCorporativosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -5,6 +5,7 @@ namespace App.logic.IServices
 {
     public interface IResultadosEvaIndicadoresService
     {
+        Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(int EvaluacionId);
         Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListaEvaluacionIndicadoresByEvaluacionId(int EvaluacionId);
         Task<List<JOINTbl_com_ResultadosEvaIndicadoresModels>> GetListResultadosIndicadores(long EvaluacionId, int[] ClaseId, int EmpresaId);
 

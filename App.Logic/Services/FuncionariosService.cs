@@ -15,7 +15,10 @@ public class FuncionariosService: IFuncionariosService
     {
         _funcionariosRepository = funcionariosRepository;
     }
-
+    public async Task<SCP_FuncionariosModels> GetObjFuncionarioByIdentificacion(long Identificacion)
+    {
+        return await _funcionariosRepository.GetObjFuncionarioByIdentificacion(Identificacion);
+    }
     public async Task<SCP_FuncionariosModels> GetObjFuncionarioByIdentificacion(int EmpresaId, long Identificacion)
     {
         return await _funcionariosRepository.ObjFuncionarioByEmpresaIdByIdentificacion(EmpresaId, Identificacion);

@@ -13,7 +13,7 @@ public class tbl_ind_ResultIndiCoporpEntities
 
     [ForeignKey(nameof(CodigoIndi))]
     public string? CodigoIndi { get; set; }
-    public tbl_ind_MastIndicadoresEntities? MastIndicadoresObj { get; set; }
+    public tbl_ind_MastIndicadoresEntities? MastIndicadoresobj { get; set; }
     public int? Anio { get; set; }
     public decimal? Resultado { get; set; }
     public decimal? Peso { get; set; }

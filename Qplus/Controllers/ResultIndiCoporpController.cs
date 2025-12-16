@@ -77,13 +77,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetListaResultadoIndicadoresCorporativosByAnio/{EvaluacionId}/{EmpresaId}/{Anio}")]
-        public async Task<GetResponse<List<JOINTBL_ind_ResultIndiCoporpModels>>> GetListaResultadoIndicadoresCorporativosByAnio(int EvaluacionId, int EmpresaId, int Anio)
+        [HttpGet("GetListaResultadoIndicadoresCorporativos/{EvaluacionId}/{EmpresaId}")]
+        public async Task<GetResponse<List<JOINTBL_ind_ResultIndiCoporpModels>>> GetListaResultadoIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
         {
             GetResponse<List<JOINTBL_ind_ResultIndiCoporpModels>> resultado = new GetResponse<List<JOINTBL_ind_ResultIndiCoporpModels>>();
             try
             {
-                resultado.Data = await _resultIndiCoporpService.GetListaResultadoIndicadoresCorporativosByAnio(EvaluacionId, EmpresaId, Anio);
+                resultado.Data = await _resultIndiCoporpService.GetListaResultadoIndicadoresCorporativos(EvaluacionId, EmpresaId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;
