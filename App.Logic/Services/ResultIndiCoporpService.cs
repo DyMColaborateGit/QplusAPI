@@ -23,5 +23,9 @@ namespace App.logic.Services
         {
             return await _resultIndiCoporpRepository.ListResultadoTotalIndicadoreCorporativos(EvaluacionId, EmpresaId, InAnio);
         }
+        public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
+        {
+            return await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(EvaluacionId, EmpresaId);
+        }
     }
 }

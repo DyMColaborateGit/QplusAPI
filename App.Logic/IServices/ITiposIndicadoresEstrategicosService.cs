@@ -5,6 +5,7 @@ namespace App.logic.IServices
 {
     public interface ITiposIndicadoresEstrategicosService
     {
+        Task<TBL_ind_TiposIndicadoresEstrategicosModels> GetDataTiposIndicadoresEstrategicosByTipo(int EmpresaId, int idTipoIndiEstra);
         Task<List<TBL_ind_TiposIndicadoresEstrategicosModels>> GetListTiposIndicadoresEstrategicos(int EmpresaId);
     }
 }

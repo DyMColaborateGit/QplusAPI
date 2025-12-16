@@ -1,4 +1,5 @@
 ﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
 using App.Models.Models.Scp;
 using System;
@@ -18,10 +19,13 @@ namespace App.logic.Services
         {
             _cargosProcesosRepository = cargosProcesosRepository;
         }
-
-        public async Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int IdProceso, int id_cargo, int EmpresaId)
+        public async Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int Id_proceso, int Id_cargo, int EmpresaId)
         {
-            return await _cargosProcesosRepository.GetCargoAutorizadosByProcesoIdCargoId(IdProceso, id_cargo, EmpresaId);
+            return await _cargosProcesosRepository.GetCargoAutorizadosByProcesoIdCargoId(Id_proceso, Id_cargo, EmpresaId);
+        }
+        public async Task<SCP_CargosProcesosModels> GetProcesoPerteneceByIdCargo(int Id_cargo, int EmpresaId)
+        {
+            return await _cargosProcesosRepository.GetProcesoPerteneceByIdCargo(Id_cargo, EmpresaId);
         }
     }
 }

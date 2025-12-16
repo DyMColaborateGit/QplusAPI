@@ -31,6 +31,7 @@ public class scp_ProcesosEntities
     public ICollection<auditoriasEntities>? Auditorias { get; set; }
     public ICollection<tbl_doc_DocumentosEntities>? TBL_Doc_Documentos { get; set; }
     public ICollection<tbl_rgp_RiesgosEntities>? TBL_rgp_Riesgos { get; set; }
+    public ICollection<scp_CargosProcesosEntities>? SCP_CargosProcesos { get; set; }
 
 
 }

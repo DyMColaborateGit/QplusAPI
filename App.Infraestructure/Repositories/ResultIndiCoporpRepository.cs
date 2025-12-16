@@ -12,11 +12,13 @@ public class ResultIndiCoporpRepository: IResultIndiCoporpRepository
 {
     private readonly ConnectContext _context;
     private readonly IMapper _mapper;
+    private readonly IProgEvaluacionRepository _progEvaluacionRepository;
 
-    public ResultIndiCoporpRepository(ConnectContext context, IMapper mapper)
+    public ResultIndiCoporpRepository(ConnectContext context, IMapper mapper, IProgEvaluacionRepository progEvaluacionRepository)
     {
         _context = context;
         _mapper = mapper;
+        _progEvaluacionRepository = progEvaluacionRepository;
     }
 
     public async Task<JOINTBL_ind_ResultIndiCoporpModels> ResultadoTotalIndicadoreCorporativos(long EvaluacionId, int EmpresaId, int InAnio)
@@ -55,6 +57,26 @@ public class ResultIndiCoporpRepository: IResultIndiCoporpRepository
         catch (Exception ex)
         {
             ExceptionLogHelpers.LogException("ListResultadoTotalIndicadoreCorporativos", ex, EvaluacionId + "/" + EmpresaId + "/" + InAnio);
+            throw;
+        }
+    }
+    public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
+    {
+        try
+        {
+            var progEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+            var anioEvaluacion = progEvaluacion.InAno;
+
+            var objResult = await _context.TBL_ind_ResultIndiCoporp.AsNoTracking()
+                .Where(x => x.Anio == anioEvaluacion && x.EmpresaId == EmpresaId && x.MastIndicadoresobj.InEstado == 1)
+                .Include(x => x.MastIndicadoresobj)
+                .ToListAsync();
+
+            return _mapper.Map<List<JOINTBL_ind_ResultIndiCoporpModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListaResultadoIndicadoresCorporativos", ex, EvaluacionId + "/" + EmpresaId);
             throw;
         }
     }

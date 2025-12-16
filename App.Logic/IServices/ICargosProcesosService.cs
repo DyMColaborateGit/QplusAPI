@@ -9,6 +9,7 @@ namespace App.logic.IServices
 {
     public interface ICargosProcesosService
     {
-        Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int IdProceso, int id_cargo, int EmpresaId);
+        Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int IdProceso, int Id_cargo, int EmpresaId);
+        Task<SCP_CargosProcesosModels> GetProcesoPerteneceByIdCargo(int Id_cargo, int EmpresaId);
     }
 }

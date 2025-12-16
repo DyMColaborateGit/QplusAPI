@@ -11,6 +11,7 @@ namespace App.logic.IServices
     {
         Task<List<SCP_CargosModels>> GetListaCargos();
         Task<SCP_CargosModels> GetCargoIdCargo(int CargoId, int EmpresaId);
+        Task<SCP_CargosModels> GetDataCargoByCodigo(int Codigo, int EmpresaId);
         Task<List<SCP_CargosModels>> ListaCargosDocElaborado(int EmpresaId);
         Task<List<SCP_CargosModels>> ListaCargosDocRevisado(int EmpresaId);
         Task<List<SCP_CargosModels>> ListaCargosDocAprobado(int EmpresaId);
