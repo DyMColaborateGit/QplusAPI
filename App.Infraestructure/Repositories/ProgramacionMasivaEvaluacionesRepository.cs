@@ -32,6 +32,22 @@ public class ProgramacionMasivaEvaluacionesRepository : IProgramacionMasivaEvalu
             throw;
         }
     }
+    public async Task<ResponseTbl_com_ProgramacionMasivaEvaluacionesModels> GetDataProgramacionByID(int IdProgramacion)
+    {
+        try
+        {
+            var objResult = await _context.TBL_com_ProgramacionMasivaEvaluacion
+            .Include(x => x.ZonaObj)
+            .Include(x => x.OficinaObj)
+            .FirstOrDefaultAsync(x => x.IdProgramacion == IdProgramacion);
+            return _mapper.Map<ResponseTbl_com_ProgramacionMasivaEvaluacionesModels>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("ObjProgramacionMasivaEvaluacionesByIdProgramacion", ex, IdProgramacion.ToString());
+            throw;
+        }
+    }
 
     public async Task<Tbl_com_ProgramacionMasivaEvaluacionesModels> Update_ProgramacionMasivaEvaluaciones(Tbl_com_ProgramacionMasivaEvaluacionesModels ObjUpdate)
     {

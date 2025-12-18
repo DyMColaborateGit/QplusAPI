@@ -10452,6 +10452,90 @@
         }
       }
     },
+    "/api/ProgramacionMasivaEvaluaciones/GetDataProgramacionByID/{IdProgramacion}": {
+      "get": {
+        "tags": [
+          "ProgramacionMasivaEvaluaciones"
+        ],
+        "parameters": [
+          {
+            "name": "IdProgramacion",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseTbl_com_ProgramacionMasivaEvaluacionesModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseTbl_com_ProgramacionMasivaEvaluacionesModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseTbl_com_ProgramacionMasivaEvaluacionesModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/RelFuncSolicitudP/GetObjRelFuncSolicitudPById/{RelFuncSolicitudPId}": {
       "get": {
         "tags": [
@@ -18123,6 +18207,94 @@
               "$ref": "#/components/schemas/ResponseTbl_com_ProgEvaluacionModels"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseTbl_com_ProgramacionMasivaEvaluacionesModels": {
+        "type": "object",
+        "properties": {
+          "idProgramacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cedulaEvaluado": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "claveCargoEvaluado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigoDireccion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "zonaObj": {
+            "$ref": "#/components/schemas/TBL_mast_ZonasModels"
+          },
+          "codigoGerencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "oficinaObj": {
+            "$ref": "#/components/schemas/TBL_mast_OficinasModels"
+          },
+          "codigoNivelCompetencia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mesProgramado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cedulaEvaluador": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "anio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mesInicio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mesFin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaProgramacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usuarioProgramacion": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseTbl_com_ProgramacionMasivaEvaluacionesModelsGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/ResponseTbl_com_ProgramacionMasivaEvaluacionesModels"
           }
         },
         "additionalProperties": false

@@ -46,6 +46,7 @@ public class MappingProfiles: Profile
         CreateMap<tbl_com_EncabezadoEvaEntities, Tbl_com_EncabezadoEvaModels>().ReverseMap();
         CreateMap<tbl_com_ProgEvaluacionEntities, Tbl_com_ProgEvaluacionModels>().ReverseMap();
         CreateMap<tbl_com_ProgramacionMasivaEvaluacionesEntities, Tbl_com_ProgramacionMasivaEvaluacionesModels>().ReverseMap();
+        CreateMap<tbl_com_ProgramacionMasivaEvaluacionesEntities, ResponseTbl_com_ProgramacionMasivaEvaluacionesModels>().ReverseMap();
         CreateMap<tbl_com_NormasEntities, Tbl_com_NormasModels>().ReverseMap();
         CreateMap<tbl_com_NormasEntities, JOINTbl_com_NormasModels>().ReverseMap();
         CreateMap<tbl_com_ResultadosEvaluacionEntities, Tbl_com_ResultadosEvaluacionModels>().ReverseMap();
