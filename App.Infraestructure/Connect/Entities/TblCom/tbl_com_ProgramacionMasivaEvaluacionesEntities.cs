@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using App.Infraestructure.Connect.Entities.Scp;
+using App.Infraestructure.Connect.Entities.TblMast;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Infraestructure.Connect.Entities.TblCom;
@@ -10,8 +12,14 @@ public class tbl_com_ProgramacionMasivaEvaluacionesEntities
     public int IdProgramacion { get; set; }
     public long CedulaEvaluado { get; set; }
     public int ClaveCargoEvaluado { get; set; }
+
+    [ForeignKey(nameof(CodigoDireccion))]
     public int CodigoDireccion { get; set; }
+    public tbl_mast_ZonasEntities? ZonaObj { get; set; }
+
+    [ForeignKey(nameof(CodigoGerencia))]
     public int CodigoGerencia { get; set; }
+    public tbl_mast_OficinasEntities? OficinaObj { get; set; }
     public int CodigoNivelCompetencia { get; set; }
     public int MesProgramado { get; set; }
     public long CedulaEvaluador { get; set; }

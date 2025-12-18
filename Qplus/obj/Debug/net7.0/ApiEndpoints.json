@@ -5863,6 +5863,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ProgramacionMasivaEvaluacionesController",
+    "Method": "GetDataProgramacionByID",
+    "RelativePath": "api/ProgramacionMasivaEvaluaciones/GetDataProgramacionByID/{IdProgramacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProgramacion",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.ResponseTbl_com_ProgramacionMasivaEvaluacionesModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgramacionMasivaEvaluacionesController",
     "Method": "GetDataProgramacionMasivaEvaluaciones",
     "RelativePath": "api/ProgramacionMasivaEvaluaciones/GetDataProgramacionMasivaEvaluaciones/{IdProgramacion}",
     "HttpMethod": "GET",
