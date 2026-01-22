@@ -51,6 +51,21 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
+        public async Task<List<TBL_com_ActividadesPIDModels>> GetListaActividadesPDIByEvaluadoIdByAnio(int EmpresaId, long EvaluadoId, int InAnio)
+        {
+            try
+            {
+                var objResult = await _context.TBL_com_ActividadesPID.AsNoTracking()
+                    .Where(x => x.EmpresaId == EmpresaId && x.EvaluadoId == EvaluadoId && x.InAnio == InAnio)
+                    .ToListAsync();
+                return _mapper.Map<List<TBL_com_ActividadesPIDModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaActividadesPDIByEvaluadoIdByAnio", ex, EmpresaId + "/" + EvaluadoId + "/" + InAnio);
+                throw;
+            }
+        }
         public async Task<TBL_com_ActividadesPIDModels> CreateActividadesPID(TBL_com_ActividadesPIDModels objCreate)
         {
             try

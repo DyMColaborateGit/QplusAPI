@@ -23,6 +23,10 @@ namespace App.logic.Services
         {
             return await _actividadesPIDRepository.GetListaActividadesPDI(EmpresaId);
         }
+        public async Task<List<TBL_com_ActividadesPIDModels>> GetListaActividadesPDIByEvaluadoIdByAnio(int EmpresaId, long EvaluadoId, int InAnio)
+        {
+            return await _actividadesPIDRepository.GetListaActividadesPDIByEvaluadoIdByAnio(EmpresaId, EvaluadoId, InAnio);
+        }
         public async Task<TBL_com_ActividadesPIDModels> PostCreatenewActividadPID(TBL_com_ActividadesPIDModels ObjRequest)
         {
             return await _actividadesPIDRepository.CreateActividadesPID(ObjRequest);

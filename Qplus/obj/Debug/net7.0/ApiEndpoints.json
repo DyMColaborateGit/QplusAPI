@@ -50,6 +50,65 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ActividadesPIDController",
+    "Method": "GetListaActividadesPDIByEvaluadoIdByAnio",
+    "RelativePath": "api/ActividadesPID/GetListaActividadesPDIByEvaluadoIdByAnio/{EmpresaId}/{EvaluadoId}/{InAnio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluadoId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "InAnio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_ActividadesPIDModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ActividadesPIDController",
     "Method": "GetObjActividadesPDI",
     "RelativePath": "api/ActividadesPID/GetObjActividadesPDI/{EmpresaId}",
     "HttpMethod": "GET",
