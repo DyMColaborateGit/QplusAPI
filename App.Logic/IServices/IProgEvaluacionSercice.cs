@@ -6,6 +6,7 @@ namespace App.logic.IServices;
 public interface IProgEvaluacionSercice 
 {
     Task<Tbl_com_ProgEvaluacionModels> GetObjProgEvaluacion(long EvaluacionId);
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
 
     Task<string> GetCerrarEvaluacion(long EvaluacionId, int EmpresaId, int Caracteres);
 

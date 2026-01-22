@@ -1,8 +1,10 @@
 ﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
 using App.Models.Models.Scp;
 using App.Models.Models.Share;
 using App.Models.Models.TblCom;
+using App.Models.Models.TblInd;
 
 namespace App.logic.Services;
 
@@ -38,7 +40,10 @@ public class ProgEvaluacionService : IProgEvaluacionSercice
         var getResult = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
         return getResult;
     }
-
+    public async Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId)
+    {
+        return await _progEvaluacionRepository.GetListaProgEvaluacionByEvaluacionId(EvaluacionId);
+    }
     public async Task<string> GetCerrarEvaluacion(long EvaluacionId, int EmpresaId, int Caracteres)
     {
         Tbl_com_ProgEvaluacionModels objEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);

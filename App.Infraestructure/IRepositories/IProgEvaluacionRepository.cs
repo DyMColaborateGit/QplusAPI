@@ -6,6 +6,7 @@ namespace App.Infraestructure.IRepositories;
 public interface IProgEvaluacionRepository
 {
     Task<Tbl_com_ProgEvaluacionModels> ObjProgEvaluacion(long evaluacionId);
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
 
     Task<ResponseTbl_com_ProgEvaluacionModels> ObjProgEvaluacionByMasivas(long evaluacionId);
 

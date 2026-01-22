@@ -2,6 +2,7 @@
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.TblCom;
+using App.Models.Models.TblInd;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -34,7 +35,23 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             throw;
         }
     }
+    public async Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId)
+    {
+        try
+        {
+            var objResult = await _context.TBL_com_ProgEvaluacion
+                .AsNoTracking()
+                .Where(x => x.InIdEvaluacion == EvaluacionId)
+                .ToListAsync();
 
+            return _mapper.Map<List<Tbl_com_ProgEvaluacionModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListaProgEvaluacionByEvaluacionId", ex, EvaluacionId.ToString());
+            throw;
+        }
+    }
     public async Task<ResponseTbl_com_ProgEvaluacionModels> ObjProgEvaluacionByMasivas(long evaluacionId)
     {
         try

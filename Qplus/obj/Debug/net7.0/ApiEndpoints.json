@@ -5470,6 +5470,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
+    "Method": "GetListaProgEvaluacionByEvaluacionId",
+    "RelativePath": "api/ProgEvaluacion/GetListaProgEvaluacionByEvaluacionId/{EvaluacionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.Tbl_com_ProgEvaluacionModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
     "Method": "UpdateCajaMapaDesempenoM",
     "RelativePath": "api/ProgEvaluacion/UpdateCajaMapaDesempenoM/{EvaluacionId}/{UbicacionMD_M}/{NivelM}/{ColorNivelM}",
     "HttpMethod": "PUT",
