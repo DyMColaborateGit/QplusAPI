@@ -649,3 +649,4 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs

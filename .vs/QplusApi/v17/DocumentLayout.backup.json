@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\connect\\entities\\tblcom\\tbl_com_actividadespidentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\entities\\tblcom\\tbl_com_actividadespidentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\actividadespidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\actividadespidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\extensions\\aplicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\extensions\\aplicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\mapperprofiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\mapperprofiles\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\consolidadodesempenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\consolidadodesempenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\getgestformevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\getgestformevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\connect\\entities\\tblcom\\tbl_com_aspectosvaloracionentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\entities\\tblcom\\tbl_com_aspectosvaloracionentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\connect\\configuration\\tbl_com_aspectosvaloracionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\connect\\configuration\\tbl_com_aspectosvaloracionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\consolidadodesempenoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\consolidadodesempenoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\consolidadodesempenoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\consolidadodesempenoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\tiposindicadoresestrategicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\tiposindicadoresestrategicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,28 +87,170 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "tbl_com_ActividadesPIDEntities.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_ActividadesPIDEntities.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_ActividadesPIDEntities.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_ActividadesPIDEntities.cs",
+              "RelativeToolTip": "App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_ActividadesPIDEntities.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwBoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:44:43.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActividadesPIDController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ActividadesPIDController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\ActividadesPIDController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ActividadesPIDController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\ActividadesPIDController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:42:31.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AplicationServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "RelativeToolTip": "App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:22:20.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\MapperProfiles\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\MapperProfiles\\MappingProfiles.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\MapperProfiles\\MappingProfiles.cs",
+              "RelativeToolTip": "App.Infraestructure\\MapperProfiles\\MappingProfiles.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:21:54.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConsolidadoDesempenoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ConsolidadoDesempenoRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ConsolidadoDesempenoRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ConsolidadoDesempenoRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\ConsolidadoDesempenoRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:08:09.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConsolidadoDesempenosController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ConsolidadoDesempenosController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\ConsolidadoDesempenosController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\ConsolidadoDesempenosController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\ConsolidadoDesempenosController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:06:24.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "tbl_com_AspectosValoracionConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\tbl_com_AspectosValoracionConfiguration.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Configuration\\tbl_com_AspectosValoracionConfiguration.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Configuration\\tbl_com_AspectosValoracionConfiguration.cs",
+              "RelativeToolTip": "App.Infraestructure\\Connect\\Configuration\\tbl_com_AspectosValoracionConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:55:40.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "tbl_com_AspectosValoracionEntities.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_AspectosValoracionEntities.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_AspectosValoracionEntities.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_AspectosValoracionEntities.cs",
+              "RelativeToolTip": "App.Infraestructure\\Connect\\Entities\\TblCom\\tbl_com_AspectosValoracionEntities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:54:56.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetGestFormEvaluacionController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\GetGestFormEvaluacionController.cs",
+              "ViewState": "AgIAACUBAAAAAAAAAAAswC0BAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:26:45.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.Development.json",
+              "RelativeToolTip": "Qplus\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-19T13:51:47.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.json",
               "RelativeDocumentMoniker": "Qplus\\appsettings.json",
               "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.json",
               "RelativeToolTip": "Qplus\\appsettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAB9AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAkAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-19T13:51:48.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\appsettings.Development.json",
-              "RelativeToolTip": "Qplus\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-19T13:51:47.616Z",
+              "DocumentIndex": 11,
+              "Title": "ConsolidadoDesempenoService.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\ConsolidadoDesempenoService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\ConsolidadoDesempenoService.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\ConsolidadoDesempenoService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\ConsolidadoDesempenoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:08:03.953Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TiposIndicadoresEstrategicosController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\TiposIndicadoresEstrategicosController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\TiposIndicadoresEstrategicosController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\TiposIndicadoresEstrategicosController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\TiposIndicadoresEstrategicosController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:03:44.718Z"
             }
           ]
         },
