@@ -190,6 +190,7 @@ namespace App.logic.Extensions
             services.AddScoped<ITipoAnalisisRepository, TipoAnalisisRepository>();
             services.AddScoped<ISeguimientoActividadesRepository, SeguimientoActividadesRepository>();
             services.AddScoped<ILinkRelacionadoActividadesPIDRepository, LinkRelacionadoActividadesPIDRepository>();
+            services.AddScoped<ItotalUESRepository, TotalUESRepository>();
         }
 
         /// <summary>

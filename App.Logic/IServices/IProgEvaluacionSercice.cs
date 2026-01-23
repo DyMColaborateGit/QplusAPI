@@ -6,6 +6,7 @@ namespace App.logic.IServices;
 public interface IProgEvaluacionSercice 
 {
     Task<Tbl_com_ProgEvaluacionModels> GetObjProgEvaluacion(long EvaluacionId);
+
     Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
 
     Task<string> GetCerrarEvaluacion(long EvaluacionId, int EmpresaId, int Caracteres);
@@ -31,4 +32,6 @@ public interface IProgEvaluacionSercice
     Task<string> PutUpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel);
 
     Task<Tbl_com_ProgEvaluacionModels> UpdateProgEvaluacionTotalIndicadores(long EvaluacionId, int TotIndi, int EmpresaId, List<Tbl_com_ResultadosEvaIndicadoresModels> IndicadoresEvaluacion);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GeneradorPDFADIByEvaluacionId(int EvaluacionId);
 }

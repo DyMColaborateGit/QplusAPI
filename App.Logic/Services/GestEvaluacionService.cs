@@ -39,6 +39,8 @@ namespace App.logic.Services
         private readonly IEscalaEvaluacionService _escalaEvaluacionService;
         private readonly IParametrosEmpresasRepository _parametrosEmpresasRepository;
         private readonly INivelDesempenoPpalRepository _nivelDesempenoPpalRepository;
+        private readonly ItotalUESRepository _totalUESRepository;
+        private readonly ITotalAnalisisIndiADIRepository _totalAnalisisIndiADIRepository;
 
         public GestEvaluacionService(
         #region Definition
@@ -1387,6 +1389,10 @@ namespace App.logic.Services
             return ConsolidadoTotales;
         }
 
+        public async Task<List<TBL_com_TotalesConsolidadoDesempenoModels>> TotalAnalisisIndicadoresEstrategicosADI(long EvaluacionId, int EmpresaId)
+        {
+            return await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(EvaluacionId, EmpresaId);
+        }
         public async Task<List<TBL_com_TotalesConsolidadoDesempenoModels>> TotalAnalisisIndicadoresEstrategicos(long EvaluacionId, int EmpresaId)
         {
             List<TBL_com_TotalesConsolidadoDesempenoModels> List = new List<TBL_com_TotalesConsolidadoDesempenoModels>();
@@ -1673,6 +1679,10 @@ namespace App.logic.Services
             return ObjTotalIndEstCorporativos;
         }
 
+        public async Task<GeneralTotalUES> GetTotalAnalisisUES1(long EvaluacionId, int EmpresaId, int Tipo, int Nivel)
+        {
+            return await _totalUESRepository.GetTotalAnalisisUES1(EvaluacionId, EmpresaId, Tipo, Nivel);
+        }
         public async Task<GeneralTotalUES> GeTotalAnalisisUesOne(long EvaluacionId, int EmpresaId, int Tipo, int Nivel)
         {
             Tbl_com_ProgEvaluacionModels ObjEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
