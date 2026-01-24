@@ -1754,6 +1754,10 @@ namespace App.logic.Services
             return TotalUes;
         }
 
+        public async Task<GeneralTotalUES> GetTotalAnalisisUES2(long EvaluacionId, int EmpresaId)
+        {
+            return await _totalUESRepository.GetTotalAnalisisUES2(EvaluacionId, EmpresaId);
+        }
         public async Task<GeneralTotalUES> GeTotalAnalisisuesTwo(long EvaluacionId, int EmpresaId)
         {
             GeneralTotalUES To = new GeneralTotalUES();

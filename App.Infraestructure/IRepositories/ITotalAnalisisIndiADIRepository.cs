@@ -1,5 +1,4 @@
 ﻿using App.Models.Models.TblCom;
-using System.Collections.Generic;
 
 namespace App.Infraestructure.IRepositories
 {

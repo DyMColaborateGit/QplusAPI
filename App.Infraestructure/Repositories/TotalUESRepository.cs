@@ -16,11 +16,19 @@ public class TotalUESRepository : ItotalUESRepository
     private readonly IPesosxTipoIndEstxTipoNivelEstRepository _pesosxTipoIndEstxTipoNivelEstRepository;
     private readonly IResultadosEvaIndicadoresRepository _resultadosEvaIndicadoresRepository;
     private readonly IResulDirectorGerentesRepository _resulDirectorGerentesRepository;
+    private readonly ITotalAnalisisIndiADIRepository _totalAnalisisIndiADIRepository;
 
-    public TotalUESRepository(ConnectContext context, IMapper mapper)
+    public TotalUESRepository(ConnectContext context, IMapper mapper, IProgEvaluacionRepository progEvaluacionRepository, IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository,
+        IResultadosEvaIndicadoresRepository resultadosEvaIndicadoresRepository, IResulDirectorGerentesRepository resulDirectorGerentesRepository, ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository)
     {
         _context = context;
         _mapper = mapper;
+        _progEvaluacionRepository = progEvaluacionRepository;
+        _pesosxTipoIndEstxTipoNivelEstRepository = pesosxTipoIndEstxTipoNivelEstRepository;
+        _resultadosEvaIndicadoresRepository = resultadosEvaIndicadoresRepository;
+        _resulDirectorGerentesRepository = resulDirectorGerentesRepository;
+        _totalAnalisisIndiADIRepository = totalAnalisisIndiADIRepository;
+
     }
 
     public async Task<GeneralTotalUES> GetTotalAnalisisUES1(long EvaluacionId, int EmpresaId, int Tipo, int Nivel)
@@ -68,7 +76,7 @@ public class TotalUESRepository : ItotalUESRepository
                 idEVa = DataEvaluacion.InIdEvaluacion;
                 cc = (int)ObjEvaluacion.IdPadre;
             }
-            peso = (await TotalAnalisisIndicadoresEstrategicos(EvaluacionId, EmpresaId))[0].Peso;
+            peso = (await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(EvaluacionId, EmpresaId))[0].Peso;
         }
 
         if (t == 1)
@@ -92,5 +100,28 @@ public class TotalUESRepository : ItotalUESRepository
             TotalUes.peso = peso;
         }
         return TotalUes;
+    }
+    public async Task<GeneralTotalUES> GetTotalAnalisisUES2(long EvaluacionId, int EmpresaId)
+    {
+        GeneralTotalUES To = new GeneralTotalUES();
+        Tbl_com_ProgEvaluacionModels ObjEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+        int tipoIndi = (int)ObjEvaluacion.TipoNivelEstrategico;
+        decimal peso = 100;
+
+        if (tipoIndi != 0)
+        {
+            peso = (await _pesosxTipoIndEstxTipoNivelEstRepository.ObjPesosxTipoIndEstxTipoNivelEst(EmpresaId, tipoIndi, 2)).Peso;
+        }
+
+        var listInd = await _resultadosEvaIndicadoresRepository.ListResultadosEvaIndicadores(EvaluacionId);
+        decimal sum = 0;
+        foreach (var li in listInd)
+        {
+            sum += li.Ponderado;
+        }
+
+        To.Total = sum;
+        To.peso = peso;
+        return To;
     }
 }

@@ -18,14 +18,37 @@ public class TotalAnalisisIndiADIRepository : ITotalAnalisisIndiADIRepository
     private readonly IPesosxTipoIndEstxTipoNivelEstRepository _pesosxTipoIndEstxTipoNivelEstRepository;
     private readonly IResultadosEvaIndicadoresRepository _resultadosEvaIndicadoresRepository;
     private readonly IResulDirectorGerentesRepository _resulDirectorGerentesRepository;
+    private readonly IProgramacionMasivaEvaluacionesRepository _programacionMasivaEvaluacionesRepository;
+    private readonly IPesosxTipoIndxNivelCompRepository _pesosxTipoIndxNivelCompRepository;
+    private readonly IGetPorcentajesRepository _getPorcentajesRepository;
+    private readonly ITotalIndEstCorporativosRepository _totalIndEstCorporativosRepository;
+    private readonly IZonasRepository _zonasRepository;
+    private readonly IOficinasRepository _oficinasRepository;
+    private readonly IFuncionariosRepository _funcionariosRepository;
+    private readonly IParametrosDesempenoRepository _parametrosDesempenoRepository;
 
-    public TotalAnalisisIndiADIRepository(ConnectContext context, IMapper mapper)
+    public TotalAnalisisIndiADIRepository(ConnectContext context, IMapper mapper, IProgEvaluacionRepository progEvaluacionRepository, IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository,
+        IResultadosEvaIndicadoresRepository resultadosEvaIndicadoresRepository, IResulDirectorGerentesRepository resulDirectorGerentesRepository, IProgramacionMasivaEvaluacionesRepository programacionMasivaEvaluacionesRepository,
+        IPesosxTipoIndxNivelCompRepository pesosxTipoIndxNivelCompRepository, IGetPorcentajesRepository getPorcentajesRepository, ITotalIndEstCorporativosRepository totalIndEstCorporativosRepository, IZonasRepository zonasRepository,
+        IOficinasRepository oficinasRepository, IFuncionariosRepository funcionariosRepository, IParametrosDesempenoRepository parametrosDesempenoRepository)
     {
         _context = context;
         _mapper = mapper;
+        _progEvaluacionRepository = progEvaluacionRepository;
+        _pesosxTipoIndEstxTipoNivelEstRepository = pesosxTipoIndEstxTipoNivelEstRepository;
+        _resultadosEvaIndicadoresRepository = resultadosEvaIndicadoresRepository;
+        _resulDirectorGerentesRepository = resulDirectorGerentesRepository;
+        _programacionMasivaEvaluacionesRepository = programacionMasivaEvaluacionesRepository;
+        _pesosxTipoIndxNivelCompRepository = pesosxTipoIndxNivelCompRepository;
+        _getPorcentajesRepository = getPorcentajesRepository;
+        _totalIndEstCorporativosRepository = totalIndEstCorporativosRepository;
+        _zonasRepository = zonasRepository;
+        _oficinasRepository = oficinasRepository;
+        _funcionariosRepository = funcionariosRepository;
+        _parametrosDesempenoRepository = parametrosDesempenoRepository;
     }
 
-    public async Task<TBL_com_TotalesConsolidadoDesempenoModels> TotalAnalisisIndicadoresEstrategicosADI(long EvaluacionId, int EmpresaId)
+    public async Task<List<TBL_com_TotalesConsolidadoDesempenoModels>> TotalAnalisisIndicadoresEstrategicosADI(long EvaluacionId, int EmpresaId)
     {
         List<TBL_com_TotalesConsolidadoDesempenoModels> List = new List<TBL_com_TotalesConsolidadoDesempenoModels>();
 

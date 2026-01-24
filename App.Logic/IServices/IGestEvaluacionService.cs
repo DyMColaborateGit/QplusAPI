@@ -38,6 +38,8 @@ namespace App.logic.IServices
 
         Task<GeneralTotalUES> GetTotalAnalisisUES1(long EvaluacionId, int EmpresaId, int Tipo, int Nivel);
 
+        Task<GeneralTotalUES> GetTotalAnalisisUES2(long EvaluacionId, int EmpresaId);
+
         Task<List<TBL_com_TotalesConsolidadoDesempenoModels>> TotalAnalisisIndicadoresEstrategicosADI(long EvaluacionId, int EmpresaId);
     }
 }

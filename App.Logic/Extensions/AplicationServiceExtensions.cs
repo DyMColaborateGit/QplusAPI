@@ -191,6 +191,7 @@ namespace App.logic.Extensions
             services.AddScoped<ISeguimientoActividadesRepository, SeguimientoActividadesRepository>();
             services.AddScoped<ILinkRelacionadoActividadesPIDRepository, LinkRelacionadoActividadesPIDRepository>();
             services.AddScoped<ItotalUESRepository, TotalUESRepository>();
+            services.AddScoped<ITotalAnalisisIndiADIRepository, TotalAnalisisIndiADIRepository>();
         }
 
         /// <summary>
