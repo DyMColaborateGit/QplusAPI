@@ -4,8 +4,10 @@ using App.Infraestructure.IRepositories;
 using App.Models.Models.TblCom;
 using App.Models.Models.TblInd;
 using AutoMapper;
+using Azure.Core;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Linq;
 using System.Text;
 
 namespace App.Infraestructure.Repositories;
@@ -27,12 +29,12 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
     private readonly ITiposIndicadoresEstrategicosRepository _tiposIndicadoresEstrategicosRepository;
     private readonly ITotalIndEstCorporativosRepository _totalIndEstCorporativosRepository;
     private readonly IResultIndiCoporpRepository _resultIndiCoporpRepository;
-    // Pendiente UES1 Y UES2
     private readonly ItotalUESRepository _totalUESRepository;
     private readonly IPesosxTipoIndEstxTipoNivelEstRepository _pesosxTipoIndEstxTipoNivelEstRepository;
     private readonly IResultcomTecnicasRepository _resultcomTecnicasRepository;
     private readonly IEmpresasTitulosRepository _empresasTitulosRepository;
     private readonly ITotalAnalisisIndiADIRepository _totalAnalisisIndiADIRepository;
+    private readonly IPesosxTipoIndxNivelCompRepository _pesosxTipoIndxNivelCompRepository;
 
 
     public ProgEvaluacionRepository(ConnectContext context, IMapper mapper, 
@@ -40,9 +42,9 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         ICargosRepository cargosRepository, ICargosProcesosRepository cargosProcesosRepository, ITxtFormEvaluacionRepository txtFormEvaluacionRepository,
         IResultadosEvaluacionRepository resultadosEvaluacionRepository, IConsolidadoDesempenoRepository consolidadoDesempenoRepository,
         IResultadosEvaIndicadoresRepository resultadosEvaIndicadoresRepository, IResultadosRepository resultadosRepository, ITiposIndicadoresEstrategicosRepository tiposIndicadoresEstrategicosRepository,
-        ITotalIndEstCorporativosRepository totalIndEstCorporativosRepository, IResultIndiCoporpRepository resultIndiCoporpRepository,
+        ITotalIndEstCorporativosRepository totalIndEstCorporativosRepository, ItotalUESRepository totalUESRepository, IResultIndiCoporpRepository resultIndiCoporpRepository,
         IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository, IResultcomTecnicasRepository resultcomTecnicasRepository,
-        IEmpresasTitulosRepository empresasTitulosRepository, ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository)
+        IEmpresasTitulosRepository empresasTitulosRepository, ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository, IPesosxTipoIndxNivelCompRepository pesosxTipoIndxNivelCompRepository)
     {
         _context = context;
         _mapper = mapper;
@@ -58,10 +60,12 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         _tiposIndicadoresEstrategicosRepository = tiposIndicadoresEstrategicosRepository;
         _totalIndEstCorporativosRepository = totalIndEstCorporativosRepository;
         _resultIndiCoporpRepository = resultIndiCoporpRepository;
+        _totalUESRepository = totalUESRepository;
         _pesosxTipoIndEstxTipoNivelEstRepository = pesosxTipoIndEstxTipoNivelEstRepository;
         _resultcomTecnicasRepository = resultcomTecnicasRepository;
         _empresasTitulosRepository = empresasTitulosRepository;
         _totalAnalisisIndiADIRepository = totalAnalisisIndiADIRepository;
+        _pesosxTipoIndxNivelCompRepository = pesosxTipoIndxNivelCompRepository;
     }
 
     public async Task<Tbl_com_ProgEvaluacionModels> ObjProgEvaluacion(long evaluacionId)
@@ -459,7 +463,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             throw;
         }
     }
-    public async Task<List<Tbl_com_ProgEvaluacionModels>> GeneradorPDFADIByEvaluacionId(int EvaluacionId)
+    public async Task<string>GeneradorPDFADIByEvaluacionId(int EvaluacionId, int acc)
     {
         try
         {
@@ -533,9 +537,19 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
 
             foreach (var item in ADI)
             {
-                string imagenHtml = !string.IsNullOrEmpty(item.Color)
-                    ? $"<img src='{item.Color}' style='height: 25px; width: 25px; vertical-align: middle;' />"
-                    : "";
+                string colorHex = ObtenerHexColor(item.Color);
+
+                // 2.óvalo con CSS
+                string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 1px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
 
                 htmlPdf += $@"
                 <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 5px;"">
@@ -547,7 +561,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                     <tr>
                         <td style=""border: 1px solid #dddddd; padding: 8px;"">{item.Normasobj.VcCompetencia}</td>
                         <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{item.Nivel}</td>
-                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{imagenHtml}</td>
+                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ovaloHtml}</td>
                     </tr>
                 </table>";
 
@@ -866,7 +880,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                         {
                             int idEvaluacionPadre = progEva.InIdEvaluacion;
 
-                            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoValoracionId, progEva.Nivel);
+                            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
                             var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
 
                             decimal pesoTotal = UES1.peso;
@@ -1009,7 +1023,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                         {
                             int idEvaluacionPadre = progEva.InIdEvaluacion;
 
-                            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoValoracionId, progEva.Nivel);
+                            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
                             var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
 
                             decimal pesoTotal = UES1.peso;
@@ -1168,7 +1182,404 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             }
             else
             {
+                var gestion = await _pesosxTipoIndxNivelCompRepository.ObjPesosxTipoIndxNivelComp(empresa, nivelCargo, 1);
+                bool gestionVisible = gestion.VisibleADI;
+                var estretegicos = await _pesosxTipoIndxNivelCompRepository.ObjPesosxTipoIndxNivelComp(empresa, nivelCargo, 2);
+                bool estretegicosVisible = estretegicos.VisibleADI;
 
+                if (gestionVisible)
+                {
+                    // --- Indicadores de Gestión ---
+                    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Indicadores de Gestión</h3>";
+
+                    string tablaIndicadoresGestionCabecera = $@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                            <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                            </tr>";
+
+                    StringBuilder filasIndicadoresGestion = new StringBuilder();
+
+                    if (indicadoresGestion != null)
+                    {
+                        foreach (var IndicadoresG in indicadoresGestion)
+                        {
+                            filasIndicadoresGestion.Append($@"
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{IndicadoresG.MastIndicadoresobj.CodIndicador}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{IndicadoresG.Indicador}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{IndicadoresG.Peso}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{IndicadoresG.Real}</td>
+                            </tr>");
+                        }
+                    }
+
+                    string tablaIndicadoresGestionCierre = @"</table><br />";
+
+                    htmlPdf += tablaIndicadoresGestionCabecera + filasIndicadoresGestion.ToString() + tablaIndicadoresGestionCierre;
+                }
+                if (estretegicosVisible)
+                {
+                    var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 3);
+                    string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
+
+                    htmlPdf += $@"
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                {nombreTituloUes1}
+                            </h3>";
+
+                    var idPadre = progEva.IdPadre;
+                    var anio = progEva.InAno;
+                    var mesInicio = progEva.MesIni;
+                    var mesFin = progEva.MesFin;
+                    int tipoValoracion = 1;
+                    int tipoEvaluacion = 1;
+
+                    if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
+                    {
+                        int idEvaluacionPadre = progEva.InIdEvaluacion;
+
+                        var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
+                        var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
+
+                        decimal pesoTotal = UES1.peso;
+                        decimal totalCumplimiento = UES1.Total;
+
+                        htmlPdf += $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
+                                    </tr>
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
+                                    </tr>
+                                </table>";
+
+                        // --- Tabla Detalle de Indicadores Extra ---
+                        string tablaIndicadoresExtrateCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                    </tr>";
+
+                        StringBuilder filasIndicadoresExtrate = new StringBuilder();
+
+                        if (indicadoresExtra != null)
+                        {
+                            foreach (var indiExtra in indicadoresExtra)
+                            {
+                                filasIndicadoresExtrate.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
+                                </tr>");
+                            }
+                        }
+                        htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
+
+                        // --- Total Análisis Indicadores Estratégicos ---
+                        var TotalAnaIndiEstra = await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEva.InIdEvaluacion, empresa);
+
+                        htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis Indicadores Estrategicos</h3>";
+
+                        string tablaTotalCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Valor Análisis</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 10%;"">Color</th>
+                                    </tr>";
+
+                        StringBuilder filasTotalAnalisis = new StringBuilder();
+
+                        if (TotalAnaIndiEstra != null)
+                        {
+                            foreach (var TotalAIE in TotalAnaIndiEstra)
+                            {
+                                // Detectamos el color para el óvalo usando la función que definimos antes
+                                string colorHex = ObtenerHexColor(TotalAIE.Color);
+
+                                string ovaloHtml = $@"
+                                    <span style=""
+                                        display: inline-block; 
+                                        width: 35px; 
+                                        height: 18px; 
+                                        background-color: {colorHex}; 
+                                        border-radius: 12px; 
+                                        border: 0.5px solid #444; 
+                                        vertical-align: middle;"">
+                                    </span>";
+
+                                filasTotalAnalisis.Append($@"
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Peso}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.ValorAnalisis}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Nivel}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                            {ovaloHtml}
+                                        </td>
+                                    </tr>");
+                            }
+                        }
+
+                        htmlPdf += tablaTotalCabecera + filasTotalAnalisis.ToString() + "</table><br />";
+                    }
+                }
+            }
+            // Total Análisis de Rendimiento
+            htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis de Rendimiento</h3>";
+
+            // Obtención de datos asíncrona desde el repositorio
+            var AnalisisRendi = await _consolidadoDesempenoRepository.ListConsolidadoDesempeno(progEva.InIdEvaluacion, 2);
+
+            StringBuilder filasAnalisisRendimiento = new StringBuilder();
+
+            if (AnalisisRendi != null)
+            {
+                foreach (var itemRendi in AnalisisRendi)
+                {
+                    // Generación del óvalo CSS dinámico basado en el color de la DB
+                    string colorHex = ObtenerHexColor(itemRendi.Color);
+
+                    string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 0.5px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                    filasAnalisisRendimiento.Append($@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">
+                                    {itemRendi.Nivel}
+                                </td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                    {ovaloHtml}
+                                </td>
+                            </tr>
+                        </table>");
+                }
+            }
+
+            htmlPdf += filasAnalisisRendimiento.ToString() + "<br />";
+
+            // --- Sección Observaciones Generales ---
+            htmlPdf += $@"
+                    <br/>
+                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                        <tr>
+                            <td style=""border: 1px solid #dddddd; padding-left: 10px; padding-top: 10px; padding-bottom: 8px; vertical-align: top; text-align: left; background-color: #f2f2f2; width: 30%;"">
+                                <strong>Observaciones Generales:</strong>
+                            </td>
+                            <td style=""border: 1px solid #dddddd; padding-left: 10px; padding-top: 10px; padding-bottom: 8px; vertical-align: top; text-align: left;"">
+                                {progEva.ObservacionGeneral}
+                            </td>
+                        </tr>
+                    </table><br/>";
+
+            var listaTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(EvaluacionId);
+            int comptc = listaTecnicas?.Count() ?? 0;
+            if (comptc > 0)
+            {
+                // --- 3. Competencias Técnicas ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">3. Competencias Técnicas</h3>";
+
+                // Obtención del texto descriptivo desde el repositorio
+                var textoTecnicas = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, (int)progEva.InAno, 3, (int)progEva.TipoValoracionId);
+
+                htmlPdf += $@"
+                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                        <tr>
+                            <td style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
+                                <br/>
+                                {textoTecnicas}
+                            </td>
+                        </tr>
+                    </table><br/>";
+
+                // --- Resultados Competencias Técnicas ---
+                var ResultCompeTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(progEva.InIdEvaluacion);
+
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Resultados Competencias Técnicas</h3>";
+
+                string tablaCabeceraTecnica = $@"
+                    <br/>
+                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Competencia</th>
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Observación</th>
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 60px;"">Color</th>
+                        </tr>";
+
+                StringBuilder filasTecnicas = new StringBuilder();
+
+                if (ResultCompeTecnicas != null)
+                {
+                    foreach (var ResultCompeTec in ResultCompeTecnicas)
+                    {
+                        // Generación del óvalo CSS basado en el color que viene de la DB
+                        string colorHex = ObtenerHexColor(ResultCompeTec.Color);
+
+                        string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 0.5px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                        filasTecnicas.Append($@"
+                        <tr style=""border: 1px solid #dddddd;"">
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.Descripcion}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.Observacion}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.EscalaNivel}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                {ovaloHtml}
+                            </td>
+                        </tr>");
+                    }
+                }
+
+                htmlPdf += tablaCabeceraTecnica + filasTecnicas.ToString() + "</table><br />";
+
+                // --- Total Competencias Técnicas ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Competencias Tecnicas</h3>";
+
+                // Obtención de datos asíncrona (Asegúrate de tener inyectado el repositorio correspondiente)
+                var TotalCompTecnicas = await _progEvaluacionRepository.GetListaProgEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
+
+                StringBuilder sbTotalCompTecnicas = new StringBuilder();
+
+                if (TotalCompTecnicas != null)
+                {
+                    foreach (var TotalCompTecn in TotalCompTecnicas)
+                    {
+                        // Usamos la función de mapeo de color para el óvalo CSS
+                        string colorHex = ObtenerHexColor(TotalCompTecn.Color);
+
+                        string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 0.5px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                        sbTotalCompTecnicas.Append($@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">
+                                    {TotalCompTecn.NivelComt}
+                                </td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                    {ovaloHtml}
+                                </td>
+                            </tr>
+                        </table>");
+                    }
+                }
+
+                // Concatenamos el contenido y cerramos con el espacio final
+                htmlPdf += sbTotalCompTecnicas.ToString() + "<br />";
+            }
+            /// traer este dato en el parametro
+            //int acc = int.Parse(Request.QueryString.Get("acc"));
+            if (acc == 2)
+            {
+                // --- Resultados Análisis de Desarrollo ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Resultados Análisis de Desarrollo</h3><br />";
+
+                var ResultAnalisisDesarrollo = await _consolidadoDesempenoRepository.GetListaConsolidadosByEvaluacionId(progEva.InIdEvaluacion);
+
+                StringBuilder sbResultadosDesarrollo = new StringBuilder();
+
+                if (ResultAnalisisDesarrollo != null)
+                {
+                    foreach (var ResultAnaDesa in ResultAnalisisDesarrollo)
+                    {
+                        string colorHex = ObtenerHexColor(ResultAnaDesa.Color);
+
+                        string ovaloHtml = $@"
+                        <span style=""display: inline-block; width: 35px; height: 18px; background-color: {colorHex}; border-radius: 12px; border: 0.5px solid #444; vertical-align: middle;"">
+                        </span>";
+
+                        sbResultadosDesarrollo.Append($@"
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px; width: 40%;"">{ResultAnaDesa.AspectoValoracionObj.AspectoValoracion}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px; width: auto;"">{ResultAnaDesa.Nivel}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                    {ovaloHtml}
+                                </td>
+                            </tr>
+                        </table>");
+                    }
+                }
+
+                htmlPdf += sbResultadosDesarrollo.ToString() + "<br />";
+
+                // --- Concepto Final Análisis de Desarrollo ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Concepto Final Análisis de Desarrollo</h3>";
+
+                var ConcepFinalAnaDesarrollo = await _progEvaluacionRepository.GetListaProgEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
+
+                StringBuilder sbConceptoFinal = new StringBuilder();
+
+                if (ConcepFinalAnaDesarrollo != null)
+                {
+                    foreach (var ConcepFinalAnaDesa in ConcepFinalAnaDesarrollo)
+                    {
+                        string colorHex = ObtenerHexColor(ConcepFinalAnaDesa.Color);
+
+                        string ovaloHtml = $@"
+                                <span style=""display: inline-block; width: 35px; height: 18px; background-color: {colorHex}; border-radius: 12px; border: 0.5px solid #444; vertical-align: middle;"">
+                                </span>";
+
+                        sbConceptoFinal.Append($@"
+                            <br/>
+                            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 20%;"">{ConcepFinalAnaDesa.Nivel}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ConcepFinalAnaDesa.DescNivel}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                        {ovaloHtml}
+                                    </td>
+                                </tr>
+                            </table>");
+                    }
+                }
+
+                htmlPdf += sbConceptoFinal.ToString() + "<br />";
             }
 
                 return htmlPdf;

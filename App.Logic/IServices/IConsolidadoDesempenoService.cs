@@ -10,5 +10,6 @@ namespace App.logic.IServices
     public interface IConsolidadoDesempenoService
     {
         Task<List<TBL_com_ConsolidadoDesempenoModels>> GetListConsolidadoDesempeno(long EvaluacionId, int Tipo);
+        Task<List<TBL_com_ConsolidadoDesempenoModels>> GetListaConsolidadosByEvaluacionId(int EvaluacionId);
     }
 }

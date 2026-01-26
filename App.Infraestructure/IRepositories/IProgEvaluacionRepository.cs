@@ -29,6 +29,6 @@ public interface IProgEvaluacionRepository
 
     Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD_M, string EvaluadorId, long EvaluadoId, bool BEstado);
 
-    Task<List<Tbl_com_ProgEvaluacionModels>> GeneradorPDFADIByEvaluacionId(int EvaluacionId);
+    Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId, int acc);
 
 }
