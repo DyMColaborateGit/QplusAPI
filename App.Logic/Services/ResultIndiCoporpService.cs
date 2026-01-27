@@ -8,10 +8,12 @@ namespace App.logic.Services
     public class ResultIndiCoporpService: IResultIndiCoporpService
     {
         private readonly IResultIndiCoporpRepository _resultIndiCoporpRepository;
+        private readonly IProgEvaluacionRepository _progEvaluacionRepository;
 
-        public ResultIndiCoporpService(IResultIndiCoporpRepository resultIndiCoporpRepository)
+        public ResultIndiCoporpService(IResultIndiCoporpRepository resultIndiCoporpRepository, IProgEvaluacionRepository progEvaluacionRepository)
         {
             _resultIndiCoporpRepository = resultIndiCoporpRepository;
+            _progEvaluacionRepository = progEvaluacionRepository;
         }
 
         public async Task<JOINTBL_ind_ResultIndiCoporpModels> GetresultadoTotalIndicadoreCorporativos(long EvaluacionId, int EmpresaId, int InAnio)
@@ -25,7 +27,10 @@ namespace App.logic.Services
         }
         public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
         {
-            return await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(EvaluacionId, EmpresaId);
+            var progEva = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+
+            return await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva, EmpresaId);
+            //return await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(EvaluacionId, EmpresaId);
         }
     }
 }

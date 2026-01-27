@@ -1,6 +1,7 @@
 ﻿using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
+using App.Models.Models.TblCom;
 using App.Models.Models.TblInd;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -11,15 +12,15 @@ public class TotalIndEstCorporativosRepository: ITotalIndEstCorporativosReposito
 {
     private readonly ConnectContext _context;
     private readonly IMapper _mapper;
-    private readonly IProgEvaluacionRepository _progEvaluacionRepository;
+    //private readonly IProgEvaluacionRepository _progEvaluacionRepository;
     private readonly IFuncionariosRepository _funcionariosRepository;
     private readonly IPesosxTipoIndEstxTipoNivelEstRepository _pesosxTipoIndEstxTipoNivelEstRepository;
 
-    public TotalIndEstCorporativosRepository(ConnectContext context, IMapper mapper, IProgEvaluacionRepository progEvaluacionRepository, IFuncionariosRepository funcionariosRepository, IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository)
+    public TotalIndEstCorporativosRepository(ConnectContext context, IMapper mapper, IFuncionariosRepository funcionariosRepository, IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository)
     {
         _context = context;
         _mapper = mapper;
-        _progEvaluacionRepository = progEvaluacionRepository;
+        //_progEvaluacionRepository = progEvaluacionRepository;
         _funcionariosRepository = funcionariosRepository;
         _pesosxTipoIndEstxTipoNivelEstRepository = pesosxTipoIndEstxTipoNivelEstRepository;
     }
@@ -53,11 +54,12 @@ public class TotalIndEstCorporativosRepository: ITotalIndEstCorporativosReposito
             throw;
         }
     }
-    public async Task<List<GeneralTBL_ind_TotalIndEstCorporativosModels>> GetListaTotalIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
+    //public async Task<List<GeneralTBL_ind_TotalIndEstCorporativosModels>> GetListaTotalIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
+    public async Task<List<GeneralTBL_ind_TotalIndEstCorporativosModels>> GetListaTotalIndicadoresCorporativos(Tbl_com_ProgEvaluacionModels progEvaluacion, int EmpresaId)
     {
         try
         {
-            var progEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+            //var progEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
             var anioEvaluacion = progEvaluacion.InAno;
             var funcionarioEvaluacion = progEvaluacion.InIdEvaluado;
             var tipoIndi = progEvaluacion.TipoNivelEstrategico;
@@ -86,7 +88,7 @@ public class TotalIndEstCorporativosRepository: ITotalIndEstCorporativosReposito
         }
         catch (Exception ex)
         {
-            ExceptionLogHelpers.LogException("GetListaTotalIndicadoresCorporativos", ex, EvaluacionId + "/" + EmpresaId);
+            ExceptionLogHelpers.LogException("GetListaTotalIndicadoresCorporativos", ex, progEvaluacion + "/" + EmpresaId);
             throw;
         }
     }

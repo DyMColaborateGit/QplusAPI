@@ -515,14 +515,8 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.xml
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.csproj.AssemblyReference.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\rpswa.dswa.cache.json
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.AssemblyInfoInputs.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.AssemblyInfo.cs
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.csproj.CoreCompileInputs.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.sourcelink.json
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Select.Html.dep
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Select.Tools.dep
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\webConfigure.config
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\appsettings.json
@@ -571,9 +565,9 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Micros
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Select.Pdf.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\SQLitePCLRaw.core.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -597,7 +591,6 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtim
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -621,8 +614,6 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtim
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
@@ -633,6 +624,15 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\App.Mo
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\App.logic.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\App.Models.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\App.Infraestructure.pdb
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.csproj.AssemblyReference.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\rpswa.dswa.cache.json
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.AssemblyInfoInputs.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.AssemblyInfo.cs
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.csproj.CoreCompileInputs.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.sourcelink.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\rjimswa.dswa.cache.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\rjsmrazor.dswa.cache.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\rjsmcshtml.dswa.cache.json
@@ -649,4 +649,3 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.MvcApplicationPartsAssemblyInfo.cs

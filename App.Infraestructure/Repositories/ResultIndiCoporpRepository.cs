@@ -1,6 +1,7 @@
 ﻿using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
+using App.Models.Models.TblCom;
 using App.Models.Models.TblInd;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -12,13 +13,13 @@ public class ResultIndiCoporpRepository: IResultIndiCoporpRepository
 {
     private readonly ConnectContext _context;
     private readonly IMapper _mapper;
-    private readonly IProgEvaluacionRepository _progEvaluacionRepository;
+    //private readonly IProgEvaluacionRepository _progEvaluacionRepository;
 
-    public ResultIndiCoporpRepository(ConnectContext context, IMapper mapper, IProgEvaluacionRepository progEvaluacionRepository)
+    public ResultIndiCoporpRepository(ConnectContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
-        _progEvaluacionRepository = progEvaluacionRepository;
+        //_progEvaluacionRepository = progEvaluacionRepository;
     }
 
     public async Task<JOINTBL_ind_ResultIndiCoporpModels> ResultadoTotalIndicadoreCorporativos(long EvaluacionId, int EmpresaId, int InAnio)
@@ -60,11 +61,12 @@ public class ResultIndiCoporpRepository: IResultIndiCoporpRepository
             throw;
         }
     }
-    public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
+    //public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativos(int EvaluacionId, int EmpresaId)
+    public async Task<List<JOINTBL_ind_ResultIndiCoporpModels>> GetListaResultadoIndicadoresCorporativos(Tbl_com_ProgEvaluacionModels progEvaluacion, int EmpresaId)
     {
         try
         {
-            var progEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+            //var progEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
             var anioEvaluacion = progEvaluacion.InAno;
 
             var objResult = await _context.TBL_ind_ResultIndiCoporp.AsNoTracking()
@@ -76,7 +78,7 @@ public class ResultIndiCoporpRepository: IResultIndiCoporpRepository
         }
         catch (Exception ex)
         {
-            ExceptionLogHelpers.LogException("GetListaResultadoIndicadoresCorporativos", ex, EvaluacionId + "/" + EmpresaId);
+            ExceptionLogHelpers.LogException("GetListaResultadoIndicadoresCorporativos", ex, progEvaluacion + "/" + EmpresaId);
             throw;
         }
     }

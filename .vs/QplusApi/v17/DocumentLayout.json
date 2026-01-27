@@ -1,26 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CODE\\DYM\\QplusAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\irepositories\\iprogevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iprogevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\totalindestcorporativosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\totalindestcorporativosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\repositories\\totalanalisisindiadirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\totalanalisisindiadirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\iservices\\iprogevaluacionsercice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iprogevaluacionsercice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\extensions\\aplicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\extensions\\aplicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\qplus\\controllers\\totalindestcorporativoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\totalindestcorporativoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.infraestructure\\irepositories\\itotalindestcorporativosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\itotalindestcorporativosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\services\\totalindestcorporativosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\totalindestcorporativosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|c:\\users\\dymdesarrollo\\desktop\\code\\qplus\\qplusapi\\app.logic\\iservices\\itotalindestcorporativosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\itotalindestcorporativosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,60 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProgEvaluacionRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "ViewState": "AgIAAOkFAAAAAAAAAAAAAPMFAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T14:16:02.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProgEvaluacionRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAwwB8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T21:58:55.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgEvaluacionService.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\ProgEvaluacionService.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\ProgEvaluacionService.cs",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAawAQBAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T21:58:44.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProgEvaluacionSercice.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwCMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T21:58:30.095Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -106,15 +66,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProgEvaluacionController.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "ViewState": "AgIAAIcBAAAAAAAAAAAYwJsBAABQAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AplicationServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "RelativeToolTip": "App.Logic\\Extensions\\AplicationServiceExtensions.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T21:57:37.371Z",
+              "WhenOpened": "2026-01-27T21:46:56.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TotalAnalisisIndiADIRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\TotalAnalisisIndiADIRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\TotalAnalisisIndiADIRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\TotalAnalisisIndiADIRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\TotalAnalisisIndiADIRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:31:39.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITotalIndEstCorporativosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\ITotalIndEstCorporativosRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\ITotalIndEstCorporativosRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\IRepositories\\ITotalIndEstCorporativosRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\IRepositories\\ITotalIndEstCorporativosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:03:32.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TotalIndEstCorporativosService.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\TotalIndEstCorporativosService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\TotalIndEstCorporativosService.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\Services\\TotalIndEstCorporativosService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\TotalIndEstCorporativosService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBcAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:03:30.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TotalIndEstCorporativosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\TotalIndEstCorporativosRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\TotalIndEstCorporativosRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\TotalIndEstCorporativosRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\TotalIndEstCorporativosRepository.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDkAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T16:23:05.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITotalIndEstCorporativosService.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\ITotalIndEstCorporativosService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\IServices\\ITotalIndEstCorporativosService.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Logic\\IServices\\ITotalIndEstCorporativosService.cs",
+              "RelativeToolTip": "App.Logic\\IServices\\ITotalIndEstCorporativosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:11:21.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TotalIndEstCorporativosController.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\TotalIndEstCorporativosController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\TotalIndEstCorporativosController.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\Qplus\\Controllers\\TotalIndEstCorporativosController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\TotalIndEstCorporativosController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T21:00:33.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProgEvaluacionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "ToolTip": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T14:16:02.04Z",
               "EditorCaption": ""
             }
           ]

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj": {}
+    "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj": {}
   },
   "projects": {
-    "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj": {
+    "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj",
         "projectName": "App.Infraestructure",
-        "projectPath": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\App.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\DYMDesarrollo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DYMDesarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\CODE\\DYM\\QplusAPI\\App.Models\\App.Models.csproj": {
-                "projectPath": "E:\\CODE\\DYM\\QplusAPI\\App.Models\\App.Models.csproj"
+              "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj": {
+                "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj"
               }
             }
           }
@@ -84,7 +84,15 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.2, )"
+              "version": "[13.0.3, )"
+            },
+            "Select.Pdf.NetCore": {
+              "target": "Package",
+              "version": "[25.2.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.Linq.Expressions": {
               "target": "Package",
@@ -107,24 +115,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\CODE\\DYM\\QplusAPI\\App.Models\\App.Models.csproj": {
+    "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CODE\\DYM\\QplusAPI\\App.Models\\App.Models.csproj",
+        "projectUniqueName": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj",
         "projectName": "App.Models",
-        "projectPath": "E:\\CODE\\DYM\\QplusAPI\\App.Models\\App.Models.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\CODE\\DYM\\QplusAPI\\App.Models\\obj\\",
+        "projectPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\App.Models.csproj",
+        "packagesPath": "C:\\Users\\DYMDesarrollo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DYMDesarrollo\\Desktop\\CODE\\QPLUS\\QplusAPI\\App.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DYMDesarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -182,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }

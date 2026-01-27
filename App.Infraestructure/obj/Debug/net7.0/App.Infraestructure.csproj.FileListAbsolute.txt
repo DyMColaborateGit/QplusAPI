@@ -61,6 +61,8 @@ E:\CODE\DYM\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.dl
 E:\CODE\DYM\QplusAPI\App.Infraestructure\obj\Debug\net7.0\refint\App.Infraestructure.dll
 E:\CODE\DYM\QplusAPI\App.Infraestructure\obj\Debug\net7.0\App.Infraestructure.pdb
 E:\CODE\DYM\QplusAPI\App.Infraestructure\obj\Debug\net7.0\ref\App.Infraestructure.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\bin\Debug\net7.0\Select.Html.dep
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\bin\Debug\net7.0\Select.Tools.dep
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.deps.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Infraestructure\bin\Debug\net7.0\App.Infraestructure.pdb

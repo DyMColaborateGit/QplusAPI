@@ -10640,7 +10640,7 @@
         }
       }
     },
-    "/api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}": {
+    "/api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}/{acc}": {
       "get": {
         "tags": [
           "ProgEvaluacion"
@@ -10648,6 +10648,16 @@
         "parameters": [
           {
             "name": "EvaluacionId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "acc",
             "in": "path",
             "required": true,
             "style": "simple",

@@ -5304,13 +5304,18 @@
   {
     "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
     "Method": "GeneradorPDFADIByEvaluacionId",
-    "RelativePath": "api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}",
+    "RelativePath": "api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}/{acc}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "EvaluacionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "acc",
         "Type": "System.Int32",
         "IsRequired": true
       }
