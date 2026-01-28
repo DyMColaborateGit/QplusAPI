@@ -4,6 +4,6 @@ namespace App.Infraestructure.IRepositories
 {
     public interface ITotalAnalisisIndiADIRepository
     {
-        Task<List<TBL_com_TotalesConsolidadoDesempenoModels>> TotalAnalisisIndicadoresEstrategicosADI(long EvaluacionId, int EmpresaId);
+        Task<List<TBL_com_TotalesConsolidadoDesempenoModels>> TotalAnalisisIndicadoresEstrategicosADI(Tbl_com_ProgEvaluacionModels progEvaluacion, int EmpresaId);
     }
 }

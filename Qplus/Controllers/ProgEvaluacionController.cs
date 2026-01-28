@@ -403,13 +403,13 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GeneradorPDFADIByEvaluacionId/{EvaluacionId}/{acc}")]
-        public async Task<GetResponse<string>> GeneradorPDFADIByEvaluacionId(int EvaluacionId, int acc)
+        [HttpGet("GeneradorPDFADIByEvaluacionId/{EvaluacionId}")]
+        public async Task<GetResponse<string>> GeneradorPDFADIByEvaluacionId(int EvaluacionId)
         {
             GetResponse<string> resultado = new GetResponse<string>();
             try
             {
-                resultado.Data = await _progEvaluacionSercice.GeneradorPDFADIByEvaluacionId(EvaluacionId, acc);
+                resultado.Data = await _progEvaluacionSercice.GeneradorPDFADIByEvaluacionId(EvaluacionId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

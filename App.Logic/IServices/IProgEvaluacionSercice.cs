@@ -33,5 +33,5 @@ public interface IProgEvaluacionSercice
 
     Task<Tbl_com_ProgEvaluacionModels> UpdateProgEvaluacionTotalIndicadores(long EvaluacionId, int TotIndi, int EmpresaId, List<Tbl_com_ResultadosEvaIndicadoresModels> IndicadoresEvaluacion);
 
-    Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId, int acc);
+    Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId);
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Qplus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ff27018d209e1f62b3f64a7bb0111e7ab085526")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba7d44d5d4d9ba1a33cec2fac6ca0ea88839a6f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Qplus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Qplus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

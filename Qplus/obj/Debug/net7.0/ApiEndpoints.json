@@ -8771,6 +8771,60 @@
     ]
   },
   {
+    "ContainingType": "Qplus.Controllers.TotalAnalisisIndiADIController",
+    "Method": "TotalAnalisisIndicadoresEstrategicosADI",
+    "RelativePath": "api/TotalAnalisisIndiADI/GetTotalAnalisisIndicadoresEstrategicosADI/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblCom.TBL_com_TotalesConsolidadoDesempenoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Qplus.Controllers.TotalIndEstCorporativosController",
     "Method": "GetListaTotalIndicadoresCorporativos",
     "RelativePath": "api/TotalIndEstCorporativos/GetListaTotalIndicadoresCorporativos/{EvaluacionId}/{EmpresaId}",
@@ -8792,6 +8846,124 @@
     "ReturnTypes": [
       {
         "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblInd.GeneralTBL_ind_TotalIndEstCorporativosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TotalUESController",
+    "Method": "GetTotalAnalisisUES2",
+    "RelativePath": "api/TotalUES/GetTotalAnalisisUES1/{EvaluacionId}/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.GeneralTotalUES, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.TotalUESController",
+    "Method": "GetTotalAnalisisUES1",
+    "RelativePath": "api/TotalUES/GetTotalAnalisisUES1/{EvaluacionId}/{EmpresaId}/{Tipo}/{Nivel}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EvaluacionId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Tipo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Nivel",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblInd.GeneralTotalUES, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

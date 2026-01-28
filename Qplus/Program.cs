@@ -6,7 +6,6 @@ using System.Reflection;
 using App.logic.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-
 //Se encarga de Transformar Los Modelos con las ERntidades
 builder.Services.InitMapper();
 

@@ -3,10 +3,10 @@ using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.TblCom;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Text;
-using System.Drawing;
 
 namespace App.Infraestructure.Repositories;
 
@@ -25,14 +25,12 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
     private readonly IResultadosRepository _resultadosRepository;
     private readonly ITiposIndicadoresEstrategicosRepository _tiposIndicadoresEstrategicosRepository;
     private readonly ITotalIndEstCorporativosRepository _totalIndEstCorporativosRepository;
-    //Crear el iservice y service y referenciarlo
-    //private readonly ItotalUESRepository _totalUESRepository;
+    private readonly ItotalUESRepository _totalUESRepository;
     private readonly IResultIndiCoporpRepository _resultIndiCoporpRepository;
     private readonly IPesosxTipoIndEstxTipoNivelEstRepository _pesosxTipoIndEstxTipoNivelEstRepository;
     private readonly IResultcomTecnicasRepository _resultcomTecnicasRepository;
     private readonly IEmpresasTitulosRepository _empresasTitulosRepository;
-    //Crear el iservice y service y referenciarlo
-    //private readonly ITotalAnalisisIndiADIRepository _totalAnalisisIndiADIRepository;
+    private readonly ITotalAnalisisIndiADIRepository _totalAnalisisIndiADIRepository;
     private readonly IPesosxTipoIndxNivelCompRepository _pesosxTipoIndxNivelCompRepository;
     private readonly IEmpresasRepository _empresasRepository;
 
@@ -42,15 +40,8 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         IConsolidadoDesempenoRepository consolidadoDesempenoRepository, IResultadosEvaIndicadoresRepository resultadosEvaIndicadoresRepository, IResultadosRepository resultadosRepository,
         ITiposIndicadoresEstrategicosRepository tiposIndicadoresEstrategicosRepository, IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository,
         IResultcomTecnicasRepository resultcomTecnicasRepository, IEmpresasTitulosRepository empresasTitulosRepository, IPesosxTipoIndxNivelCompRepository pesosxTipoIndxNivelCompRepository,
-        IEmpresasRepository empresasRepository, ITotalIndEstCorporativosRepository totalIndEstCorporativosRepository, IResultIndiCoporpRepository resultIndiCoporpRepository)
-
-    //,
-    // ItotalUESRepository totalUESRepository
-    //, , ,
-    //, , ,ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository
-    //, , ,
-    //)
-
+        IEmpresasRepository empresasRepository, ITotalIndEstCorporativosRepository totalIndEstCorporativosRepository, IResultIndiCoporpRepository resultIndiCoporpRepository,
+        ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository, ItotalUESRepository totalUESRepository)
     {
         _context = context;
         _mapper = mapper;
@@ -65,12 +56,12 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         _resultadosRepository = resultadosRepository;
         _tiposIndicadoresEstrategicosRepository = tiposIndicadoresEstrategicosRepository;
         _totalIndEstCorporativosRepository = totalIndEstCorporativosRepository;
-        //_totalUESRepository = totalUESRepository;
+        _totalUESRepository = totalUESRepository;
         _resultIndiCoporpRepository = resultIndiCoporpRepository;
         _pesosxTipoIndEstxTipoNivelEstRepository = pesosxTipoIndEstxTipoNivelEstRepository;
         _resultcomTecnicasRepository = resultcomTecnicasRepository;
         _empresasTitulosRepository = empresasTitulosRepository;
-        //_totalAnalisisIndiADIRepository = totalAnalisisIndiADIRepository;
+        _totalAnalisisIndiADIRepository = totalAnalisisIndiADIRepository;
         _pesosxTipoIndxNivelCompRepository = pesosxTipoIndxNivelCompRepository;
         _empresasRepository = empresasRepository;
     }
@@ -470,1125 +461,1126 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             throw;
         }
     }
-    public async Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId, int acc)
+    public async Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId)
     {
         try
         {
             var progEva = await ObjProgEvaluacion(EvaluacionId);
-            if (progEva == null) return "La evaluación no existe en DB";
-            return "Éxito: Variables cargadas con mocks";
-            //var progEva = await ObjProgEvaluacion(EvaluacionId);
-            //var ZonaOficina = await _programacionMasivaEvaluacionesRepository.GetDataProgramacionByID((int)progEva.IdPrgramacionEvaluacion);
-            //var emp = await _funcionariosRepository.GetObjFuncionarioByIdentificacion((long)progEva.InIdEvaluado);
-            //int empresa = emp.EmpresaId;
-            //int codigoCargo = (int)progEva.CodigoCargo;
-            //int nivelCargo = (int)progEva.NivelCargo;
-            //int tipoNivel = (int)progEva.TipoNivelEstrategico;
-            //var dataCargo = await _cargosRepository.GetDataCargoByCodigo(codigoCargo, empresa);
-            //string nombreCargo = "";
-            //if (dataCargo != null)
-            //{
-            //    string codigo = dataCargo.Codigo.ToString() ?? "";
-            //    string nombre = dataCargo.VcNombre ?? "";
-
-            //    nombreCargo = (string.IsNullOrEmpty(codigo))
-            //        ? nombre
-            //        : $"{codigo} - {nombre}";
-            //}
-            //var dataCargoproceso = await _cargosProcesosRepository.GetProcesoPerteneceByIdCargo(codigoCargo, empresa);
-            //string nombreCargoProceso = "";
-            //if (dataCargoproceso != null)
-            //{
-            //    nombreCargoProceso = dataCargoproceso.ProcesosObj.Proceso ?? "";
-            //}
-            //var textoAdi = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, 1, (int)progEva.TipoValoracionId, (int)progEva.InAno);
-            //var textoAdi2 = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, 2, (int)progEva.TipoValoracionId, (int)progEva.InAno);
-            //var ADI = await _resultadosEvaluacionRepository.ListFormEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
-            //var nivelCompe = await _consolidadoDesempenoRepository.ListConsolidadoDesempeno(progEva.InIdEvaluacion, 1);
-            //var indicadoresGestion = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresByEvaluacionId(progEva.InIdEvaluacion);
-            //var NombreZonaOficina = await _empresasTitulosRepository.ObjEmpresasTitulos(empresa);
-            //// Construcción del HTML
-            //string htmlPdf = "";
-
-            //string tablaInicio = $@"
-            //<table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Fecha Cierre</th>
-            //        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Cargo</th>
-            //        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Proceso</th>
-            //        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">{NombreZonaOficina.Zona}</th>
-            //        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">{NombreZonaOficina.Oficina}</th>
-            //    </tr>";
-
-            //string filaDatos = $@"
-            //    <tr style=""border: 1px solid #dddddd;"">
-            //        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{progEva.FechaCierre?.ToShortDateString()}</td>
-            //        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{nombreCargo}</td>
-            //        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{nombreCargoProceso}</td>
-            //        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ZonaOficina?.ZonaObj?.Zona}</td>
-            //        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ZonaOficina?.OficinaObj?.Oficina}</td>
-            //    </tr>
-            //</table><br />";
-
-            //htmlPdf += tablaInicio + filaDatos;
-
-            //// Análisis Competencia
-            //htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">1. Análisis de Competencias</h3>";
-
-            //string filaAnalsis = $@"
-            //    <tr>
-            //        <td colspan=""6"" style=""border: 1px solid #dddddd; padding: 10px 8px 10px 10px; vertical-align: top; text-align: left;"">
-            //            <br/>
-            //            {textoAdi}
-            //        </td>
-            //    </tr>";
-
-            //htmlPdf += filaAnalsis;
-
-            //foreach (var item in ADI)
-            //{
-            //    string colorHex = ObtenerHexColor(item.Color);
-
-            //    // 2.óvalo con CSS
-            //    string ovaloHtml = $@"
-            //            <span style=""
-            //                display: inline-block; 
-            //                width: 35px; 
-            //                height: 18px; 
-            //                background-color: {colorHex}; 
-            //                border-radius: 12px; 
-            //                border: 1px solid #444; 
-            //                vertical-align: middle;"">
-            //            </span>";
-
-            //    htmlPdf += $@"
-            //    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 5px;"">
-            //        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //            <th style=""border: 1px solid #dddddd; padding: 8px; width: 50%;"">Competencia</th>
-            //            <th style=""border: 1px solid #dddddd; padding: 8px;"">Nivel de Desarrollo</th>
-            //            <th style=""border: 1px solid #dddddd; padding: 8px; width: 50px;""></th>
-            //        </tr>
-            //        <tr>
-            //            <td style=""border: 1px solid #dddddd; padding: 8px;"">{item.Normasobj.VcCompetencia}</td>
-            //            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{item.Nivel}</td>
-            //            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ovaloHtml}</td>
-            //        </tr>
-            //    </table>";
-
-            //    var criterios = await _resultadosRepository.GetResultadosEvaluacionListaByEvaluacionId(progEva.InIdEvaluacion, item.NormaId);
-            //    if (criterios != null && criterios.Any())
-            //    {
-            //        StringBuilder filasCriterios = new StringBuilder();
-
-            //        foreach (var criterio in criterios)
-            //        {
-            //            // icono
-            //            string iconoHtml = @"<span style='display: inline-block; width: 18px; height: 18px; background-color: black; color: white; border-radius: 50%; text-align: center; line-height: 18px; font-size: 10px; vertical-align: middle; margin-right: 8px;'>&#10004;</span>";
-
-            //            filasCriterios.Append($@"
-            //                    <tr>
-            //                        <td style=""width: 70%; border: none; padding: 6px 0; text-align: left; display: flex; align-items: center;"">
-            //                            {iconoHtml}
-            //                            <span style=""vertical-align: middle;"">{criterio.Criterio}</span>
-            //                        </td>
-            //                        <td style=""width: 30%; border: none; padding: 6px 0; text-align: right;"">
-            //                            <span style=""border: 1px solid #ccc; padding: 2px 10px; border-radius: 3px; font-weight: bold; font-size: 12px;"">
-            //                                {criterio.Escalanivel}
-            //                            </span>
-            //                        </td>
-            //                    </tr>");
-            //        }
-
-            //        // Fila contenedora de la sub-tabla
-            //        htmlPdf += $@"
-            //            <tr style=""border: 1px solid #dddddd;"">
-            //                <td colspan=""4"" style=""border: 1px solid #dddddd; padding: 0;"">
-            //                    <table style=""width: 100%; border-collapse: collapse;"">
-            //                        {filasCriterios}
-            //                    </table>
-            //                </td>
-            //            </tr>";
-
-            //        // Sección de Observaciones
-            //        htmlPdf += $@"
-            //            <tr style=""border: 1px solid #dddddd;"">
-            //                <td colspan=""4"" style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left; background-color: #f9f9f9;"">
-            //                    <strong>Observaciones Análisis Competencia:</strong>
-            //                </td>
-            //            </tr>
-            //            <tr style=""border: 1px solid #dddddd;"">
-            //                <td colspan=""4"" style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
-            //                    {item.Observaciones ?? "Sin observaciones"}
-            //                </td>
-            //            </tr>";
-            //    }
-
-            //    htmlPdf += "</table><br />";
-            //}
-
-            //htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">Resultados Análisis Competencias</h3>";
-
-            //string tablaResultadosHeader = $@"
-            //            <br/>
-            //            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Competencia</th>
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Nivel de Desarrollo</th>
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; width: 50px;""></th>
-            //                </tr>";
-
-            //StringBuilder filasResultados = new StringBuilder();
-
-            //if (ADI != null)
-            //{
-            //    foreach (var ResultadoAC in ADI)
-            //    {
-            //        // Reemplazo de imagen por icono circular negro con check blanco
-            //        string iconoHtml = @"<span style='display: inline-block; width: 20px; height: 20px; background-color: black; color: white; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; vertical-align: middle;'>&#10004;</span>";
-
-            //        filasResultados.Append($@"
-            //                <tr style=""border: 1px solid #dddddd;"">
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultadoAC.Normasobj.VcCompetencia}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ResultadoAC.Nivel}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{iconoHtml}</td>
-            //                </tr>");
-            //    }
-            //}
-
-            //htmlPdf += tablaResultadosHeader + filasResultados.ToString() + "</table><br />";
-
-            //htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">Total Nivel de Competencias</h3>";
-
-            //StringBuilder totalNivelRows = new StringBuilder();
-            //totalNivelRows.Append(@"<table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">");
-
-            //if (nivelCompe != null)
-            //{
-            //    foreach (var totalNivelCompe in nivelCompe)
-            //    {
-            //        // 1. Capturamos el color
-            //        string colorHex = ObtenerHexColor(totalNivelCompe.Color);
-
-            //        // 2.óvalo con CSS
-            //        string ovaloHtml = $@"
-            //            <span style=""
-            //                display: inline-block; 
-            //                width: 35px; 
-            //                height: 18px; 
-            //                background-color: {colorHex}; 
-            //                border-radius: 12px; 
-            //                border: 1px solid #444; 
-            //                vertical-align: middle;"">
-            //            </span>";
-
-            //        totalNivelRows.Append($@"
-            //            <tr style=""border: 1px solid #dddddd;"">
-            //                <td style=""border: 1px solid #dddddd; text-align: left; padding: 10px;"">
-            //                    {totalNivelCompe.Nivel}
-            //                </td>
-            //                <td style=""border: 1px solid #dddddd; text-align: center; padding: 5px; width: 60px;"">
-            //                    {ovaloHtml}
-            //                </td>
-            //            </tr>");
-            //    }
-            //}
-
-            //totalNivelRows.Append("</table><br />");
-            //htmlPdf += totalNivelRows.ToString();
-
-            //htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">2. Análisis del Rendimiento</h3>";
-
-            //htmlPdf += $@"
-            //    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //        <tr>
-            //            <td style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
-            //                <br/>
-            //                {textoAdi2}
-            //            </td>
-            //        </tr>
-            //    </table><br/>";
-
-            //if (nivelCargo == 1)
-            //{
-            //    if (tipoNivel == 1)
-            //    {
-            //        var tituloIndEstra = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 1);
-            //        string nombreIndEstra = tituloIndEstra.tipoIndicadorEstrategico;
-
-            //       var indiCorporativos = await _totalIndEstCorporativosRepository.GetListaTotalIndicadoresCorporativos(progEva.InIdEvaluacion, empresa);
-            //        var ResultIndiCorporativos = await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva.InIdEvaluacion, empresa);
-
-            //        htmlPdf += $@"
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    Indicadores Estratégicos
-            //                </h3>
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 10px 0 5px 0;"">
-            //                    {nombreIndEstra}
-            //                </h3>";
-
-            //        StringBuilder tablaPesoTotal = new StringBuilder();
-            //        tablaPesoTotal.Append($@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 350px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Año</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 34%;"">Total</th>
-            //                        </tr>");
-
-            //        if (indiCorporativos != null)
-            //        {
-            //            foreach (var indiCorp in indiCorporativos)
-            //            {
-            //                tablaPesoTotal.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                            {indiCorp.Anio}
-            //                        </td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                            {indiCorp.Peso:N2}
-            //                        </td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                            {indiCorp.Total:N2}
-            //                        </td>
-            //                    </tr>");
-            //            }
-            //        }
-
-            //        tablaPesoTotal.Append("</table><br />");
-
-            //        htmlPdf += tablaPesoTotal.ToString();
-
-            //        string tablaIndicadoresExtraCabecera = $@"
-            //                <br/>
-            //                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                    </tr>";
-
-            //        StringBuilder filasIndicadoresExtra = new StringBuilder();
-
-            //        if (ResultIndiCorporativos != null)
-            //        {
-            //            foreach (var indiCorp in ResultIndiCorporativos)
-            //            {
-            //                filasIndicadoresExtra.Append($@"
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiCorp.MastIndicadoresobj.VcNombreIndicador}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Resultado}</td>
-            //                        </tr>");
-            //            }
-            //        }
-
-            //        string tablaIndicadoresExtraCierre = @"</table><br />";
-
-            //        htmlPdf += tablaIndicadoresExtraCabecera + filasIndicadoresExtra.ToString() + tablaIndicadoresExtraCierre;
-            //    }
-            //    else if (tipoNivel == 2)
-            //    {
-            //        // Indicadores Estratégicos
-            //        var tituloIndEstra = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 1);
-            //        string nombreIndEstra = tituloIndEstra.tipoIndicadorEstrategico;
-
-            //        var indiCorporativos = await _totalIndEstCorporativosRepository.GetListaTotalIndicadoresCorporativos(progEva.InIdEvaluacion, empresa);
-            //        var ResultIndiCorporativos = await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva.InIdEvaluacion, empresa);
-
-            //        htmlPdf += $@"
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    Indicadores Estratégicos
-            //                </h3>
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 10px 0 5px 0;"">
-            //                    {nombreIndEstra}
-            //                </h3>";
-
-            //        StringBuilder tablaPesoTotal = new StringBuilder();
-            //        tablaPesoTotal.Append($@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 350px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Año</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 34%;"">Total</th>
-            //                        </tr>");
-
-            //        if (indiCorporativos != null)
-            //        {
-            //            foreach (var indiCorp in indiCorporativos)
-            //            {
-            //                tablaPesoTotal.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                            {indiCorp.Anio}
-            //                        </td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                            {indiCorp.Peso:N2}
-            //                        </td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                            {indiCorp.Total:N2}
-            //                        </td>
-            //                    </tr>");
-            //            }
-            //        }
-
-            //        tablaPesoTotal.Append("</table><br />");
-
-            //        htmlPdf += tablaPesoTotal.ToString();
-
-            //        string tablaIndicadoresExtraCabecera = $@"
-            //                <br/>
-            //                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                    </tr>";
-
-            //        StringBuilder filasIndicadoresExtra = new StringBuilder();
-
-            //        if (ResultIndiCorporativos != null)
-            //        {
-            //            foreach (var indiCorp in ResultIndiCorporativos)
-            //            {
-            //                filasIndicadoresExtra.Append($@"
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiCorp.MastIndicadoresobj.VcNombreIndicador}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Resultado}</td>
-            //                        </tr>");
-            //            }
-            //        }
-
-            //        string tablaIndicadoresExtraCierre = @"</table><br />";
-
-            //        htmlPdf += tablaIndicadoresExtraCabecera + filasIndicadoresExtra.ToString() + tablaIndicadoresExtraCierre;
-
-            //        var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 2);
-            //        string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
-
-            //        htmlPdf += $@"
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    {nombreTituloUes1}
-            //                </h3>";
-
-            //        // REVISAR COMO TRAER LOS DATOS DEL UES1
-            //        var idPadre = progEva.IdPadre;
-            //        if (idPadre > 0)
-            //        {
-            //            var anio = progEva.InAno;
-            //            var mesInicio = progEva.MesIni;
-            //            var mesFin = progEva.MesFin;
-            //            int tipoValoracion = 1;
-            //            int tipoEvaluacion = 1;
-
-            //            if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
-            //            {
-            //                int idEvaluacionPadre = progEva.InIdEvaluacion;
-
-            //                var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
-            //                var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
-
-            //                decimal pesoTotal = UES1.peso;
-            //                decimal totalCumplimiento = UES1.Total;
-
-            //                htmlPdf += $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
-            //                        </tr>
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
-            //                        </tr>
-            //                    </table>";
-
-            //                // --- Tabla Detalle de Indicadores Extra ---
-            //                string tablaIndicadoresExtrateCabecera = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                        </tr>";
-
-            //                StringBuilder filasIndicadoresExtrate = new StringBuilder();
-
-            //                if (indicadoresExtra != null)
-            //                {
-            //                    foreach (var indiExtra in indicadoresExtra)
-            //                    {
-            //                        filasIndicadoresExtrate.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
-            //                    </tr>");
-            //                    }
-            //                }
-            //                htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
-            //            }
-            //        }
-            //    }
-            //    else
-            //    {
-            //        // Indicadores Estratégicos
-            //        var tituloIndEstra = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 1);
-            //        string nombreIndEstra = tituloIndEstra.tipoIndicadorEstrategico;
-
-            //        var indiCorporativos = await _totalIndEstCorporativosRepository.GetListaTotalIndicadoresCorporativos(progEva.InIdEvaluacion, empresa);
-            //        var ResultIndiCorporativos = await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva.InIdEvaluacion, empresa);
-
-            //        htmlPdf += $@"
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    Indicadores Estratégicos
-            //                </h3>
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 10px 0 5px 0;"">
-            //                    {nombreIndEstra}
-            //                </h3>";
-
-            //        string tablaPrincipalPesoTotalAño = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 33%;"">Año</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 33%;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 34%;"">Total</th>
-            //                        </tr>";
-
-            //        StringBuilder filasPrincipal = new StringBuilder();
-
-            //        if (indiCorporativos != null)
-            //        {
-            //            foreach (var indiCorp in indiCorporativos)
-            //            {
-            //                filasPrincipal.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Anio}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso:N2}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Total:N2}</td>
-            //                    </tr>");
-            //            }
-            //        }
-
-            //        htmlPdf += tablaPrincipalPesoTotalAño + filasPrincipal.ToString() + "</table><br />";
-
-            //        // --- Tabla Indicadores Extra
-            //        string tablaIndicadoresExtraCabecera = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                        </tr>";
-
-            //        StringBuilder filasExtra = new StringBuilder();
-
-            //        if (ResultIndiCorporativos != null)
-            //        {
-            //            foreach (var indiCorp in ResultIndiCorporativos)
-            //            {
-            //                filasExtra.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiCorp.MastIndicadoresobj.VcNombreIndicador ?? ""}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Resultado}</td>
-            //                    </tr>");
-            //            }
-            //        }
-
-            //        htmlPdf += tablaIndicadoresExtraCabecera + filasExtra.ToString() + "</table><br />";
-
-            //        var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 2);
-            //        string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
-
-            //        htmlPdf += $@"
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    {nombreTituloUes1}
-            //                </h3>";
-
-            //        // REVISAR COMO TRAER LOS DATOS DEL UES1
-            //        var idPadre = progEva.IdPadre;
-            //        if (idPadre > 0)
-            //        {
-            //            var anio = progEva.InAno;
-            //            var mesInicio = progEva.MesIni;
-            //            var mesFin = progEva.MesFin;
-            //            int tipoValoracion = 1;
-            //            int tipoEvaluacion = 1;
-
-            //            if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
-            //            {
-            //                int idEvaluacionPadre = progEva.InIdEvaluacion;
-
-            //                var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
-            //                var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
-
-            //                decimal pesoTotal = UES1.peso;
-            //                decimal totalCumplimiento = UES1.Total;
-
-            //                htmlPdf += $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
-            //                        </tr>
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
-            //                        </tr>
-            //                    </table>";
-
-            //                string tablaIndicadoresExtrateCabecera = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                        </tr>";
-
-            //                StringBuilder filasIndicadoresExtrate = new StringBuilder();
-
-            //                if (indicadoresExtra != null)
-            //                {
-            //                    foreach (var indiExtra in indicadoresExtra)
-            //                    {
-            //                        filasIndicadoresExtrate.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
-            //                    </tr>");
-            //                    }
-            //                }
-            //                htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
-
-            //                var tituloUes2 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 3);
-            //                string nombreTituloUes2 = tituloUes2.tipoIndicadorEstrategico;
-
-            //                htmlPdf += $@"
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    {nombreTituloUes2}
-            //                </h3>";
-
-            //                int idEvaluacionPadre2 = progEva.InIdEvaluacion;
-
-            //                var UES2 = await _totalUESRepository.GetTotalAnalisisUES2(idEvaluacionPadre, empresa);
-            //                var indicadoresExtra2 = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
-
-            //                decimal pesoTotal2 = UES2.peso;
-            //                decimal totalCumplimiento2 = UES2.Total;
-
-            //                htmlPdf += $@"
-            //                            <br/>
-            //                            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                                <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
-            //                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
-            //                                </tr>
-            //                                <tr style=""border: 1px solid #dddddd;"">
-            //                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal2:N2}</td>
-            //                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento2:N2}</td>
-            //                                </tr>
-            //                            </table>";
-
-            //                // --- Tabla Detalle de Indicadores Extra ---
-            //                string tablaIndicadoresExtrateCabecera2 = $@"
-            //                        <br/>
-            //                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                            <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
-            //                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                            </tr>";
-
-            //                StringBuilder filasIndicadoresExtrate2 = new StringBuilder();
-
-            //                if (indicadoresExtra2 != null)
-            //                {
-            //                    foreach (var indiExtra in indicadoresExtra2)
-            //                    {
-            //                        filasIndicadoresExtrate2.Append($@"
-            //                            <tr style=""border: 1px solid #dddddd;"">
-            //                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
-            //                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
-            //                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
-            //                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
-            //                            </tr>");
-            //                    }
-            //                }
-            //                htmlPdf += tablaIndicadoresExtrateCabecera2 + filasIndicadoresExtrate2.ToString() + "</table><br />";
-
-            //                // --- Total Análisis Indicadores Estratégicos ---
-            //                var TotalAnaIndiEstra = await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEva.InIdEvaluacion, empresa);
-
-            //                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis Indicadores Estrategicos</h3>";
-
-            //                string tablaTotalCabecera = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Valor Análisis</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 10%;"">Color</th>
-            //                        </tr>";
-
-            //                StringBuilder filasTotalAnalisis = new StringBuilder();
-
-            //                if (TotalAnaIndiEstra != null)
-            //                {
-            //                    foreach (var TotalAIE in TotalAnaIndiEstra)
-            //                    {
-            //                        // Detectamos el color para el óvalo usando la función que definimos antes
-            //                        string colorHex = ObtenerHexColor(TotalAIE.Color);
-
-            //                        string ovaloHtml = $@"
-            //                        <span style=""
-            //                            display: inline-block; 
-            //                            width: 35px; 
-            //                            height: 18px; 
-            //                            background-color: {colorHex}; 
-            //                            border-radius: 12px; 
-            //                            border: 0.5px solid #444; 
-            //                            vertical-align: middle;"">
-            //                        </span>";
-
-            //                        filasTotalAnalisis.Append($@"
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Peso}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.ValorAnalisis}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Nivel}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                                {ovaloHtml}
-            //                            </td>
-            //                        </tr>");
-            //                    }
-            //                }
-
-            //                htmlPdf += tablaTotalCabecera + filasTotalAnalisis.ToString() + "</table><br />";
-            //            }
-            //        }
-            //    }
-            //}
-            //else
-            //{
-            //    var gestion = await _pesosxTipoIndxNivelCompRepository.ObjPesosxTipoIndxNivelComp(empresa, nivelCargo, 1);
-            //    bool gestionVisible = gestion.VisibleADI;
-            //    var estretegicos = await _pesosxTipoIndxNivelCompRepository.ObjPesosxTipoIndxNivelComp(empresa, nivelCargo, 2);
-            //    bool estretegicosVisible = estretegicos.VisibleADI;
-
-            //    if (gestionVisible)
-            //    {
-            //        // --- Indicadores de Gestión ---
-            //        htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Indicadores de Gestión</h3>";
-
-            //        string tablaIndicadoresGestionCabecera = $@"
-            //            <br/>
-            //            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                </tr>";
-
-            //        StringBuilder filasIndicadoresGestion = new StringBuilder();
-
-            //        if (indicadoresGestion != null)
-            //        {
-            //            foreach (var IndicadoresG in indicadoresGestion)
-            //            {
-            //                filasIndicadoresGestion.Append($@"
-            //                <tr style=""border: 1px solid #dddddd;"">
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{IndicadoresG.MastIndicadoresobj.CodIndicador}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{IndicadoresG.Indicador}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{IndicadoresG.Peso}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{IndicadoresG.Real}</td>
-            //                </tr>");
-            //            }
-            //        }
-
-            //        string tablaIndicadoresGestionCierre = @"</table><br />";
-
-            //        htmlPdf += tablaIndicadoresGestionCabecera + filasIndicadoresGestion.ToString() + tablaIndicadoresGestionCierre;
-            //    }
-            //    if (estretegicosVisible)
-            //    {
-            //        var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 3);
-            //        string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
-
-            //        htmlPdf += $@"
-            //                <br />
-            //                <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
-            //                    {nombreTituloUes1}
-            //                </h3>";
-
-            //        var idPadre = progEva.IdPadre;
-            //        var anio = progEva.InAno;
-            //        var mesInicio = progEva.MesIni;
-            //        var mesFin = progEva.MesFin;
-            //        int tipoValoracion = 1;
-            //        int tipoEvaluacion = 1;
-
-            //        if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
-            //        {
-            //            int idEvaluacionPadre = progEva.InIdEvaluacion;
-
-            //            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(idEvaluacionPadre, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
-            //            var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
-
-            //            decimal pesoTotal = UES1.peso;
-            //            decimal totalCumplimiento = UES1.Total;
-
-            //            htmlPdf += $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
-            //                        </tr>
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
-            //                        </tr>
-            //                    </table>";
-
-            //            // --- Tabla Detalle de Indicadores Extra ---
-            //            string tablaIndicadoresExtrateCabecera = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
-            //                        </tr>";
-
-            //            StringBuilder filasIndicadoresExtrate = new StringBuilder();
-
-            //            if (indicadoresExtra != null)
-            //            {
-            //                foreach (var indiExtra in indicadoresExtra)
-            //                {
-            //                    filasIndicadoresExtrate.Append($@"
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
-            //                    </tr>");
-            //                }
-            //            }
-            //            htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
-
-            //            // --- Total Análisis Indicadores Estratégicos ---
-            //            var TotalAnaIndiEstra = await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEva.InIdEvaluacion, empresa);
-
-            //            htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis Indicadores Estrategicos</h3>";
-
-            //            string tablaTotalCabecera = $@"
-            //                    <br/>
-            //                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Peso</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Valor Análisis</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
-            //                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 10%;"">Color</th>
-            //                        </tr>";
-
-            //            StringBuilder filasTotalAnalisis = new StringBuilder();
-
-            //            if (TotalAnaIndiEstra != null)
-            //            {
-            //                foreach (var TotalAIE in TotalAnaIndiEstra)
-            //                {
-            //                    // Detectamos el color para el óvalo usando la función que definimos antes
-            //                    string colorHex = ObtenerHexColor(TotalAIE.Color);
-
-            //                    string ovaloHtml = $@"
-            //                        <span style=""
-            //                            display: inline-block; 
-            //                            width: 35px; 
-            //                            height: 18px; 
-            //                            background-color: {colorHex}; 
-            //                            border-radius: 12px; 
-            //                            border: 0.5px solid #444; 
-            //                            vertical-align: middle;"">
-            //                        </span>";
-
-            //                    filasTotalAnalisis.Append($@"
-            //                        <tr style=""border: 1px solid #dddddd;"">
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Peso}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.ValorAnalisis}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Nivel}</td>
-            //                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                                {ovaloHtml}
-            //                            </td>
-            //                        </tr>");
-            //                }
-            //            }
-
-            //            htmlPdf += tablaTotalCabecera + filasTotalAnalisis.ToString() + "</table><br />";
-            //        }
-            //    }
-            //}
-            //// Total Análisis de Rendimiento
-            //htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis de Rendimiento</h3>";
-
-            //// Obtención de datos asíncrona desde el repositorio
-            //var AnalisisRendi = await _consolidadoDesempenoRepository.ListConsolidadoDesempeno(progEva.InIdEvaluacion, 2);
-
-            //StringBuilder filasAnalisisRendimiento = new StringBuilder();
-
-            //if (AnalisisRendi != null)
-            //{
-            //    foreach (var itemRendi in AnalisisRendi)
-            //    {
-            //        string colorHex = ObtenerHexColor(itemRendi.Color);
-
-            //        string ovaloHtml = $@"
-            //            <span style=""
-            //                display: inline-block; 
-            //                width: 35px; 
-            //                height: 18px; 
-            //                background-color: {colorHex}; 
-            //                border-radius: 12px; 
-            //                border: 0.5px solid #444; 
-            //                vertical-align: middle;"">
-            //            </span>";
-
-            //        filasAnalisisRendimiento.Append($@"
-            //            <br/>
-            //            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                <tr style=""border: 1px solid #dddddd;"">
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">
-            //                        {itemRendi.Nivel}
-            //                    </td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
-            //                        {ovaloHtml}
-            //                    </td>
-            //                </tr>
-            //            </table>");
-            //    }
-            //}
-
-            //htmlPdf += filasAnalisisRendimiento.ToString() + "<br />";
-
-            //// --- Sección Observaciones Generales ---
-            //htmlPdf += $@"
-            //        <br/>
-            //        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //            <tr>
-            //                <td style=""border: 1px solid #dddddd; padding-left: 10px; padding-top: 10px; padding-bottom: 8px; vertical-align: top; text-align: left; background-color: #f2f2f2; width: 30%;"">
-            //                    <strong>Observaciones Generales:</strong>
-            //                </td>
-            //                <td style=""border: 1px solid #dddddd; padding-left: 10px; padding-top: 10px; padding-bottom: 8px; vertical-align: top; text-align: left;"">
-            //                    {progEva.ObservacionGeneral}
-            //                </td>
-            //            </tr>
-            //        </table><br/>";
-
-            //var listaTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(EvaluacionId);
-            //int comptc = listaTecnicas?.Count() ?? 0;
-            //if (comptc > 0)
-            //{
-            //    // --- Competencias Técnicas ---
-            //    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">3. Competencias Técnicas</h3>";
-
-            //    // Obtención del texto descriptivo desde el repositorio
-            //    var textoTecnicas = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, (int)progEva.InAno, 3, (int)progEva.TipoValoracionId);
-
-            //    htmlPdf += $@"
-            //        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //            <tr>
-            //                <td style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
-            //                    <br/>
-            //                    {textoTecnicas}
-            //                </td>
-            //            </tr>
-            //        </table><br/>";
-
-            //    // --- Resultados Competencias Técnicas ---
-            //    var ResultCompeTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(progEva.InIdEvaluacion);
-
-            //    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Resultados Competencias Técnicas</h3>";
-
-            //    string tablaCabeceraTecnica = $@"
-            //        <br/>
-            //        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //            <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
-            //                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Competencia</th>
-            //                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Observación</th>
-            //                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
-            //                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 60px;"">Color</th>
-            //            </tr>";
-
-            //    StringBuilder filasTecnicas = new StringBuilder();
-
-            //    if (ResultCompeTecnicas != null)
-            //    {
-            //        foreach (var ResultCompeTec in ResultCompeTecnicas)
-            //        {
-            //            // Generación del óvalo CSS basado en el color que viene de la DB
-            //            string colorHex = ObtenerHexColor(ResultCompeTec.Color);
-
-            //            string ovaloHtml = $@"
-            //            <span style=""
-            //                display: inline-block; 
-            //                width: 35px; 
-            //                height: 18px; 
-            //                background-color: {colorHex}; 
-            //                border-radius: 12px; 
-            //                border: 0.5px solid #444; 
-            //                vertical-align: middle;"">
-            //            </span>";
-
-            //            filasTecnicas.Append($@"
-            //            <tr style=""border: 1px solid #dddddd;"">
-            //                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.Descripcion}</td>
-            //                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.Observacion}</td>
-            //                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.EscalaNivel}</td>
-            //                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
-            //                    {ovaloHtml}
-            //                </td>
-            //            </tr>");
-            //        }
-            //    }
-
-            //    htmlPdf += tablaCabeceraTecnica + filasTecnicas.ToString() + "</table><br />";
-
-            //    // --- Total Competencias Técnicas ---
-            //    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Competencias Tecnicas</h3>";
-
-            //    var TotalCompTecnicas = await GetListaProgEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
-
-            //    StringBuilder sbTotalCompTecnicas = new StringBuilder();
-
-            //    if (TotalCompTecnicas != null)
-            //    {
-            //        foreach (var TotalCompTecn in TotalCompTecnicas)
-            //        {
-            //            // Usamos la función de mapeo de color para el óvalo CSS
-            //            string colorHex = ObtenerHexColor(TotalCompTecn.Color);
-
-            //            string ovaloHtml = $@"
-            //            <span style=""
-            //                display: inline-block; 
-            //                width: 35px; 
-            //                height: 18px; 
-            //                background-color: {colorHex}; 
-            //                border-radius: 12px; 
-            //                border: 0.5px solid #444; 
-            //                vertical-align: middle;"">
-            //            </span>";
-
-            //            sbTotalCompTecnicas.Append($@"
-            //            <br/>
-            //            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                <tr style=""border: 1px solid #dddddd;"">
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">
-            //                        {TotalCompTecn.NivelComt}
-            //                    </td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
-            //                        {ovaloHtml}
-            //                    </td>
-            //                </tr>
-            //            </table>");
-            //        }
-            //    }
-
-            //    htmlPdf += sbTotalCompTecnicas.ToString() + "<br />";
-            //}
-            //if (acc == 2)
-            //{
-            //    // --- Resultados Análisis de Desarrollo ---
-            //    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Resultados Análisis de Desarrollo</h3><br />";
-
-            //    var ResultAnalisisDesarrollo = await _consolidadoDesempenoRepository.GetListaConsolidadosByEvaluacionId(progEva.InIdEvaluacion);
-
-            //    StringBuilder sbResultadosDesarrollo = new StringBuilder();
-
-            //    if (ResultAnalisisDesarrollo != null)
-            //    {
-            //        foreach (var ResultAnaDesa in ResultAnalisisDesarrollo)
-            //        {
-            //            string colorHex = ObtenerHexColor(ResultAnaDesa.Color);
-
-            //            string ovaloHtml = $@"
-            //            <span style=""display: inline-block; width: 35px; height: 18px; background-color: {colorHex}; border-radius: 12px; border: 0.5px solid #444; vertical-align: middle;"">
-            //            </span>";
-
-            //            sbResultadosDesarrollo.Append($@"
-            //            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                <tr style=""border: 1px solid #dddddd;"">
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px; width: 40%;"">{ResultAnaDesa.AspectoValoracionObj.AspectoValoracion}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px; width: auto;"">{ResultAnaDesa.Nivel}</td>
-            //                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
-            //                        {ovaloHtml}
-            //                    </td>
-            //                </tr>
-            //            </table>");
-            //        }
-            //    }
-
-            //    htmlPdf += sbResultadosDesarrollo.ToString() + "<br />";
-
-            //    // --- Concepto Final Análisis de Desarrollo ---
-            //    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Concepto Final Análisis de Desarrollo</h3>";
-
-            //    var ConcepFinalAnaDesarrollo = await GetListaProgEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
-
-            //    StringBuilder sbConceptoFinal = new StringBuilder();
-
-            //    if (ConcepFinalAnaDesarrollo != null)
-            //    {
-            //        foreach (var ConcepFinalAnaDesa in ConcepFinalAnaDesarrollo)
-            //        {
-            //            string colorHex = ObtenerHexColor(ConcepFinalAnaDesa.Color);
-
-            //            string ovaloHtml = $@"
-            //                    <span style=""display: inline-block; width: 35px; height: 18px; background-color: {colorHex}; border-radius: 12px; border: 0.5px solid #444; vertical-align: middle;"">
-            //                    </span>";
-
-            //            sbConceptoFinal.Append($@"
-            //                <br/>
-            //                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
-            //                    <tr style=""border: 1px solid #dddddd;"">
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 20%;"">{ConcepFinalAnaDesa.Nivel}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ConcepFinalAnaDesa.DescNivel}</td>
-            //                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
-            //                            {ovaloHtml}
-            //                        </td>
-            //                    </tr>
-            //                </table>");
-            //        }
-            //    }
-
-            //    htmlPdf += sbConceptoFinal.ToString() + "<br />";
-            //}
+            int evaluacionId = progEva.InIdEvaluacion;
+            var ZonaOficina = await _programacionMasivaEvaluacionesRepository.GetDataProgramacionByID((int)progEva.IdPrgramacionEvaluacion);
+            var emp = await _funcionariosRepository.GetObjFuncionarioByIdentificacion((long)progEva.InIdEvaluado);
+            int empresa = emp.EmpresaId;
+            int codigoCargo = (int)progEva.CodigoCargo;
+            int nivelCargo = (int)progEva.NivelCargo;
+            int tipoNivel = (int)progEva.TipoNivelEstrategico;
+            var dataCargo = await _cargosRepository.GetDataCargoByCodigo(codigoCargo, empresa);
+            string nombreCargo = "";
+            if (dataCargo != null)
+            {
+                string codigo = dataCargo.Codigo.ToString() ?? "";
+                string nombre = dataCargo.VcNombre ?? "";
+
+                nombreCargo = (string.IsNullOrEmpty(codigo))
+                    ? nombre
+                    : $"{codigo} - {nombre}";
+            }
+            var dataCargoproceso = await _cargosProcesosRepository.GetProcesoPerteneceByIdCargo(codigoCargo, empresa);
+            string nombreCargoProceso = "";
+            if (dataCargoproceso != null)
+            {
+                nombreCargoProceso = dataCargoproceso.ProcesosObj.Proceso ?? "";
+            }
+            var textoAdi = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, 1, (int)progEva.TipoValoracionId, (int)progEva.InAno);
+            var textoAdi2 = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, 2, (int)progEva.TipoValoracionId, (int)progEva.InAno);
+            var ADI = await _resultadosEvaluacionRepository.ListFormEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
+            var nivelCompe = await _consolidadoDesempenoRepository.ListConsolidadoDesempeno(progEva.InIdEvaluacion, 1);
+            var indicadoresGestion = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresByEvaluacionId(progEva.InIdEvaluacion);
+            var NombreZonaOficina = await _empresasTitulosRepository.ObjEmpresasTitulos(empresa);
+            // Construcción del HTML
+            string htmlPdf = "";
+
+            string tablaInicio = $@"
+            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Fecha Cierre</th>
+                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Cargo</th>
+                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Proceso</th>
+                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">{NombreZonaOficina.Zona}</th>
+                    <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">{NombreZonaOficina.Oficina}</th>
+                </tr>";
+
+            string filaDatos = $@"
+                <tr style=""border: 1px solid #dddddd;"">
+                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{progEva.FechaCierre?.ToShortDateString()}</td>
+                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{nombreCargo}</td>
+                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{nombreCargoProceso}</td>
+                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ZonaOficina?.ZonaObj?.Zona}</td>
+                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ZonaOficina?.OficinaObj?.Oficina}</td>
+                </tr>
+            </table><br />";
+
+            htmlPdf += tablaInicio + filaDatos;
+
+            // Análisis Competencia
+            htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">1. Análisis de Competencias</h3>";
+
+            string filaAnalsis = $@"
+                <tr>
+                    <td colspan=""6"" style=""border: 1px solid #dddddd; padding: 10px 8px 10px 10px; vertical-align: top; text-align: left;"">
+                        <br/>
+                        {textoAdi}
+                    </td>
+                </tr>";
+
+            htmlPdf += filaAnalsis;
+
+            foreach (var item in ADI)
+            {
+                string colorHex = ObtenerHexColor(item.Color);
+
+                // 2.óvalo con CSS
+                string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 1px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                htmlPdf += $@"
+                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 5px;"">
+                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                        <th style=""border: 1px solid #dddddd; padding: 8px; width: 50%;"">Competencia</th>
+                        <th style=""border: 1px solid #dddddd; padding: 8px;"">Nivel de Desarrollo</th>
+                        <th style=""border: 1px solid #dddddd; padding: 8px; width: 50px;""></th>
+                    </tr>
+                    <tr>
+                        <td style=""border: 1px solid #dddddd; padding: 8px;"">{item.Normasobj.VcCompetencia}</td>
+                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{item.Nivel}</td>
+                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ovaloHtml}</td>
+                    </tr>
+                </table>";
+
+                var criterios = await _resultadosRepository.GetResultadosEvaluacionListaByEvaluacionId(progEva.InIdEvaluacion, item.NormaId);
+                if (criterios != null && criterios.Any())
+                {
+                    StringBuilder filasCriterios = new StringBuilder();
+
+                    foreach (var criterio in criterios)
+                    {
+                        // icono
+                        string iconoHtml = @"<span style='display: inline-block; width: 18px; height: 18px; background-color: black; color: white; border-radius: 50%; text-align: center; line-height: 18px; font-size: 10px; vertical-align: middle; margin-right: 8px;'>&#10004;</span>";
+
+                        filasCriterios.Append($@"
+                                <tr>
+                                    <td style=""width: 70%; border: none; padding: 6px 0; text-align: left; display: flex; align-items: center;"">
+                                        {iconoHtml}
+                                        <span style=""vertical-align: middle;"">{criterio.Criterio}</span>
+                                    </td>
+                                    <td style=""width: 30%; border: none; padding: 6px 0; text-align: right;"">
+                                        <span style=""border: 1px solid #ccc; padding: 2px 10px; border-radius: 3px; font-weight: bold; font-size: 12px;"">
+                                            {criterio.Escalanivel}
+                                        </span>
+                                    </td>
+                                </tr>");
+                    }
+
+                    // Fila contenedora de la sub-tabla
+                    htmlPdf += $@"
+                        <tr style=""border: 1px solid #dddddd;"">
+                            <td colspan=""4"" style=""border: 1px solid #dddddd; padding: 0;"">
+                                <table style=""width: 100%; border-collapse: collapse;"">
+                                    {filasCriterios}
+                                </table>
+                            </td>
+                        </tr>";
+
+                    // Sección de Observaciones
+                    htmlPdf += $@"
+                        <tr style=""border: 1px solid #dddddd;"">
+                            <td colspan=""4"" style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left; background-color: #f9f9f9;"">
+                                <strong>Observaciones Análisis Competencia:</strong>
+                            </td>
+                        </tr>
+                        <tr style=""border: 1px solid #dddddd;"">
+                            <td colspan=""4"" style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
+                                {item.Observaciones ?? "Sin observaciones"}
+                            </td>
+                        </tr>";
+                }
+
+                htmlPdf += "</table><br />";
+            }
+
+            htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">Resultados Análisis Competencias</h3>";
+
+            string tablaResultadosHeader = $@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Competencia</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center;"">Nivel de Desarrollo</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; width: 50px;""></th>
+                            </tr>";
+
+            StringBuilder filasResultados = new StringBuilder();
+
+            if (ADI != null)
+            {
+                foreach (var ResultadoAC in ADI)
+                {
+                    // Reemplazo de imagen por icono circular negro con check blanco
+                    string iconoHtml = @"<span style='display: inline-block; width: 20px; height: 20px; background-color: black; color: white; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; vertical-align: middle;'>&#10004;</span>";
+
+                    filasResultados.Append($@"
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultadoAC.Normasobj.VcCompetencia}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{ResultadoAC.Nivel}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{iconoHtml}</td>
+                            </tr>");
+                }
+            }
+
+            htmlPdf += tablaResultadosHeader + filasResultados.ToString() + "</table><br />";
+
+            htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">Total Nivel de Competencias</h3>";
+
+            StringBuilder totalNivelRows = new StringBuilder();
+            totalNivelRows.Append(@"<table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">");
+
+            if (nivelCompe != null)
+            {
+                foreach (var totalNivelCompe in nivelCompe)
+                {
+                    // 1. Capturamos el color
+                    string colorHex = ObtenerHexColor(totalNivelCompe.Color);
+
+                    // 2.óvalo con CSS
+                    string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 1px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                    totalNivelRows.Append($@"
+                        <tr style=""border: 1px solid #dddddd;"">
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 10px;"">
+                                {totalNivelCompe.Nivel}
+                            </td>
+                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 5px; width: 60px;"">
+                                {ovaloHtml}
+                            </td>
+                        </tr>");
+                }
+            }
+
+            totalNivelRows.Append("</table><br />");
+            htmlPdf += totalNivelRows.ToString();
+
+            htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">2. Análisis del Rendimiento</h3>";
+
+            htmlPdf += $@"
+                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                    <tr>
+                        <td style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
+                            <br/>
+                            {textoAdi2}
+                        </td>
+                    </tr>
+                </table><br/>";
+
+            if (nivelCargo == 1)
+            {
+                if (tipoNivel == 1)
+                {
+                    var tituloIndEstra = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 1);
+                    string nombreIndEstra = tituloIndEstra.tipoIndicadorEstrategico;
+
+                    var indiCorporativos = await _totalIndEstCorporativosRepository.GetListaTotalIndicadoresCorporativos(progEva, empresa);
+                    var ResultIndiCorporativos = await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva, empresa);
+
+                    htmlPdf += $@"
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                Indicadores Estratégicos
+                            </h3>
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 10px 0 5px 0;"">
+                                {nombreIndEstra}
+                            </h3>";
+
+                    StringBuilder tablaPesoTotal = new StringBuilder();
+                    tablaPesoTotal.Append($@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 350px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Año</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 34%;"">Total</th>
+                                    </tr>");
+
+                    if (indiCorporativos != null)
+                    {
+                        foreach (var indiCorp in indiCorporativos)
+                        {
+                            tablaPesoTotal.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                        {indiCorp.Anio}
+                                    </td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                        {indiCorp.Peso:N2}
+                                    </td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                        {indiCorp.Total:N2}
+                                    </td>
+                                </tr>");
+                        }
+                    }
+
+                    tablaPesoTotal.Append("</table><br />");
+
+                    htmlPdf += tablaPesoTotal.ToString();
+
+                    string tablaIndicadoresExtraCabecera = $@"
+                            <br/>
+                            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                </tr>";
+
+                    StringBuilder filasIndicadoresExtra = new StringBuilder();
+
+                    if (ResultIndiCorporativos != null)
+                    {
+                        foreach (var indiCorp in ResultIndiCorporativos)
+                        {
+                            filasIndicadoresExtra.Append($@"
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiCorp.MastIndicadoresobj.VcNombreIndicador}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Resultado}</td>
+                                    </tr>");
+                        }
+                    }
+
+                    string tablaIndicadoresExtraCierre = @"</table><br />";
+
+                    htmlPdf += tablaIndicadoresExtraCabecera + filasIndicadoresExtra.ToString() + tablaIndicadoresExtraCierre;
+                }
+                else if (tipoNivel == 2)
+                {
+                    // Indicadores Estratégicos
+                    var tituloIndEstra = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 1);
+                    string nombreIndEstra = tituloIndEstra.tipoIndicadorEstrategico;
+
+                    var indiCorporativos = await _totalIndEstCorporativosRepository.GetListaTotalIndicadoresCorporativos(progEva, empresa);
+                    var ResultIndiCorporativos = await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva, empresa);
+
+                    htmlPdf += $@"
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                Indicadores Estratégicos
+                            </h3>
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 10px 0 5px 0;"">
+                                {nombreIndEstra}
+                            </h3>";
+
+                    StringBuilder tablaPesoTotal = new StringBuilder();
+                    tablaPesoTotal.Append($@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 350px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Año</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 33%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; text-align: center; width: 34%;"">Total</th>
+                                    </tr>");
+
+                    if (indiCorporativos != null)
+                    {
+                        foreach (var indiCorp in indiCorporativos)
+                        {
+                            tablaPesoTotal.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                        {indiCorp.Anio}
+                                    </td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                        {indiCorp.Peso:N2}
+                                    </td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                        {indiCorp.Total:N2}
+                                    </td>
+                                </tr>");
+                        }
+                    }
+
+                    tablaPesoTotal.Append("</table><br />");
+
+                    htmlPdf += tablaPesoTotal.ToString();
+
+                    string tablaIndicadoresExtraCabecera = $@"
+                            <br/>
+                            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                    <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                </tr>";
+
+                    StringBuilder filasIndicadoresExtra = new StringBuilder();
+
+                    if (ResultIndiCorporativos != null)
+                    {
+                        foreach (var indiCorp in ResultIndiCorporativos)
+                        {
+                            filasIndicadoresExtra.Append($@"
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiCorp.MastIndicadoresobj.VcNombreIndicador}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Resultado}</td>
+                                    </tr>");
+                        }
+                    }
+
+                    string tablaIndicadoresExtraCierre = @"</table><br />";
+
+                    htmlPdf += tablaIndicadoresExtraCabecera + filasIndicadoresExtra.ToString() + tablaIndicadoresExtraCierre;
+
+                    var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 2);
+                    string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
+
+                    htmlPdf += $@"
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                {nombreTituloUes1}
+                            </h3>";
+
+                    // REVISAR COMO TRAER LOS DATOS DEL UES1
+                    var idPadre = progEva.IdPadre;
+                    if (idPadre > 0)
+                    {
+                        var anio = progEva.InAno;
+                        var mesInicio = progEva.MesIni;
+                        var mesFin = progEva.MesFin;
+                        int tipoValoracion = 1;
+                        int tipoEvaluacion = 1;
+
+                        if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
+                        {
+                            int idEvaluacionPadre = progEva.InIdEvaluacion;
+
+                            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(progEva, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
+                            var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
+
+                            decimal pesoTotal = UES1.peso;
+                            decimal totalCumplimiento = UES1.Total;
+
+                            htmlPdf += $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
+                                    </tr>
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
+                                    </tr>
+                                </table>";
+
+                            // --- Tabla Detalle de Indicadores Extra ---
+                            string tablaIndicadoresExtrateCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                    </tr>";
+
+                            StringBuilder filasIndicadoresExtrate = new StringBuilder();
+
+                            if (indicadoresExtra != null)
+                            {
+                                foreach (var indiExtra in indicadoresExtra)
+                                {
+                                    filasIndicadoresExtrate.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
+                                </tr>");
+                                }
+                            }
+                            htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
+                        }
+                    }
+                }
+                else
+                {
+                    // Indicadores Estratégicos
+                    var tituloIndEstra = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 1);
+                    string nombreIndEstra = tituloIndEstra.tipoIndicadorEstrategico;
+
+                    var indiCorporativos = await _totalIndEstCorporativosRepository.GetListaTotalIndicadoresCorporativos(progEva, empresa);
+                    var ResultIndiCorporativos = await _resultIndiCoporpRepository.GetListaResultadoIndicadoresCorporativos(progEva, empresa);
+
+                    htmlPdf += $@"
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                Indicadores Estratégicos
+                            </h3>
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 10px 0 5px 0;"">
+                                {nombreIndEstra}
+                            </h3>";
+
+                    string tablaPrincipalPesoTotalAño = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 33%;"">Año</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 33%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 34%;"">Total</th>
+                                    </tr>";
+
+                    StringBuilder filasPrincipal = new StringBuilder();
+
+                    if (indiCorporativos != null)
+                    {
+                        foreach (var indiCorp in indiCorporativos)
+                        {
+                            filasPrincipal.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Anio}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso:N2}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Total:N2}</td>
+                                </tr>");
+                        }
+                    }
+
+                    htmlPdf += tablaPrincipalPesoTotalAño + filasPrincipal.ToString() + "</table><br />";
+
+                    // --- Tabla Indicadores Extra
+                    string tablaIndicadoresExtraCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                    </tr>";
+
+                    StringBuilder filasExtra = new StringBuilder();
+
+                    if (ResultIndiCorporativos != null)
+                    {
+                        foreach (var indiCorp in ResultIndiCorporativos)
+                        {
+                            filasExtra.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiCorp.MastIndicadoresobj.VcNombreIndicador ?? ""}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Peso}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiCorp.Resultado}</td>
+                                </tr>");
+                        }
+                    }
+
+                    htmlPdf += tablaIndicadoresExtraCabecera + filasExtra.ToString() + "</table><br />";
+
+                    var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 2);
+                    string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
+
+                    htmlPdf += $@"
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                {nombreTituloUes1}
+                            </h3>";
+
+                    // REVISAR COMO TRAER LOS DATOS DEL UES1
+                    var idPadre = progEva.IdPadre;
+                    if (idPadre > 0)
+                    {
+                        var anio = progEva.InAno;
+                        var mesInicio = progEva.MesIni;
+                        var mesFin = progEva.MesFin;
+                        int tipoValoracion = 1;
+                        int tipoEvaluacion = 1;
+
+                        if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
+                        {
+                            int idEvaluacionPadre = progEva.InIdEvaluacion;
+
+                            var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(progEva, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
+                            var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
+
+                            decimal pesoTotal = UES1.peso;
+                            decimal totalCumplimiento = UES1.Total;
+
+                            htmlPdf += $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
+                                    </tr>
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
+                                    </tr>
+                                </table>";
+
+                            string tablaIndicadoresExtrateCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                    </tr>";
+
+                            StringBuilder filasIndicadoresExtrate = new StringBuilder();
+
+                            if (indicadoresExtra != null)
+                            {
+                                foreach (var indiExtra in indicadoresExtra)
+                                {
+                                    filasIndicadoresExtrate.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
+                                </tr>");
+                                }
+                            }
+                            htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
+
+                            var tituloUes2 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 3);
+                            string nombreTituloUes2 = tituloUes2.tipoIndicadorEstrategico;
+
+                            htmlPdf += $@"
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                {nombreTituloUes2}
+                            </h3>";
+
+                            int idEvaluacionPadre2 = progEva.InIdEvaluacion;
+
+                            var UES2 = await _totalUESRepository.GetTotalAnalisisUES2(progEva, empresa);
+                            var indicadoresExtra2 = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
+
+                            decimal pesoTotal2 = UES2.peso;
+                            decimal totalCumplimiento2 = UES2.Total;
+
+                            htmlPdf += $@"
+                                        <br/>
+                                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                            <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
+                                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
+                                            </tr>
+                                            <tr style=""border: 1px solid #dddddd;"">
+                                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal2:N2}</td>
+                                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento2:N2}</td>
+                                            </tr>
+                                        </table>";
+
+                            // --- Tabla Detalle de Indicadores Extra ---
+                            string tablaIndicadoresExtrateCabecera2 = $@"
+                                    <br/>
+                                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                        </tr>";
+
+                            StringBuilder filasIndicadoresExtrate2 = new StringBuilder();
+
+                            if (indicadoresExtra2 != null)
+                            {
+                                foreach (var indiExtra in indicadoresExtra2)
+                                {
+                                    filasIndicadoresExtrate2.Append($@"
+                                        <tr style=""border: 1px solid #dddddd;"">
+                                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
+                                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
+                                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
+                                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
+                                        </tr>");
+                                }
+                            }
+                            htmlPdf += tablaIndicadoresExtrateCabecera2 + filasIndicadoresExtrate2.ToString() + "</table><br />";
+
+                            // --- Total Análisis Indicadores Estratégicos ---
+                            var TotalAnaIndiEstra = await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEva, empresa);
+
+                            htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis Indicadores Estrategicos</h3>";
+
+                            string tablaTotalCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Valor Análisis</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 10%;"">Color</th>
+                                    </tr>";
+
+                            StringBuilder filasTotalAnalisis = new StringBuilder();
+
+                            if (TotalAnaIndiEstra != null)
+                            {
+                                foreach (var TotalAIE in TotalAnaIndiEstra)
+                                {
+                                    // Detectamos el color para el óvalo usando la función que definimos antes
+                                    string colorHex = ObtenerHexColor(TotalAIE.Color);
+
+                                    string ovaloHtml = $@"
+                                    <span style=""
+                                        display: inline-block; 
+                                        width: 35px; 
+                                        height: 18px; 
+                                        background-color: {colorHex}; 
+                                        border-radius: 12px; 
+                                        border: 0.5px solid #444; 
+                                        vertical-align: middle;"">
+                                    </span>";
+
+                                    filasTotalAnalisis.Append($@"
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Peso}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.ValorAnalisis}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Nivel}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                            {ovaloHtml}
+                                        </td>
+                                    </tr>");
+                                }
+                            }
+
+                            htmlPdf += tablaTotalCabecera + filasTotalAnalisis.ToString() + "</table><br />";
+                        }
+                    }
+                }
+            }
+            else
+            {
+                var gestion = await _pesosxTipoIndxNivelCompRepository.ObjPesosxTipoIndxNivelComp(empresa, nivelCargo, 1);
+                bool gestionVisible = gestion.VisibleADI;
+                var estretegicos = await _pesosxTipoIndxNivelCompRepository.ObjPesosxTipoIndxNivelComp(empresa, nivelCargo, 2);
+                bool estretegicosVisible = estretegicos.VisibleADI;
+
+                if (gestionVisible)
+                {
+                    // --- Indicadores de Gestión ---
+                    htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Indicadores de Gestión</h3>";
+
+                    string tablaIndicadoresGestionCabecera = $@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                            <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                            </tr>";
+
+                    StringBuilder filasIndicadoresGestion = new StringBuilder();
+
+                    if (indicadoresGestion != null)
+                    {
+                        foreach (var IndicadoresG in indicadoresGestion)
+                        {
+                            filasIndicadoresGestion.Append($@"
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{IndicadoresG.MastIndicadoresobj.CodIndicador}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{IndicadoresG.Indicador}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{IndicadoresG.Peso}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{IndicadoresG.Real}</td>
+                            </tr>");
+                        }
+                    }
+
+                    string tablaIndicadoresGestionCierre = @"</table><br />";
+
+                    htmlPdf += tablaIndicadoresGestionCabecera + filasIndicadoresGestion.ToString() + tablaIndicadoresGestionCierre;
+                }
+                if (estretegicosVisible)
+                {
+                    var tituloUes1 = await _tiposIndicadoresEstrategicosRepository.GetDataTiposIndicadoresEstrategicosByTipo(empresa, 3);
+                    string nombreTituloUes1 = tituloUes1.tipoIndicadorEstrategico;
+
+                    htmlPdf += $@"
+                            <br />
+                            <h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">
+                                {nombreTituloUes1}
+                            </h3>";
+
+                    var idPadre = progEva.IdPadre;
+                    var anio = progEva.InAno;
+                    var mesInicio = progEva.MesIni;
+                    var mesFin = progEva.MesFin;
+                    int tipoValoracion = 1;
+                    int tipoEvaluacion = 1;
+
+                    if (progEva.InAno == anio && progEva.MesIni == mesInicio && progEva.MesFin == mesFin && tipoEvaluacion == 1 && tipoValoracion == 1 && progEva.InIdEvaluado == idPadre)
+                    {
+                        int idEvaluacionPadre = progEva.InIdEvaluacion;
+
+                        var UES1 = await _totalUESRepository.GetTotalAnalisisUES1(progEva, empresa, (int)progEva.TipoNivelEstrategico, ZonaOficina.CodigoNivelCompetencia);
+                        var indicadoresExtra = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresEstrategicosEvaluacionId(idEvaluacionPadre);
+
+                        decimal pesoTotal = UES1.peso;
+                        decimal totalCumplimiento = UES1.Total;
+
+                        htmlPdf += $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 300px; border: 1px solid #dddddd; margin: 0 auto 15px auto;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 50%;"">Total</th>
+                                    </tr>
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{pesoTotal:N2}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{totalCumplimiento:N2}</td>
+                                    </tr>
+                                </table>";
+
+                        // --- Tabla Detalle de Indicadores Extra ---
+                        string tablaIndicadoresExtrateCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd; margin-bottom: 15px;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Clase</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Indicador</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">% cumplimiento</th>
+                                    </tr>";
+
+                        StringBuilder filasIndicadoresExtrate = new StringBuilder();
+
+                        if (indicadoresExtra != null)
+                        {
+                            foreach (var indiExtra in indicadoresExtra)
+                            {
+                                filasIndicadoresExtrate.Append($@"
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.ClaseIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{indiExtra.MastIndicadoresobj.InIdIndicador}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Peso}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{indiExtra.Real}</td>
+                                </tr>");
+                            }
+                        }
+                        htmlPdf += tablaIndicadoresExtrateCabecera + filasIndicadoresExtrate.ToString() + "</table><br />";
+
+                        // --- Total Análisis Indicadores Estratégicos ---
+                        var TotalAnaIndiEstra = await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEva, empresa);
+
+                        htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis Indicadores Estrategicos</h3>";
+
+                        string tablaTotalCabecera = $@"
+                                <br/>
+                                <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                                    <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Peso</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Valor Análisis</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
+                                        <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 10%;"">Color</th>
+                                    </tr>";
+
+                        StringBuilder filasTotalAnalisis = new StringBuilder();
+
+                        if (TotalAnaIndiEstra != null)
+                        {
+                            foreach (var TotalAIE in TotalAnaIndiEstra)
+                            {
+                                // Detectamos el color para el óvalo usando la función que definimos antes
+                                string colorHex = ObtenerHexColor(TotalAIE.Color);
+
+                                string ovaloHtml = $@"
+                                    <span style=""
+                                        display: inline-block; 
+                                        width: 35px; 
+                                        height: 18px; 
+                                        background-color: {colorHex}; 
+                                        border-radius: 12px; 
+                                        border: 0.5px solid #444; 
+                                        vertical-align: middle;"">
+                                    </span>";
+
+                                filasTotalAnalisis.Append($@"
+                                    <tr style=""border: 1px solid #dddddd;"">
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Peso}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.ValorAnalisis}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{TotalAIE.Nivel}</td>
+                                        <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                            {ovaloHtml}
+                                        </td>
+                                    </tr>");
+                            }
+                        }
+
+                        htmlPdf += tablaTotalCabecera + filasTotalAnalisis.ToString() + "</table><br />";
+                    }
+                }
+            }
+            // Total Análisis de Rendimiento
+            htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Análisis de Rendimiento</h3>";
+
+            // Obtención de datos asíncrona desde el repositorio
+            var AnalisisRendi = await _consolidadoDesempenoRepository.ListConsolidadoDesempeno(progEva.InIdEvaluacion, 2);
+
+            StringBuilder filasAnalisisRendimiento = new StringBuilder();
+
+            if (AnalisisRendi != null)
+            {
+                foreach (var itemRendi in AnalisisRendi)
+                {
+                    string colorHex = ObtenerHexColor(itemRendi.Color);
+
+                    string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 0.5px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                    filasAnalisisRendimiento.Append($@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">
+                                    {itemRendi.Nivel}
+                                </td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                    {ovaloHtml}
+                                </td>
+                            </tr>
+                        </table>");
+                }
+            }
+
+            htmlPdf += filasAnalisisRendimiento.ToString() + "<br />";
+
+            // --- Sección Observaciones Generales ---
+            htmlPdf += $@"
+                    <br/>
+                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                        <tr>
+                            <td style=""border: 1px solid #dddddd; padding-left: 10px; padding-top: 10px; padding-bottom: 8px; vertical-align: top; text-align: left; background-color: #f2f2f2; width: 30%;"">
+                                <strong>Observaciones Generales:</strong>
+                            </td>
+                            <td style=""border: 1px solid #dddddd; padding-left: 10px; padding-top: 10px; padding-bottom: 8px; vertical-align: top; text-align: left;"">
+                                {progEva.ObservacionGeneral}
+                            </td>
+                        </tr>
+                    </table><br/>";
+
+            var listaTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(EvaluacionId);
+            int comptc = listaTecnicas?.Count() ?? 0;
+            if (comptc > 0)
+            {
+                // --- Competencias Técnicas ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">3. Competencias Técnicas</h3>";
+
+                // Obtención del texto descriptivo desde el repositorio
+                var textoTecnicas = await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(empresa, (int)progEva.InAno, 3, (int)progEva.TipoValoracionId);
+
+                htmlPdf += $@"
+                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                        <tr>
+                            <td style=""border: 1px solid #dddddd; padding: 10px; vertical-align: top; text-align: left;"">
+                                <br/>
+                                {textoTecnicas}
+                            </td>
+                        </tr>
+                    </table><br/>";
+
+                // --- Resultados Competencias Técnicas ---
+                var ResultCompeTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(progEva.InIdEvaluacion);
+
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Resultados Competencias Técnicas</h3>";
+
+                string tablaCabeceraTecnica = $@"
+                    <br/>
+                    <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                        <tr style=""border: 1px solid #dddddd; background-color: #f2f2f2;"">
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Competencia</th>
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Observación</th>
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center;"">Nivel</th>
+                            <th style=""border: 1px solid #dddddd; padding: 8px; vertical-align: top; text-align: center; width: 60px;"">Color</th>
+                        </tr>";
+
+                StringBuilder filasTecnicas = new StringBuilder();
+
+                if (ResultCompeTecnicas != null)
+                {
+                    foreach (var ResultCompeTec in ResultCompeTecnicas)
+                    {
+                        // Generación del óvalo CSS basado en el color que viene de la DB
+                        string colorHex = ObtenerHexColor(ResultCompeTec.Color);
+
+                        string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 0.5px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                        filasTecnicas.Append($@"
+                        <tr style=""border: 1px solid #dddddd;"">
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.Descripcion}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.Observacion}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ResultCompeTec.EscalaNivel}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">
+                                {ovaloHtml}
+                            </td>
+                        </tr>");
+                    }
+                }
+
+                htmlPdf += tablaCabeceraTecnica + filasTecnicas.ToString() + "</table><br />";
+
+                // --- Total Competencias Técnicas ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Total Competencias Tecnicas</h3>";
+
+                var TotalCompTecnicas = await GetListaProgEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
+
+                StringBuilder sbTotalCompTecnicas = new StringBuilder();
+
+                if (TotalCompTecnicas != null)
+                {
+                    foreach (var TotalCompTecn in TotalCompTecnicas)
+                    {
+                        // Usamos la función de mapeo de color para el óvalo CSS
+                        string colorHex = ObtenerHexColor(TotalCompTecn.Color);
+
+                        string ovaloHtml = $@"
+                        <span style=""
+                            display: inline-block; 
+                            width: 35px; 
+                            height: 18px; 
+                            background-color: {colorHex}; 
+                            border-radius: 12px; 
+                            border: 0.5px solid #444; 
+                            vertical-align: middle;"">
+                        </span>";
+
+                        sbTotalCompTecnicas.Append($@"
+                        <br/>
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">
+                                    {TotalCompTecn.NivelComt}
+                                </td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                    {ovaloHtml}
+                                </td>
+                            </tr>
+                        </table>");
+                    }
+                }
+
+                htmlPdf += sbTotalCompTecnicas.ToString() + "<br />";
+            }
+            int acc = 2;
+            if (acc == 2)
+            {
+                // --- Resultados Análisis de Desarrollo ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Resultados Análisis de Desarrollo</h3><br />";
+
+                var ResultAnalisisDesarrollo = await _consolidadoDesempenoRepository.GetListaConsolidadosByEvaluacionId(progEva.InIdEvaluacion);
+
+                StringBuilder sbResultadosDesarrollo = new StringBuilder();
+
+                if (ResultAnalisisDesarrollo != null)
+                {
+                    foreach (var ResultAnaDesa in ResultAnalisisDesarrollo)
+                    {
+                        string colorHex = ObtenerHexColor(ResultAnaDesa.Color);
+
+                        string ovaloHtml = $@"
+                        <span style=""display: inline-block; width: 35px; height: 18px; background-color: {colorHex}; border-radius: 12px; border: 0.5px solid #444; vertical-align: middle;"">
+                        </span>";
+
+                        sbResultadosDesarrollo.Append($@"
+                        <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                            <tr style=""border: 1px solid #dddddd;"">
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px; width: 40%;"">{ResultAnaDesa.AspectoValoracionObj.AspectoValoracion}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px; width: auto;"">{ResultAnaDesa.Nivel}</td>
+                                <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                    {ovaloHtml}
+                                </td>
+                            </tr>
+                        </table>");
+                    }
+                }
+
+                htmlPdf += sbResultadosDesarrollo.ToString() + "<br />";
+
+                // --- Concepto Final Análisis de Desarrollo ---
+                htmlPdf += $@"<h3 style=""font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;"">Concepto Final Análisis de Desarrollo</h3>";
+
+                var ConcepFinalAnaDesarrollo = await GetListaProgEvaluacionByEvaluacionId(progEva.InIdEvaluacion);
+
+                StringBuilder sbConceptoFinal = new StringBuilder();
+
+                if (ConcepFinalAnaDesarrollo != null)
+                {
+                    foreach (var ConcepFinalAnaDesa in ConcepFinalAnaDesarrollo)
+                    {
+                        string colorHex = ObtenerHexColor(ConcepFinalAnaDesa.Color);
+
+                        string ovaloHtml = $@"
+                                <span style=""display: inline-block; width: 35px; height: 18px; background-color: {colorHex}; border-radius: 12px; border: 0.5px solid #444; vertical-align: middle;"">
+                                </span>";
+
+                        sbConceptoFinal.Append($@"
+                            <br/>
+                            <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
+                                <tr style=""border: 1px solid #dddddd;"">
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 20%;"">{ConcepFinalAnaDesa.Nivel}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{ConcepFinalAnaDesa.DescNivel}</td>
+                                    <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; width: 10%;"">
+                                        {ovaloHtml}
+                                    </td>
+                                </tr>
+                            </table>");
+                    }
+                }
+
+                htmlPdf += sbConceptoFinal.ToString() + "<br />";
+            }
             //var DataEmpresa = await _empresasRepository.ObjEmpresa(empresa);
             //string logoEmpresa = DataEmpresa.Logo;
 
             //return ExportarHtmlToPdf(htmlPdf.ToString(), progEva, logoEmpresa);
+
+            return _mapper.Map<string>(htmlPdf.ToString());
 
         }
         catch (Exception ex)
@@ -1599,73 +1591,69 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
     }
     //private string ExportarHtmlToPdf(string htmlContenido, dynamic progEva, string logoEmpresa)
     //{
-    //    // 1. Configuración del Conversor
+    //    // 1. Configuración del Conversor con motor Blink
     //    SelectPdf.HtmlToPdf converter = new SelectPdf.HtmlToPdf();
+    //    converter.Options.RenderingEngine = SelectPdf.RenderingEngine.Blink; //
     //    converter.Options.PdfPageSize = SelectPdf.PdfPageSize.Letter;
-    //    converter.Options.MarginTop = 15;
-    //    converter.Options.MarginLeft = 30;
+
+    //    // Márgenes equilibrados
+    //    converter.Options.MarginTop = 20;
+    //    converter.Options.MarginLeft = 20;
     //    converter.Options.MarginRight = 20;
-    //    converter.Options.MarginBottom = 15;
+    //    converter.Options.MarginBottom = 20;
 
-    //    // --- CONFIGURACIÓN DEL HEADER (Encabezado azul) ---
+    //    // --- CONFIGURACIÓN DEL HEADER ---
     //    converter.Options.DisplayHeader = true;
-    //    converter.Header.Height = 60;
-    //    converter.Header.DisplayOnFirstPage = true;
+    //    converter.Header.Height = 50;
 
-    //    string textoEncabezado = $"Análisis de Desarrollo {progEva.NomEvaluado}. Periodo {progEva.MesInicial} - {progEva.MesFinal} {progEva.Anio}";
+    //    string textoEncabezado = $"Análisis de Desarrollo {progEva.NomEvaluado}. Periodo {progEva.MesIni} - {progEva.MesFin} {progEva.InAno}";
 
     //    string headerHtmlString = $@"
-    //    <div style='width: 100%; height: 60px; background-color: #003da5; color: white; 
-    //                line-height: 60px; text-align: center; font-family: arial, sans-serif; 
-    //                font-size: 18px; font-weight: bold;'>
-    //        {textoEncabezado}
-    //    </div>";
+    //        <div style='width: 100%; height: 50px; background-color: #003da5; color: white; 
+    //                    display: flex; align-items: center; justify-content: center;
+    //                    font-family: Arial, sans-serif; font-size: 16px; font-weight: bold;'>
+    //            {textoEncabezado}
+    //        </div>";
 
-    //    SelectPdf.PdfHtmlSection headerHtml = new SelectPdf.PdfHtmlSection(headerHtmlString, "");
-    //    headerHtml.AutoFitHeight = SelectPdf.HtmlToPdfPageFitMode.AutoFit;
-    //    converter.Header.Add(headerHtml);
+    //    converter.Header.Add(new SelectPdf.PdfHtmlSection(headerHtmlString, ""));
 
-    //    // --- CONFIGURACIÓN DEL FOOTER (Páginas y Logo) ---
+    //    // --- CONFIGURACIÓN DEL FOOTER (Paginación limpia sin System.Drawing) ---
     //    converter.Options.DisplayFooter = true;
-    //    converter.Footer.Height = 70;
-    //    converter.Footer.DisplayOnFirstPage = true;
+    //    converter.Footer.Height = 60;
 
-    //    // Texto de paginación
-    //    SelectPdf.PdfTextSection text = new SelectPdf.PdfTextSection(0, 5, "Pagina: {page_number} de {total_pages}", new Font("Arial", 8));
-    //    text.HorizontalAlign = SelectPdf.PdfTextHorizontalAlign.Center;
-    //    converter.Footer.Add(text);
-
-    //    // Logo en el Footer (Inyectado como Base64 para evitar errores de ruta)
+    //    // Paginación y Logo integrados en HTML para evitar usar 'new Font'
     //    string footerHtmlString = $@"
-    //    <div style='width: 100%; height: 60px; position: relative; 
-    //                background: linear-gradient(to bottom, white 50%, #003da5 50%);'>
-    //        <img src='data:image/png;base64,{logoEmpresa}' 
-    //             style='height: 50px; width: auto; position: absolute; right: 0; 
-    //                    top: 20%; transform: translateY(-50%); 
-    //                    background-color: white; padding: 6px; border-radius: 5px;' />
-    //    </div>";
+    //        <div style='width: 100%; font-family: Arial; font-size: 10px; color: #444;'>
+    //            <div style='text-align: center; width: 100%; padding-bottom: 5px;'>
+    //                Página {{page_number}} de {{total_pages}}
+    //            </div>
+    //            <div style='width: 100%; height: 40px; background: linear-gradient(to bottom, #ffffff 0%, #003da5 100%); position: relative;'>
+    //                    <img src='data:image/png;base64,{logoEmpresa}' 
+    //                        style='height: 35px; position: absolute; right: 10px; top: -10px; 
+    //                                background: white; padding: 4px; border: 1px solid #ddd;' />
+    //            </div>
+    //        </div>";
 
-    //    SelectPdf.PdfHtmlSection footerHtml = new SelectPdf.PdfHtmlSection(0, 15, footerHtmlString, "");
-    //    footerHtml.AutoFitHeight = SelectPdf.HtmlToPdfPageFitMode.AutoFit;
-    //    converter.Footer.Add(footerHtml);
+    //    converter.Footer.Add(new SelectPdf.PdfHtmlSection(footerHtmlString, ""));
 
     //    // --- GENERACIÓN FINAL ---
+    //    // Importante: Blink procesa el HTML de forma más robusta
     //    SelectPdf.PdfDocument doc = converter.ConvertHtmlString(htmlContenido);
     //    byte[] pdfBytes = doc.Save();
     //    doc.Close();
 
     //    return Convert.ToBase64String(pdfBytes);
     //}
-    //private string ObtenerHexColor(string nombreArchivo)
-    //{
-    //    if (string.IsNullOrEmpty(nombreArchivo)) return "#ccc"; // Gris si es nulo
+    private string ObtenerHexColor(string nombreArchivo)
+    {
+        if (string.IsNullOrEmpty(nombreArchivo)) return "#ccc"; // Gris si es nulo
 
-    //    string nombre = nombreArchivo.ToLower();
-    //    if (nombre.Contains("green")) return "#82E007"; // Verde
-    //    if (nombre.Contains("blue")) return "#007BFF"; // Azul
-    //    if (nombre.Contains("red")) return "#FF4136"; // Rojo
-    //    if (nombre.Contains("yellow")) return "#FFDC00"; // Amarillo
+        string nombre = nombreArchivo.ToLower();
+        if (nombre.Contains("green")) return "#82E007"; // Verde
+        if (nombre.Contains("blue")) return "#007BFF"; // Azul
+        if (nombre.Contains("red")) return "#FF4136"; // Rojo
+        if (nombre.Contains("yellow")) return "#FFDC00"; // Amarillo
 
-    //    return "#ccc"; // Color por defecto
-    //}
+        return "#ccc"; // Color por defecto
+    }
 }
