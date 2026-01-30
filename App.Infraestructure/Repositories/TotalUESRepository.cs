@@ -30,14 +30,14 @@ public class TotalUESRepository : ItotalUESRepository
         _totalAnalisisIndiADIRepository = totalAnalisisIndiADIRepository;
     }
 
-    public async Task<GeneralTotalUES> GetTotalAnalisisUES1(Tbl_com_ProgEvaluacionModels progEvaluacion, int EmpresaId, int Tipo, int Nivel)
+    public async Task<GeneralTotalUES> GetTotalAnalisisUES1(Tbl_com_ProgEvaluacionModels dataPadre, int EmpresaId, int Tipo, int Nivel, Tbl_com_ProgEvaluacionModels progEva)
     {
         //Tbl_com_ProgEvaluacionModels ObjEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
         GeneralTotalUES TotalUes = new GeneralTotalUES();
         int t = 0;
         long idEVa = 0;
         long cc = 0;
-        int tipoIndi = (int)progEvaluacion.TipoNivelEstrategico;
+        int tipoIndi = (int)progEva.TipoNivelEstrategico;
         decimal peso = 100;
 
         if (tipoIndi != 0)
@@ -51,33 +51,33 @@ public class TotalUESRepository : ItotalUESRepository
             if (Tipo == 1)
             {
                 t = 1;
-                idEVa = progEvaluacion.InIdEvaluacion;
+                idEVa = dataPadre.InIdEvaluacion;
             }
             if (Tipo == 2)
             {
                 t = 2;
                 //idEVa = (await _progEvaluacionRepository.ObjProgEvaluacionPadre((int)ObjEvaluacion.IdPadre, (int)ObjEvaluacion.InAno, (int)ObjEvaluacion.MesIni, (int)ObjEvaluacion.MesFin, EmpresaId, 1, 1)).InIdEvaluacion;
-                idEVa = (await ObjProgEvaluacionPadre((int)progEvaluacion.IdPadre, (int)progEvaluacion.InAno, (int)progEvaluacion.MesIni, (int)progEvaluacion.MesFin, EmpresaId, 1, 1)).InIdEvaluacion;
-                cc = (int)progEvaluacion.IdPadre;
+                idEVa = (await ObjProgEvaluacionPadre((long)dataPadre.InIdEvaluado, (int)dataPadre.InAno, (int)dataPadre.MesIni, (int)dataPadre.MesFin, EmpresaId, 1, 1)).InIdEvaluacion;
+                cc = (long)dataPadre.InIdEvaluado;
             }
 
         }
         if (Nivel != 1)
         {
-            if (progEvaluacion.IdPadre == 0)
+            if (progEva.InIdEvaluado == 0)
             {
                 t = 1;
-                idEVa = progEvaluacion.InIdEvaluacion;
+                idEVa = progEva.InIdEvaluacion;
             }
             else
             {
                 t = 2;
                 //var DataEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacionPadre((int)ObjEvaluacion.IdPadre, (int)ObjEvaluacion.InAno, (int)ObjEvaluacion.MesIni, (int)ObjEvaluacion.MesFin, EmpresaId, 1, 1);
-                var DataEvaluacion = await ObjProgEvaluacionPadre((int)progEvaluacion.IdPadre, (int)progEvaluacion.InAno, (int)progEvaluacion.MesIni, (int)progEvaluacion.MesFin, EmpresaId, 1, 1);
+                var DataEvaluacion = await ObjProgEvaluacionPadre((long)dataPadre.InIdEvaluado, (int)dataPadre.InAno, (int)dataPadre.MesIni, (int)dataPadre.MesFin, EmpresaId, 1, 1);
                 idEVa = DataEvaluacion.InIdEvaluacion;
-                cc = (int)progEvaluacion.IdPadre;
+                cc = (long)dataPadre.InIdEvaluado;
             }
-            peso = (await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEvaluacion, EmpresaId))[0].Peso;
+            peso = (await _totalAnalisisIndiADIRepository.TotalAnalisisIndicadoresEstrategicosADI(progEva, EmpresaId))[0].Peso;
         }
 
         if (t == 1)
@@ -96,7 +96,7 @@ public class TotalUESRepository : ItotalUESRepository
         }
         else
         {
-            decimal res = (await _resulDirectorGerentesRepository.ListResulDirectorGerentes(cc, (int)progEvaluacion.InAno, (int)progEvaluacion.MesIni, (int)progEvaluacion.MesFin))[0].Resultado;
+            decimal res = (await _resulDirectorGerentesRepository.ListResulDirectorGerentes(cc, (int)progEva.InAno, (int)progEva.MesIni, (int)progEva.MesFin))[0].Resultado;
             TotalUes.Total = res;
             TotalUes.peso = peso;
         }

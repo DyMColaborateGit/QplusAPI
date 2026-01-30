@@ -16,11 +16,12 @@ namespace App.logic.Services
             _totalUESRepository = totalUESRepository;
             _progEvaluacionRepository = progEvaluacionRepository;
         }
-        public async Task<GeneralTotalUES> GetTotalAnalisisUES1(long EvaluacionId, int EmpresaId, int Tipo, int Nivel)
+        public async Task<GeneralTotalUES> GetTotalAnalisisUES1(int EvaluacionIdPadre, int EmpresaId, int Tipo, int Nivel, int EvaluacionId)
         {
             var progEva = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
+            var dataPadre = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionIdPadre);
 
-            return await _totalUESRepository.GetTotalAnalisisUES1(progEva, EmpresaId, Tipo, Nivel);
+            return await _totalUESRepository.GetTotalAnalisisUES1(dataPadre, EmpresaId, Tipo, Nivel, progEva);
         }
         public async Task<GeneralTotalUES> GetTotalAnalisisUES2(long EvaluacionId, int EmpresaId)
         {

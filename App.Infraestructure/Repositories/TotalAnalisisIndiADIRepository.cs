@@ -293,21 +293,40 @@ public class TotalAnalisisIndiADIRepository : ITotalAnalisisIndiADIRepository
 
         if (TIE != 0)
         {
+            TBL_com_ParametrosDesempenoModels paramDesempeno = await _parametrosDesempenoRepository.GetDataParametroDesempenoByMaxValor(2);
+            double valorMax = (double)paramDesempeno.ValorMax;
+            if ((double)TIE > valorMax)
+            {
+                TBL_com_ParametrosDesempenoModels param = await _parametrosDesempenoRepository.ObjParametrosDesempenoByParametroId(paramDesempeno.ParametroId);
+                string parametro1 = param.Parametro;
+                string col1 = param.Color;
 
-            TBL_com_ParametrosDesempenoModels param = await _parametrosDesempenoRepository.ObjParametrosDesempenoByTipoId(2, Decimal.Round(TIE, 2), EmpresaId);
-            string parametro1 = param.Parametro;
-            string col1 = param.Color;
+                TBL_com_TotalesConsolidadoDesempenoModels dCD = new TBL_com_TotalesConsolidadoDesempenoModels();
+                dCD.Nivel = parametro1;
+                dCD.Color = col1;
+                dCD.ValorAnalisis = (decimal)TIE;
+                dCD.Peso = pesoE;
+                dCD.Tiponivel = tiponivel;
+                dCD.TipoId = nivel;
+                dCD.PesoEstra = pesoEstra;
+                List.Add(dCD);
+            }
+            else
+            {
+                TBL_com_ParametrosDesempenoModels param = await _parametrosDesempenoRepository.ObjParametrosDesempenoByTipoId(2, Decimal.Round(TIE, 2), EmpresaId);
+                string parametro1 = param.Parametro;
+                string col1 = param.Color;
 
-            TBL_com_TotalesConsolidadoDesempenoModels dCD = new TBL_com_TotalesConsolidadoDesempenoModels();
-            dCD.Nivel = parametro1;
-            dCD.Color = col1;
-            dCD.ValorAnalisis = (decimal)TIE;
-            dCD.Peso = pesoE;
-            dCD.Tiponivel = tiponivel;
-            dCD.TipoId = nivel;
-            dCD.PesoEstra = pesoEstra;
-            List.Add(dCD);
-
+                TBL_com_TotalesConsolidadoDesempenoModels dCD = new TBL_com_TotalesConsolidadoDesempenoModels();
+                dCD.Nivel = parametro1;
+                dCD.Color = col1;
+                dCD.ValorAnalisis = (decimal)TIE;
+                dCD.Peso = pesoE;
+                dCD.Tiponivel = tiponivel;
+                dCD.TipoId = nivel;
+                dCD.PesoEstra = pesoEstra;
+                List.Add(dCD);
+            }
         }
         else
         {

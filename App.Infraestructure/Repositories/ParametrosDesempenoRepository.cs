@@ -50,6 +50,23 @@ public class ParametrosDesempenoRepository: IParametrosDesempenoRepository
         }
     }
 
+    public async Task<TBL_com_ParametrosDesempenoModels> GetDataParametroDesempenoByMaxValor(int TipoId)
+    {
+        try
+        {
+            var objResult = await _context.TBL_com_ParametrosDesempeno
+                .AsNoTracking()
+                .Where(x => x.TipoId == TipoId)
+                .OrderByDescending(x => x.ValorMax)
+                .FirstOrDefaultAsync();
+            return _mapper.Map<TBL_com_ParametrosDesempenoModels>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetDataParametroDesempenoByMaxValor", ex, TipoId.ToString());
+            throw;
+        }
+    }
     public async Task<List<TBL_com_ParametrosDesempenoModels>> GetListParametrosDesempeno(int EmpresaId)
     {
         try

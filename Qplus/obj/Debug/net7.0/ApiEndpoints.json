@@ -4642,6 +4642,55 @@
   },
   {
     "ContainingType": "Qplus.Controllers.ParametrosDesempenoController",
+    "Method": "GetDataParametroDesempenoByMaxValor",
+    "RelativePath": "api/ParametrosDesempeno/GetDataParametroDesempenoByMaxValor/{TipoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TipoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[App.Models.Models.TblCom.TBL_com_ParametrosDesempenoModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.ParametrosDesempenoController",
     "Method": "GetListParametrosDesempeno",
     "RelativePath": "api/ParametrosDesempeno/GetListParametrosDesempeno/{EmpresaId}",
     "HttpMethod": "GET",
@@ -5304,18 +5353,13 @@
   {
     "ContainingType": "Qplus.Controllers.ProgEvaluacionController",
     "Method": "GeneradorPDFADIByEvaluacionId",
-    "RelativePath": "api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}/{acc}",
+    "RelativePath": "api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "EvaluacionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "acc",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -8941,9 +8985,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "EvaluacionId",
-        "Type": "System.Int64",
-        "IsRequired": true
+        "Name": "EvaluacionIdPadre",
+        "Type": "System.Int32",
+        "IsRequired": false
       },
       {
         "Name": "EmpresaId",
@@ -8957,6 +9001,11 @@
       },
       {
         "Name": "Nivel",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EvaluacionId",
         "Type": "System.Int32",
         "IsRequired": true
       }

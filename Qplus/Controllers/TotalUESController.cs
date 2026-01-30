@@ -25,12 +25,12 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("GetTotalAnalisisUES1/{EvaluacionId}/{EmpresaId}/{Tipo}/{Nivel}")]
-        public async Task<GetResponse<GeneralTotalUES>> GetTotalAnalisisUES1(long EvaluacionId, int EmpresaId, int Tipo, int Nivel)
+        public async Task<GetResponse<GeneralTotalUES>> GetTotalAnalisisUES1(int EvaluacionIdPadre, int EmpresaId, int Tipo, int Nivel, int EvaluacionId)
         {
             GetResponse<GeneralTotalUES> resultado = new GetResponse<GeneralTotalUES>();
             try
             {
-                resultado.Data = await _totalUESService.GetTotalAnalisisUES1(EvaluacionId, EmpresaId, Tipo, Nivel);
+                resultado.Data = await _totalUESService.GetTotalAnalisisUES1(EvaluacionIdPadre, EmpresaId, Tipo, Nivel, EvaluacionId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

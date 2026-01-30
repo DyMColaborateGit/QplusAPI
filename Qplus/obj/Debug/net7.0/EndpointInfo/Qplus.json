@@ -8223,6 +8223,90 @@
         }
       }
     },
+    "/api/ParametrosDesempeno/GetDataParametroDesempenoByMaxValor/{TipoId}": {
+      "get": {
+        "tags": [
+          "ParametrosDesempeno"
+        ],
+        "parameters": [
+          {
+            "name": "TipoId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK. Devuelve el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/ParametrosDesempeno/GetListParametrosDesempeno/{EmpresaId}": {
       "get": {
         "tags": [
@@ -10640,7 +10724,7 @@
         }
       }
     },
-    "/api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}/{acc}": {
+    "/api/ProgEvaluacion/GeneradorPDFADIByEvaluacionId/{EvaluacionId}": {
       "get": {
         "tags": [
           "ProgEvaluacion"
@@ -10648,16 +10732,6 @@
         "parameters": [
           {
             "name": "EvaluacionId",
-            "in": "path",
-            "required": true,
-            "style": "simple",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "acc",
             "in": "path",
             "required": true,
             "style": "simple",
@@ -15678,13 +15752,12 @@
         ],
         "parameters": [
           {
-            "name": "EvaluacionId",
-            "in": "path",
-            "required": true,
-            "style": "simple",
+            "name": "EvaluacionIdPadre",
+            "in": "query",
+            "style": "form",
             "schema": {
               "type": "integer",
-              "format": "int64"
+              "format": "int32"
             }
           },
           {
@@ -15709,6 +15782,16 @@
           },
           {
             "name": "Nivel",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "EvaluacionId",
             "in": "path",
             "required": true,
             "style": "simple",
@@ -20789,6 +20872,30 @@
           "descripcion": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TBL_com_ParametrosDesempenoModelsGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/TBL_com_ParametrosDesempenoModels"
           }
         },
         "additionalProperties": false
