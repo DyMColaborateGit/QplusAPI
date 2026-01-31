@@ -495,6 +495,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             var nivelCompe = await _consolidadoDesempenoRepository.ListConsolidadoDesempeno(progEva.InIdEvaluacion, 1);
             var indicadoresGestion = await _resultadosEvaIndicadoresRepository.GetListaEvaluacionIndicadoresByEvaluacionId(progEva.InIdEvaluacion);
             var NombreZonaOficina = await _empresasTitulosRepository.ObjEmpresasTitulos(empresa);
+            var dataEmpresa = await _empresasRepository.ObjEmpresa(empresa);
             // Construcción del HTML
             string htmlPdf = "";
 
@@ -521,7 +522,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             htmlPdf += tablaInicio + filaDatos;
 
             // condición si es confandi mayor al 2023 falta colocar que sea solo para comfandi
-            if (progEva.FechaCreacion?.Year > 2023)
+            if (progEva.FechaCreacion?.Year > 2023 && dataEmpresa.Empresa == "Comfandi")
             {
                 // Análisis Competencia
                 htmlPdf += "<h3 style=\"font-family: arial, sans-serif; text-align: center; font-weight: bold; font-size: 20px; margin: 15px 0 5px 0;\">1. Análisis de Competencias</h3>";
