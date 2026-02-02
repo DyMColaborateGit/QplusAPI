@@ -8,5 +8,6 @@
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\8.0.2\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\8.0.2\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.abstractions\9.0.1\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Configuration.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.abstractions\9.0.1\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Configuration.Abstractions.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration\9.0.1\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Configuration.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration\9.0.1\buildTransitive\netcoreapp2.0\Microsoft.Extensions.Configuration.targets')" />
+    <Import Project="$(NuGetPackageRoot)haukcode.wkhtmltopdfdotnet\1.5.95\build\Haukcode.WkHtmlToPdfDotNet.targets" Condition="Exists('$(NuGetPackageRoot)haukcode.wkhtmltopdfdotnet\1.5.95\build\Haukcode.WkHtmlToPdfDotNet.targets')" />
   </ImportGroup>
 </Project>

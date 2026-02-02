@@ -21,9 +21,14 @@ public class tbl_com_ConsolidadoDesempenoConfiguration : IEntityTypeConfiguratio
         .IsRequired()
         .HasColumnType("int");
 
-        builder.Property(p => p.TipoId)
-        .IsRequired()
-        .HasColumnType("int");
+        //builder.Property(p => p.TipoId)
+        //.IsRequired()
+        //.HasColumnType("int");
+
+        builder.HasOne(p => p.AspectoValoracionObj)
+        .WithMany(p => p.TBL_com_ConsolidadoDesempeno)
+        .HasForeignKey(p => p.TipoId)
+        .OnDelete(DeleteBehavior.NoAction);
 
         builder.Property(p => p.ValorAnalisis)
         .IsRequired()

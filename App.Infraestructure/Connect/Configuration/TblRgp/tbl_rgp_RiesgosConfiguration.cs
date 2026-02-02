@@ -44,9 +44,6 @@ namespace App.Infraestructure.Connect.Configuration.TblRgp
                 .HasForeignKey(p => p.ProcesoId)
                 .OnDelete(DeleteBehavior.NoAction);
 
-            //builder.Property(p => p.ProcesoId)
-            //    .HasColumnType("int");
-
             builder.Property(p => p.ClaseId)
                 .HasColumnType("int");
 

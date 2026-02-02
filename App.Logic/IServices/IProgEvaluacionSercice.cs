@@ -7,6 +7,8 @@ public interface IProgEvaluacionSercice
 {
     Task<Tbl_com_ProgEvaluacionModels> GetObjProgEvaluacion(long EvaluacionId);
 
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
+
     Task<string> GetCerrarEvaluacion(long EvaluacionId, int EmpresaId, int Caracteres);
 
     Task<string> GetConceptoFinalEval(RequestConceptoFinal ConceptoFinal);
@@ -30,4 +32,6 @@ public interface IProgEvaluacionSercice
     Task<string> PutUpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel);
 
     Task<Tbl_com_ProgEvaluacionModels> UpdateProgEvaluacionTotalIndicadores(long EvaluacionId, int TotIndi, int EmpresaId, List<Tbl_com_ResultadosEvaIndicadoresModels> IndicadoresEvaluacion);
+
+    Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId);
 }

@@ -7,6 +7,8 @@ public interface IProgEvaluacionRepository
 {
     Task<Tbl_com_ProgEvaluacionModels> ObjProgEvaluacion(long evaluacionId);
 
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
+
     Task<ResponseTbl_com_ProgEvaluacionModels> ObjProgEvaluacionByMasivas(long evaluacionId);
 
     Task<List<Tbl_com_ProgEvaluacionModels>> ListEvaluacionesAnio(int Anio, int TipoEvaluacion);
@@ -27,5 +29,6 @@ public interface IProgEvaluacionRepository
 
     Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD_M, string EvaluadorId, long EvaluadoId, bool BEstado);
 
+    Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId);
 
 }

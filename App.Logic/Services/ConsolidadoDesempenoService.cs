@@ -20,5 +20,11 @@ namespace App.logic.Services
 
             return lista;
         }
+        public async Task<List<TBL_com_ConsolidadoDesempenoModels>> GetListaConsolidadosByEvaluacionId(int EvaluacionId)
+        {
+            var lista = await _consolidadoDesempenoRepository.GetListaConsolidadosByEvaluacionId(EvaluacionId);
+
+            return lista;
+        }
     }
 }

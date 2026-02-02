@@ -106,6 +106,8 @@ namespace App.logic.Extensions
             services.AddScoped<ILinkRelacionadoActividadesPIDService, LinkRelacionadoActividadesPIDService>();
             services.AddScoped<IResultadosService, ResultadosService>();
             services.AddScoped<ITotalIndEstCorporativosService, TotalIndEstCorporativosService>();
+            services.AddScoped<ITotalAnalisisIndiADIService, TotalAnalisisIndiADIService>();
+            services.AddScoped<ITotalUESService, TotalUESService>();
         }
 
         /// <summary>
@@ -190,6 +192,8 @@ namespace App.logic.Extensions
             services.AddScoped<ITipoAnalisisRepository, TipoAnalisisRepository>();
             services.AddScoped<ISeguimientoActividadesRepository, SeguimientoActividadesRepository>();
             services.AddScoped<ILinkRelacionadoActividadesPIDRepository, LinkRelacionadoActividadesPIDRepository>();
+            services.AddScoped<ItotalUESRepository, TotalUESRepository>();
+            services.AddScoped<ITotalAnalisisIndiADIRepository, TotalAnalisisIndiADIRepository>();
         }
 
         /// <summary>

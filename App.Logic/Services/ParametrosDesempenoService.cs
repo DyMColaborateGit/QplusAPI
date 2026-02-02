@@ -14,6 +14,10 @@ public class ParametrosDesempenoService : IParametrosDesempenoService
         _parametrosDesempenoRepository = parametrosDesempenoRepository;
     }
 
+    public async Task<TBL_com_ParametrosDesempenoModels> GetDataParametroDesempenoByMaxValor(int TipoId)
+    {
+        return await _parametrosDesempenoRepository.GetDataParametroDesempenoByMaxValor(TipoId);
+    }
     public async Task<List<TBL_com_ParametrosDesempenoModels>> GetListParametrosDesempeno(int EmpresaId)
     {
         return await _parametrosDesempenoRepository.GetListParametrosDesempeno(EmpresaId);

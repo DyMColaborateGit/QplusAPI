@@ -1,4 +1,5 @@
-﻿using App.Models.Models.TblInd;
+﻿using App.Models.Models.TblCom;
+using App.Models.Models.TblInd;
 
 namespace App.logic.IServices
 {

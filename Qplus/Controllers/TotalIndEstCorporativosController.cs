@@ -1,6 +1,8 @@
 ﻿
 using App.logic.IServices;
+using App.logic.Services;
 using App.Models.Global;
+using App.Models.Models.TblCom;
 using App.Models.Models.TblInd;
 using Microsoft.AspNetCore.Mvc;
 
