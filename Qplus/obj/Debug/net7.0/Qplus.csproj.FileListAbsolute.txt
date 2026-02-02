@@ -130,9 +130,9 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\webConfigure.config
-C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Qplus.staticwebassets.endpoints.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\appsettings.json
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Qplus.staticwebassets.endpoints.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Qplus.exe
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Qplus.deps.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Qplus.runtimeconfig.json

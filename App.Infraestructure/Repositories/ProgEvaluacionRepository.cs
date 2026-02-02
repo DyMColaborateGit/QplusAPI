@@ -1444,7 +1444,9 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             htmlPdf += filasAnalisisRendimiento.ToString() + "<br />";
 
             // --- Sección Observaciones Generales ---
-            htmlPdf += $@"
+            if (progEva.FechaCreacion?.Year > 2023 && dataEmpresa.Empresa == "Comfandi")
+            {
+                htmlPdf += $@"
                     <br/>
                     <table style=""font-family: arial, sans-serif; border-collapse: collapse; width: 100%; border: 1px solid #dddddd;"">
                         <tr>
@@ -1456,6 +1458,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                             </td>
                         </tr>
                     </table><br/>";
+            }
 
             var listaTecnicas = await _resultcomTecnicasRepository.ListResultcomTecnicasModelsByEvaluacionId(EvaluacionId);
             int comptc = listaTecnicas?.Count() ?? 0;
