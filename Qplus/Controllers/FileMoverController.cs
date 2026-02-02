@@ -6,6 +6,12 @@ using System.IO;
 
 namespace Qplus.Controllers
 {
+    public class ProcesarLoteRequest
+    {
+        public List<FilePdfADIPdiModel> FilePdfs { get; set; }
+        public string RutaFinal { get; set; }
+    }
+
     [Route("api/[controller]")]
     [ApiController]
     public class FileMoverController : ControllerBase
@@ -16,7 +22,6 @@ namespace Qplus.Controllers
         {
             _fileMoverService = fileMoverService;
         }
-
 
         /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
         /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
@@ -72,6 +77,135 @@ namespace Qplus.Controllers
                 resultado.CathError = ex.Message.ToString();
                 return resultado;
             }
-        }    
+        }
+
+        ///// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        ///// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        ///// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        //[HttpPost("ProcesarLotePdfs/{FilePdfs}/{RutaFinal}")]
+        //public async Task<GetResponse<FileResultModels>> ProcesarLotePdfs(List<FilePdfADIPdiModel> FilePdfs, string RutaFinal)
+        //{
+        //    GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
+        //    try
+        //    {
+        //        Console.WriteLine($"Lista recibida: {FilePdfs}");
+
+        //        resultado.Data = await _fileMoverService.ProcesarLotePdfs(FilePdfs, RutaFinal);
+        //        resultado.StatusCode = (int)HttpCodes.OK;
+        //        resultado.Message = new HttpCodesMessage().OK;
+        //        return resultado;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+        //        resultado.Message = new HttpCodesMessage().INTERNALERROR;
+        //        resultado.CathError = ex.Message.ToString();
+        //        return resultado;
+        //    }
+        //}
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        // CORRECCIÓN: Quitamos los parámetros de la ruta string del HttpPost
+        [HttpPost("GetGenerarGuardarPdfs")]
+        public async Task<GetResponse<FileResultModels>> GetGenerarGuardarPdfs([FromBody] ProcesarLoteRequest request)
+        {
+            GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
+            try
+            {
+                // Ahora accedemos a los datos a través del objeto 'request'
+                if (request == null || request.FilePdfs == null)
+                {
+                    resultado.StatusCode = (int)HttpCodes.BADREQUEST;
+                    resultado.Message = "Datos de entrada inválidos";
+                    return resultado;
+                }
+
+                resultado.Data = await _fileMoverService.GetGenerarGuardarPdfs(request.FilePdfs, request.RutaFinal);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message;
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost("PostGuardarPdfDataArchivo/{FilePdfs}")]
+        public async Task<GetResponse<FileResultModels>> PostGuardarPdfDataArchivo(FilePdfADIPdiModel FilePdfs)
+        {
+            GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
+            try
+            {
+                Console.WriteLine($"Lista recibida: {FilePdfs}");
+
+                resultado.Data = await _fileMoverService.PostGuardarPdfDataArchivo(FilePdfs);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("ObtenerImagenBase64/{nombreArchivo}/{arbolRaiz}")]
+        public async Task<IActionResult> ObtenerImagenBase64(string nombreArchivo, string arbolRaiz)
+        {
+            GetResponse<FileResultModels> resultado = new GetResponse<FileResultModels>();
+            try
+            {
+                if (resultado.Data == null || (resultado.StatusCode == (int)HttpCodes.NOTFOUND))
+                {
+                    resultado.StatusCode = (int)HttpCodes.NOTFOUND;
+                    resultado.Message = new HttpCodesMessage().NOTFOUND;
+                    return NotFound(resultado);
+                }
+
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message;
+
+                return StatusCode(500, resultado);
+            }
+        }
     }
 }

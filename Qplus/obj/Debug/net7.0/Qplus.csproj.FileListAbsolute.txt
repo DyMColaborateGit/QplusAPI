@@ -129,6 +129,8 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.xml
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 E:\CODE\DYM\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x86\native\wkhtmltox.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\webConfigure.config
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\appsettings.json
@@ -144,7 +146,9 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\AutoMa
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\WkHtmlToPdfDotNet.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Humanizer.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\libwkhtmltox.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -177,6 +181,7 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Micros
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
@@ -196,12 +201,17 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\System
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\System.Text.Encodings.Web.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\linux-arm64\native\libwkhtmltox.so
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\linux-x64\native\libwkhtmltox.so
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\linux-x86\native\libwkhtmltox.so
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\osx-x64\native\libwkhtmltox.dylib
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -225,6 +235,8 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtim
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll

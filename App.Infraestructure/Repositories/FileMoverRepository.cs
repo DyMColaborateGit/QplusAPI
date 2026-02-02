@@ -2,28 +2,34 @@
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
 using App.Models.Models.FileMove;
-using App.Models.Models.TblCom;
 using App.Models.Models.TblDoc;
 using AutoMapper;
-using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
 using System;
-using System.Formats.Tar;
-using System.IO;
+using WkHtmlToPdfDotNet;
+using WkHtmlToPdfDotNet.Contracts;
+using Microsoft.AspNetCore.Hosting;
 
 namespace App.Infraestructure.Repositories;
+public class BatchResult
+{
+    public List<string> ArchivosGenerados { get; set; } = new List<string>();
+    public List<string> Errores { get; set; } = new List<string>();
+}
 
 public class FileMoverRepository : IFileMoverRepository
 {
     private readonly ConnectContext _context;
+    private readonly IConverter _converter;
     private readonly IMapper _mapper;
+    private readonly IWebHostEnvironment _environment;
 
-    public FileMoverRepository(ConnectContext context, IMapper mapper)
+    public FileMoverRepository(ConnectContext context, IMapper mapper, IConverter converter, IWebHostEnvironment environment)
     {
         _context = context;
         _mapper = mapper;
+        _converter = converter;
+        _environment = environment;
     }
 
     public async Task<FileResultModels> CheckFileExists(FileMoveModels fileCheck)
@@ -118,6 +124,43 @@ public class FileMoverRepository : IFileMoverRepository
         };
     }
 
+    public async Task<FileResultModels> PostPdfArchivos(List<FilePdfADIPdiModel> allFiles)
+    {
+        if (allFiles == null || allFiles.Count == 0)
+        {
+            return new FileResultModels
+            {
+                success = false,
+                status = "BadRequest",
+                message = "La lista de archivos está vacía."
+            };
+        }
+        Console.WriteLine($"Lista recibida: {allFiles}");
+
+        const int batchSize = 1;
+        var resultados = new List<object>();
+
+        for (int i = 0; i < allFiles.Count; i += batchSize)
+        {
+            var batch = allFiles.Skip(i).Take(batchSize).ToList();
+
+            // Procesar cada archivo en el batch
+            foreach (var fileMove in batch)
+            {
+                var resultado = await PostGuardarPdfDataArchivo(fileMove);
+                resultados.Add(resultado);
+            }
+        }
+
+        return new FileResultModels
+        {
+            success = true,
+            data = resultados,
+            status = "Success",
+            message = "El archivo '{nomFile}' fue movido correctamente."
+        };
+    }
+
     public async Task<FileResultModels> PostMoverDataArchivo(FileMoveModels fileMove)
     {
         try
@@ -191,6 +234,232 @@ public class FileMoverRepository : IFileMoverRepository
             throw;
         }
     }
+    
+    public async Task<FileResultModels> PostGuardarPdfDataArchivo(FilePdfADIPdiModel fileMove)
+    {
+        try
+        {
+            if (fileMove.FileName != "")
+            {
+                if (string.IsNullOrEmpty(fileMove.FolderPath) || string.IsNullOrEmpty(fileMove.FolderPath))
+                {
+                    return new FileResultModels
+                    {
+                        success = false,
+                        status = "Warning",
+                        message = "Los parametros estan vacios.",
+                        fileName = $"{fileMove.FolderPath}_{fileMove.FileName}_{fileMove.FolderPath}"
+                    };
+                }
+
+                var rutaDirectorioDestino = Path.Combine(fileMove.FolderPath, fileMove.FolderPath);
+
+                if (!Directory.Exists(rutaDirectorioDestino))
+                {
+                    Directory.CreateDirectory(rutaDirectorioDestino);
+                }
+
+                var rutaFinal = Path.Combine(rutaDirectorioDestino, fileMove.FileName);
+                var id = fileMove.FileName;
+
+                Console.WriteLine($"Id: {id}");
+                Console.WriteLine($"Ruta Final: {rutaFinal}");
+
+                if (System.IO.File.Exists(rutaFinal))
+                {
+                    // Usamos 'using' para asegurar que el archivo se cierre y libere correctamente tras la escritura
+                    using (var stream = new FileStream(rutaFinal, FileMode.Create))
+                    {
+                        // Copiamos el contenido del IFormFile directamente al flujo del archivo en disco
+                        //await fileMove.PdfFile.CopyToAsync(stream);
+                    }
+                    //Console.WriteLine($"Documento actualizado: {updateDoc}");
+                    await Task.Delay(1500);
+                }
+                //else
+                //{
+                //    //var updateDoc = await UpdateDocumentos(fileMove.id, 2);
+                //    Console.WriteLine($"Documento no existente");
+                //}
+            }
+
+            return new FileResultModels
+            {
+                success = false,
+                status = "Warning",
+                message = "El archivo '{fileMove.FileName}' NO existe en la carpeta Origen.",
+                fileName = $"{fileMove.FileName}_{fileMove.FolderPath}_{fileMove.FileName}_{fileMove.FolderPath}"
+            };
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("PostMoverArchivo", ex, "Error de Sistema");
+            throw;
+        }
+    }
+
+    public async Task<FileResultModels> GetGenerarGuardarPdfs(List<FilePdfADIPdiModel> requests, string rutaFinal)
+    {
+        // Usamos una lista temporal para errores y archivos para luego llenar el modelo final
+        var archivosGenerados = new List<string>();
+        var errores = new List<string>();
+
+        try
+        {
+            // Aseguramos que el árbol de directorios exista antes de procesar
+            AsegurarEstructuraDirectorios(rutaFinal);
+        }
+        catch (Exception ex)
+        {
+            return new FileResultModels
+            {
+                success = false,
+                status = "NotFound",
+                message = $"Error crítico al crear directorios: {ex.Message}"
+            };
+        }
+
+        foreach (var request in requests)
+        {
+            try
+            {
+                // Nota: Si GenerarYGuardarPdf no es async, este foreach corre síncronamente
+                // pero el método sigue siendo válido como Task
+                string path = GenerarGuardarPdf(request);
+                archivosGenerados.Add(path);
+            }
+            catch (Exception ex)
+            {
+                errores.Add($"Error en '{request.FileName}': {ex.Message}");
+            }
+        }
+
+        return new FileResultModels
+        {
+            success = true,
+            status = "Success",
+            message = errores.Count == 0 ? "Proceso completado" : "Proceso completado con algunos errores",
+            fileName = "Pdfs generados",
+            Data = archivosGenerados,
+            Errors = errores
+        };
+    }
+
+    private void AsegurarEstructuraDirectorios(string ruta)
+    {
+        if (string.IsNullOrEmpty(ruta)) return;
+
+        if (!Directory.Exists(ruta))
+        {
+            Directory.CreateDirectory(ruta);
+        }
+    }
+
+    public string GenerarGuardarPdf(FilePdfADIPdiModel request)
+    {
+        string fileName = request.FileName.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase) ? request.FileName : request.FileName + ".pdf";
+        string headerTempPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}_header.html");
+        string footerTempPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}_footer.html");
+
+        try
+        {
+            if (!string.IsNullOrEmpty(request.HeaderHtml))
+            {
+                File.WriteAllText(headerTempPath, PrepararContenedorHtml(request.HeaderHtml));
+            }
+
+            // Al preparar el Footer, inyectamos soporte para las clases de numeración automática
+            if (!string.IsNullOrEmpty(request.FooterHtml))
+            {
+                File.WriteAllText(footerTempPath, PrepararContenedorHtml(request.FooterHtml, incluirScriptPaginas: true));
+            }
+
+            var doc = new HtmlToPdfDocument()
+            {
+                GlobalSettings = {
+                    ColorMode = ColorMode.Color,
+                    Orientation = Orientation.Portrait,
+                    PaperSize = PaperKind.A4,
+                    Margins = new MarginSettings { Top = 25, Bottom = 25, Left = 10, Right = 10 }
+                },
+                Objects = {
+                    new ObjectSettings
+                    {
+                        HtmlContent = request.BodyHtml,
+                        WebSettings = { DefaultEncoding = "utf-8", Background = true },
+                        HeaderSettings = {
+                            HtmlUrl = !string.IsNullOrEmpty(request.HeaderHtml) ? new Uri(headerTempPath).AbsoluteUri : null,
+                            Spacing = 10
+                        },
+                        FooterSettings = {
+                            HtmlUrl = !string.IsNullOrEmpty(request.FooterHtml) ? new Uri(footerTempPath).AbsoluteUri : null,
+                            Spacing = 10,
+                        }
+                    }
+                }
+            };
+
+            byte[] pdfBytes = _converter.Convert(doc);
+
+            if (!Directory.Exists(request.FolderPath))
+                Directory.CreateDirectory(request.FolderPath);
+
+            string fullOutputPath = Path.Combine(request.FolderPath, fileName);
+            File.WriteAllBytes(fullOutputPath, pdfBytes);
+
+            return fullOutputPath;
+        }
+        finally
+        {
+            EliminarArchivoTemporal(headerTempPath);
+            EliminarArchivoTemporal(footerTempPath);
+        }
+    }
+
+    private string PrepararContenedorHtml(string htmlFragmento, bool incluirScriptPaginas = false)
+    {
+        // Script para inyectar números de página en elementos con clases específicas
+        string scriptPaginacion = incluirScriptPaginas ? @"
+            <script>
+            function subst() {
+                var vars = {};
+                var query_strings_from_url = document.location.search.substring(1).split('&');
+                for (var query_string in query_strings_from_url) {
+                    var cas = query_strings_from_url[query_string].split('=', 2);
+                    vars[cas[0]] = decodeURI(cas[1]);
+                }
+                var css_selector_classes = ['page', 'frompage', 'topage', 'webpage', 'section', 'subsection', 'date', 'isodate', 'time', 'title', 'doctitle', 'sitepage', 'sitepages'];
+                for (var css_class in css_selector_classes) {
+                    var elements = document.getElementsByClassName(css_selector_classes[css_class]);
+                    for (var j = 0; j < elements.length; ++j) {
+                        elements[j].textContent = vars[css_selector_classes[css_class]];
+                    }
+                }
+            }
+            </script>" : "";
+
+        string bodyAttr = incluirScriptPaginas ? "onload='subst()'" : "";
+
+        return $@"<!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset='utf-8'>
+                    {scriptPaginacion}
+                    <style>
+                        body {{ margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; }}
+                        .page-number-container {{ text-align: right; width: 100%; }}
+                    </style>
+                </head>
+                <body {bodyAttr}>
+                    {htmlFragmento}
+                </body>
+                </html>";
+    }
+
+    private void EliminarArchivoTemporal(string path)
+    {
+        try { if (File.Exists(path)) File.Delete(path); } catch { }
+    }
 
     public async Task<TBL_doc_DocumentosModels> UpdateDocumentos(int docId, int existe)
     {
@@ -225,4 +494,50 @@ public class FileMoverRepository : IFileMoverRepository
 
     }
 
+    public async Task<FileResultModels> ObtenerImagenBase64(string nombreArchivo, string arbolRaiz)
+    {
+        try
+        {
+            arbolRaiz = "LogosEmpresas";
+            string carpeta = Path.Combine(_environment.ContentRootPath, "wwwroot", arbolRaiz);
+            string rutaCompleta = Path.Combine(carpeta, nombreArchivo);
+
+            if (!System.IO.File.Exists(rutaCompleta))
+            {
+                return new FileResultModels
+                {
+                    success = false,
+                    message = "La imagen no existe.",
+                    status = "NotFound"
+                };
+            }
+
+            byte[] bytes = await System.IO.File.ReadAllBytesAsync(rutaCompleta);
+            string extension = Path.GetExtension(nombreArchivo).ToLower();
+            string tipoMime = extension == ".png" ? "image/png" : "image/jpeg";
+            string base64 = Convert.ToBase64String(bytes);
+
+            return new FileResultModels
+            {
+                success = true,
+                status = "Success",
+                fileName = nombreArchivo,
+                // Guardamos el base64 en la propiedad Data o una nueva
+                data = $"data:{tipoMime};base64,{base64}"
+            };
+        }
+        catch (Exception ex)
+        {
+            arbolRaiz = "LogosEmpresas";
+            string carpeta = Path.Combine(_environment.ContentRootPath, "UserFiles", arbolRaiz);
+            string rutaCompleta = Path.Combine(carpeta, nombreArchivo);
+
+            return new FileResultModels
+            {
+                success = false,
+                message = ex.Message + "-" + rutaCompleta,
+                status = "Error"
+            };
+        }
+    }
 }

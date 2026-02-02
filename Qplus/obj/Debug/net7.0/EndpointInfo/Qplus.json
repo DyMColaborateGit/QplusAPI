@@ -2,7 +2,6 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Qplus-Api",
-    "description": "ASP.NET Core API General",
     "version": "v1"
   },
   "paths": {
@@ -25,7 +24,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -45,7 +44,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -65,7 +64,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -109,7 +108,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -129,7 +128,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -149,7 +148,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -213,7 +212,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -233,7 +232,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -253,7 +252,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -304,7 +303,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -324,7 +323,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -344,7 +343,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -416,7 +415,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -436,7 +435,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -456,7 +455,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -528,7 +527,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -548,7 +547,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -568,7 +567,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -600,7 +599,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -620,7 +619,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -640,7 +639,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -693,7 +692,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -713,7 +712,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -733,7 +732,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -777,7 +776,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -797,7 +796,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -817,7 +816,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -837,7 +836,7 @@
             }
           },
           "500": {
-            "description": "ServerError. No se ha encontrado el objeto solicitado."
+            "description": "Server Error"
           }
         }
       }
@@ -861,7 +860,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -881,7 +880,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -901,7 +900,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -945,7 +944,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -965,7 +964,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -985,7 +984,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1029,7 +1028,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1049,7 +1048,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1069,7 +1068,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1133,7 +1132,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1153,7 +1152,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1173,7 +1172,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1224,7 +1223,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1244,7 +1243,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1264,7 +1263,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1294,10 +1293,7 @@
         "tags": [
           "Autenticate"
         ],
-        "summary": "Obtiene la autenticacion del Usuario.",
-        "description": "Nos permite crear un script de autenticación para la plataforma.",
         "requestBody": {
-          "description": "Son las credenciales de autenticación del usuario",
           "content": {
             "application/json": {
               "schema": {
@@ -1318,7 +1314,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1338,7 +1334,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1358,7 +1354,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1390,7 +1386,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1410,7 +1406,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1430,7 +1426,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1484,7 +1480,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1504,7 +1500,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1524,7 +1520,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1578,7 +1574,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1598,7 +1594,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1618,7 +1614,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1662,7 +1658,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1682,7 +1678,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1702,7 +1698,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1746,7 +1742,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1766,7 +1762,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1786,7 +1782,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1830,7 +1826,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1850,7 +1846,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1870,7 +1866,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1924,7 +1920,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1944,7 +1940,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -1964,7 +1960,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2028,7 +2024,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2048,7 +2044,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2068,7 +2064,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2100,7 +2096,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2120,7 +2116,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2140,7 +2136,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2193,7 +2189,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2213,7 +2209,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2233,7 +2229,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2277,7 +2273,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2297,7 +2293,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2317,7 +2313,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2371,7 +2367,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2391,7 +2387,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2411,7 +2407,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2465,7 +2461,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2485,7 +2481,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2505,7 +2501,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2549,7 +2545,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2569,7 +2565,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2589,7 +2585,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2643,7 +2639,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2663,7 +2659,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2683,7 +2679,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2737,7 +2733,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2757,7 +2753,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2777,7 +2773,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2821,7 +2817,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2841,7 +2837,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2861,7 +2857,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2905,7 +2901,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2925,7 +2921,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2945,7 +2941,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -2989,7 +2985,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3009,7 +3005,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3029,7 +3025,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3249,7 +3245,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3269,7 +3265,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3289,7 +3285,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3309,7 +3305,7 @@
             }
           },
           "500": {
-            "description": "ServerError. No se ha encontrado el objeto solicitado."
+            "description": "Server Error"
           }
         }
       }
@@ -3333,7 +3329,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3353,7 +3349,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3373,7 +3369,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3405,7 +3401,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3425,7 +3421,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3445,7 +3441,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3489,7 +3485,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3509,7 +3505,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3529,7 +3525,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3573,7 +3569,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3593,7 +3589,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3613,7 +3609,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3667,7 +3663,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3687,7 +3683,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3707,7 +3703,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3758,7 +3754,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3778,7 +3774,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3798,7 +3794,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3852,7 +3848,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3872,7 +3868,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3892,7 +3888,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3946,7 +3942,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3966,7 +3962,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -3986,7 +3982,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4030,7 +4026,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4050,7 +4046,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4070,7 +4066,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4102,7 +4098,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4122,7 +4118,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4142,7 +4138,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4202,7 +4198,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4222,7 +4218,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4242,7 +4238,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4293,7 +4289,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4313,7 +4309,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4333,7 +4329,275 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/FileMover/GetGenerarGuardarPdfs": {
+      "post": {
+        "tags": [
+          "FileMover"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarLoteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarLoteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarLoteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResultModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResultModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResultModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/FileMover/PostGuardarPdfDataArchivo/{FilePdfs}": {
+      "post": {
+        "tags": [
+          "FileMover"
+        ],
+        "parameters": [
+          {
+            "name": "FilePdfs",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilePdfADIPdiModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilePdfADIPdiModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilePdfADIPdiModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResultModelsGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResultModelsGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResultModelsGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/FileMover/ObtenerImagenBase64/{nombreArchivo}/{arbolRaiz}": {
+      "get": {
+        "tags": [
+          "FileMover"
+        ],
+        "parameters": [
+          {
+            "name": "nombreArchivo",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "arbolRaiz",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4377,7 +4641,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4397,7 +4661,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4417,7 +4681,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4471,7 +4735,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4491,7 +4755,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4511,7 +4775,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4555,7 +4819,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4575,7 +4839,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4595,7 +4859,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4649,7 +4913,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4669,7 +4933,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4689,7 +4953,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4721,7 +4985,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4741,7 +5005,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4761,7 +5025,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4815,7 +5079,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4835,7 +5099,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4855,7 +5119,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4919,7 +5183,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4939,7 +5203,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -4959,7 +5223,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5013,7 +5277,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5033,7 +5297,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5053,7 +5317,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5097,7 +5361,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5117,7 +5381,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5137,7 +5401,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5188,7 +5452,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5208,7 +5472,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5228,7 +5492,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5279,7 +5543,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5299,7 +5563,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5319,7 +5583,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5391,7 +5655,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5411,7 +5675,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5431,7 +5695,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5485,7 +5749,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5505,7 +5769,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5525,7 +5789,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5589,7 +5853,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5609,7 +5873,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5629,7 +5893,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5703,7 +5967,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5723,7 +5987,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5743,7 +6007,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5797,7 +6061,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5817,7 +6081,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5837,7 +6101,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5911,7 +6175,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5931,7 +6195,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -5951,7 +6215,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6005,7 +6269,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6025,7 +6289,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6045,7 +6309,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6065,7 +6329,7 @@
             }
           },
           "500": {
-            "description": "ServerError. No se ha encontrado el objeto solicitado."
+            "description": "Server Error"
           }
         }
       }
@@ -6099,7 +6363,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6119,7 +6383,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6139,7 +6403,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6193,7 +6457,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6213,7 +6477,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6233,7 +6497,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6307,7 +6571,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6327,7 +6591,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6347,7 +6611,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6421,7 +6685,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6441,7 +6705,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6461,7 +6725,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6524,7 +6788,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6544,7 +6808,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6564,7 +6828,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6677,7 +6941,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6697,7 +6961,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6717,7 +6981,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6820,7 +7084,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6840,7 +7104,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6860,7 +7124,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6973,7 +7237,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -6993,7 +7257,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7013,7 +7277,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7116,7 +7380,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7136,7 +7400,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7156,7 +7420,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7210,7 +7474,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7230,7 +7494,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7250,7 +7514,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7304,7 +7568,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7324,7 +7588,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7344,7 +7608,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7447,7 +7711,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7467,7 +7731,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7487,7 +7751,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7590,7 +7854,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7610,7 +7874,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7630,7 +7894,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7733,7 +7997,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7753,7 +8017,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7773,7 +8037,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7876,7 +8140,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7896,7 +8160,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7916,7 +8180,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -7980,7 +8244,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8000,7 +8264,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8020,7 +8284,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8064,7 +8328,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8084,7 +8348,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8104,7 +8368,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8158,7 +8422,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8178,7 +8442,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8198,7 +8462,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8242,7 +8506,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8262,7 +8526,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8282,7 +8546,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8326,7 +8590,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8346,7 +8610,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8366,7 +8630,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8420,7 +8684,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8440,7 +8704,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8460,7 +8724,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8480,7 +8744,7 @@
             }
           },
           "500": {
-            "description": "ServerError. No se ha encontrado el objeto solicitado."
+            "description": "Server Error"
           }
         }
       }
@@ -8504,7 +8768,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8524,7 +8788,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8544,7 +8808,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8588,7 +8852,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8608,7 +8872,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8628,7 +8892,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8672,7 +8936,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8692,7 +8956,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8712,7 +8976,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8776,7 +9040,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8796,7 +9060,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8816,7 +9080,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8860,7 +9124,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8880,7 +9144,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8900,7 +9164,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8944,7 +9208,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8964,7 +9228,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -8984,7 +9248,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9028,7 +9292,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9048,7 +9312,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9068,7 +9332,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9121,7 +9385,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9141,7 +9405,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9161,7 +9425,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9224,7 +9488,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9244,7 +9508,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9264,7 +9528,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9296,7 +9560,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9316,7 +9580,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9336,7 +9600,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9380,7 +9644,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9400,7 +9664,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9420,7 +9684,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9464,7 +9728,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9484,7 +9748,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9504,7 +9768,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9548,7 +9812,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9568,7 +9832,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9588,7 +9852,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9652,7 +9916,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9672,7 +9936,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9692,7 +9956,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9743,7 +10007,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9763,7 +10027,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9783,7 +10047,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9847,7 +10111,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9867,7 +10131,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9887,7 +10151,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9950,7 +10214,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9970,7 +10234,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -9990,7 +10254,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10053,7 +10317,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10073,7 +10337,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10093,7 +10357,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10165,7 +10429,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10185,7 +10449,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10205,7 +10469,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10258,7 +10522,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10278,7 +10542,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10298,7 +10562,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10361,7 +10625,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10381,7 +10645,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10401,7 +10665,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10473,7 +10737,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10493,7 +10757,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10513,7 +10777,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10566,7 +10830,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10586,7 +10850,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10606,7 +10870,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10659,7 +10923,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10679,7 +10943,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10699,7 +10963,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10743,7 +11007,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10763,7 +11027,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10783,7 +11047,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10827,7 +11091,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10847,7 +11111,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10867,7 +11131,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10911,7 +11175,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10931,7 +11195,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10951,7 +11215,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -10995,7 +11259,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11015,7 +11279,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11035,7 +11299,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11079,7 +11343,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11099,7 +11363,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11119,7 +11383,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11163,7 +11427,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11183,7 +11447,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11203,7 +11467,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11254,7 +11518,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11274,7 +11538,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11294,7 +11558,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11338,7 +11602,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11358,7 +11622,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11378,7 +11642,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11422,7 +11686,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11442,7 +11706,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11462,7 +11726,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11506,7 +11770,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11526,7 +11790,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11546,7 +11810,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11590,7 +11854,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11610,7 +11874,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11630,7 +11894,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11681,7 +11945,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11701,7 +11965,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11721,7 +11985,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11772,7 +12036,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11792,7 +12056,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11812,7 +12076,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11856,7 +12120,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11876,7 +12140,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11896,7 +12160,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11960,7 +12224,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -11980,7 +12244,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12000,7 +12264,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12051,7 +12315,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12071,7 +12335,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12091,7 +12355,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12145,7 +12409,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12165,7 +12429,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12185,7 +12449,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12229,7 +12493,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12249,7 +12513,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12269,7 +12533,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12313,7 +12577,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12333,7 +12597,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12353,7 +12617,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12407,7 +12671,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12427,7 +12691,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12447,7 +12711,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12501,7 +12765,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12521,7 +12785,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12541,7 +12805,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12615,7 +12879,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12635,7 +12899,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12655,7 +12919,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12706,7 +12970,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12726,7 +12990,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12746,7 +13010,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12809,7 +13073,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12829,7 +13093,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12849,7 +13113,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12893,7 +13157,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12913,7 +13177,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12933,7 +13197,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -12996,7 +13260,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13016,7 +13280,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13036,7 +13300,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13080,7 +13344,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13100,7 +13364,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13120,7 +13384,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13164,7 +13428,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13184,7 +13448,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13204,7 +13468,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13248,7 +13512,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13268,7 +13532,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13288,7 +13552,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13332,7 +13596,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13352,7 +13616,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13372,7 +13636,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13435,7 +13699,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13455,7 +13719,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13475,7 +13739,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13526,7 +13790,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13546,7 +13810,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13566,7 +13830,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13617,7 +13881,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13637,7 +13901,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13657,7 +13921,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13721,7 +13985,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13741,7 +14005,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13761,7 +14025,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13825,7 +14089,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13845,7 +14109,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13865,7 +14129,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13919,7 +14183,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13939,7 +14203,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -13959,7 +14223,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14003,7 +14267,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14023,7 +14287,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14043,7 +14307,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14106,7 +14370,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14126,7 +14390,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14146,7 +14410,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14259,7 +14523,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14279,7 +14543,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14299,7 +14563,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14319,7 +14583,7 @@
             }
           },
           "500": {
-            "description": "ServerError. No se ha encontrado el objeto solicitado."
+            "description": "Server Error"
           }
         }
       }
@@ -14343,7 +14607,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14363,7 +14627,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14383,7 +14647,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14427,7 +14691,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14447,7 +14711,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14467,7 +14731,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14487,7 +14751,7 @@
             }
           },
           "500": {
-            "description": "ServerError. No se ha encontrado el objeto solicitado."
+            "description": "Server Error"
           }
         }
       }
@@ -14511,7 +14775,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14531,7 +14795,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14551,7 +14815,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14595,7 +14859,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14615,7 +14879,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14635,7 +14899,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14686,7 +14950,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14706,7 +14970,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14726,7 +14990,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14770,7 +15034,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14790,7 +15054,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14810,7 +15074,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14854,7 +15118,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14874,7 +15138,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14894,7 +15158,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14968,7 +15232,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -14988,7 +15252,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15008,7 +15272,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15052,7 +15316,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15072,7 +15336,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15092,7 +15356,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15136,7 +15400,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15156,7 +15420,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15176,7 +15440,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15230,7 +15494,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15250,7 +15514,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15270,7 +15534,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15314,7 +15578,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15334,7 +15598,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15354,7 +15618,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15408,7 +15672,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15428,7 +15692,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15448,7 +15712,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15492,7 +15756,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15512,7 +15776,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15532,7 +15796,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15586,7 +15850,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15606,7 +15870,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15626,7 +15890,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15680,7 +15944,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15700,7 +15964,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15720,7 +15984,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15803,7 +16067,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15823,7 +16087,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15843,7 +16107,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15897,7 +16161,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15917,7 +16181,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15937,7 +16201,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15969,7 +16233,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -15989,7 +16253,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16009,7 +16273,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16069,7 +16333,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16089,7 +16353,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16109,7 +16373,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16162,7 +16426,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16182,7 +16446,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16202,7 +16466,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16246,7 +16510,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16266,7 +16530,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16286,7 +16550,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16318,7 +16582,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK. Devuelve el objeto solicitado.",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16338,7 +16602,7 @@
             }
           },
           "401": {
-            "description": "Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.",
+            "description": "Unauthorized",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16358,7 +16622,7 @@
             }
           },
           "404": {
-            "description": "NotFound. No se ha encontrado el objeto solicitado.",
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -16610,6 +16874,40 @@
         },
         "additionalProperties": false
       },
+      "FilePdfADIPdiModel": {
+        "type": "object",
+        "properties": {
+          "ccliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "folderPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "headerHtml": {
+            "type": "string",
+            "nullable": true
+          },
+          "bodyHtml": {
+            "type": "string",
+            "nullable": true
+          },
+          "footerHtml": {
+            "type": "string",
+            "nullable": true
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "FileResultModels": {
         "type": "object",
         "properties": {
@@ -16617,6 +16915,10 @@
             "type": "boolean"
           },
           "data": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
             "nullable": true
           },
           "status": {
@@ -16629,6 +16931,13 @@
           },
           "fileName": {
             "type": "string",
+            "nullable": true
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
             "nullable": true
           }
         },
@@ -17562,6 +17871,23 @@
           }
         },
         "additionalProperties": { }
+      },
+      "ProcesarLoteRequest": {
+        "type": "object",
+        "properties": {
+          "filePdfs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FilePdfADIPdiModel"
+            },
+            "nullable": true
+          },
+          "rutaFinal": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "ProductosModels": {
         "type": "object",
@@ -24580,7 +24906,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "JWT Authorization header using the Bearer scheme. \r\n                      Enter 'Bearer' [space] and then your token in the text input below.\r\n                      Example: 'Bearer 12345abcdef'",
+        "description": "JWT Authorization header using the Bearer scheme.",
         "name": "Authorization",
         "in": "header"
       }

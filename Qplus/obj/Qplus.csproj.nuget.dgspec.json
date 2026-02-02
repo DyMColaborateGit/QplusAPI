@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Haukcode.WkHtmlToPdfDotNet": {
+              "target": "Package",
+              "version": "[1.5.95, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -103,6 +107,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -164,6 +171,10 @@
             "AspNetCoreRateLimit": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Haukcode.WkHtmlToPdfDotNet": {
+              "target": "Package",
+              "version": "[1.5.95, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -244,6 +255,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Haukcode.WkHtmlToPdfDotNet": {
+              "target": "Package",
+              "version": "[1.5.95, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -338,6 +353,10 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Haukcode.WkHtmlToPdfDotNet": {
+              "target": "Package",
+              "version": "[1.5.95, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.9, )"
@@ -364,13 +383,13 @@
               "target": "Package",
               "version": "[6.5.0, )"
             },
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[10.0.2, )"
-            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.32.0, )"
+            },
+            "libwkhtmltox-64": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
