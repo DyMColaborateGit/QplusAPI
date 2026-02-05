@@ -36,3 +36,5 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\Ap
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\ref\App.logic.dll
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x86\native\wkhtmltox.dll

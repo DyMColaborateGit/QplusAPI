@@ -256,8 +256,8 @@ public class ProgEvaluacionService : IProgEvaluacionSercice
 
         return "ModMD";
     }
-    public async Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId)
-    {
-        return await _progEvaluacionRepository.GeneradorPDFADIByEvaluacionId(EvaluacionId);
-    }
+    //public async Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId)
+    //{
+    //    return await _progEvaluacionRepository.GeneradorPDFADIByEvaluacionId(EvaluacionId);
+    //}
 }

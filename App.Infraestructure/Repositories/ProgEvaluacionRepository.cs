@@ -33,6 +33,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
     private readonly ITotalAnalisisIndiADIRepository _totalAnalisisIndiADIRepository;
     private readonly IPesosxTipoIndxNivelCompRepository _pesosxTipoIndxNivelCompRepository;
     private readonly IEmpresasRepository _empresasRepository;
+    private readonly IFileMoverRepository _fileMoverRepository;
 
     public ProgEvaluacionRepository(ConnectContext context, IMapper mapper,
         IProgramacionMasivaEvaluacionesRepository programacionMasivaEvaluacionesRepository, IFuncionariosRepository funcionariosRepository, ICargosRepository cargosRepository,
@@ -41,7 +42,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         ITiposIndicadoresEstrategicosRepository tiposIndicadoresEstrategicosRepository, IPesosxTipoIndEstxTipoNivelEstRepository pesosxTipoIndEstxTipoNivelEstRepository,
         IResultcomTecnicasRepository resultcomTecnicasRepository, IEmpresasTitulosRepository empresasTitulosRepository, IPesosxTipoIndxNivelCompRepository pesosxTipoIndxNivelCompRepository,
         IEmpresasRepository empresasRepository, ITotalIndEstCorporativosRepository totalIndEstCorporativosRepository, IResultIndiCoporpRepository resultIndiCoporpRepository,
-        ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository, ItotalUESRepository totalUESRepository)
+        ITotalAnalisisIndiADIRepository totalAnalisisIndiADIRepository, ItotalUESRepository totalUESRepository, IFileMoverRepository fileMoverRepository)
     {
         _context = context;
         _mapper = mapper;
@@ -64,6 +65,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         _totalAnalisisIndiADIRepository = totalAnalisisIndiADIRepository;
         _pesosxTipoIndxNivelCompRepository = pesosxTipoIndxNivelCompRepository;
         _empresasRepository = empresasRepository;
+        _fileMoverRepository = fileMoverRepository;
     }
 
     public async Task<Tbl_com_ProgEvaluacionModels> ObjProgEvaluacion(long evaluacionId)
@@ -461,7 +463,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
             throw;
         }
     }
-    public async Task<string> GeneradorPDFADIByEvaluacionId(int EvaluacionId)
+    public async string GeneradorPDFADIByEvaluacionId(int EvaluacionId)
     {
         try
         {
@@ -1651,7 +1653,7 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
 
             //return ExportarHtmlToPdf(htmlPdf.ToString(), progEva, logoEmpresa);
 
-            return _mapper.Map<string>(htmlPdf.ToString());
+            return htmlPdf;
 
         }
         catch (Exception ex)

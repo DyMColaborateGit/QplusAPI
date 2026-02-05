@@ -272,3 +272,15 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\Qplus.genruntimeconfig.cache
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\Qplus\obj\Debug\net7.0\ref\Qplus.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win-x86\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\WkHtmlToPdfDotNet.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\libwkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\linux-arm64\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\linux-x64\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\linux-x86\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\osx-x64\native\libwkhtmltox.dylib
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
