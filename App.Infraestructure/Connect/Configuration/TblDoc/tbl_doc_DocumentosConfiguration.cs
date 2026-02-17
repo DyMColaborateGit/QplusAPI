@@ -44,11 +44,6 @@ namespace App.Infraestructure.Connect.Configuration.TblDoc
                 .IsRequired()
                 .HasColumnType("int");
 
-            //builder.Property(p => p.ProcesoDoc)
-            //    .HasColumnName("proceso_doc")
-            //    .IsRequired()
-            //    .HasColumnType("int");
-
             builder.HasOne(p => p.ProcesosObj)
                 .WithMany(p => p.TBL_Doc_Documentos)
                 .HasForeignKey(p => p.proceso_doc)
@@ -165,7 +160,7 @@ namespace App.Infraestructure.Connect.Configuration.TblDoc
                 .HasColumnType("bigint");
 
             builder.Property(p => p.ArchivoEliminadoApp)
-                .HasColumnType("bit");
+                .HasColumnType("int");
 
         }
     }

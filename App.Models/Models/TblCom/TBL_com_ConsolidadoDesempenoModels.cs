@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Models.Models.TblCom;
 
@@ -8,8 +9,9 @@ public class TBL_com_ConsolidadoDesempenoModels
 
     public int EvaluacionId { get; set; }
 
+    [ForeignKey(nameof(TipoId))]
     public int TipoId { get; set; }
-
+    public Tbl_com_AspectosValoracionModels? AspectoValoracionObj { get; set; }
     public decimal ValorAnalisis { get; set; }
 
     public string? Nivel { get; set; }

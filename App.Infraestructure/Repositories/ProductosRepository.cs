@@ -23,7 +23,23 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
+        public async Task<List<ProductosModels>> GetListaSubProcesosByActivos()
+        {
+            try
+            {
+                var objResult = await _context.Productos.AsNoTracking()
+                .Where(x => x.Estado == 1)
+                .OrderBy(x => x.Producto)
+                .ToListAsync();
 
+                return _mapper.Map<List<ProductosModels>>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetListaSubProcesosByActivos", ex, "");
+                throw;
+            }
+        }
         public async Task<List<ProductosModels>> GetListaSubProcesosByIdProcesoActivos(int IdProceso)
         {
             try

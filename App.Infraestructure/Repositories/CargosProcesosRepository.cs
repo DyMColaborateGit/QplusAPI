@@ -22,19 +22,35 @@ namespace App.Infraestructure.Repositories
             _context = context;
             _mapper = mapper;
         }
-        public async Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int IdProceso, int id_cargo, int EmpresaId)
+        public async Task<List<SCP_CargosProcesosModels>> GetCargoAutorizadosByProcesoIdCargoId(int Id_proceso, int Id_cargo, int EmpresaId)
         {
             try
             {
                 var objResult = await _context.SCP_CargosProcesos.AsNoTracking()
-                    .Where(x => x.TipoCargo != "A" && x.IdProceso == IdProceso && x.CargosObj.Codigo == id_cargo && x.EmpresaId == EmpresaId)
+                    .Where(x => x.TipoCargo != "A" && x.Id_proceso == Id_proceso && x.CargosObj.Codigo == Id_cargo && x.EmpresaId == EmpresaId)
                     .Include(x => x.CargosObj)
                     .FirstOrDefaultAsync();
                 return _mapper.Map <List<SCP_CargosProcesosModels>>(objResult);
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("GetCargoAutorizadosByProcesoIdCargoId", ex, IdProceso.ToString() + "/" + id_cargo.ToString() + "/" + EmpresaId.ToString());
+                ExceptionLogHelpers.LogException("GetCargoAutorizadosByProcesoIdCargoId", ex, Id_proceso.ToString() + "/" + Id_cargo.ToString() + "/" + EmpresaId.ToString());
+                throw;
+            }
+        }
+        public async Task<SCP_CargosProcesosModels> GetProcesoPerteneceByIdCargo(int Id_cargo, int EmpresaId)
+        {
+            try
+            {
+                var objResult = await _context.SCP_CargosProcesos.AsNoTracking()
+                    .Where(x => x.Id_cargo == Id_cargo && x.TipoCargo == "P" && x.EmpresaId == EmpresaId && x.ProcesosObj.EmpresaId == EmpresaId)
+                    .Include(x => x.ProcesosObj)
+                    .FirstOrDefaultAsync();
+                return _mapper.Map<SCP_CargosProcesosModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetProcesoPerteneceByIdCargo", ex, Id_cargo.ToString() + "/" + EmpresaId.ToString());
                 throw;
             }
         }

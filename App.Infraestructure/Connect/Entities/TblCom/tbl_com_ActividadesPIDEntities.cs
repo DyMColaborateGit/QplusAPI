@@ -27,4 +27,5 @@ public class tbl_com_ActividadesPIDEntities
     public string? AutoDesarrollo { get; set; }
     public string? TipoActividadOtro { get; set; }
     public string? Analisis { get; set; }
+    public string? UltimoUsuarioSeguimiento { get; set; }
 }

@@ -1,6 +1,8 @@
 ﻿using App.Infraestructure.IRepositories;
 using App.logic.IServices;
 using App.Models.Models.FileMove;
+using Azure.Core;
+using Microsoft.AspNetCore.Mvc;
 using System.IO;
 
 namespace App.logic.Services;
@@ -13,10 +15,31 @@ public class FileMoverService : IFileMoverService
     {
         _fileMoverRepository = fileMoverRepository;
     }
-
-    public async Task<FileResultModels> PostMoverArchivo(FileMoveModels fileMove)
+    public async Task<FilePdfResultsModel> PostMoverArchivo(List<FileMoveModels> fileMove)
     {
         return await _fileMoverRepository.PostMoverArchivo(fileMove);
     }
-
-}
+    public async Task<FilePdfResultsModel> PostPdfArchivos(List<FilePdfADIPdiModel> FilePdfs)
+    {
+        return await _fileMoverRepository.PostPdfArchivos(FilePdfs);
+    }
+    public async Task<FilePdfResultsModel> PostGuardarPdfDataArchivo(FilePdfADIPdiModel FilePdfs)
+    {
+        return await _fileMoverRepository.PostGuardarPdfDataArchivo(FilePdfs);
+    }
+    public async Task<FileResultModels> CheckFileExists(FileMoveModels fileCheck)
+    {
+        return await _fileMoverRepository.CheckFileExists(fileCheck);
+    }
+    public async Task<FilePdfResultsModel> GetGenerarGuardarPdfsPdi(List<FilePdfADIPdiModel> requests)
+    {
+        return await _fileMoverRepository.GetGenerarGuardarPdfsPdi(requests);
+    }
+    public async Task<FilePdfResultsModel> GetGenerarGuardarPdfsAdi(List<FilePdfADIPdiModel> requests)
+    {
+        return await _fileMoverRepository.GetGenerarGuardarPdfsAdi(requests);
+    }
+    public async Task<ActionResult<FileResultModels>> ObtenerImagenBase64(string nombreArchivo, string arbolRaiz)
+    {
+        return await _fileMoverRepository.ObtenerImagenBase64(nombreArchivo, arbolRaiz);
+    }}

@@ -93,6 +93,21 @@ namespace App.logic.Extensions
             services.AddScoped<IRelFuncSolicitudPService, RelFuncSolicitudPService>();
             services.AddScoped<ITextosBrechaService, TextosBrechaService>();
             services.AddScoped<IParametrosDesempenoService, ParametrosDesempenoService>();
+            services.AddScoped<IZonasRiesgoService, ZonasRiesgoService>();
+            services.AddScoped<IEvaluacionRiesgoService, EvaluacionRiesgoService>();
+            services.AddScoped<IParametrosValoracionService, ParametrosValoracionService>();
+            services.AddScoped<IConsecuenciasService, ConsecuenciasService>();
+            services.AddScoped<IProbabilidadesService, ProbabilidadesService>();
+            services.AddScoped<IRiesgosService, RiesgosService>();
+            services.AddScoped<IClasesService, ClasesService>();
+            services.AddScoped<IAgentesService, AgentesService>();
+            services.AddScoped<ITipoAnalisisService, TipoAnalisisService>();
+            services.AddScoped<ISeguimientoActividadesService, SeguimientoActividadesService>();
+            services.AddScoped<ILinkRelacionadoActividadesPIDService, LinkRelacionadoActividadesPIDService>();
+            services.AddScoped<IResultadosService, ResultadosService>();
+            services.AddScoped<ITotalIndEstCorporativosService, TotalIndEstCorporativosService>();
+            services.AddScoped<ITotalAnalisisIndiADIService, TotalAnalisisIndiADIService>();
+            services.AddScoped<ITotalUESService, TotalUESService>();
         }
 
         /// <summary>
@@ -166,6 +181,19 @@ namespace App.logic.Extensions
             services.AddScoped<IResultadoBrechaPRepository, ResultadoBrechaPRepository>();
             services.AddScoped<IRelFuncSolicitudPRepository, RelFuncSolicitudPRepository>();
             services.AddScoped<ITextosBrechaRepository, TextosBrechaRepository>();
+            services.AddScoped<IZonasRiesgoRepository, ZonasRiesgoRepository>();
+            services.AddScoped<IEvaluacionRiesgoRepository, EvaluacionRiesgoRepository>();
+            services.AddScoped<IParametrosValoracionRepository, ParametrosValoracionRepository>();
+            services.AddScoped<IConsecuenciasRepository, ConsecuenciasRepository>();
+            services.AddScoped<IProbabilidadesRepository, ProbabilidadesRepository>();
+            services.AddScoped<IRiesgosRepository, RiesgosRepository>();
+            services.AddScoped<IClasesRepository, ClasesRepository>();
+            services.AddScoped<IAgentesRepository, AgentesRepository>();
+            services.AddScoped<ITipoAnalisisRepository, TipoAnalisisRepository>();
+            services.AddScoped<ISeguimientoActividadesRepository, SeguimientoActividadesRepository>();
+            services.AddScoped<ILinkRelacionadoActividadesPIDRepository, LinkRelacionadoActividadesPIDRepository>();
+            services.AddScoped<ItotalUESRepository, TotalUESRepository>();
+            services.AddScoped<ITotalAnalisisIndiADIRepository, TotalAnalisisIndiADIRepository>();
         }
 
         /// <summary>

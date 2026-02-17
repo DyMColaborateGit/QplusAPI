@@ -23,7 +23,7 @@ namespace App.Infraestructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task<List<SCP_ProcesosModels>> ListProcesosByempresaIdByEstado(int EmpresaId, string Estado)
+        public async Task<List<SCP_ProcesosModels>> GetListProcesosByEmpresaIdByEstado(int EmpresaId, string Estado)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace App.Infraestructure.Repositories
             }
             catch (Exception ex)
             {
-                ExceptionLogHelpers.LogException("ListProcesosByempresaIdByEstado", ex, EmpresaId + "/" + Estado);
+                ExceptionLogHelpers.LogException("GetListProcesosByEmpresaIdByEstado", ex, EmpresaId + "/" + Estado);
                 throw;
             }
         }

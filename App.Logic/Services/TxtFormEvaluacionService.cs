@@ -17,5 +17,10 @@ namespace App.logic.Services
         {
             return await _txtFormEvaluacionRepository.ObjTxtFormEvaluacion(EmpresaId, Tipotexto, Tipovaloracion, Anio);
         }
+
+        public async Task<List<Tbl_com_TxtFormEvaluacionModels>> ListTxtFormEvaluacion(int EmpresaId, int Anio, int Tipovaloracion)
+        {
+            return await _txtFormEvaluacionRepository.ListTxtFormEvaluacion(EmpresaId, Anio, Tipovaloracion);
+        }
     }
 }

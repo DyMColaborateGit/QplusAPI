@@ -1,13 +1,15 @@
-﻿using App.Models.Helpers;
-using App.Infraestructure.IRepositories;
+﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
+using App.Models.Helpers;
+using App.Models.Models.Scp;
+using App.Models.Models.Share;
+using App.Models.Models.TblCom;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using App.Models.Models.Scp;
-using App.Models.Models.Share;
 
 namespace App.logic.IServices;
 
@@ -47,6 +49,11 @@ public class UsuarioService : IUsuarioService
         gestAutenticate.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
 
         return gestAutenticate;
+    }
+    public async Task<SCP_UsuarioModels> GetUsuarioByWWID(long identificacion)
+    {
+        var getResult = await _usuarioRepository.GetUsuarioByWWID(identificacion);
+        return getResult;
     }
     private JwtSecurityToken CreateJwtToken(SCP_UsuarioModels usuario)
     {

@@ -1,11 +1,21 @@
-﻿using App.Models.Models.Share;
+﻿using App.Models.Global;
+using App.Models.Models.FileMove;
+using App.Models.Models.Share;
 using App.Models.Models.TblCom;
 
 namespace App.logic.IServices;
 
 public interface IProgEvaluacionSercice 
 {
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesByParametrosBasicos(int EmpresaId, int InAnio, int MesInicio, int MesFinal);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesByParametros(int EmpresaId, int InAnio, int MesInicio, int MesFinal, int DireccionId, int OficinaId);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesFuncionarioByParametros(int EmpresaId, int InAnio, long EvaluadoId);
+
     Task<Tbl_com_ProgEvaluacionModels> GetObjProgEvaluacion(long EvaluacionId);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
 
     Task<string> GetCerrarEvaluacion(long EvaluacionId, int EmpresaId, int Caracteres);
 
@@ -30,4 +40,6 @@ public interface IProgEvaluacionSercice
     Task<string> PutUpdateUsuarioModNivel(long EvaluacionId, string UsuarioModNivel);
 
     Task<Tbl_com_ProgEvaluacionModels> UpdateProgEvaluacionTotalIndicadores(long EvaluacionId, int TotIndi, int EmpresaId, List<Tbl_com_ResultadosEvaIndicadoresModels> IndicadoresEvaluacion);
+
+    //Task<string> GeneradorBodyADIByEvaluacionId(FilePdfADIPdiModel pdiAdiObj);
 }

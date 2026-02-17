@@ -6,6 +6,6 @@ namespace App.Infraestructure.IRepositories;
 public interface IProgramacionMasivaEvaluacionesRepository
 {
     Task<Tbl_com_ProgramacionMasivaEvaluacionesModels> ObjProgramacionMasivaEvaluacionesByIdProgramacion(long IdProgramacion);
-
+    Task<ResponseTbl_com_ProgramacionMasivaEvaluacionesModels> GetDataProgramacionByID(int IdProgramacion);
     Task<Tbl_com_ProgramacionMasivaEvaluacionesModels> Update_ProgramacionMasivaEvaluaciones(Tbl_com_ProgramacionMasivaEvaluacionesModels ObjUpdate);
 }

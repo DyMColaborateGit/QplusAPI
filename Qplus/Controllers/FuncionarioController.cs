@@ -1,6 +1,7 @@
 ﻿using App.logic.IServices;
 using App.logic.Services;
 using App.Models.Global;
+using App.Models.Models;
 using App.Models.Models.Scp;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +24,32 @@ namespace Qplus.Controllers
             _funcionariosService = funcionariosService;
         }
 
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetObjFuncionarioByIdentificacion/{Identificacion}")]
+        public async Task<GetResponse<SCP_FuncionariosModels>> GetObjFuncionarioByIdentificacion(long Identificacion)
+        {
+            GetResponse<SCP_FuncionariosModels> resultado = new GetResponse<SCP_FuncionariosModels>();
+            try
+            {
+                resultado.Data = await _funcionariosService.GetObjFuncionarioByIdentificacion(Identificacion);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
 
         /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
         /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
@@ -38,6 +65,33 @@ namespace Qplus.Controllers
             try
             {
                 resultado.Data = await _funcionariosService.GetObjFuncionarioByIdentificacion(EmpresaId, Identificacion);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetListfuncionariosByEmpresaId/{EmpresaId}")]
+        public async Task<GetResponse<List<SCP_FuncionariosModels>>> GetListfuncionariosByEmpresaId(int EmpresaId)
+        {
+            GetResponse<List<SCP_FuncionariosModels>> resultado = new GetResponse<List<SCP_FuncionariosModels>>();
+            try
+            {
+                resultado.Data = await _funcionariosService.GetListfuncionariosByEmpresaId(EmpresaId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

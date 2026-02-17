@@ -26,6 +26,12 @@ public class UsuarioRepository : IUsuarioRepository
         return _mapper.Map<SCP_UsuarioModels>(objResult);
     }
 
+    public async Task<SCP_UsuarioModels> GetUsuarioByWWID(long identificacion)
+    {
+        var objResult = await _context.SCP_Usuario.FirstOrDefaultAsync(x => x.WWID == identificacion);
+        return _mapper.Map<SCP_UsuarioModels>(objResult);
+    }
+
     public async Task<List<SCP_UsuarioModels>> GetUsuarios()
     {
         var objResult = await  _context.SCP_Usuario.ToListAsync();

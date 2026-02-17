@@ -25,13 +25,17 @@ public class tbl_com_ProgramacionMasivaEvaluacionesConfiguration : IEntityTypeCo
         .IsRequired()
         .HasColumnType("int");
 
-        builder.Property(p => p.CodigoDireccion)
-        .IsRequired()
-        .HasColumnType("int");
+        builder.HasOne(p => p.ZonaObj)
+        .WithMany(p => p.TBL_com_ProgramacionMasivaEvaluacion)
+        .HasForeignKey(p => p.CodigoDireccion)
+        .HasPrincipalKey(m => m.CodigoZO)
+        .OnDelete(DeleteBehavior.NoAction);
 
-        builder.Property(p => p.CodigoGerencia)
-        .IsRequired()
-        .HasColumnType("int");
+        builder.HasOne(p => p.OficinaObj)
+        .WithMany(p => p.TBL_com_ProgramacionMasivaEvaluacion)
+        .HasForeignKey(p => p.CodigoGerencia)
+        .HasPrincipalKey(m => m.CodigoOf)
+        .OnDelete(DeleteBehavior.NoAction);
 
         builder.Property(p => p.CodigoNivelCompetencia)
         .IsRequired()

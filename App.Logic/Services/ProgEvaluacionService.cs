@@ -1,8 +1,12 @@
 ﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
+using App.Models.Global;
+using App.Models.Models.FileMove;
 using App.Models.Models.Scp;
 using App.Models.Models.Share;
 using App.Models.Models.TblCom;
+using App.Models.Models.TblInd;
 
 namespace App.logic.Services;
 
@@ -33,12 +37,30 @@ public class ProgEvaluacionService : IProgEvaluacionSercice
         _getPorcentajesRepository = getPorcentajesRepository;
     }
 
+    public async Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesByParametrosBasicos(int EmpresaId, int InAnio, int MesInicio, int MesFinal)
+    {
+        return await _progEvaluacionRepository.GetListEvaluacionesByParametrosBasicos(EmpresaId, InAnio, MesInicio, MesFinal);
+    }
+
+    public async Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesByParametros(int EmpresaId, int InAnio, int MesInicio, int MesFinal, int DireccionId, int OficinaId)
+    {
+        return await _progEvaluacionRepository.GetListEvaluacionesByParametros(EmpresaId, InAnio, MesInicio, MesFinal, DireccionId, OficinaId);
+    }
+
+    public async Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesFuncionarioByParametros(int EmpresaId, int InAnio, long EvaluadoId)
+    {
+        return await _progEvaluacionRepository.GetListEvaluacionesFuncionarioByParametros(EmpresaId, InAnio, EvaluadoId);
+    }
+
     public async Task<Tbl_com_ProgEvaluacionModels> GetObjProgEvaluacion(long EvaluacionId)
     {
         var getResult = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
         return getResult;
     }
-
+    public async Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId)
+    {
+        return await _progEvaluacionRepository.GetListaProgEvaluacionByEvaluacionId(EvaluacionId);
+    }
     public async Task<string> GetCerrarEvaluacion(long EvaluacionId, int EmpresaId, int Caracteres)
     {
         Tbl_com_ProgEvaluacionModels objEvaluacion = await _progEvaluacionRepository.ObjProgEvaluacion(EvaluacionId);
@@ -251,5 +273,8 @@ public class ProgEvaluacionService : IProgEvaluacionSercice
 
         return "ModMD";
     }
-
+    //public async Task<string> GeneradorBodyADIByEvaluacionId(FilePdfADIPdiModel pdiAdiObj)
+    //{
+    //    return await _progEvaluacionRepository.GeneradorBodyADIByEvaluacionId(pdiAdiObj);
+    //}
 }

@@ -34,12 +34,12 @@ public class TxtFormEvaluacionRepository: ITxtFormEvaluacionRepository
         }
     }
 
-    public async Task<List<Tbl_com_TxtFormEvaluacionModels>> ListTxtFormEvaluacion(int EmpresaId, int Anio)
+    public async Task<List<Tbl_com_TxtFormEvaluacionModels>> ListTxtFormEvaluacion(int EmpresaId, int Anio, int Tipovaloracion)
     {
         try
         {
             var objResult = await _context.TBL_com_TxtFormEvaluacion.AsNoTracking()
-            .Where(x => x.EmpresaId == EmpresaId && x.Anio == Anio)
+            .Where(x => x.EmpresaId == EmpresaId && x.Anio == Anio && x.TipovaloracionId == Tipovaloracion)
             .ToListAsync();
             return _mapper.Map<List<Tbl_com_TxtFormEvaluacionModels>>(objResult);
         }

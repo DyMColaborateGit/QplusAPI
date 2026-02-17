@@ -6,6 +6,7 @@ namespace App.Infraestructure.IRepositories
     public interface IResultadosRepository
     {
         Task<Tbl_com_ResultadosModels> ObjResultados(long ResultadoId);
+        Task<List<Tbl_com_ResultadosModels>> GetResultadosEvaluacionListaByEvaluacionId(int EvaluacionId, int NormaId);
 
         Task<List<Tbl_com_ResultadosModels>> ListResultadosByEvaluacionId(long EvaluacionId);
 

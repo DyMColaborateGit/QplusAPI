@@ -17,7 +17,10 @@ namespace App.logic.Services
         {
             _productosRepository = productosRepository;
         }
-
+        public async Task<List<ProductosModels>> GetListaSubProcesosByActivos()
+        {
+            return await _productosRepository.GetListaSubProcesosByActivos();
+        }
         public async Task<List<ProductosModels>> GetListaSubProcesosByIdProcesoActivos(int IdProceso)
         {
             return await _productosRepository.GetListaSubProcesosByIdProcesoActivos(IdProceso);

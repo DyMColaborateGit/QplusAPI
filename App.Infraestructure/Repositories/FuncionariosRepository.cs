@@ -17,7 +17,21 @@ public class FuncionariosRepository : IFuncionariosRepository
         _context = context;
         _mapper = mapper;
     }
-
+    public async Task<SCP_FuncionariosModels> GetObjFuncionarioByIdentificacion(long Identificacion)
+    {
+        try
+        {
+            var objResult = await _context.SCP_Funcionarios.AsNoTracking()
+            .Where(x => x.Identificacion == Identificacion)
+            .FirstOrDefaultAsync();
+            return _mapper.Map<SCP_FuncionariosModels>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetObjFuncionarioByIdentificacion", ex, Identificacion.ToString());
+            throw;
+        }
+    }
     public async Task<SCP_FuncionariosModels> ObjFuncionarioByEmpresaIdByIdentificacion(int EmpresaId, long Identificacion)
     {
         try
@@ -33,7 +47,21 @@ public class FuncionariosRepository : IFuncionariosRepository
             throw;
         }
     }
-
+    public async Task<List<SCP_FuncionariosModels>> GetListfuncionariosByEmpresaId(int EmpresaId)
+    {
+        try
+        {
+            var objResult = await _context.SCP_Funcionarios.AsNoTracking()
+                .Where(x => x.EmpresaId == EmpresaId)
+                .ToListAsync();
+            return _mapper.Map<List<SCP_FuncionariosModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListfuncionariosByEmpresaId", ex, EmpresaId.ToString());
+            throw;
+        }
+    }
     public async Task<JOINSCP_FuncionariosModels> ObjJoinFuncionarioByEmpresaIdByIdentificacion(int EmpresaId, long Identificacion)
     {
         try

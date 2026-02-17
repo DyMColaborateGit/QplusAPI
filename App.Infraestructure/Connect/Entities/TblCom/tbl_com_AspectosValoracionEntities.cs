@@ -11,4 +11,5 @@ public class tbl_com_AspectosValoracionEntities
     public int EmpresaId { get; set; }
     public string? AspectoValoracion { get; set; }
     public bool Estado { get; set; }
+    public ICollection<tbl_com_ConsolidadoDesempenoEntities>? TBL_com_ConsolidadoDesempeno { get; set; }
 }

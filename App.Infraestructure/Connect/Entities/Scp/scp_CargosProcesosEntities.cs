@@ -16,10 +16,13 @@ namespace App.Infraestructure.Connect.Entities.Scp
         public int? IdCargoAsoc { get; set; }
         public int EmpresaId { get; set; }
 
-        [ForeignKey(nameof(id_cargo))]
-        public int? id_cargo { get; set; }
+        [ForeignKey(nameof(Id_cargo))]
+        public int? Id_cargo { get; set; }
         public scp_CargosEntities? CargosObj { get; set; }
-        public int? IdProceso { get; set; }
+
+        [ForeignKey(nameof(Id_proceso))]
+        public int? Id_proceso { get; set; }
+        public scp_ProcesosEntities? ProcesosObj { get; set; }
         public string? TipoCargo { get; set; }
     }
 
