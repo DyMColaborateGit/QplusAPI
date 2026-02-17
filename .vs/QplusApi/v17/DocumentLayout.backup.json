@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
               "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
               "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "ViewState": "AgIAAOkCAAAAAAAAAAAowKYDAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAKECAAAAAAAAAAAowLECAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-15T21:02:15.299Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAmwA8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:01:54.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T21:01:54.103Z"
             },
             {
               "$type": "Document",
@@ -112,8 +111,7 @@
               "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAQwF0AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T20:57:42.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T20:57:42.733Z"
             }
           ]
         },

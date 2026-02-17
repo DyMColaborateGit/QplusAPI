@@ -687,9 +687,9 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                     <tr>
                         <td colspan=""6"" style=""padding: 10px; vertical-align: top; text-align: center; font-size: 13px;"">
                             {textoAdi.Texto}
-                        </td>
+                        </td><br/>
                     </tr>
-                </table><br/><br/>";
+                </table><br/>";
 
                 foreach (var item in ADI)
                 {
