@@ -9,4 +9,5 @@ public interface IUsuarioRepository
     Task<List<SCP_UsuarioModels>> GetUsuarios();
     Task<PaginacionHelpers<SCP_UsuarioModels>> GetUsuariosPageList(PaginacionParamsHelpers objParams);
     Task<SCP_UsuarioModels> GetAutenticateUser(LoginModel keyUser);
+    Task<SCP_UsuarioModels> GetUsuarioByWWID(long identificacion);
 }

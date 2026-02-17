@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CODE\\DYM\\QplusAPI\\",
+  "WorkspaceRootPath": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|e:\\code\\dym\\qplusapi\\qplus\\controllers\\documentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\documentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\irepositories\\idocumentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\idocumentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\irepositories\\iprogevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iprogevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|e:\\code\\dym\\qplusapi\\app.infraestructure\\repositories\\documentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\documentoscontroladosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\services\\documentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\documentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|e:\\code\\dym\\qplusapi\\app.logic\\iservices\\idocumentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\idocumentoscontroladosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\iservices\\iprogevaluacionsercice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iprogevaluacionsercice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,66 +55,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DocumentosController.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\DocumentosController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\DocumentosController.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\Qplus\\Controllers\\DocumentosController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\DocumentosController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAiwIQAAAABAAAAAAAAAA==",
+              "Title": "ProgEvaluacionRepository.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
+              "ViewState": "AgIAAOkCAAAAAAAAAAAowKYDAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:01:50.209Z",
+              "WhenOpened": "2026-02-15T21:02:15.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IDocumentosControladosRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IDocumentosControladosRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Title": "IProgEvaluacionRepository.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwA8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:26:55.974Z",
+              "WhenOpened": "2026-02-15T21:01:54.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IDocumentosControladosService.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\IDocumentosControladosService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\IDocumentosControladosService.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\IServices\\IDocumentosControladosService.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\IDocumentosControladosService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAVAAAAAAAAAA==",
+              "Title": "IProgEvaluacionSercice.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IProgEvaluacionSercice.cs",
+              "RelativeDocumentMoniker": "App.Logic\\IServices\\IProgEvaluacionSercice.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IProgEvaluacionSercice.cs",
+              "RelativeToolTip": "App.Logic\\IServices\\IProgEvaluacionSercice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:06:16.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T21:01:27.609Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DocumentosControladosService.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\DocumentosControladosService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\DocumentosControladosService.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Logic\\Services\\DocumentosControladosService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\DocumentosControladosService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAwwCcAAAA5AAAAAAAAAA==",
+              "Title": "ProgEvaluacionService.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
+              "RelativeDocumentMoniker": "App.Logic\\Services\\ProgEvaluacionService.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
+              "RelativeToolTip": "App.Logic\\Services\\ProgEvaluacionService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwDMAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:07:45.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T21:00:08.788Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DocumentosControladosRepository.cs",
-              "DocumentMoniker": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
-              "ToolTip": "E:\\CODE\\DYM\\QplusAPI\\App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\Repositories\\DocumentosControladosRepository.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAwwJgAAAA0AAAAAAAAAA==",
+              "Title": "ProgEvaluacionController.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwF0AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T14:29:14.738Z",
+              "WhenOpened": "2026-02-15T20:57:42.733Z",
               "EditorCaption": ""
             }
           ]

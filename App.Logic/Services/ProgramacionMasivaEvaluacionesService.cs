@@ -12,10 +12,14 @@ public class ProgramacionMasivaEvaluacionesService : IProgramacionMasivaEvaluaci
     {
         _programacionMasivaEvaluacionesRepository = programacionMasivaEvaluacionesRepository;
     }
-
     public async Task<Tbl_com_ProgramacionMasivaEvaluacionesModels> GetObjProgramacionMasivaEvaluaciones(long IdProgramacion)
     {
         var getResult = await _programacionMasivaEvaluacionesRepository.ObjProgramacionMasivaEvaluacionesByIdProgramacion(IdProgramacion);
+        return getResult;
+    }
+    public async Task<ResponseTbl_com_ProgramacionMasivaEvaluacionesModels> GetDataProgramacionByID(int IdProgramacion)
+    {
+        var getResult = await _programacionMasivaEvaluacionesRepository.GetDataProgramacionByID(IdProgramacion);
         return getResult;
     }
 }

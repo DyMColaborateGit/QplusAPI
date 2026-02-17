@@ -47,5 +47,6 @@ public class tbl_ind_MastIndicadoresEntities
     public long? UsuarioCreacion { get; set; }
     public ICollection<tbl_com_ResultadosEvaIndicadoresEntities>? TBL_com_ResultadosEvaIndicadores { get; set; }
     public ICollection<tbl_ind_RelIndiEstrategicosFuncionariosEntities>? TBL_ind_RelIndiEstrategicosFuncionarios { get; set; }
+    public ICollection<tbl_ind_ResultIndiCoporpEntities>? TBL_ind_ResultIndiCoporp { get; set; }
 
 }

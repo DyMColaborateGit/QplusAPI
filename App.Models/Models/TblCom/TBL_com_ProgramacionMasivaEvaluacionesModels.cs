@@ -1,4 +1,6 @@
-﻿using System;
+﻿using App.Models.Models.TblMast;
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace App.Models.Models.TblCom;
 
@@ -24,8 +26,14 @@ public class ResponseTbl_com_ProgramacionMasivaEvaluacionesModels
     public int IdProgramacion { get; set; }
     public long CedulaEvaluado { get; set; }
     public int ClaveCargoEvaluado { get; set; }
+
+    [ForeignKey(nameof(CodigoDireccion))]
     public int CodigoDireccion { get; set; }
+    public TBL_mast_ZonasModels? ZonaObj { get; set; }
+
+    [ForeignKey(nameof(CodigoGerencia))]
     public int CodigoGerencia { get; set; }
+    public TBL_mast_OficinasModels? OficinaObj { get; set; }
     public int CodigoNivelCompetencia { get; set; }
     public int MesProgramado { get; set; }
     public long CedulaEvaluador { get; set; }

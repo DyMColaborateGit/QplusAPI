@@ -29,7 +29,10 @@ namespace App.logic.Services
         public async Task<SCP_CargosModels> GetCargoIdCargo(int CargoId, int EmpresaId)
         {
             return await _cargosRepository.objCargoIdCargo(CargoId, EmpresaId);
-
+        }
+        public async Task<SCP_CargosModels> GetDataCargoByCodigo(int Codigo, int EmpresaId)
+        {
+            return await _cargosRepository.GetDataCargoByCodigo(Codigo, EmpresaId);
         }
         public async Task<List<SCP_CargosModels>> ListaCargosDocElaborado(int EmpresaId)
         {

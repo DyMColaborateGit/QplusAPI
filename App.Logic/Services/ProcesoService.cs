@@ -14,9 +14,9 @@ namespace App.logic.Services
             _procesoRepository = procesoRepository;
         }
 
-        public async Task<List<SCP_ProcesosModels>> GetListProcesosByEmpresaId(int EmpresaId, string Estado)
+        public async Task<List<SCP_ProcesosModels>> GetListProcesosByEmpresaIdByEstado(int EmpresaId, string Estado)
         {
-            return await _procesoRepository.ListProcesosByempresaIdByEstado(EmpresaId, Estado);
+            return await _procesoRepository.GetListProcesosByEmpresaIdByEstado(EmpresaId, Estado);
         }
 
         public async Task<List<SCP_ProcesosModels>> GetListaProcesosEstadoByEmpresaIdByMacroproId(int EmpresaId, int Id_Area, string Estado)

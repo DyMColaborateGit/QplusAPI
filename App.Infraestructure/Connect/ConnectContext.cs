@@ -8,7 +8,9 @@ using App.Infraestructure.Connect.Entities.TblDoc;
 using App.Infraestructure.Connect.Entities.TblGhu;
 using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Connect.Entities.TblMast;
+using App.Infraestructure.Connect.Entities.TblRgp;
 using App.Infraestructure.Connect.Entities.Tipo;
+using App.Models.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -78,6 +80,7 @@ public class ConnectContext : DbContext
     public DbSet<tbl_com_PreguntasEntities> TBL_com_Preguntas { get; set; }
     public DbSet<tbl_com_MatrizdeTalentosEntities> TBL_com_MatrizdeTalentos { get; set; }
     public DbSet<tbl_com_NivelesDesempenoPpalEntities> TBL_Com_NivelesDesempenoPpal { get; set; }
+    public DbSet<tbl_com_SeguimientoActividadesEntities> TBL_com_SeguimientoActividades { get; set; }
     #endregion
 
     #region TBL-IND
@@ -107,6 +110,18 @@ public class ConnectContext : DbContext
     public DbSet<tbl_ghu_TextosBrechaEntities> TBL_ghu_TextosBrecha { get; set; }
     #endregion
 
+    #region TBL-RGP
+    public DbSet<tbl_rgp_RiesgosEntities> TBL_rgp_Riesgos {  get; set; }
+    public DbSet<tbl_rgp_ConsecuenciasEntities> TBL_rgp_Consecuencias {  get; set; }
+    public DbSet<tbl_rgp_ProbabilidadesEntities> TBL_rgp_Probabilidades {  get; set; }
+    public DbSet<tbl_rgp_ZonasEntities> TBL_rgp_Zonas {  get; set; }
+    public DbSet<tbl_rgp_EvaluacionRiesgoEntities> TBL_rgp_EvaluacionRiesgo {  get; set; }
+    public DbSet<tbl_rgp_ParametrosValoracionEntities> TBL_rgp_ParametrosValoracion {  get; set; }
+    public DbSet<tbl_rgp_ClasesEntities> TBL_rgp_Clases {  get; set; }
+    public DbSet<tbl_rgp_AgentesEntities> TBL_rgp_Agentes {  get; set; }
+    public DbSet<tbl_rgp_TipoAnalisisEntities> TBL_rgp_TipoAnalisis {  get; set; }
+    #endregion
+
     #region T
     public DbSet<areasEntities> Areas { get; set; }
     #endregion
@@ -118,6 +133,7 @@ public class ConnectContext : DbContext
     #region Tipo
     public DbSet<tipos_DocumentoEntities> Tipos_documento { get; set; } 
     #endregion
+    public DbSet<linkRelacionadoActividadesPIDEntities> LinkRelacionadoActividadesPID { get; set; }
     public DbSet<historial_cambiosEntities> Historial_Cambios { get; set; }
     public DbSet<control_distribucionEntities> Control_Distribucion { get; set; }
 
@@ -126,4 +142,9 @@ public class ConnectContext : DbContext
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
+
+    //internal async Task SaveChangesAsync()
+    //{
+    //    throw new NotImplementedException();
+    //}
 }

@@ -53,13 +53,6 @@ namespace App.Infraestructure.Repositories
           int NivelSeguridad, int EmpresaId, int InIdSistema, int Usuario, string NombreDoc, int userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize,
           int codigoCargo)
         {
-
-            //if (CodigoDoc == null)
-            //    CodigoDoc = "T";
-
-            //if (NombreDoc == null)
-            //    NombreDoc = "T";
-
             if (string.IsNullOrEmpty(CodigoDoc))
             {
                 CodigoDoc = "T";
@@ -148,29 +141,6 @@ namespace App.Infraestructure.Repositories
         {
             public List<T> Data { get; set; }
             public int TotalRegistros { get; set; }
-        }
-
-        public async Task<TBL_doc_DocumentosModels> UpdateDocumentos(TBL_doc_DocumentosModels ObjUpdate)
-        {
-            var UpdateRegistro = _context.TBL_doc_Documentos.FirstOrDefault(p => p.DocumentoId == ObjUpdate.DocumentoId);
-            try
-            {
-                if (UpdateRegistro != null)
-                {
-                    #region Update
-                    UpdateRegistro.DocumentoId = ObjUpdate.DocumentoId;
-                    UpdateRegistro.ArchivoEliminadoApp = ObjUpdate.ArchivoEliminadoApp;
-                    #endregion
-                }
-
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                ExceptionLogHelpers.LogException("UpdateDocumentos", ex, JsonConvert.SerializeObject(ObjUpdate));
-                throw;
-            }
-            return _mapper.Map<TBL_doc_DocumentosModels>(UpdateRegistro);
         }
     }
 }

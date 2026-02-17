@@ -21,10 +21,11 @@ namespace App.Infraestructure.Connect.Configuration
             .IsRequired(false)
             .HasColumnType("int");
 
-            builder.Property(p => p.CodigoIndi)
-            .IsRequired()
-            .HasMaxLength(150)
-            .HasColumnType("nvarchar");
+            builder.HasOne(p => p.MastIndicadoresobj)
+               .WithMany(p => p.TBL_ind_ResultIndiCoporp)
+               .HasForeignKey(p => p.CodigoIndi)
+               .HasPrincipalKey(m => m.CodIndicador)
+               .OnDelete(DeleteBehavior.NoAction);
 
             builder.Property(p => p.Anio)
             .IsRequired(false)

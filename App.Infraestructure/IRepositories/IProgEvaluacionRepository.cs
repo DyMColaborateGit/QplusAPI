@@ -1,4 +1,6 @@
-﻿using App.Models.Models.TblCom;
+﻿using App.Models.Global;
+using App.Models.Models.FileMove;
+using App.Models.Models.TblCom;
 using System;
 
 namespace App.Infraestructure.IRepositories;
@@ -6,6 +8,14 @@ namespace App.Infraestructure.IRepositories;
 public interface IProgEvaluacionRepository
 {
     Task<Tbl_com_ProgEvaluacionModels> ObjProgEvaluacion(long evaluacionId);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesByParametrosBasicos(int EmpresaId, int InAnio, int MesInicio, int MesFinal);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesByParametros(int EmpresaId, int InAnio, int MesInicio, int MesFinal, int DireccionId, int OficinaId);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListEvaluacionesFuncionarioByParametros(int EmpresaId, int InAnio, long EvaluadoId);
+
+    Task<List<Tbl_com_ProgEvaluacionModels>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId);
 
     Task<ResponseTbl_com_ProgEvaluacionModels> ObjProgEvaluacionByMasivas(long evaluacionId);
 
@@ -27,5 +37,6 @@ public interface IProgEvaluacionRepository
 
     Task<List<ResponseTbl_com_ProgEvaluacionModels>> ListEvaluacionesNivelesDesempenoM(int EmpresaId, int InAnio, int ZonaId, int OficinaId, int ProcesoId, int UbicacionMD_M, string EvaluadorId, long EvaluadoId, bool BEstado);
 
+    Task<string> GeneradorBodyADIByEvaluacionId(FilePdfADIPdiModel pdiAdiObj);
 
 }

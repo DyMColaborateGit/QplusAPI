@@ -1,6 +1,8 @@
 ﻿using App.logic.IServices;
+using App.logic.Services;
 using App.Models.Global;
 using App.Models.Models.TblCom;
+using App.Models.Models.TblGhu;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Qplus.Controllers
@@ -25,12 +27,39 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("GeTextoEvaluacioneByparametros/{EmpresaId}/{Tipotexto}/{Tipovaloracion}/{Anio}")]
-        public async Task<GetResponse<Tbl_com_TxtFormEvaluacionModels>> GetEncabezadoEvaluacion(int EmpresaId, int Tipotexto, int Tipovaloracion, int Anio)
+        public async Task<GetResponse<Tbl_com_TxtFormEvaluacionModels>> GeTextoEvaluacioneByparametros(int EmpresaId, int Tipotexto, int Tipovaloracion, int Anio)
         {
             GetResponse<Tbl_com_TxtFormEvaluacionModels> resultado = new GetResponse<Tbl_com_TxtFormEvaluacionModels>();
             try
             {
                 resultado.Data = await _txtFormEvaluacionService.GetObjTxtFormEvaluacion(EmpresaId, Tipotexto, Tipovaloracion, Anio);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("ListTxtFormEvaluacion/{EmpresaId}/{Anio}/{Tipovaloracion}")]
+        public async Task<GetResponse<List<Tbl_com_TxtFormEvaluacionModels>>> ListTxtFormEvaluacion(int EmpresaId, int Anio, int Tipovaloracion)
+        {
+            GetResponse<List<Tbl_com_TxtFormEvaluacionModels>> resultado = new GetResponse<List<Tbl_com_TxtFormEvaluacionModels>>();
+            try
+            {
+                resultado.Data = await _txtFormEvaluacionService.ListTxtFormEvaluacion(EmpresaId, Anio, Tipovaloracion);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;

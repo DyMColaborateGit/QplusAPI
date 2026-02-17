@@ -36,6 +36,22 @@ public class ConsolidadoDesempenoRepository: IConsolidadoDesempenoRepository
             throw;
         }
     }
+    public async Task<List<TBL_com_ConsolidadoDesempenoModels>> GetListaConsolidadosByEvaluacionId(int EvaluacionId)
+    {
+        try
+        {
+            var objResult = await _context.TBL_com_ConsolidadoDesempeno.AsNoTracking()
+                .Where(x => x.EvaluacionId == EvaluacionId)
+                .Include(x => x.AspectoValoracionObj)
+                .ToListAsync();
+            return _mapper.Map<List<TBL_com_ConsolidadoDesempenoModels>>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetListaConsolidadosByEvaluacionId", ex, EvaluacionId.ToString());
+            throw;
+        }
+    }
 
     public async Task<TBL_com_ConsolidadoDesempenoModels> CreateConsolidadoDesempeno(TBL_com_ConsolidadoDesempenoModels objCreate)
     {

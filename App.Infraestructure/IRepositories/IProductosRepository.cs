@@ -10,6 +10,7 @@ namespace App.Infraestructure.IRepositories
 {
     public interface IProductosRepository
     {
+        Task<List<ProductosModels>> GetListaSubProcesosByActivos();
         Task<List<ProductosModels>> GetListaSubProcesosByIdProcesoActivos(int IdProceso);
     }
 }

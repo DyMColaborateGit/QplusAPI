@@ -1,7 +1,10 @@
 ﻿using App.logic.IServices;
+using App.logic.Services;
 using App.Models.Global;
+using App.Models.Models.FileMove;
 using App.Models.Models.Share;
 using App.Models.Models.TblCom;
+using App.Models.Models.TblInd;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -33,6 +36,89 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetListEvaluacionesByParametrosBasicos/{EmpresaId}/{InAnio}/{MesInicio}/{MesFinal}")]
+        public async Task<GetResponse<List<Tbl_com_ProgEvaluacionModels>>> GetListEvaluacionesByParametrosBasicos(int EmpresaId, int InAnio, int MesInicio, int MesFinal)
+        {
+            GetResponse<List<Tbl_com_ProgEvaluacionModels>> resultado = new GetResponse<List<Tbl_com_ProgEvaluacionModels>>();
+            try
+            {
+                resultado.Data = await _progEvaluacionSercice.GetListEvaluacionesByParametrosBasicos(EmpresaId, InAnio, MesInicio, MesFinal);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetListEvaluacionesByParametros/{EmpresaId}/{InAnio}/{MesInicio}/{MesFinal}/{DireccionId}/{OficinaId}")]
+        public async Task<GetResponse<List<Tbl_com_ProgEvaluacionModels>>> GetListEvaluacionesByParametros(int EmpresaId, int InAnio, int MesInicio, int MesFinal, int DireccionId, int OficinaId)
+        {
+            GetResponse<List<Tbl_com_ProgEvaluacionModels>> resultado = new GetResponse<List<Tbl_com_ProgEvaluacionModels>>();
+            try
+            {
+                resultado.Data = await _progEvaluacionSercice.GetListEvaluacionesByParametros(EmpresaId, InAnio, MesInicio, MesFinal, DireccionId, OficinaId);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        
+       /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetListEvaluacionesFuncionarioByParametros/{EmpresaId}/{InAnio}/{EvaluadoId}")]
+        public async Task<GetResponse<List<Tbl_com_ProgEvaluacionModels>>> GetListEvaluacionesFuncionarioByParametros(int EmpresaId, int InAnio, long EvaluadoId)
+        {
+            GetResponse<List<Tbl_com_ProgEvaluacionModels>> resultado = new GetResponse<List<Tbl_com_ProgEvaluacionModels>>();
+            try
+            {
+                resultado.Data = await _progEvaluacionSercice.GetListEvaluacionesFuncionarioByParametros(EmpresaId, InAnio, EvaluadoId);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("GetEvaluacioneByEvaluacionId/{EvaluacionId}")]
         public async Task<GetResponse<Tbl_com_ProgEvaluacionModels>> GetDataEvaluacionByevaluacionId(long EvaluacionId)
         {
@@ -40,6 +126,33 @@ namespace Qplus.Controllers
             try
             {
                 resultado.Data = await _progEvaluacionSercice.GetObjProgEvaluacion(EvaluacionId);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetListaProgEvaluacionByEvaluacionId/{EvaluacionId}")]
+        public async Task<GetResponse<List<Tbl_com_ProgEvaluacionModels>>> GetListaProgEvaluacionByEvaluacionId(int EvaluacionId)
+        {
+            GetResponse<List<Tbl_com_ProgEvaluacionModels>> resultado = new GetResponse<List<Tbl_com_ProgEvaluacionModels>>();
+            try
+            {
+                resultado.Data = await _progEvaluacionSercice.GetListaProgEvaluacionByEvaluacionId(EvaluacionId);
                 resultado.StatusCode = (int)HttpCodes.OK;
                 resultado.Message = new HttpCodesMessage().OK;
                 return resultado;
@@ -366,5 +479,32 @@ namespace Qplus.Controllers
             }
         }
 
+        //// Generador PDF ADI
+        ///// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        ///// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        ///// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        //[HttpGet("GeneradorPDFADIByEvaluacionId/{pdiAdiObj}")]
+        //public async Task<GetResponse<string>> GeneradorBodyADIByEvaluacionId(FilePdfADIPdiModel pdiAdiObj)
+        //{
+        //    GetResponse<string> resultado = new GetResponse<string>();
+        //    try
+        //    {
+        //        resultado.Data = await _progEvaluacionSercice.GeneradorBodyADIByEvaluacionId(pdiAdiObj);
+        //        resultado.StatusCode = (int)HttpCodes.OK;
+        //        resultado.Message = new HttpCodesMessage().OK;
+        //        return resultado;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+        //        resultado.Message = new HttpCodesMessage().INTERNALERROR;
+        //        resultado.CathError = ex.Message.ToString();
+        //        return resultado;
+        //    }
+        //}
     }
 }

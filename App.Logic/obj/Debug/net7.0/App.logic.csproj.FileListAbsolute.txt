@@ -1,38 +1,23 @@
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.logic.deps.json
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.logic.dll
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.logic.pdb
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Infraestructure.dll
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Models.dll
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Infraestructure.pdb
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\bin\Debug\net7.0\App.Models.pdb
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.csproj.AssemblyReference.cache
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfoInputs.cache
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfo.cs
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.csproj.CoreCompileInputs.cache
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.csproj.CopyComplete
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.dll
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\App.logic.pdb
-D:\PROYECTOS DYM\Qplus-Api\App.Logic\obj\Debug\net7.0\ref\App.logic.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.deps.json
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.AssemblyReference.cache
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfoInputs.cache
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfo.cs
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.CoreCompileInputs.cache
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.sourcelink.json
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.Up2Date
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.pdb
-C:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\ref\App.logic.dll
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.deps.json
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.dll
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.pdb
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.dll
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.dll
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.pdb
+E:\CODE\DYM\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.pdb
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.AssemblyReference.cache
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfoInputs.cache
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfo.cs
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.CoreCompileInputs.cache
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.sourcelink.json
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.Up2Date
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.dll
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.pdb
+E:\CODE\DYM\QplusAPI\App.Logic\obj\Debug\net7.0\ref\App.logic.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x86\native\wkhtmltox.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.deps.json
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.pdb
@@ -51,3 +36,43 @@ C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\Ap
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.pdb
 C:\Users\DYMDesarrollo\Desktop\CODE\QPLUS\QplusAPI\App.Logic\obj\Debug\net7.0\ref\App.logic.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.AssemblyReference.cache
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfoInputs.cache
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfo.cs
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.CoreCompileInputs.cache
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.sourcelink.json
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.pdb
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x86\native\wkhtmltox.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.deps.json
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.pdb
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.dll
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.pdb
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.pdb
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.Up2Date
+F:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\ref\App.logic.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\runtimes\win-x86\native\wkhtmltox.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.deps.json
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.logic.pdb
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Infraestructure.pdb
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\bin\Debug\net7.0\App.Models.pdb
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.AssemblyReference.cache
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfoInputs.cache
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.AssemblyInfo.cs
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.CoreCompileInputs.cache
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.sourcelink.json
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.csproj.Up2Date
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\refint\App.logic.dll
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\App.logic.pdb
+D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Logic\obj\Debug\net7.0\ref\App.logic.dll

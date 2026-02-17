@@ -94,7 +94,6 @@ public class tbl_com_ProgEvaluacionEntities
     public string? Obs_Nivel_MapaD { get; set; }
     public bool? Mod_MD { get; set; }
     public string? UsuarioModNivel {  get; set; }
-
     public ICollection<tbl_com_EncabezadoEvaEntities>? TBL_com_EncabezadoEva { get; set; }
     public ICollection<tbl_com_ResultadosEvaluacionEntities>? TBL_com_ResultadosEvaluacion { get; set; }
     public ICollection<tbl_com_ResultadosEntities>? TBL_com_Resultados { get; set; }

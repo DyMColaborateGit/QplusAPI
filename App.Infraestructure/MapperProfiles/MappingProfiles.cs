@@ -8,6 +8,7 @@ using App.Infraestructure.Connect.Entities.TblDoc;
 using App.Infraestructure.Connect.Entities.TblGhu;
 using App.Infraestructure.Connect.Entities.TblInd;
 using App.Infraestructure.Connect.Entities.TblMast;
+using App.Infraestructure.Connect.Entities.TblRgp;
 using App.Infraestructure.Connect.Entities.Tipo;
 using App.Models.Models;
 using App.Models.Models.Scp;
@@ -18,6 +19,7 @@ using App.Models.Models.TblDoc;
 using App.Models.Models.TblGhu;
 using App.Models.Models.TblInd;
 using App.Models.Models.TblMast;
+using App.Models.Models.TblRgp;
 using App.Models.Models.Tipo;
 using AutoMapper;
 
@@ -44,6 +46,7 @@ public class MappingProfiles: Profile
         CreateMap<tbl_com_EncabezadoEvaEntities, Tbl_com_EncabezadoEvaModels>().ReverseMap();
         CreateMap<tbl_com_ProgEvaluacionEntities, Tbl_com_ProgEvaluacionModels>().ReverseMap();
         CreateMap<tbl_com_ProgramacionMasivaEvaluacionesEntities, Tbl_com_ProgramacionMasivaEvaluacionesModels>().ReverseMap();
+        CreateMap<tbl_com_ProgramacionMasivaEvaluacionesEntities, ResponseTbl_com_ProgramacionMasivaEvaluacionesModels>().ReverseMap();
         CreateMap<tbl_com_NormasEntities, Tbl_com_NormasModels>().ReverseMap();
         CreateMap<tbl_com_NormasEntities, JOINTbl_com_NormasModels>().ReverseMap();
         CreateMap<tbl_com_ResultadosEvaluacionEntities, Tbl_com_ResultadosEvaluacionModels>().ReverseMap();
@@ -73,6 +76,7 @@ public class MappingProfiles: Profile
         CreateMap<tbl_com_MatrizdeTalentosEntities, TBL_com_MatrizdeTalentosModels>().ReverseMap();
         CreateMap<tbl_com_MatrizdeTalentosEntities, ResponseTBL_com_MatrizdeTalentosModels>().ReverseMap();
         CreateMap<tbl_com_NivelesDesempenoPpalEntities, TBL_com_NivelesDesempenoPpalModels>().ReverseMap();
+        CreateMap<tbl_com_SeguimientoActividadesEntities, TBL_com_SeguimientoActividadesModels>().ReverseMap();
 
         CreateMap<tbl_ind_PesosxTipoIndxNivelCompEntities, Tbl_ind_PesosxTipoIndxNivelCompModels>().ReverseMap();
         CreateMap<tbl_ind_MastIndicadoresEntities, Tbl_ind_MastIndicadoresModels>().ReverseMap();
@@ -106,6 +110,8 @@ public class MappingProfiles: Profile
 
         CreateMap<control_distribucionEntities, Control_distribucionModels>().ReverseMap();
 
+        CreateMap<linkRelacionadoActividadesPIDEntities, LinkRelacionadoActividadesPIDModels>().ReverseMap();
+
         CreateMap<tbl_com_EncabezadoEvaEntities, ResponseEncabezadoEvaModels>().ReverseMap();
         CreateMap<tbl_com_ResultadosEvaluacionEntities, ResponseJoinTbl_com_ResultadosEvaluacionModels>().ReverseMap();
         CreateMap<tbl_com_ResultadosEvaluacionEntities, ResponseTbl_com_ResultadosEvaluacionModels>().ReverseMap();
@@ -123,5 +129,14 @@ public class MappingProfiles: Profile
         CreateMap<tbl_ghu_RelFuncSolicitudPEntities, Tbl_ghu_RelFuncSolicitudPModels>().ReverseMap();
         CreateMap<tbl_ghu_TextosBrechaEntities, Tbl_ghu_TextosBrechaModels>().ReverseMap();
 
+        CreateMap<tbl_rgp_ZonasEntities, Tbl_rgp_ZonasModels>().ReverseMap();
+        CreateMap<tbl_rgp_EvaluacionRiesgoEntities, Tbl_rgp_EvaluacionRiesgoModels>().ReverseMap();
+        CreateMap<tbl_rgp_ParametrosValoracionEntities, Tbl_rgp_ParametrosValoracionModels>().ReverseMap();
+        CreateMap<tbl_rgp_ConsecuenciasEntities, Tbl_rgp_ConsecuenciasModels>().ReverseMap();
+        CreateMap<tbl_rgp_ProbabilidadesEntities, Tbl_rgp_ProbabilidadesModels>().ReverseMap();
+        CreateMap<tbl_rgp_RiesgosEntities, Tbl_rgp_RiesgosModels>().ReverseMap();
+        CreateMap<tbl_rgp_ClasesEntities, Tbl_rgp_ClasesModels>().ReverseMap();
+        CreateMap<tbl_rgp_AgentesEntities, Tbl_rgp_AgentesModels>().ReverseMap();
+        CreateMap<tbl_rgp_TipoAnalisisEntities, Tbl_rgp_TipoAnalisisModels>().ReverseMap();
     }
 }

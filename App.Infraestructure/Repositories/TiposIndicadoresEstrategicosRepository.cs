@@ -1,6 +1,7 @@
 ﻿using App.Infraestructure.Connect;
 using App.Infraestructure.Helpers;
 using App.Infraestructure.IRepositories;
+using App.Models.Models.Scp;
 using App.Models.Models.TblInd;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,21 @@ public class TiposIndicadoresEstrategicosRepository: ITiposIndicadoresEstrategic
         _context = context;
         _mapper = mapper;
     }
-
+    public async Task<TBL_ind_TiposIndicadoresEstrategicosModels> GetDataTiposIndicadoresEstrategicosByTipo(int EmpresaId, int idTipoIndiEstra)
+    {
+        try
+        {
+            var objResult = await _context.TBL_ind_TiposIndicadoresEstrategicos.AsNoTracking()
+                .Where(x => x.EmpresaId == EmpresaId && x.IdTipoIndiEstra == idTipoIndiEstra)
+                .FirstOrDefaultAsync();
+            return _mapper.Map<TBL_ind_TiposIndicadoresEstrategicosModels>(objResult);
+        }
+        catch (Exception ex)
+        {
+            ExceptionLogHelpers.LogException("GetDataTiposIndicadoresEstrategicosByTipo", ex, EmpresaId.ToString() + "/" + idTipoIndiEstra.ToString());
+            throw;
+        }
+    }
     public async Task<List<TBL_ind_TiposIndicadoresEstrategicosModels>> ListTiposIndicadoresEstrategicosByEmpresaId(int EmpresaId)
     {
         try

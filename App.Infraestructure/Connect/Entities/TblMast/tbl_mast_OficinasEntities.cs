@@ -1,7 +1,8 @@
-﻿using System;
+﻿using App.Infraestructure.Connect.Entities.Scp;
+using App.Infraestructure.Connect.Entities.TblCom;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using App.Infraestructure.Connect.Entities.Scp;
 
 namespace App.Infraestructure.Connect.Entities.TblMast;
 
@@ -22,4 +23,6 @@ public class tbl_mast_OficinasEntities
     public string UsuarioModificacion { get; set; }
     public DateTime FechaModificacion { get; set; }
     public int CargoResponsable { get; set; }
+    public ICollection<tbl_com_ProgramacionMasivaEvaluacionesEntities>? TBL_com_ProgramacionMasivaEvaluacion { get; set; }
+
 }

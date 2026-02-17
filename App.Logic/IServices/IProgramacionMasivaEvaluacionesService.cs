@@ -6,4 +6,5 @@ namespace App.logic.IServices;
 public interface IProgramacionMasivaEvaluacionesService
 {
     Task<Tbl_com_ProgramacionMasivaEvaluacionesModels> GetObjProgramacionMasivaEvaluaciones(long IdProgramacion);
+    Task<ResponseTbl_com_ProgramacionMasivaEvaluacionesModels> GetDataProgramacionByID(int IdProgramacion);
 }

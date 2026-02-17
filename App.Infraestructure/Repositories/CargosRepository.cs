@@ -54,6 +54,21 @@ namespace App.Infraestructure.Repositories
                 throw;
             }
         }
+        public async Task<SCP_CargosModels> GetDataCargoByCodigo(int Codigo, int EmpresaId)
+        {
+            try
+            {
+                var objResult = await _context.SCP_Cargos.AsNoTracking()
+                    .Where(x => x.Codigo == Codigo && x.EmpresaId == EmpresaId)
+                    .FirstOrDefaultAsync();
+                return _mapper.Map<SCP_CargosModels>(objResult);
+            }
+            catch (Exception ex)
+            {
+                ExceptionLogHelpers.LogException("GetDataCargoByCodigo", ex, Codigo.ToString() + "/" + EmpresaId.ToString());
+                throw;
+            }
+        }
         public async Task<List<SCP_CargosModels>> ListaCargosDocElaborado(int EmpresaId)
         {
             try
