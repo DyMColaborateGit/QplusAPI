@@ -13,4 +13,6 @@ public interface IFileMoverService
     Task<FilePdfResultsModel> GetGenerarGuardarPdfsAdi(List<FilePdfADIPdiModel> requests);
     Task<FileResultModels> CheckFileExists(FileMoveModels fileCheck);
     Task<ActionResult<FileResultModels>> ObtenerImagenBase64(string nombreArchivo, string arbolRaiz);
+    Task<List<FolderPdfStatsModel>> GetUserFilesFolderPdfsStats([FromBody] FolderPdfStatsModel rutasDescarga);
+    Task<byte[]> GetZipFolderStreamAsync(string carpetaPath);
 }
