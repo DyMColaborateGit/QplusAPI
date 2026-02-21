@@ -42,4 +42,13 @@ public class FileMoverService : IFileMoverService
     public async Task<ActionResult<FileResultModels>> ObtenerImagenBase64(string nombreArchivo, string arbolRaiz)
     {
         return await _fileMoverRepository.ObtenerImagenBase64(nombreArchivo, arbolRaiz);
-    }}
+    }
+    public async Task<List<FolderPdfStatsModel>> GetUserFilesFolderPdfsStats([FromBody] FolderPdfStatsModel rutasDescarga)
+    {
+        return await _fileMoverRepository.GetUserFilesFolderPdfsStats(rutasDescarga);
+    }
+    public async Task<byte[]> GetZipFolderStreamAsync(string carpetaPath)
+    {
+        return await _fileMoverRepository.GetZipFolderStreamAsync(carpetaPath);
+    }
+}

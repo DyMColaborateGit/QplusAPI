@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\progevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\irepositories\\iprogevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\irepositories\\iprogevaluacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\filemovercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\filemovercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\controllers\\progevaluacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\services\\progevaluacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2C7F34E-E34D-4923-A762-2CFB0B8E0BCC}|Qplus\\Qplus.csproj|solutionrelative:qplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.logic\\iservices\\iprogevaluacionsercice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5537B18-F228-4D1E-9876-22122779E57B}|App.Logic\\App.logic.csproj|solutionrelative:app.logic\\iservices\\iprogevaluacionsercice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|d:\\code\\dym\\plataforma_1.0\\qplusapi\\app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C9334D4-5FFC-4A47-863A-1301E378B1E4}|App.Infraestructure\\App.Infraestructure.csproj|solutionrelative:app.infraestructure\\repositories\\filemoverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,64 +54,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileMoverController.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\FileMoverController.cs",
+              "RelativeDocumentMoniker": "Qplus\\Controllers\\FileMoverController.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\FileMoverController.cs",
+              "RelativeToolTip": "Qplus\\Controllers\\FileMoverController.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAqwOQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T18:30:50.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProgEvaluacionRepository.cs",
               "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
               "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
               "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
               "RelativeToolTip": "App.Infraestructure\\Repositories\\ProgEvaluacionRepository.cs",
-              "ViewState": "AgIAAKECAAAAAAAAAAAowLECAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAMgCAAAAAAAAAAAowN4CAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:02:15.299Z",
+              "WhenOpened": "2026-02-21T16:29:03.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProgEvaluacionRepository.cs",
-              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "RelativeDocumentMoniker": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "RelativeToolTip": "App.Infraestructure\\IRepositories\\IProgEvaluacionRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwA8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:01:54.103Z"
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Qplus\\appsettings.Development.json",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.Development.json",
+              "RelativeToolTip": "Qplus\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-21T16:28:31.097Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IProgEvaluacionSercice.cs",
-              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "RelativeDocumentMoniker": "App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "RelativeToolTip": "App.Logic\\IServices\\IProgEvaluacionSercice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Title": "FileMoverRepository.cs",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\FileMoverRepository.cs",
+              "RelativeDocumentMoniker": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Infraestructure\\Repositories\\FileMoverRepository.cs",
+              "RelativeToolTip": "App.Infraestructure\\Repositories\\FileMoverRepository.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAwwGYCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:01:27.609Z"
+              "WhenOpened": "2026-02-21T15:41:28.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProgEvaluacionService.cs",
-              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
-              "RelativeDocumentMoniker": "App.Logic\\Services\\ProgEvaluacionService.cs",
-              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\App.Logic\\Services\\ProgEvaluacionService.cs",
-              "RelativeToolTip": "App.Logic\\Services\\ProgEvaluacionService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwDMAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T21:00:08.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgEvaluacionController.cs",
-              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "RelativeDocumentMoniker": "Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "RelativeToolTip": "Qplus\\Controllers\\ProgEvaluacionController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwF0AAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T20:57:42.733Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.json",
+              "RelativeDocumentMoniker": "Qplus\\appsettings.json",
+              "ToolTip": "D:\\CODE\\DYM\\PLATAFORMA_1.0\\QplusAPI\\Qplus\\appsettings.json",
+              "RelativeToolTip": "Qplus\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-21T15:41:19.092Z",
+              "EditorCaption": ""
             }
           ]
         },

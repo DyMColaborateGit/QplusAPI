@@ -568,11 +568,11 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
         if (colorEstilo.Contains("green")) return "background-color:#92D050; color:#FFFFFF;";
         if (colorEstilo.Contains("blue")) return "background-color:#00B0F0; color:#FFFFFF;"; // Azul
         if (colorEstilo.Contains("red")) return "background-color:#FF0000; color:#FFFFFF;"; // Rojo
-        if (colorEstilo.Contains("yellow")) return "backgrounnd-color:#FFFF00; color:#000000"; // Amarillo
+        if (colorEstilo.Contains("yellow")) return "background-color:#FFFF00; color:#000000"; // Amarillo
         if (colorEstilo.Contains("background-color:#92D050;")) return "background-color:#92D050; color:#FFFFFF;";
         if (colorEstilo.Contains("background-color:#00B0F0;")) return "background-color:#00B0F0; color:#FFFFFF;"; // Azul
         if (colorEstilo.Contains("background-color:#FF0000;")) return "background-color:#FF0000; color:#FFFFFF;"; // Rojo
-        if (colorEstilo.Contains("background-color:#FFFF00;")) return "background-color:#FFFF00; color:#000000;"; // Amarillo
+        if (colorEstilo.Contains("background-color:#ffff00;")) return "background-color:#FFFF00; color:#000000;"; // Amarillo
 
         return "background-color:#FFFFFF;color:#000000;"; // Color por defecto
     }
@@ -714,9 +714,9 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                             <th style=""border: 1px solid #dddddd; padding: 8px; width: 10%; text-align: center;""></th>
                         </tr>
                         <tr style=""border: 1px solid #dddddd;"">
-                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;""><strong>{item.Normasobj.VcCompetencia}</strong></td>
-                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{item.Nivel}</td>
-                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{circuloHtml}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: left; padding: 8px;"">{item.Normasobj.VcCompetencia}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; font-weight: normal;"">{item.Nivel}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px; font-weight: normal;"">{circuloHtml}</td>
                         </tr>";
 
                     var criterios = await _resultadosRepository.GetResultadosEvaluacionListaByEvaluacionId(progEva.InIdEvaluacion, item.NormaId);
@@ -732,15 +732,14 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
 
                             filasCriterios.Append($@"
                             <tr>
-                                <td style=""border: none; padding: 6px 15px; text-align: left; font-size: 12px;"">
+                                <td style=""border: none; font-weight: normal; padding: 6px 15px; text-align: left; font-size: 12px;"">
                                     {iconoHtml} {criterio.Criterio}
                                 </td>
-                                <td style=""padding: 6px 10px; text-align: right; border: none; width: 150px; "">
-                                    <span style=""border: 1px solid #ccc; padding: 2px 8px; display: inline-block; width: 150px; text-align: center; border-radius: 3px; {colorCriterioHex};"">
+                                <td style=""padding: 6px 10px; text-align: right; border: none; width: 50px; "">
+                                    <span style=""padding: 2px 8px; display: inline-block; width: 50px; text-align: center; border-radius: 3px; {colorCriterioHex};"">
                                         {criterio.Escalanivel}
                                     </span>
                                 </td>
-                                <td style=""border: none; padding: 6px 8px; text-align: center;""></td>
                             </tr>");
                         }
 
@@ -783,9 +782,9 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
                             <th style=""border: 1px solid #dddddd; padding: 8px; width: 5%;""></th>
                         </tr>
                         <tr>
-                            <td style=""border: 1px solid #dddddd; padding: 10px; text-align: left;""><strong>{item.Normasobj.VcCompetencia}</strong></td>
-                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{item.Nivel}</td>
-                            <td style=""border: 1px solid #dddddd; text-align: center; padding: 8px;"">{circuloHtml}</td>
+                            <td style=""border: 1px solid #dddddd; padding: 10px; font-weight: normal; text-align: left;"">{item.Normasobj.VcCompetencia}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: font-weight: normal; center; padding: 8px;"">{item.Nivel}</td>
+                            <td style=""border: 1px solid #dddddd; text-align: font-weight: normal; center; padding: 8px;"">{circuloHtml}</td>
                         </tr>";
 
                     var criterios = await _resultadosRepository.GetResultadosEvaluacionListaByEvaluacionId(progEva.InIdEvaluacion, item.NormaId);
@@ -801,11 +800,11 @@ public class ProgEvaluacionRepository: IProgEvaluacionRepository
 
                             filasCriterios.Append($@"
                             <tr>
-                                <td style=""padding: 6px 15px; text-align: left; font-size: 12px; border: none;"">
+                                <td style=""padding: 6px 15px; text-align: left; font-weight: normal; font-size: 12px; border: none;"">
                                     {iconoHtml} {criterio.Criterio}
                                 </td>
                                 <td style=""padding: 6px 10px; text-align: right; border: none; width: 150px; "">
-                                    <span style=""border: 1px solid #ccc; padding: 2px 8px; display: inline-block; width: 150px; text-align: center; border-radius: 3px; {colorCriterioHex};"">
+                                    <span style=""padding: 2px 8px; display: inline-block; width: 150px; text-align: center; border-radius: 3px; {colorCriterioHex};"">
                                         {criterio.Escalanivel}
                                     </span>
                                 </td>

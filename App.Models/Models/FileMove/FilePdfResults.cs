@@ -13,9 +13,9 @@ namespace App.Models.Models.FileMove
         public List<string>? detalleNoGenerados { get; set; }
         public List<string>? detalleGuardados { get; set; }
         public List<string>? detalleNoGuardados { get; set; }
+        public List<string>? Errors { get; set; }
         public string? status { get; set; }
         public string? message { get; set; }
-        public List<string>? Errors { get; set; }
         public int? id { get; set; }
         public string? path { get; set; }
     }
