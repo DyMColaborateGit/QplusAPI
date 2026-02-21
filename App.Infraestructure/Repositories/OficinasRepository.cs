@@ -39,7 +39,7 @@ public class OficinasRepository: IOficinasRepository
         try
         {
             var objResult = await _context.TBL_mast_Oficinas.AsNoTracking()
-            .Where(x => x.EmpresaId == EmpresaId && x.Estado == true)
+            .Where(x => x.EmpresaId == EmpresaId)
             .OrderBy(x => x.Oficina)
             .ToListAsync();
             if (ZonaId != -1)
