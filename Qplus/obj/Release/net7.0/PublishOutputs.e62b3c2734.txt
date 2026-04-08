@@ -1,4 +1,6 @@
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Qplus.exe
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win-x64\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win-x86\native\wkhtmltox.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\webConfigure.config
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\appsettings.json
@@ -10,6 +12,8 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\AutoMapper.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Azure.Core.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Azure.Identity.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\WkHtmlToPdfDotNet.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\libwkhtmltox.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -24,8 +28,11 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFramewo
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.Configuration.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.FileProviders.Abstractions.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.Options.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.Primitives.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Microsoft.Identity.Client.dll
@@ -47,13 +54,19 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Drawing.Common.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Memory.Data.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Runtime.Caching.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Security.Permissions.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Text.Encodings.Web.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\System.Windows.Extensions.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\linux-arm64\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\linux-x64\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\linux-x86\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\osx-x64\native\libwkhtmltox.dylib
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -88,6 +101,7 @@ E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\unix\lib\netco
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\App.Infraestructure.dll
 E:\CODE\DYM\QplusAPI\Qplus\obj\Release\net7.0\PubTmp\Out\App.logic.dll

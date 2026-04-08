@@ -145,3 +145,7 @@ D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Release\net7.0\refin
 D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.pdb
 D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.genruntimeconfig.cache
 D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\App.Infraestructure\obj\Release\net7.0\ref\App.Infraestructure.dll
+E:\CODE\DYM\QplusAPI\App.Infraestructure\bin\Release\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\App.Infraestructure\bin\Release\net7.0\runtimes\win-x86\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\App.Infraestructure\bin\Release\net7.0\App.Infraestructure.runtimeconfig.json
+E:\CODE\DYM\QplusAPI\App.Infraestructure\obj\Release\net7.0\App.Infraestructure.genruntimeconfig.cache

@@ -1151,3 +1151,17 @@ D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Release\net7.0\Qplus.xml
 D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Release\net7.0\Qplus.pdb
 D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Release\net7.0\Qplus.genruntimeconfig.cache
 D:\CODE\DYM\PLATAFORMA_1.0\QplusAPI\Qplus\obj\Release\net7.0\ref\Qplus.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\win-x64\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\win-x86\native\wkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\WkHtmlToPdfDotNet.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\libwkhtmltox.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\System.Diagnostics.DiagnosticSource.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\System.Text.Encodings.Web.dll
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\linux-arm64\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\linux-x64\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\linux-x86\native\libwkhtmltox.so
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\osx-x64\native\libwkhtmltox.dylib
+E:\CODE\DYM\QplusAPI\Qplus\bin\Release\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
