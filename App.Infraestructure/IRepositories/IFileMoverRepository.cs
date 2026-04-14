@@ -14,4 +14,6 @@ public interface IFileMoverRepository
     Task<FilePdfResultsModel> GetGenerarGuardarPdfsPdi(List<FilePdfADIPdiModel> requests);
     Task<FilePdfResultsModel> GetGenerarGuardarPdfsAdi(List<FilePdfADIPdiModel> requests);
     Task<ActionResult<FileResultModels>> ObtenerImagenBase64(string nombreArchivo, string arbolRaiz);
+    Task<List<FolderPdfStatsModel>> GetUserFilesFolderPdfsStats([FromBody] FolderPdfStatsModel rutasDescarga);
+    Task<byte[]> GetZipFolderStreamAsync(string carpetaPath);
 }

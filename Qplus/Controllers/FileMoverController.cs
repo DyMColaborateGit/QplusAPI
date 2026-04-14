@@ -1,8 +1,12 @@
-﻿using App.Models.Models.FileMove;
+﻿using App.Infraestructure.IRepositories;
+using App.Infraestructure.Repositories;
 using App.logic.IServices;
 using App.Models.Global;
+using App.Models.Models.FileMove;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
+using System.IO.Compression;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Qplus.Controllers
 {
@@ -17,10 +21,12 @@ namespace Qplus.Controllers
     public class FileMoverController : ControllerBase
     {
         private readonly IFileMoverService _fileMoverService;
+        private readonly IFileMoverRepository _fileMoverRepository;
 
-        public FileMoverController(IFileMoverService fileMoverService)
+        public FileMoverController(IFileMoverService fileMoverService, IFileMoverRepository fileMoverRepository)
         {
             _fileMoverService = fileMoverService;
+            _fileMoverRepository = fileMoverRepository;
         }
 
         /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
@@ -79,6 +85,8 @@ namespace Qplus.Controllers
             }
         }
         
+
+
 
 
         /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
@@ -165,6 +173,95 @@ namespace Qplus.Controllers
                 resultado.Message = new HttpCodesMessage().INTERNALERROR;
                 resultado.CathError = ex.Message.ToString();
                 return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost("GetUserFilesFolderPdfsStats")]
+        public async Task<GetResponse<List<FolderPdfStatsModel>>> GetUserFilesFolderPdfsStats([FromBody] FolderPdfStatsModel rutasDescarga)
+        {
+            GetResponse<List<FolderPdfStatsModel>> resultado = new GetResponse<List<FolderPdfStatsModel>>();
+            try
+            {
+                resultado.Data = await _fileMoverService.GetUserFilesFolderPdfsStats(rutasDescarga);
+                resultado.StatusCode = (int)HttpCodes.OK;
+                resultado.Message = new HttpCodesMessage().OK;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                resultado.StatusCode = (int)HttpCodes.INTERNALERROR;
+                resultado.Message = new HttpCodesMessage().INTERNALERROR;
+                resultado.CathError = ex.Message.ToString();
+                return resultado;
+            }
+        }
+
+        /// <response code="200">OK. Devuelve el objeto solicitado.</response> 
+        /// <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>  
+        /// <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost("DescargarCarpetaZipPdfs")]
+        public IActionResult DescargarCarpetaZipPdfs([FromBody] FolderPdfStatsModel rutasDescarga)
+        {
+            byte[] archivoZip = GenerarBytesDeCarpeta(rutasDescarga.FullPath);
+
+            if (archivoZip == null || archivoZip.Length == 0)
+            {
+                return NotFound("No se pudo generar el archivo o la ruta no existe.");
+            }
+
+            Response.OnCompleted(() =>
+            {
+                try
+                {
+                    if (Directory.Exists(rutasDescarga.FullPath))
+                    {
+                        Directory.Delete(rutasDescarga.FullPath, true);
+                        Console.WriteLine($"Carpeta eliminada permanentemente: {rutasDescarga.FullPath}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error al eliminar carpeta temporal: {ex.Message}");
+                }
+                return Task.CompletedTask;
+            });
+
+            return File(archivoZip, "application/zip", rutasDescarga.FolderName + ".zip");
+        }
+
+        private byte[] GenerarBytesDeCarpeta(string folderPath)
+        {
+            if (!Directory.Exists(folderPath)) return Array.Empty<byte>();
+
+            using (var ms = new MemoryStream())
+            {
+                using (var archive = new ZipArchive(ms, ZipArchiveMode.Create, true))
+                {
+                    foreach (var file in Directory.GetFiles(folderPath, "*", SearchOption.AllDirectories))
+                    {
+                        var entryName = Path.GetRelativePath(folderPath, file);
+                        var entry = archive.CreateEntry(entryName);
+
+                        using (var entryStream = entry.Open())
+                        using (var fileStream = System.IO.File.OpenRead(file))
+                        {
+                            fileStream.CopyTo(entryStream);
+                        }
+                    }
+                }
+
+                return ms.ToArray();
             }
         }
 
