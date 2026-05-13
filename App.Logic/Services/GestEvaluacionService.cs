@@ -617,10 +617,11 @@ namespace App.logic.Services
                             dEv = await _progEvaluacionRepository.UpdateProgEvaluacion(dEv);
                             if (dEv != null)
                             {
-                                if (dEv.TipoValoracionId == 1)
-                                {
-                                    _ = GestRecalcularIndiHerencia((long)dEv.InIdEvaluado, (int)dEv.InAno, (int)dEv.MesIni, (int)dEv.MesFin, EmpresaId);// Verificar si el evaluado hereda calificacion del gerente o del director para los indicadores Estrategicos
-                                }
+                                //if (dEv.TipoValoracionId == 1)
+                                //{
+                                // Verificar si el evaluado hereda calificacion del gerente o del director para los indicadores Estrategicos
+                                //    _ = GestRecalcularIndiHerencia((long)dEv.InIdEvaluado, (int)dEv.InAno, (int)dEv.MesIni, (int)dEv.MesFin, EmpresaId);
+                                //}
                                 await GestCategoriaMapadeTalentosfuncionarios(dEv, EmpresaId);
                                 return "ok";
                             }
@@ -637,7 +638,7 @@ namespace App.logic.Services
                 }
                 else
                 {
-                    return "No se puede verificar el análisis debido a que no ha calificado todas las competencias o completado los caracteres de la observación.";
+                    return "No se puede verificar el análisis debido a que no ha calificado todas las competencias o no cumplen con el mínimo de caracteres en observaciones análisis competencia.";
                 }
             }
             catch (Exception ex)
@@ -1770,7 +1771,7 @@ namespace App.logic.Services
         private async Task<Tbl_com_ProgEvaluacionModels> GestCategoriaMapadeTalentosfuncionarios(Tbl_com_ProgEvaluacionModels ProgEvaluacion, int EmpresaId)
         {
             TBL_com_MatrizdeTalentosModels ObjCatgoriaMapaTalento = await _matrizdeTalentoRepository.CategoriaMatrizdeTalentos(decimal.Parse(ProgEvaluacion.PromComp.ToString()), decimal.Parse(ProgEvaluacion.PromIndi.ToString()), EmpresaId);
-            if (ObjCatgoriaMapaTalento is object)
+            if (ObjCatgoriaMapaTalento.CodMatrix > 0)
             {
                 ProgEvaluacion.NumeroMapaTalento = ObjCatgoriaMapaTalento.NumeroCaja;
                 ProgEvaluacion.ColorMapaTalento = ObjCatgoriaMapaTalento.Color;
