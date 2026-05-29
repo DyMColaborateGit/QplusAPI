@@ -4,7 +4,7 @@
     <ActiveDebugProfile>http</ActiveDebugProfile>
     <Controller_SelectedScaffolderID>MvcControllerWithActionsScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
-    <NameOfLastUsedPublishProfile>E:\CODE\DYM\QplusAPI\Qplus\Properties\PublishProfiles\FolderProfile35.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>E:\DYM\CODE\DYM\QplusAPI\Qplus\Properties\PublishProfiles\FolderProfile36.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

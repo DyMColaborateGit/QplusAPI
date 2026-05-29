@@ -1532,6 +1532,55 @@
     ]
   },
   {
+    "ContainingType": "Qplus.Controllers.ControlesController",
+    "Method": "GetListaControlesRiesgos",
+    "RelativePath": "api/Controles/GetListaControlesRiesgos/{EmpresaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.TblRgp.Tbl_rgp_ControlesModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Qplus.Controllers.DialogodeDesarrolloController",
     "Method": "GetListTiposIndicadoresEstrategicos",
     "RelativePath": "api/DialogodeDesarrollo/GetListdialogodedesarrolloByevaluacionId/{IdEvaluacionId}/{EmpresaId}",
@@ -1738,7 +1787,7 @@
       },
       {
         "Name": "Usuario",
-        "Type": "System.Int32",
+        "Type": "System.Int64",
         "IsRequired": true
       },
       {
@@ -1748,7 +1797,7 @@
       },
       {
         "Name": "userId",
-        "Type": "System.Int32",
+        "Type": "System.Int64",
         "IsRequired": true
       },
       {
@@ -2827,6 +2876,65 @@
       {
         "Name": "EmpresaId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Models.Global.GetResponse\u00601[[System.Collections.Generic.List\u00601[[App.Models.Models.Scp.SCP_FuncionariosModels, App.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Qplus.Controllers.FuncionarioController",
+    "Method": "GetListfuncionariosByEmpresaIdByEstado",
+    "RelativePath": "api/Funcionario/GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Identificacion}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Identificacion",
+        "Type": "",
         "IsRequired": true
       }
     ],

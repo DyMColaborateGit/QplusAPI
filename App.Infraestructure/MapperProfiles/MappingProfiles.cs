@@ -138,5 +138,6 @@ public class MappingProfiles: Profile
         CreateMap<tbl_rgp_ClasesEntities, Tbl_rgp_ClasesModels>().ReverseMap();
         CreateMap<tbl_rgp_AgentesEntities, Tbl_rgp_AgentesModels>().ReverseMap();
         CreateMap<tbl_rgp_TipoAnalisisEntities, Tbl_rgp_TipoAnalisisModels>().ReverseMap();
+        CreateMap<tbl_rgp_ControlesEntities, Tbl_rgp_ControlesModels>().ReverseMap();
     }
 }

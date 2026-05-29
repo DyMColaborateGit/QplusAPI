@@ -27,6 +27,10 @@ public class FuncionariosService: IFuncionariosService
     {
         return await _funcionariosRepository.GetListfuncionariosByEmpresaId(EmpresaId);
     }
+    public async Task<List<SCP_FuncionariosModels>> GetListfuncionariosByEmpresaIdByEstado(int EmpresaId, bool Estado)
+    {
+        return await _funcionariosRepository.GetListfuncionariosByEmpresaIdByEstado(EmpresaId, Estado);
+    }
 
     public async Task<JOINSCP_FuncionariosModels> GetJoinFuncionarioByIdentificacion(int EmpresaId, long Identificacion)
     {

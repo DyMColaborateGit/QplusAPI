@@ -2704,6 +2704,90 @@
         }
       }
     },
+    "/api/Controles/GetListaControlesRiesgos/{EmpresaId}": {
+      "get": {
+        "tags": [
+          "Controles"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ControlesModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ControlesModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tbl_rgp_ControlesModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/DialogodeDesarrollo/GetListdialogodedesarrolloByevaluacionId/{IdEvaluacionId}/{EmpresaId}": {
       "get": {
         "tags": [
@@ -3151,7 +3235,7 @@
             "style": "simple",
             "schema": {
               "type": "integer",
-              "format": "int32"
+              "format": "int64"
             }
           },
           {
@@ -3170,7 +3254,7 @@
             "style": "simple",
             "schema": {
               "type": "integer",
-              "format": "int32"
+              "format": "int64"
             }
           },
           {
@@ -5105,6 +5189,107 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SCP_FuncionariosModelsListGetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SCP_FuncionariosModelsListGetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SCP_FuncionariosModelsListGetResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Funcionario/GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Identificacion}": {
+      "get": {
+        "tags": [
+          "Funcionario"
+        ],
+        "parameters": [
+          {
+            "name": "EmpresaId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Estado",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Identificacion",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -25440,6 +25625,80 @@
         },
         "additionalProperties": false
       },
+      "Tbl_rgp_ControlesModels": {
+        "type": "object",
+        "properties": {
+          "idControl": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idRiesgo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "control": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTipoControl": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioCreacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usuarioModificacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idEvaluacion": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tbl_rgp_ControlesModelsListGetResponse": {
+        "type": "object",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "cathError": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tbl_rgp_ControlesModels"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Tbl_rgp_EvaluacionRiesgoModels": {
         "type": "object",
         "properties": {
@@ -25738,6 +25997,14 @@
           "subprocesoId": {
             "type": "integer",
             "format": "int32"
+          },
+          "macroProcesoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "responsable": {
+            "type": "integer",
+            "format": "int64"
           }
         },
         "additionalProperties": false

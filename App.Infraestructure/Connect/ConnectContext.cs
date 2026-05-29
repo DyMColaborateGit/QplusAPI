@@ -112,6 +112,7 @@ public class ConnectContext : DbContext
 
     #region TBL-RGP
     public DbSet<tbl_rgp_RiesgosEntities> TBL_rgp_Riesgos {  get; set; }
+    public DbSet<tbl_rgp_ControlesEntities> TBL_rgp_Controles {  get; set; }
     public DbSet<tbl_rgp_ConsecuenciasEntities> TBL_rgp_Consecuencias {  get; set; }
     public DbSet<tbl_rgp_ProbabilidadesEntities> TBL_rgp_Probabilidades {  get; set; }
     public DbSet<tbl_rgp_ZonasEntities> TBL_rgp_Zonas {  get; set; }
