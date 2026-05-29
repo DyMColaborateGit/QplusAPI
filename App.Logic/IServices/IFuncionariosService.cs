@@ -13,5 +13,6 @@ public interface IFuncionariosService
     Task<SCP_FuncionariosModels> GetObjFuncionarioByIdentificacion(long Identificacion);
     Task<SCP_FuncionariosModels> GetObjFuncionarioByIdentificacion(int EmpresaId, long Identificacion);
     Task<List<SCP_FuncionariosModels>> GetListfuncionariosByEmpresaId(int EmpresaId);
+    Task<List<SCP_FuncionariosModels>> GetListfuncionariosByEmpresaIdByEstado(int EmpresaId, bool Estado);
     Task<JOINSCP_FuncionariosModels> GetJoinFuncionarioByIdentificacion(int EmpresaId, long Identificacion);
 }

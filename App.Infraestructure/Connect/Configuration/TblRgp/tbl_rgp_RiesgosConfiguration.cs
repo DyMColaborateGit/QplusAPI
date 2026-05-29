@@ -83,6 +83,13 @@ namespace App.Infraestructure.Connect.Configuration.TblRgp
 
             builder.Property(p => p.SubprocesoId)
                 .HasColumnType("int");
+
+            builder.Property(p => p.MacroProcesoId)
+                .HasColumnType("int");
+
+            builder.Property(p => p.Responsable)
+                .IsRequired()
+                .HasColumnType("bigint");
         }
     } 
 }

@@ -83,7 +83,7 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("GetListadoDocumentosFiltrosVista/{IdArea}/{proceso_doc}/{CodigoDoc}/{IdProducto}/{IdTipo}/{Estado}/{NivelSeguridad}/{EmpresaId}/{InIdSistema}/{Usuario}/{NombreDoc}/{userId}/{ElaboradoPor}/{RevisadoPor}/{AprobadoPor}/{EstadoProceso}/{Pagina}/{pageSize}/{codigoCargo}")]
         public async Task<GetResponse<PagedResult<ResponseTBL_doc_DocumentosModels>>> GetListadoDocumentosFiltrosVista(int IdArea, int proceso_doc, string CodigoDoc, int IdProducto, int IdTipo, string Estado,
-            int NivelSeguridad, int EmpresaId, int InIdSistema, int Usuario, string NombreDoc, int userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize, int codigoCargo)
+            int NivelSeguridad, int EmpresaId, int InIdSistema, long Usuario, string NombreDoc, long userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize, int codigoCargo)
         {
             GetResponse<PagedResult<ResponseTBL_doc_DocumentosModels>> resultado = new GetResponse<PagedResult<ResponseTBL_doc_DocumentosModels>>();
             try

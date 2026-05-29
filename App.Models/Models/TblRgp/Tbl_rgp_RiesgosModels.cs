@@ -26,5 +26,7 @@ namespace App.Models.Models.TblRgp
         public string? Codigo { get; set; }
         public int Consecutivo { get; set; }
         public int SubprocesoId { get; set; }
+        public int MacroProcesoId { get; set; }
+        public long Responsable { get; set; }
     }
 }

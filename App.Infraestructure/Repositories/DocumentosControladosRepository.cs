@@ -50,7 +50,7 @@ namespace App.Infraestructure.Repositories
             }
         }
         public async Task<PagedResult<ResponseTBL_doc_DocumentosModels>> GetListadoDocumentosFiltrosVista(int IdArea, int proceso_doc, string CodigoDoc, int IdProducto, int IdTipo, string Estado,
-          int NivelSeguridad, int EmpresaId, int InIdSistema, int Usuario, string NombreDoc, int userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize,
+          int NivelSeguridad, int EmpresaId, int InIdSistema, long Usuario, string NombreDoc, long userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize,
           int codigoCargo)
         {
             if (string.IsNullOrEmpty(CodigoDoc))

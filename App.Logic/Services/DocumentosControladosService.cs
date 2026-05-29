@@ -27,7 +27,7 @@ namespace App.logic.Services
         }
 
         public async Task<PagedResult<ResponseTBL_doc_DocumentosModels>> GetListadoDocumentosFiltrosVista(int IdArea, int proceso_doc, string CodigoDoc, int IdProducto, int IdTipo, string Estado,
-            int NivelSeguridad, int EmpresaId, int InIdSistema, int Usuario, string NombreDoc, int userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize, int codigoCargo)
+            int NivelSeguridad, int EmpresaId, int InIdSistema, long Usuario, string NombreDoc, long userId, int ElaboradoPor, int RevisadoPor, int AprobadoPor, string EstadoProceso, int Pagina, int pageSize, int codigoCargo)
         {
             return await _documentosControladosRepository.GetListadoDocumentosFiltrosVista(IdArea, proceso_doc, CodigoDoc, IdProducto, IdTipo, Estado, NivelSeguridad, EmpresaId, 
                 InIdSistema, Usuario, NombreDoc, userId, ElaboradoPor, RevisadoPor, AprobadoPor, EstadoProceso, Pagina, pageSize, codigoCargo);
