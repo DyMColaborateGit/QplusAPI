@@ -112,7 +112,7 @@ namespace Qplus.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpGet("GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Identificacion}")]
+        [HttpGet("GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Estado}")]
         public async Task<GetResponse<List<SCP_FuncionariosModels>>> GetListfuncionariosByEmpresaIdByEstado(int EmpresaId, bool Estado)
         {
             GetResponse<List<SCP_FuncionariosModels>> resultado = new GetResponse<List<SCP_FuncionariosModels>>();

@@ -2917,7 +2917,7 @@
   {
     "ContainingType": "Qplus.Controllers.FuncionarioController",
     "Method": "GetListfuncionariosByEmpresaIdByEstado",
-    "RelativePath": "api/Funcionario/GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Identificacion}",
+    "RelativePath": "api/Funcionario/GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Estado}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -2930,11 +2930,6 @@
       {
         "Name": "Estado",
         "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "Identificacion",
-        "Type": "",
         "IsRequired": true
       }
     ],
