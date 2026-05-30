@@ -5259,7 +5259,7 @@
         }
       }
     },
-    "/api/Funcionario/GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Identificacion}": {
+    "/api/Funcionario/GetListfuncionariosByEmpresaIdByEstado/{EmpresaId}/{Estado}": {
       "get": {
         "tags": [
           "Funcionario"
@@ -5277,19 +5277,11 @@
           },
           {
             "name": "Estado",
-            "in": "query",
-            "style": "form",
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "Identificacion",
             "in": "path",
             "required": true,
             "style": "simple",
             "schema": {
-              "type": "string"
+              "type": "boolean"
             }
           }
         ],
